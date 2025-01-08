@@ -1,1 +1,18 @@
- 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/*missing alt attribute*/
+img:not([alt]) {
+  outline-offset: 0.5rem;
+  outline: 0.5rem dashed red;
+}
+
+/*empty alt attribute*/
+img[alt=""] {
+  outline-offset: 1.5rem;
+  outline: 0.5rem solid blue;
+}
