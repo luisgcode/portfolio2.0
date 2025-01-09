@@ -52,7 +52,7 @@ img[alt=""] {
 }
 
 .custom-bg {
-  background-image: radial-gradient(#ffffff1a 0.5px, #00040f 0.5px);
+  background-image: radial-gradient(#ffffff1a 0.5px, #000f2d 0.5px);
   background-size: 20px 20px;
 }
 
@@ -69,12 +69,41 @@ img[alt=""] {
   transform: rotate(-4deg);
 }
 
+.navigation-logo:hover {
+  filter: drop-shadow(5px 0px 10px rgba(255, 255, 255, 0.504));
+}
+
+/* Sound icon animation */
 .sound-icon {
   font-size: 2rem;
   position: absolute;
+  top: 10%;
+  left: 80%;
+  z-index: -1;
+  opacity: 0;
 }
 
 .navigation-logo:hover .sound-icon {
-  opacity: 1;
+  left: 104%;
+  top: -10%;
+  transform: rotate(5deg);
   transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 1;
+  animation-name: keyboardRotate;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes keyboardRotate {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
 }

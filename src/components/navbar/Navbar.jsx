@@ -1,6 +1,7 @@
 import React from "react";
 import { luisLogo } from "../import_data";
 import { AiFillSound } from "react-icons/ai";
+import "./navbar.css";
 
 const Navbar = () => {
   return (
@@ -16,22 +17,25 @@ const Navbar = () => {
         </div>
         <ul className="navigation-items flex gap-12">
           <li>
-            <a className="text-white" href="#">
+            <a className="nav-link" href="#">
               Home
             </a>
           </li>
           <li>
-            <a className="text-white" href="#">
+            <a className="nav-link" href="#">
               Projects
             </a>
           </li>
           <li>
-            <a className="text-white" href="#">
+            <a className="nav-link" href="#">
               About
             </a>
           </li>
           <li>
-            <a className="text-white" href="#">
+            <a
+              className="bg-highlightColor text-white py-2 px-4 rounded-md"
+              href="#"
+            >
               Contact
             </a>
           </li>
