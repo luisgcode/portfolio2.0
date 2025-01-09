@@ -64,6 +64,7 @@ img[alt=""] {
   margin: 4rem 6rem;
 }
 
+/* Logo details */
 .logo-image {
   width: 85px;
   transform: rotate(-4deg);
@@ -71,6 +72,75 @@ img[alt=""] {
 
 .navigation-logo:hover {
   filter: drop-shadow(5px 0px 10px rgba(255, 255, 255, 0.504));
+}
+
+/* keyboard animation */
+.space-bar {
+  width: 31px;
+  height: 5px;
+  position: absolute;
+  border-radius: 15px;
+  left: 33%;
+  top: 77%;
+  transform: rotate(-4deg);
+}
+
+.navigation-logo:hover .space-bar {
+  animation-name: keyShining;
+  animation-duration: 0.6s; /* Duración de la animación */
+  animation-delay: 5s; /* Retraso antes de iniciar la animación */
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; /* Se ejecuta solo una vez */
+}
+
+.bubble {
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  border-radius: 50%;
+  left: 7%;
+  top: 39%;
+  transform: rotate(-4deg);
+}
+
+.navigation-logo:hover .bubble {
+  animation-name: keyShining;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.7s;
+}
+
+.navigation-logo .bubble:nth-of-type(2) {
+  left: 40%;
+  top: 35%;
+  animation-delay: 1s;
+}
+
+.navigation-logo .bubble:nth-of-type(3) {
+  left: 73%;
+  top: 31%;
+  animation-delay: 0.6s;
+}
+
+.navigation-logo .bubble:nth-of-type(4) {
+  left: 57%;
+  top: 53%;
+  animation-delay: 1.4s;
+}
+
+@keyframes keyShining {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(-4deg);
+    box-shadow: 1px 2px 4px #5d5fef;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* Sound icon animation */
@@ -89,7 +159,7 @@ img[alt=""] {
   transform: rotate(5deg);
   transition: all 0.3s ease;
   z-index: 1;
-  opacity: 1;
+  opacity: 0.3;
   animation-name: keyboardRotate;
   animation-duration: 1s;
   animation-timing-function: ease;

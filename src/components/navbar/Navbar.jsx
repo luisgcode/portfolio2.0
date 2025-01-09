@@ -2,18 +2,38 @@ import React from "react";
 import { luisLogo } from "../import_data";
 import { AiFillSound } from "react-icons/ai";
 import "./navbar.css";
+import sound from "../../assets/audio/keyboard-audio.mp3";
+import { audio } from "motion/react-client";
 
 const Navbar = () => {
+  const audio = new Audio(sound);
+  audio.currentTime = 5;
+
+  function play() {
+    audio.play(); // Reproducir el audio
+  }
+
+  function stop() {
+    audio.pause(); // Pausar el audio
+  }
+
   return (
     <div className="navbar sec-pad">
       <div className="navigation flex items-center justify-between">
         <div className="navigation-logo cursor-pointer relative">
           <img
+            onMouseEnter={play}
+            onMouseOut={stop}
             className="logo-image"
             src={luisLogo}
             alt="My portfolio's logo"
           />
           <AiFillSound className="sound-icon" />
+          <div className=" space-bar"></div>
+          <div className=" bubble "></div>
+          <div className=" bubble "></div>
+          <div className=" bubble "></div>
+          <div className=" bubble "></div>
         </div>
         <ul className="navigation-items flex gap-12">
           <li>
