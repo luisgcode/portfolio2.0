@@ -3,7 +3,6 @@ import { luisLogo } from "../import_data";
 import { AiFillSound } from "react-icons/ai";
 import "./navbar.css";
 import sound from "../../assets/audio/keyboard-audio.mp3";
-import { audio } from "motion/react-client";
 
 const Navbar = () => {
   const audio = new Audio(sound);

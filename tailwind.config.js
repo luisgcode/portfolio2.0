@@ -10,7 +10,7 @@ export default {
     },
     extend: {
       colors: {
-        detailColor: "#321a7f",
+        detailColor: "#d6dfe5",
         highlightColor: "#5d5fef",
       },
     },
