@@ -1,16 +1,39 @@
+/* ? Anything that I would need to modify over Tailwind, goes here */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --font-family: "Manrope", sans-serif;
+  --color-bg: #00040f;
+}
 
-  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
-  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+/* & Typography settings */
+body {
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
+  font-family: "Poppins", serif;
+  line-height: 1.4;
+}
 
-  --color-bg: #040c18;
-  --color-footer: #031b34;
-  --color-blog: #042c54;
-  --color-text: #81afdd;
-  --color-subtext: #ff8a71;
+h1 {
+  font-size: clamp(2.5rem, 5vw, 6rem);
+  color: #ffffff;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 4.5rem);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3.5vw, 3.5rem);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+}
+
+h5 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
 }

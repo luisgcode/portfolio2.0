@@ -1,3 +1,5 @@
+/* ? Styles or parameters for this app */
+/* & Customized Utilities */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,11 +12,8 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-size: clamp(1.4rem, 2vw, 1.6rem);
-  color: #ffc788;
   background: var(--color-bg);
+  color: #cfcfcf;
 }
 
 img,
@@ -50,4 +49,9 @@ img:not([alt]) {
 img[alt=""] {
   outline-offset: 1.5rem;
   outline: 0.5rem solid blue;
+}
+
+.custom-bg {
+  background-image: radial-gradient(#ffffff1a 0.5px, #00040f 0.5px);
+  background-size: 20px 20px;
 }

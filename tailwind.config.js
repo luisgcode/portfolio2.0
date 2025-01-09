@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html", // Para el archivo HTML en la raíz
-    "./src/**/*.{js,jsx}", // Para todos los archivos dentro de `src`
-  ],
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     screens: {
       sm: "480px",
@@ -13,10 +10,8 @@ export default {
     },
     extend: {
       colors: {
-        titleColor: "#37b24d",
-      },
-      width: {
-        custom: "1360px",
+        detailColor: "#321a7f",
+        highlightColor: "#5d5fef",
       },
     },
   },
