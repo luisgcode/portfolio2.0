@@ -29,7 +29,6 @@ const Navbar = () => {
             alt="My portfolio's logo"
           />
           <AiFillSound className="sound-icon" />
-          <div className=" space-bar"></div>
           <div className=" bubble "></div>
           <div className=" bubble "></div>
           <div className=" bubble "></div>

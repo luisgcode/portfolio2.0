@@ -67,7 +67,6 @@ img[alt=""] {
 /* Logo details */
 .logo-image {
   width: 85px;
-  transform: rotate(-4deg);
 }
 
 .navigation-logo:hover {
@@ -75,32 +74,14 @@ img[alt=""] {
 }
 
 /* keyboard animation */
-.space-bar {
-  width: 31px;
-  height: 5px;
-  position: absolute;
-  border-radius: 15px;
-  left: 33%;
-  top: 77%;
-  transform: rotate(-4deg);
-}
-
-.navigation-logo:hover .space-bar {
-  animation-name: keyShining;
-  animation-duration: 0.6s; /* Duración de la animación */
-  animation-delay: 5s; /* Retraso antes de iniciar la animación */
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite; /* Se ejecuta solo una vez */
-}
 
 .bubble {
   width: 7px;
   height: 7px;
   position: absolute;
   border-radius: 50%;
-  left: 7%;
-  top: 39%;
-  transform: rotate(-4deg);
+  left: 9%;
+  top: 32%;
 }
 
 .navigation-logo:hover .bubble {
@@ -119,13 +100,13 @@ img[alt=""] {
 
 .navigation-logo .bubble:nth-of-type(3) {
   left: 73%;
-  top: 31%;
+  top: 39%;
   animation-delay: 0.6s;
 }
 
 .navigation-logo .bubble:nth-of-type(4) {
-  left: 57%;
-  top: 53%;
+  left: 56%;
+  top: 55%;
   animation-delay: 1.4s;
 }
 
@@ -135,8 +116,7 @@ img[alt=""] {
   }
   50% {
     opacity: 1;
-    transform: rotate(-4deg);
-    box-shadow: 1px 2px 4px #5d5fef;
+    box-shadow: 1px 2px 3px #5d5fef;
   }
   100% {
     opacity: 0;
@@ -155,7 +135,7 @@ img[alt=""] {
 
 .navigation-logo:hover .sound-icon {
   left: 104%;
-  top: -10%;
+  top: 0%;
   transform: rotate(5deg);
   transition: all 0.3s ease;
   z-index: 1;
