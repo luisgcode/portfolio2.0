@@ -57,9 +57,24 @@ img[alt=""] {
 }
 
 .sec-pad {
-  padding: 4rem 6rem;
+  padding: 4rem 8rem;
 }
 
 .sec-mar {
   margin: 4rem 6rem;
+}
+
+.logo-image {
+  width: 85px;
+  transform: rotate(-4deg);
+}
+
+.sound-icon {
+  font-size: 2rem;
+  position: absolute;
+}
+
+.navigation-logo:hover .sound-icon {
+  opacity: 1;
+  transition: all 0.3s ease;
 }
