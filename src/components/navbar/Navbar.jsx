@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className=" bubble "></div>
           <div className=" bubble "></div>
         </div>
-        <ul className="navigation-items flex gap-12">
+        <ul className="navigation-items flex gap-12 mr-16">
           <li>
             <a className="nav-link" href="#">
               Home

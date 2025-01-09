@@ -22,9 +22,13 @@ import htmlLogo from "../assets/images/logos/tech-html.svg";
 import hotjarLogo from "../assets/images/logos/tech-hotjar.svg";
 import gitHubLogo from "../assets/images/logos/tech-github.svg";
 import gitLogo from "../assets/images/logos/tech-git.svg";
+
 import luisLogo from "../assets/images/logos/logo.svg";
 
+import heroImage from "../assets/images/hero-alter1.png";
+
 export {
+  heroImage,
   luisLogo,
   bootstrapLogo,
   cssLogo,

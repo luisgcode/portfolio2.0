@@ -14,6 +14,8 @@ html {
 body {
   background: var(--color-bg);
   color: #cfcfcf;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 img,

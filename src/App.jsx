@@ -5,6 +5,7 @@ import About from "./components/about/About";
 import Toolbox from "./components/toolbox/Toolbox";
 import Projects from "./components/projects/Projects";
 import Footer from "./components/footer/Footer";
+import Behind from "./components/behind/Behind";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <Hero />
       </div>
+      <Behind />
       <About />
       <div className="custom-bg">
         <Toolbox />
