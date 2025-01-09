@@ -55,3 +55,11 @@ img[alt=""] {
   background-image: radial-gradient(#ffffff1a 0.5px, #00040f 0.5px);
   background-size: 20px 20px;
 }
+
+.sec-pad {
+  padding: 4rem 6rem;
+}
+
+.sec-mar {
+  margin: 4rem 6rem;
+}
