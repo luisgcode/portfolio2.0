@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/luisgcode/portfolio2.0.git",
   "name": "portfolio2.0",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "motion": "^11.16.1",
