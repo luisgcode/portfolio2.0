@@ -5,6 +5,41 @@
   scroll-behavior: smooth;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: clamp(1.4rem, 2vw, 1.6rem);
+  color: #ffc788;
+  background: var(--color-bg);
+}
+
+img,
+picture,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: unset;
+}
+
 /*missing alt attribute*/
 img:not([alt]) {
   outline-offset: 0.5rem;
