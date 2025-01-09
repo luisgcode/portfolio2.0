@@ -20,9 +20,18 @@ h1 {
   font-weight: 800;
 }
 
+h1::selection,
+p::selection {
+  background: #5d5fef;
+}
+
 h2 {
   font-size: clamp(2rem, 4vw, 4.5rem);
   font-weight: 500;
+}
+
+h2::selection {
+  background: #d6dfe5;
 }
 
 h3 {

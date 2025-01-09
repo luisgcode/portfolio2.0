@@ -3,7 +3,7 @@ import "./hero.css";
 import { heroImage } from "../import_data";
 import { FiLinkedin } from "react-icons/fi";
 import { LuGithub } from "react-icons/lu";
-import { MdOutlineEmail } from "react-icons/md";
+import { BsFileEarmarkPdf } from "react-icons/bs";
 
 const Hero = () => {
   return (
@@ -11,12 +11,12 @@ const Hero = () => {
       <div className="hero-container flex items-center justify-between my-10  ">
         <div className="intro ">
           <h1>Luis Guaiquirian</h1>
-          <h2 className="text-highlightColor">Web Developer</h2>
+          <h2 className="text-highlightColor  ">Web Developer</h2>
           <p className="mt-2 mb-10">
             I build responsive Web applications with modern technologies, <br />
             specializing in:
           </p>
-          {/* Learning */}
+
           <div className="flex flex-wrap items-center gap-10">
             <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor">
               React JS
@@ -34,18 +34,26 @@ const Hero = () => {
           <div className="mt-10">
             <ul className="flex gap-10">
               <li>
-                <a className="flex gap-4" href="#">
+                <a className="flex gap-3 text-4xl" href="#">
+                  <BsFileEarmarkPdf /> Résumé
+                </a>
+              </li>
+              <li>
+                <a
+                  className="flex gap-3 text-4xl"
+                  href="https://www.linkedin.com/in/luisgcode/"
+                  target="_blank"
+                >
                   <FiLinkedin /> Linkedin
                 </a>
               </li>
               <li>
-                <a className="flex gap-4" href="#">
+                <a
+                  className="flex gap-3 text-4xl"
+                  href="https://github.com/luisgcode"
+                  target="_blank"
+                >
                   <LuGithub /> Github
-                </a>
-              </li>
-              <li>
-                <a className="flex gap-4" href="#">
-                  <MdOutlineEmail /> Email
                 </a>
               </li>
             </ul>

@@ -7,6 +7,7 @@ import sound from "../../assets/audio/keyboard-audio.mp3";
 const Navbar = () => {
   const audio = new Audio(sound);
   audio.currentTime = 5;
+  audio.volume = 0.4;
 
   function play() {
     audio.play(); // Reproducir el audio
