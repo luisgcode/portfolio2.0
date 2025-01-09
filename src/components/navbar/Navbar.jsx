@@ -1,11 +1,8 @@
 import React from "react";
+import { luisLogo } from "../import_data";
 
 const Navbar = () => {
-  return (
-    <div className="navbar">
-      <h1>I am navbar</h1>
-    </div>
-  );
+  return <div className="navbar"></div>;
 };
 
 export default Navbar;
