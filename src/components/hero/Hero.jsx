@@ -27,7 +27,7 @@ const Hero = () => {
             <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300 text-[14px]">
               JavaScript
             </span>
-            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300 text-[12px]">
+            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300 text-[10px]">
               Python
             </span>
           </div>

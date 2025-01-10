@@ -1,3 +1,12 @@
+.projects {
+  background-image: url(/src/assets/images/vector1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow-x: hidden;
+
+  background-position-x: 130%;
+}
+
 .project-card {
   flex-basis: 1/3;
   min-width: 300px;

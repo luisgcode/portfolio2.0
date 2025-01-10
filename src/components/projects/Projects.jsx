@@ -41,7 +41,7 @@ const Projects = () => {
               View Code
             </a>
           </div>
-        </div>
+        </div>{" "}
       </div>
     </div>
   );
