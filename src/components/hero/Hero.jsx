@@ -34,7 +34,11 @@ const Hero = () => {
           <div className="mt-10">
             <ul className="flex gap-10">
               <li>
-                <a className="flex gap-3 text-4xl" href="#">
+                <a
+                  className="flex gap-3 text-4xl"
+                  href="/portfolio2.0/cv_developer_luis.pdf"
+                  download="luis_summary.pdf"
+                >
                   <BsFileEarmarkPdf /> Résumé
                 </a>
               </li>

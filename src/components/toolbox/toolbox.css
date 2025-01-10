@@ -1,0 +1,21 @@
+.heading-tertiary {
+  position: relative;
+  margin-bottom: 2rem;
+  z-index: 1;
+  display: inline-block;
+}
+
+.brush {
+  background-color: #1c2767;
+  height: 25px;
+  position: absolute;
+  width: 110%;
+  bottom: 1px;
+  left: 0;
+  z-index: -1;
+}
+.toolbox {
+  background-image: url(/src/assets/images/vector1.svg);
+  background-repeat: no-repeat;
+  background-position: -80% 10%;
+}
