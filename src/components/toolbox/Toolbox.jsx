@@ -90,7 +90,7 @@ const Toolbox = () => {
                   src={sassLogo}
                   alt="logo javascript "
                 />
-                <small>Tailwind CSS</small>
+                <small>Sass</small>
               </div>
             </div>
           </div>
@@ -132,7 +132,7 @@ const Toolbox = () => {
           <div className="tools-row">
             <h4 className="flex items-center gap-2">
               <FaTools />
-              Tools
+              Development & Collaboration
             </h4>
             <div className="tools-icons flex flex-wrap gap-10 my-10">
               {/* Github */}

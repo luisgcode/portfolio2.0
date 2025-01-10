@@ -2,6 +2,7 @@ import React from "react";
 import { portfolioVideo, portfolioPoster } from "../import_data";
 import { FaCode } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
+import "./projects.css";
 
 const Projects = () => {
   return (
@@ -10,15 +11,12 @@ const Projects = () => {
         My Latest Projects.
         <span className="brush"></span>
       </h3>
+      <p className="italic my-3 text-m text-highlightColor">
+        ** hover to preview video.
+      </p>
       <div className="pojects-container flex   justify-between flex-wrap">
-        {/* Portfolio 2.0 */}
-        <div className="project-card basis-1/3 min-w-[300px] max-w-[32%]">
-          <video className="rounded-lg " poster={portfolioPoster}>
-            <source src={portfolioVideo} type="video/mp4" />
-          </video>
-        </div>
         {/* CrowdMeter */}
-        <div className="project-card basis-1/3 min-w-[300px] max-w-[32%] bg-highlightColor bg-opacity-20 border border-highlightColor rounded-lg">
+        <div className="project-card">
           <video className="rounded-lg" poster={portfolioPoster}>
             <source src={portfolioVideo} type="video/mp4" />
           </video>
@@ -33,7 +31,7 @@ const Projects = () => {
               learned in the last 2 years.
             </span>
           </div>
-          <div className="py-4 px-6 flex justify-between items-center">
+          <div className=" bottom-info">
             <a className="flex gap-2  items-center" href="#">
               <CgWebsite />
               Live site
@@ -43,12 +41,6 @@ const Projects = () => {
               View Code
             </a>
           </div>
-        </div>
-        {/* CrowdMeter */}
-        <div className="project-card basis-1/3 min-w-[300px] max-w-[32%]">
-          <video className="rounded-lg" poster={portfolioPoster}>
-            <source src={portfolioVideo} type="video/mp4" />
-          </video>
         </div>
       </div>
     </div>

@@ -21,13 +21,13 @@ const Hero = () => {
             <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300">
               React JS
             </span>
-            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300">
+            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300 ">
               Tailwind CSS
-            </span>
-            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300">
+            </span>{" "}
+            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300 text-[14px]">
               JavaScript
             </span>
-            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300">
+            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300 text-[12px]">
               Python
             </span>
           </div>
