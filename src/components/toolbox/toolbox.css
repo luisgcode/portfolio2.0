@@ -19,10 +19,17 @@
   background-image: url(/src/assets/images/vector1.svg);
   background-repeat: no-repeat;
   background-position: -80% 10%;
+  overflow-x: hidden;
 }
 
 .tools-row {
   border-radius: 25px;
+  padding: 2.2rem 0 0.2rem 2.5rem;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(20px);
+}
+
+.tools-row:hover {
   background-image: linear-gradient(to right, #9697f35e, transparent);
-  padding: 1rem 0 0.5rem 3rem;
+  transform: translateX(0);
 }

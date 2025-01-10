@@ -32,6 +32,11 @@ import {
   magentoLogo,
   gitLogo,
   gitHubLogo,
+  prestashopLogo,
+  wordpressLogo,
+  jiraLogo,
+  confluenceLogo,
+  notionLogo,
 } from "../import_data";
 
 const Toolbox = () => {
@@ -48,7 +53,7 @@ const Toolbox = () => {
             continuous education is imperative for staying relevant.
           </p>
         </div>
-        <div className="toolbox-wrapp flex flex-col gap-10">
+        <div className="toolbox-wrapp flex flex-col  ">
           <div className="tools-row">
             <h4 className="flex items-center gap-2">
               <MdMonitor />
@@ -135,47 +140,55 @@ const Toolbox = () => {
                 <img
                   className="h-20 w-20"
                   src={gitHubLogo}
-                  alt="logo Python "
+                  alt="logo GitHub "
                 />
                 <small>GitHub</small>
               </div>
               {/* Git */}
               <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={gitLogo} alt="logo PHP " />
+                <img className="h-20 w-20" src={gitLogo} alt="logo Git " />
                 <small>Git</small>
               </div>
               {/* vs code */}
               <div className=" flex flex-col items-center">
                 <img
                   className="h-20 w-20"
-                  src={firebaseLogo}
-                  alt="logo firebase "
+                  src={vsCodeLogo}
+                  alt="logo VS Code "
                 />
                 <small>VS Code</small>
               </div>
               {/* Figma */}
               <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={mySqlLogo} alt="logo MySQL " />
+                <img className="h-20 w-20" src={figmaLogo} alt="logo Figma " />
                 <small>Figma</small>
               </div>
               {/* Notion */}
               <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={mySqlLogo} alt="logo MySQL " />
+                <img
+                  className="h-20 w-20"
+                  src={notionLogo}
+                  alt="logo Notion "
+                />
                 <small>Notion</small>
               </div>
               {/* Confluence */}
               <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={mySqlLogo} alt="logo MySQL " />
+                <img
+                  className="h-20 w-20"
+                  src={confluenceLogo}
+                  alt="logo Confluence "
+                />
                 <small>Confluence</small>
               </div>
               {/* Jira */}
               <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={mySqlLogo} alt="logo MySQL " />
+                <img className="h-20 w-20" src={jiraLogo} alt="logo Jira " />
                 <small>Jira</small>
               </div>
               {/* Slack */}
               <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={mySqlLogo} alt="logo MySQL " />
+                <img className="h-20 w-20" src={slackLogo} alt="logo Slack " />
                 <small>Slack</small>
               </div>
             </div>
@@ -190,22 +203,22 @@ const Toolbox = () => {
               <div className=" flex flex-col items-center">
                 <img
                   className="h-20 w-20"
-                  src={gitHubLogo}
-                  alt="logo Python "
+                  src={powerBiLogo}
+                  alt="logo Power BI"
                 />
                 <small>Power BI</small>
               </div>
               {/* GA4 */}
               <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={gitLogo} alt="logo PHP " />
+                <img className="h-20 w-20" src={ga4Logo} alt="logo GA4 " />
                 <small>GA4</small>
               </div>
               {/* Hotjar */}
               <div className=" flex flex-col items-center">
                 <img
                   className="h-20 w-20"
-                  src={firebaseLogo}
-                  alt="logo firebase "
+                  src={hotjarLogo}
+                  alt="logo Hotjar "
                 />
                 <small>Hotjar</small>
               </div>
@@ -217,28 +230,32 @@ const Toolbox = () => {
               CMS
             </h4>
             <div className="tools-icons flex flex-wrap gap-10 my-10">
-              {/* Power BI */}
+              {/* Magento */}
               <div className=" flex flex-col items-center">
                 <img
                   className="h-20 w-20"
-                  src={gitHubLogo}
-                  alt="logo Python "
+                  src={magentoLogo}
+                  alt="logo Magento "
                 />
-                <small>Power BI</small>
+                <small>Magento</small>
               </div>
-              {/* GA4 */}
-              <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={gitLogo} alt="logo PHP " />
-                <small>GA4</small>
-              </div>
-              {/* Hotjar */}
+              {/* wordpress */}
               <div className=" flex flex-col items-center">
                 <img
                   className="h-20 w-20"
-                  src={firebaseLogo}
-                  alt="logo firebase "
+                  src={wordpressLogo}
+                  alt="logo Wordpress "
                 />
-                <small>Hotjar</small>
+                <small>Wordpress</small>
+              </div>
+              {/* Prestashop */}
+              <div className=" flex flex-col items-center">
+                <img
+                  className="h-20 w-20"
+                  src={prestashopLogo}
+                  alt="logo Prestashop "
+                />
+                <small>Prestashop</small>
               </div>
             </div>
           </div>

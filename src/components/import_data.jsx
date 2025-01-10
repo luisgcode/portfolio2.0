@@ -23,6 +23,11 @@ import htmlLogo from "../assets/images/logos/tech-html.svg";
 import hotjarLogo from "../assets/images/logos/tech-hotjar.svg";
 import gitHubLogo from "../assets/images/logos/tech-github.svg";
 import gitLogo from "../assets/images/logos/tech-git.svg";
+import wordpressLogo from "../assets/images/logos/tech-wordpres.svg";
+import prestashopLogo from "../assets/images/logos/tech-prestashop.svg";
+import notionLogo from "../assets/images/logos/tech-notion.svg";
+import jiraLogo from "../assets/images/logos/tech-jira.svg";
+import confluenceLogo from "../assets/images/logos/tech-confluence.svg";
 //  ^  My logo
 import luisLogo from "../assets/images/logos/logo.svg";
 //  ^  My hero image
@@ -36,6 +41,9 @@ export {
   heroImage,
   luisLogo,
   bootstrapLogo,
+  notionLogo,
+  jiraLogo,
+  confluenceLogo,
   cssLogo,
   figmaLogo,
   fileZileaLogo,
@@ -57,6 +65,8 @@ export {
   htmlLogo,
   hotjarLogo,
   magentoLogo,
+  wordpressLogo,
+  prestashopLogo,
   gitLogo,
   gitHubLogo,
   portfolioVideo,
