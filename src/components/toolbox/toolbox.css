@@ -14,8 +14,15 @@
   left: 0;
   z-index: -1;
 }
+
 .toolbox {
   background-image: url(/src/assets/images/vector1.svg);
   background-repeat: no-repeat;
   background-position: -80% 10%;
+}
+
+.tools-row {
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #9697f35e, transparent);
+  padding: 1rem 0 0.5rem 3rem;
 }

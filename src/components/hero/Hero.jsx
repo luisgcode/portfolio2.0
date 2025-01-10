@@ -18,16 +18,16 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap items-center gap-10">
-            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor">
+            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300">
               React JS
             </span>
-            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor">
+            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300">
               Tailwind CSS
             </span>
-            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor">
+            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300">
               JavaScript
             </span>
-            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor">
+            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300">
               Python
             </span>
           </div>

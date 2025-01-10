@@ -1,3 +1,4 @@
+//  ^  Skills logos
 import bootstrapLogo from "../assets/images/logos/tech-bootstrap.svg";
 import cssLogo from "../assets/images/logos/tech-css.svg";
 import figmaLogo from "../assets/images/logos/tech-figma.svg";
@@ -22,10 +23,14 @@ import htmlLogo from "../assets/images/logos/tech-html.svg";
 import hotjarLogo from "../assets/images/logos/tech-hotjar.svg";
 import gitHubLogo from "../assets/images/logos/tech-github.svg";
 import gitLogo from "../assets/images/logos/tech-git.svg";
-
+//  ^  My logo
 import luisLogo from "../assets/images/logos/logo.svg";
-
+//  ^  My hero image
 import heroImage from "../assets/images/hero-alter1.png";
+
+// projects videos
+import portfolioVideo from "../assets/videos/crowdmeter.mp4";
+import portfolioPoster from "../assets/images/posters/poster-crowdmeter.jpg";
 
 export {
   heroImage,
@@ -54,4 +59,6 @@ export {
   magentoLogo,
   gitLogo,
   gitHubLogo,
+  portfolioVideo,
+  portfolioPoster,
 };

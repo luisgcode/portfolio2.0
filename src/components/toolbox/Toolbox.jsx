@@ -1,6 +1,11 @@
 import React from "react";
 
 import "./toolbox.css";
+import { MdMonitor } from "react-icons/md";
+import { FaServer } from "react-icons/fa";
+import { FaTools } from "react-icons/fa";
+import { MdOutlineAnalytics } from "react-icons/md";
+import { IoSettingsOutline } from "react-icons/io5";
 
 import {
   bootstrapLogo,
@@ -33,7 +38,7 @@ const Toolbox = () => {
   return (
     <div className="toolbox sec-pad">
       <div>
-        <div className="toolbox-heading">
+        <div className="toolbox-heading mb-10">
           <h3 className="heading-tertiary">
             My Toolbox.
             <span className="brush"></span>
@@ -43,58 +48,200 @@ const Toolbox = () => {
             continuous education is imperative for staying relevant.
           </p>
         </div>
-        <div className="toolbox-wrapp">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
-          architecto accusantium quis error rerum perspiciatis debitis, saepe
-          culpa vero vitae quisquam, consectetur facere perferendis omnis
-          temporibus, veniam officia commodi! Incidunt explicabo ipsam, a nihil
-          natus quisquam. Delectus expedita dolor reiciendis, consequuntur
-          provident exercitationem fuga vero deleniti corporis accusantium
-          nesciunt iste incidunt ratione ea consequatur possimus modi est
-          maiores nihil recusandae porro dignissimos repellendus vitae aperiam?
-          Cum reiciendis, nihil natus quibusdam magni quas totam nam
-          reprehenderit aliquid, tempore eius accusantium. Eos, non molestiae.
-          Dolores minima ut quisquam, quae consequatur similique, corrupti harum
-          amet, fuga iure unde a? Error, recusandae porro repudiandae nemo aut
-          quae ab voluptates placeat vero minus iure aperiam, repellendus sequi,
-          id reprehenderit quas. Quibusdam, similique dicta? Accusamus tempore
-          quibusdam explicabo, nesciunt recusandae a, labore amet, fugiat
-          officia in fuga! Voluptatum temporibus quia in repellat atque, hic
-          veritatis delectus aliquam omnis quos libero, cumque saepe dolorum
-          odit enim sint obcaecati magni porro veniam fugit doloremque? Deleniti
-          quos labore hic rerum, dignissimos ipsa harum earum quae, inventore
-          debitis, saepe reiciendis recusandae nisi suscipit et tempore fugit
-          perferendis atque! Qui adipisci amet deserunt fuga ab in culpa
-          voluptas. Laborum accusamus dignissimos accusantium eveniet maiores
-          voluptas minima officiis cupiditate neque, recusandae aspernatur unde,
-          saepe illo porro quis aliquam. Ratione deserunt sunt, laboriosam,
-          error culpa porro magnam provident soluta praesentium quibusdam omnis
-          tempore libero quia ipsam. Nam sint reiciendis ut optio officiis
-          exercitationem voluptatibus saepe provident quidem at modi dolorem
-          cumque necessitatibus nisi earum repellat, soluta voluptas quibusdam
-          eum magni animi temporibus facere, vel fugit. Ab, repellendus
-          doloremque! Dolore ad laboriosam minima ipsa provident repellendus
-          molestiae veritatis cupiditate accusamus dolor excepturi, sit minus
-          esse, unde ullam nobis vero maiores enim ipsum neque quo itaque quas
-          numquam! Excepturi fugiat tenetur rem accusantium, facilis nostrum
-          iure minus magnam alias ullam accusamus atque labore quos voluptates
-          deleniti ratione odit ipsum totam numquam impedit. Animi error magni
-          dolore quos, assumenda est sapiente cupiditate eligendi dicta nisi
-          odio facilis laboriosam quo, accusantium quasi sequi. In quis alias
-          ducimus minus totam recusandae sequi assumenda, atque rerum libero
-          itaque earum magni fugiat quibusdam, possimus voluptate quas ratione
-          saepe. Eum alias dicta porro consequuntur possimus, eos quidem
-          cupiditate unde fuga laudantium! Commodi possimus nemo ad quae totam
-          aut ex suscipit, facere deserunt impedit exercitationem a nesciunt
-          provident, laboriosam officia, delectus nobis illum. Eius in earum,
-          officia repellendus incidunt exercitationem cupiditate autem? Debitis
-          incidunt ducimus ab pariatur, consequatur atque quaerat magni non,
-          eaque quis dolor, dolores ipsam tempora assumenda? Neque iusto nemo
-          numquam! Qui accusamus vel eum corporis placeat, omnis sint pariatur
-          rem dolores. Ab consequuntur alias autem omnis ipsum doloremque
-          ratione nemo in libero assumenda! Recusandae reiciendis harum sequi,
-          odit eaque, et nisi vero, deserunt error numquam iure. Mollitia, quam
-          dignissimos?
+        <div className="toolbox-wrapp flex flex-col gap-10">
+          <div className="tools-row">
+            <h4 className="flex items-center gap-2">
+              <MdMonitor />
+              Front-end
+            </h4>
+            <div className="tools-icons flex flex-wrap gap-10 my-10">
+              {/* React */}
+              <div className=" flex flex-col items-center">
+                <img className="h-20 w-20" src={reactLogo} alt="logo React " />
+                <small>React JS</small>
+              </div>{" "}
+              {/* JS */}
+              <div className=" flex flex-col items-center">
+                <img
+                  className="h-20 w-20"
+                  src={jsLogo}
+                  alt="logo javascript "
+                />
+                <small>JavaScript</small>
+              </div>{" "}
+              {/* Tailwind */}
+              <div className=" flex flex-col items-center">
+                <img
+                  className="h-20 w-20"
+                  src={tailWindLogo}
+                  alt="logo javascript "
+                />
+                <small>Tailwind CSS</small>
+              </div>{" "}
+              {/* Sass */}
+              <div className=" flex flex-col items-center">
+                <img
+                  className="h-20 w-20"
+                  src={sassLogo}
+                  alt="logo javascript "
+                />
+                <small>Tailwind CSS</small>
+              </div>
+            </div>
+          </div>
+          <div className="tools-row">
+            <h4 className="flex items-center gap-2">
+              <FaServer /> Back-end
+            </h4>
+            <div className="tools-icons flex flex-wrap gap-10 my-10">
+              {/* Python */}
+              <div className=" flex flex-col items-center">
+                <img
+                  className="h-20 w-20"
+                  src={pythonLogo}
+                  alt="logo Python "
+                />
+                <small>Python</small>
+              </div>
+              {/* php */}
+              <div className=" flex flex-col items-center">
+                <img className="h-20 w-20" src={phpLogo} alt="logo PHP " />
+                <small>PHP</small>
+              </div>
+              {/* firebase */}
+              <div className=" flex flex-col items-center">
+                <img
+                  className="h-20 w-20"
+                  src={firebaseLogo}
+                  alt="logo firebase "
+                />
+                <small>Firebase</small>
+              </div>
+              {/* Mysql */}
+              <div className=" flex flex-col items-center">
+                <img className="h-20 w-20" src={mySqlLogo} alt="logo MySQL " />
+                <small>MySQL</small>
+              </div>
+            </div>
+          </div>
+          <div className="tools-row">
+            <h4 className="flex items-center gap-2">
+              <FaTools />
+              Tools
+            </h4>
+            <div className="tools-icons flex flex-wrap gap-10 my-10">
+              {/* Github */}
+              <div className=" flex flex-col items-center">
+                <img
+                  className="h-20 w-20"
+                  src={gitHubLogo}
+                  alt="logo Python "
+                />
+                <small>GitHub</small>
+              </div>
+              {/* Git */}
+              <div className=" flex flex-col items-center">
+                <img className="h-20 w-20" src={gitLogo} alt="logo PHP " />
+                <small>Git</small>
+              </div>
+              {/* vs code */}
+              <div className=" flex flex-col items-center">
+                <img
+                  className="h-20 w-20"
+                  src={firebaseLogo}
+                  alt="logo firebase "
+                />
+                <small>VS Code</small>
+              </div>
+              {/* Figma */}
+              <div className=" flex flex-col items-center">
+                <img className="h-20 w-20" src={mySqlLogo} alt="logo MySQL " />
+                <small>Figma</small>
+              </div>
+              {/* Notion */}
+              <div className=" flex flex-col items-center">
+                <img className="h-20 w-20" src={mySqlLogo} alt="logo MySQL " />
+                <small>Notion</small>
+              </div>
+              {/* Confluence */}
+              <div className=" flex flex-col items-center">
+                <img className="h-20 w-20" src={mySqlLogo} alt="logo MySQL " />
+                <small>Confluence</small>
+              </div>
+              {/* Jira */}
+              <div className=" flex flex-col items-center">
+                <img className="h-20 w-20" src={mySqlLogo} alt="logo MySQL " />
+                <small>Jira</small>
+              </div>
+              {/* Slack */}
+              <div className=" flex flex-col items-center">
+                <img className="h-20 w-20" src={mySqlLogo} alt="logo MySQL " />
+                <small>Slack</small>
+              </div>
+            </div>
+          </div>
+          <div className="tools-row">
+            <h4 className="flex items-center gap-2">
+              <MdOutlineAnalytics />
+              Analytics
+            </h4>
+            <div className="tools-icons flex flex-wrap gap-10 my-10">
+              {/* Power BI */}
+              <div className=" flex flex-col items-center">
+                <img
+                  className="h-20 w-20"
+                  src={gitHubLogo}
+                  alt="logo Python "
+                />
+                <small>Power BI</small>
+              </div>
+              {/* GA4 */}
+              <div className=" flex flex-col items-center">
+                <img className="h-20 w-20" src={gitLogo} alt="logo PHP " />
+                <small>GA4</small>
+              </div>
+              {/* Hotjar */}
+              <div className=" flex flex-col items-center">
+                <img
+                  className="h-20 w-20"
+                  src={firebaseLogo}
+                  alt="logo firebase "
+                />
+                <small>Hotjar</small>
+              </div>
+            </div>
+          </div>
+          <div className="tools-row">
+            <h4 className="flex items-center gap-2">
+              <IoSettingsOutline />
+              CMS
+            </h4>
+            <div className="tools-icons flex flex-wrap gap-10 my-10">
+              {/* Power BI */}
+              <div className=" flex flex-col items-center">
+                <img
+                  className="h-20 w-20"
+                  src={gitHubLogo}
+                  alt="logo Python "
+                />
+                <small>Power BI</small>
+              </div>
+              {/* GA4 */}
+              <div className=" flex flex-col items-center">
+                <img className="h-20 w-20" src={gitLogo} alt="logo PHP " />
+                <small>GA4</small>
+              </div>
+              {/* Hotjar */}
+              <div className=" flex flex-col items-center">
+                <img
+                  className="h-20 w-20"
+                  src={firebaseLogo}
+                  alt="logo firebase "
+                />
+                <small>Hotjar</small>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
