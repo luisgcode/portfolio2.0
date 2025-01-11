@@ -18,7 +18,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="navbar  ">
+    <div className="navbar px-8 md:p-mid_pad">
       <div className="navigation flex items-center justify-between">
         <div className="navigation-logo cursor-pointer relative">
           <img

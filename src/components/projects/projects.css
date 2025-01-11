@@ -21,7 +21,7 @@
 .bottom-info {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1.5rem;
+  padding: 10px 15px;
   border-radius: 0 0 5px 5px;
   background-color: #000f2d;
   transform: translateY(100%);

@@ -1,6 +1,6 @@
 .heading-tertiary {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
   z-index: 1;
   display: inline-block;
 }
@@ -24,7 +24,7 @@
 
 .tools-row {
   border-radius: 25px;
-  padding: 2.2rem 0 0.2rem 2.5rem;
+  padding: 2.2px 0 0.2px 25px;
   transition: transform 0.3s ease-in-out;
   transform: translateX(20px);
 }

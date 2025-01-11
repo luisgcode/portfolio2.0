@@ -7,10 +7,6 @@
   scroll-behavior: smooth;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   background: var(--color-bg);
   color: #cfcfcf;
@@ -43,14 +39,14 @@ a {
 
 /*missing alt attribute*/
 img:not([alt]) {
-  outline-offset: 0.5rem;
-  outline: 0.5rem dashed red;
+  outline-offset: 5px;
+  outline: 5px dashed red;
 }
 
 /*empty alt attribute*/
 img[alt=""] {
-  outline-offset: 1.5rem;
-  outline: 0.5rem solid blue;
+  outline-offset: 15px;
+  outline: 5px solid blue;
 }
 
 .custom-bg {
@@ -59,11 +55,7 @@ img[alt=""] {
 }
 
 .sec-pad {
-  padding: 4rem 8rem;
-}
-
-.init-pad {
-  padding: 2rem 4rem;
+  padding: 40px 80px;
 }
 
 /* Logo details */

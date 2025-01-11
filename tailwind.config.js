@@ -14,7 +14,7 @@ export default {
         highlightColor: "#9698F3",
       },
       spacing: {
-        mid_pad: "4rem 8rem",
+        mid_pad: "40px 80px",
       },
     },
   },

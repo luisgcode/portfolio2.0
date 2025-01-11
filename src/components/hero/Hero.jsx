@@ -7,7 +7,7 @@ import { BsFileEarmarkPdf } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="hero init-pad md:p-mid_pad md:border">
+    <div className="hero sec-pad">
       <div className="hero-container flex items-center justify-between my-10  ">
         <div className="intro ">
           <h1>Luis Guaiquirian</h1>
