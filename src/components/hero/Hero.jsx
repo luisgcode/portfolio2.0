@@ -7,35 +7,37 @@ import { BsFileEarmarkPdf } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="hero sec-pad">
-      <div className="hero-container flex items-center justify-between my-10  ">
-        <div className="intro ">
+    <div className="hero px-8 py-6 md:p-mid_pad">
+      <div className="hero-container my-6 flex justify-between ">
+        <div className="intro">
           <h1>Luis Guaiquirian</h1>
           <h2 className="text-highlightColor  ">Web Developer</h2>
-          <p className="mt-2 mb-10">
-            I build responsive Web applications with modern technologies, <br />
+          <p className="mt-1 mb-6 max-w-[35ch]">
+            I build responsive Web applications with modern technologies,
             specializing in:
           </p>
-
-          <div className="flex flex-wrap items-center gap-10">
-            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-3 md:gap-x-5">
+            <span className=" px-2 rounded-lg py-1 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300">
               React JS
             </span>
-            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300 ">
+            <span className=" px-2 rounded-lg py-1 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 ">
               Tailwind CSS
             </span>{" "}
-            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300 text-[14px]">
+            <span className=" px-2 rounded-lg py-1 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-sm">
               JavaScript
+            </span>{" "}
+            <span className=" px-2 rounded-lg py-1 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs">
+              Next JS
             </span>
-            <span className=" px-4 rounded-lg py-2 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 cursor-pointer transition-all duration-300 text-[10px]">
+            <span className=" px-2 rounded-lg py-1 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs">
               Python
             </span>
           </div>
-          <div className="mt-10">
-            <ul className="flex gap-10">
+          <div className="mt-6">
+            <ul className="flex gap-6">
               <li>
                 <a
-                  className="flex gap-3 text-4xl"
+                  className="flex gap-1 text-1xl hover:scale-110 transition-scale duration-100"
                   href="/portfolio2.0/cv_developer_luis.pdf"
                   download="luis_summary.pdf"
                 >
@@ -44,7 +46,7 @@ const Hero = () => {
               </li>
               <li>
                 <a
-                  className="flex gap-3 text-4xl"
+                  className="flex gap-1 text-1xl hover:scale-110 transition-scale duration-100"
                   href="https://www.linkedin.com/in/luisgcode/"
                   target="_blank"
                 >
@@ -53,7 +55,7 @@ const Hero = () => {
               </li>
               <li>
                 <a
-                  className="flex gap-3 text-4xl"
+                  className="flex gap-1 text-1xl hover:scale-110 transition-scale duration-100"
                   href="https://github.com/luisgcode"
                   target="_blank"
                 >
@@ -63,7 +65,7 @@ const Hero = () => {
             </ul>
           </div>
         </div>
-        <div className="image w-2/2 mr-32 ">
+        <div className=" hidden md:block image w-2/2 mr-20  ">
           <img className="w-[280px]" src={heroImage} alt="Luis Guaiquirian" />
         </div>
       </div>

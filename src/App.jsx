@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <div className="custom-bg">
         <Navbar />
-        {/* <Hero /> */}
+        <Hero />
       </div>
       {/* <Behind /> */}
       {/* <About /> */}
