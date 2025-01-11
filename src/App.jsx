@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <Hero />
       </div>
-      {/* <Behind /> */}
+      <Behind />
       {/* <About /> */}
       <div className="custom-bg">{/* <Toolbox /> */}</div>
       {/* <Projects /> */}

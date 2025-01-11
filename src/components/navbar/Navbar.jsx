@@ -24,7 +24,7 @@ const Navbar = () => {
           <img
             onMouseEnter={play}
             onMouseOut={stop}
-            className="logo-image min-w-[65px]"
+            className="logo-image md:min-w-[65px] "
             src={luisLogo}
             alt="My portfolio's logo"
           />
