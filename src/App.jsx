@@ -13,12 +13,11 @@ function App() {
       <div className="custom-bg">
         <Navbar />
         <Hero />
-        <Behind /> <Toolbox />
+        <Behind />
+        <Toolbox />
+        <Projects />
+        <Footer />
       </div>
-
-      <div className="custom-bg"></div>
-      <Projects />
-      {/* <Footer /> */}
     </div>
   );
 }
