@@ -6,7 +6,7 @@ import "./projects.css";
 
 const Projects = () => {
   return (
-    <div className="projects sec-pad">
+    <div className="projects ">
       <h3 className="heading-tertiary">
         My Latest Projects.
         <span className="brush"></span>

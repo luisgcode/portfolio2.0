@@ -24,7 +24,7 @@
 
 .tools-row {
   border-radius: 25px;
-  padding: 2.2px 0 0.2px 25px;
+  padding: 25px 0 25px 25px;
   transition: transform 0.3s ease-in-out;
   transform: translateX(20px);
 }

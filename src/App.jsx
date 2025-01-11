@@ -16,7 +16,9 @@ function App() {
       </div>
       <Behind />
       {/* <About /> */}
-      <div className="custom-bg">{/* <Toolbox /> */}</div>
+      <div className="custom-bg">
+        <Toolbox />
+      </div>
       {/* <Projects /> */}
       {/* <Footer /> */}
     </div>

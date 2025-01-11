@@ -41,9 +41,9 @@ import {
 
 const Toolbox = () => {
   return (
-    <div className="toolbox sec-pad">
+    <div className="toolbox px-8 py-6 md:p-mid_pad">
       <div>
-        <div className="toolbox-heading mb-10">
+        <div className="toolbox-heading mb-6">
           <h3 className="heading-tertiary">
             My Toolbox.
             <span className="brush"></span>
@@ -54,21 +54,21 @@ const Toolbox = () => {
           </p>
         </div>
         <div className="toolbox-wrapp flex flex-col  ">
-          <div className="tools-row">
-            <h4 className="flex items-center gap-2">
+          <div className="tools-row  ">
+            <h5 className="flex items-center gap-2">
               <MdMonitor />
               Front-end
-            </h4>
-            <div className="tools-icons flex flex-wrap gap-10 my-10">
+            </h5>
+            <div className="tools-icons flex flex-wrap gap-8 mt-6">
               {/* React */}
               <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={reactLogo} alt="logo React " />
+                <img className="h-12 w-12" src={reactLogo} alt="logo React " />
                 <small>React JS</small>
               </div>{" "}
               {/* JS */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-20 w-20"
+                  className="h-12 w-12"
                   src={jsLogo}
                   alt="logo javascript "
                 />
@@ -77,7 +77,7 @@ const Toolbox = () => {
               {/* Tailwind */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-20 w-20"
+                  className="h-12 w-12"
                   src={tailWindLogo}
                   alt="logo javascript "
                 />
@@ -86,7 +86,7 @@ const Toolbox = () => {
               {/* Sass */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-20 w-20"
+                  className="h-12 w-12"
                   src={sassLogo}
                   alt="logo javascript "
                 />
@@ -94,15 +94,15 @@ const Toolbox = () => {
               </div>
             </div>
           </div>
-          <div className="tools-row">
-            <h4 className="flex items-center gap-2">
+          <div className="tools-row  ">
+            <h5 className="flex items-center gap-2">
               <FaServer /> Back-end
-            </h4>
-            <div className="tools-icons flex flex-wrap gap-10 my-10">
+            </h5>
+            <div className="tools-icons flex flex-wrap gap-8 mt-6">
               {/* Python */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-20 w-20"
+                  className="h-12 w-12"
                   src={pythonLogo}
                   alt="logo Python "
                 />
@@ -110,13 +110,13 @@ const Toolbox = () => {
               </div>
               {/* php */}
               <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={phpLogo} alt="logo PHP " />
+                <img className="h-12 w-12" src={phpLogo} alt="logo PHP " />
                 <small>PHP</small>
               </div>
               {/* firebase */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-20 w-20"
+                  className="h-12 w-12"
                   src={firebaseLogo}
                   alt="logo firebase "
                 />
@@ -124,21 +124,21 @@ const Toolbox = () => {
               </div>
               {/* Mysql */}
               <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={mySqlLogo} alt="logo MySQL " />
+                <img className="h-12 w-12" src={mySqlLogo} alt="logo MySQL " />
                 <small>MySQL</small>
               </div>
             </div>
           </div>
           <div className="tools-row">
-            <h4 className="flex items-center gap-2">
+            <h5 className="flex items-center gap-2">
               <FaTools />
               Development & Collaboration
-            </h4>
-            <div className="tools-icons flex flex-wrap gap-10 my-10">
+            </h5>
+            <div className="tools-icons flex flex-wrap gap-8 mt-6">
               {/* Github */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-20 w-20"
+                  className="h-12 w-12"
                   src={gitHubLogo}
                   alt="logo GitHub "
                 />
@@ -146,13 +146,13 @@ const Toolbox = () => {
               </div>
               {/* Git */}
               <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={gitLogo} alt="logo Git " />
+                <img className="h-12 w-12" src={gitLogo} alt="logo Git " />
                 <small>Git</small>
               </div>
               {/* vs code */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-20 w-20"
+                  className="h-12 w-12"
                   src={vsCodeLogo}
                   alt="logo VS Code "
                 />
@@ -160,13 +160,13 @@ const Toolbox = () => {
               </div>
               {/* Figma */}
               <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={figmaLogo} alt="logo Figma " />
+                <img className="h-12 w-12" src={figmaLogo} alt="logo Figma " />
                 <small>Figma</small>
               </div>
               {/* Notion */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-20 w-20"
+                  className="h-12 w-12"
                   src={notionLogo}
                   alt="logo Notion "
                 />
@@ -175,7 +175,7 @@ const Toolbox = () => {
               {/* Confluence */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-20 w-20"
+                  className="h-12 w-12"
                   src={confluenceLogo}
                   alt="logo Confluence "
                 />
@@ -183,26 +183,26 @@ const Toolbox = () => {
               </div>
               {/* Jira */}
               <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={jiraLogo} alt="logo Jira " />
+                <img className="h-12 w-12" src={jiraLogo} alt="logo Jira " />
                 <small>Jira</small>
               </div>
               {/* Slack */}
               <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={slackLogo} alt="logo Slack " />
+                <img className="h-12 w-12" src={slackLogo} alt="logo Slack " />
                 <small>Slack</small>
               </div>
             </div>
           </div>
           <div className="tools-row">
-            <h4 className="flex items-center gap-2">
+            <h5 className="flex items-center gap-2">
               <MdOutlineAnalytics />
               Analytics
-            </h4>
-            <div className="tools-icons flex flex-wrap gap-10 my-10">
+            </h5>
+            <div className="tools-icons flex flex-wrap gap-8 mt-6">
               {/* Power BI */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-20 w-20"
+                  className="h-12 w-12"
                   src={powerBiLogo}
                   alt="logo Power BI"
                 />
@@ -210,13 +210,13 @@ const Toolbox = () => {
               </div>
               {/* GA4 */}
               <div className=" flex flex-col items-center">
-                <img className="h-20 w-20" src={ga4Logo} alt="logo GA4 " />
+                <img className="h-12 w-12" src={ga4Logo} alt="logo GA4 " />
                 <small>GA4</small>
               </div>
               {/* Hotjar */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-20 w-20"
+                  className="h-12 w-12"
                   src={hotjarLogo}
                   alt="logo Hotjar "
                 />
@@ -225,15 +225,15 @@ const Toolbox = () => {
             </div>
           </div>
           <div className="tools-row">
-            <h4 className="flex items-center gap-2">
+            <h5 className="flex items-center gap-2">
               <IoSettingsOutline />
               CMS
-            </h4>
-            <div className="tools-icons flex flex-wrap gap-10 my-10">
+            </h5>
+            <div className="tools-icons flex flex-wrap gap-8 mt-6">
               {/* Magento */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-20 w-20"
+                  className="h-12 w-12"
                   src={magentoLogo}
                   alt="logo Magento "
                 />
@@ -242,7 +242,7 @@ const Toolbox = () => {
               {/* wordpress */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-20 w-20"
+                  className="h-12 w-12"
                   src={wordpressLogo}
                   alt="logo Wordpress "
                 />
@@ -251,7 +251,7 @@ const Toolbox = () => {
               {/* Prestashop */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-20 w-20"
+                  className="h-12 w-12"
                   src={prestashopLogo}
                   alt="logo Prestashop "
                 />
