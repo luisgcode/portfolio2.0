@@ -18,13 +18,13 @@ const Navbar = () => {
   }
 
   return (
-    <div className="navbar sec-pad">
+    <div className="navbar  ">
       <div className="navigation flex items-center justify-between">
         <div className="navigation-logo cursor-pointer relative">
           <img
             onMouseEnter={play}
             onMouseOut={stop}
-            className="logo-image"
+            className="logo-image min-w-[65px]"
             src={luisLogo}
             alt="My portfolio's logo"
           />
