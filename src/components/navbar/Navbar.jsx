@@ -18,8 +18,8 @@ const Navbar = () => {
   }
 
   return (
-    <div className="navbar px-8 md:p-mid_pad">
-      <div className="navigation flex items-center justify-between">
+    <div className="navbar">
+      <div className="navigation flex items-center justify-between px-8 py-6 md:p-mid_pad">
         <div className="navigation-logo cursor-pointer relative">
           <img
             onMouseEnter={play}
@@ -34,7 +34,7 @@ const Navbar = () => {
           <div className=" bubble "></div>
           <div className=" bubble "></div>
         </div>
-        <ul className="navigation-items flex gap-12 mr-16">
+        <ul className="navigation-items hidden md:flex gap-12 ">
           <li>
             <a className="nav-link" href="#">
               Home
@@ -59,6 +59,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
+        <div className="mobile-menu md:hidden">✅</div>
       </div>
     </div>
   );
