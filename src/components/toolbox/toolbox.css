@@ -24,12 +24,20 @@
 
 .tools-row {
   border-radius: 25px;
-  padding: 25px 0 25px 25px;
+  padding: 15px;
   transition: transform 0.3s ease-in-out;
-  transform: translateX(20px);
+  background-image: linear-gradient(to right, #9697f35e, transparent);
 }
 
-.tools-row:hover {
-  background-image: linear-gradient(to right, #9697f35e, transparent);
-  transform: translateX(0);
+@media (min-width: 768px) {
+  .tools-row {
+    padding: 25px 0 25px 25px;
+    transform: translateX(20px);
+    background-image: unset;
+  }
+
+  .tools-row:hover {
+    background-image: linear-gradient(to right, #9697f35e, transparent);
+    transform: translateX(0);
+  }
 }

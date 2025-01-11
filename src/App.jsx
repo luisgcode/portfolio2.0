@@ -13,12 +13,10 @@ function App() {
       <div className="custom-bg">
         <Navbar />
         <Hero />
+        <Behind /> <Toolbox />
       </div>
-      <Behind />
-      {/* <About /> */}
-      <div className="custom-bg">
-        <Toolbox />
-      </div>
+
+      <div className="custom-bg"></div>
       {/* <Projects /> */}
       {/* <Footer /> */}
     </div>

@@ -7,7 +7,7 @@ import { BsFileEarmarkPdf } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="hero px-8 py-6 md:p-mid_pad">
+    <div className="hero px-8 py-6 md:p-mid_pad  ">
       <div className="hero-container my-6 flex justify-between ">
         <div className="intro">
           <h1>Luis Guaiquirian</h1>

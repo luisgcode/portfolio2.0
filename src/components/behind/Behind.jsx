@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Behind = () => {
   return (
-    <div className="behind text-center mt-12 overflow-y-hidden hidden md:flex px-8">
+    <div className="behind text-center mt-20 overflow-y-hidden hidden md:flex px-8">
       <motion.div
         variants={{
           hidden: { y: 80 },

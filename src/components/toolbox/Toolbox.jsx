@@ -53,7 +53,7 @@ const Toolbox = () => {
             continuous education is imperative for staying relevant.
           </p>
         </div>
-        <div className="toolbox-wrapp flex flex-col  ">
+        <div className="toolbox-wrapp flex flex-col gap-3 md:gap-0 ">
           <div className="tools-row  ">
             <h5 className="flex items-center gap-2">
               <MdMonitor />
@@ -62,13 +62,13 @@ const Toolbox = () => {
             <div className="tools-icons flex flex-wrap gap-8 mt-6">
               {/* React */}
               <div className=" flex flex-col items-center">
-                <img className="h-12 w-12" src={reactLogo} alt="logo React " />
+                <img className="h-10 w-10" src={reactLogo} alt="logo React " />
                 <small>React JS</small>
               </div>{" "}
               {/* JS */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-12 w-12"
+                  className="h-10 w-10"
                   src={jsLogo}
                   alt="logo javascript "
                 />
@@ -77,7 +77,7 @@ const Toolbox = () => {
               {/* Tailwind */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-12 w-12"
+                  className="h-10 w-10"
                   src={tailWindLogo}
                   alt="logo javascript "
                 />
@@ -86,7 +86,7 @@ const Toolbox = () => {
               {/* Sass */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-12 w-12"
+                  className="h-10 w-10"
                   src={sassLogo}
                   alt="logo javascript "
                 />
@@ -102,7 +102,7 @@ const Toolbox = () => {
               {/* Python */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-12 w-12"
+                  className="h-10 w-10"
                   src={pythonLogo}
                   alt="logo Python "
                 />
@@ -110,13 +110,13 @@ const Toolbox = () => {
               </div>
               {/* php */}
               <div className=" flex flex-col items-center">
-                <img className="h-12 w-12" src={phpLogo} alt="logo PHP " />
+                <img className="h-10 w-10" src={phpLogo} alt="logo PHP " />
                 <small>PHP</small>
               </div>
               {/* firebase */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-12 w-12"
+                  className="h-10 w-10"
                   src={firebaseLogo}
                   alt="logo firebase "
                 />
@@ -124,7 +124,7 @@ const Toolbox = () => {
               </div>
               {/* Mysql */}
               <div className=" flex flex-col items-center">
-                <img className="h-12 w-12" src={mySqlLogo} alt="logo MySQL " />
+                <img className="h-10 w-10" src={mySqlLogo} alt="logo MySQL " />
                 <small>MySQL</small>
               </div>
             </div>
@@ -138,7 +138,7 @@ const Toolbox = () => {
               {/* Github */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-12 w-12"
+                  className="h-10 w-10"
                   src={gitHubLogo}
                   alt="logo GitHub "
                 />
@@ -146,13 +146,13 @@ const Toolbox = () => {
               </div>
               {/* Git */}
               <div className=" flex flex-col items-center">
-                <img className="h-12 w-12" src={gitLogo} alt="logo Git " />
+                <img className="h-10 w-10" src={gitLogo} alt="logo Git " />
                 <small>Git</small>
               </div>
               {/* vs code */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-12 w-12"
+                  className="h-10 w-10"
                   src={vsCodeLogo}
                   alt="logo VS Code "
                 />
@@ -160,13 +160,13 @@ const Toolbox = () => {
               </div>
               {/* Figma */}
               <div className=" flex flex-col items-center">
-                <img className="h-12 w-12" src={figmaLogo} alt="logo Figma " />
+                <img className="h-10 w-10" src={figmaLogo} alt="logo Figma " />
                 <small>Figma</small>
               </div>
               {/* Notion */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-12 w-12"
+                  className="h-10 w-10"
                   src={notionLogo}
                   alt="logo Notion "
                 />
@@ -175,7 +175,7 @@ const Toolbox = () => {
               {/* Confluence */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-12 w-12"
+                  className="h-10 w-10"
                   src={confluenceLogo}
                   alt="logo Confluence "
                 />
@@ -183,12 +183,12 @@ const Toolbox = () => {
               </div>
               {/* Jira */}
               <div className=" flex flex-col items-center">
-                <img className="h-12 w-12" src={jiraLogo} alt="logo Jira " />
+                <img className="h-10 w-10" src={jiraLogo} alt="logo Jira " />
                 <small>Jira</small>
               </div>
               {/* Slack */}
               <div className=" flex flex-col items-center">
-                <img className="h-12 w-12" src={slackLogo} alt="logo Slack " />
+                <img className="h-10 w-10" src={slackLogo} alt="logo Slack " />
                 <small>Slack</small>
               </div>
             </div>
@@ -202,7 +202,7 @@ const Toolbox = () => {
               {/* Power BI */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-12 w-12"
+                  className="h-10 w-10"
                   src={powerBiLogo}
                   alt="logo Power BI"
                 />
@@ -210,13 +210,13 @@ const Toolbox = () => {
               </div>
               {/* GA4 */}
               <div className=" flex flex-col items-center">
-                <img className="h-12 w-12" src={ga4Logo} alt="logo GA4 " />
+                <img className="h-10 w-10" src={ga4Logo} alt="logo GA4 " />
                 <small>GA4</small>
               </div>
               {/* Hotjar */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-12 w-12"
+                  className="h-10 w-10"
                   src={hotjarLogo}
                   alt="logo Hotjar "
                 />
@@ -233,7 +233,7 @@ const Toolbox = () => {
               {/* Magento */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-12 w-12"
+                  className="h-10 w-10"
                   src={magentoLogo}
                   alt="logo Magento "
                 />
@@ -242,7 +242,7 @@ const Toolbox = () => {
               {/* wordpress */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-12 w-12"
+                  className="h-10 w-10"
                   src={wordpressLogo}
                   alt="logo Wordpress "
                 />
@@ -251,7 +251,7 @@ const Toolbox = () => {
               {/* Prestashop */}
               <div className=" flex flex-col items-center">
                 <img
-                  className="h-12 w-12"
+                  className="h-10 w-10"
                   src={prestashopLogo}
                   alt="logo Prestashop "
                 />
