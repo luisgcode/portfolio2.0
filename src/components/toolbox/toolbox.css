@@ -26,7 +26,7 @@
   border-radius: 25px;
   padding: 15px;
   transition: transform 0.3s ease-in-out;
-  background-image: linear-gradient(to right, #9697f35e, transparent);
+  background-image: linear-gradient(to right, #9697f33f, transparent);
 }
 
 @media (min-width: 768px) {
@@ -37,7 +37,7 @@
   }
 
   .tools-row:hover {
-    background-image: linear-gradient(to right, #9697f35e, transparent);
+    background-image: linear-gradient(to right, #9697f33f, transparent);
     transform: translateX(0);
   }
 }

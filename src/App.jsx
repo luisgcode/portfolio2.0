@@ -17,7 +17,7 @@ function App() {
       </div>
 
       <div className="custom-bg"></div>
-      {/* <Projects /> */}
+      <Projects />
       {/* <Footer /> */}
     </div>
   );

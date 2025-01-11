@@ -41,7 +41,7 @@ import {
 
 const Toolbox = () => {
   return (
-    <div className="toolbox px-8 py-6 md:p-mid_pad">
+    <div className="toolbox px-8 py-6 md:p-mid_pad mt-20 md:mt-0">
       <div>
         <div className="toolbox-heading mb-6">
           <h3 className="heading-tertiary">

@@ -52,7 +52,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              className="bg-highlightColor text-white py-2 px-4 rounded-md"
+              className="  border-highlightColor border-2 text-white py-2 px-4 rounded-md"
               href="#"
             >
               Contact
