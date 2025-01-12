@@ -13,9 +13,8 @@ function App() {
       <div className="custom-bg">
         <Navbar />
         <Hero />
-        <Behind />
+        <Behind /> <Projects />
         <Toolbox />
-        <Projects />
         <Footer />
       </div>
     </div>

@@ -37,6 +37,7 @@ import heroImage from "../assets/images/hero-alter1.png";
 import posterPortfolio2 from "../assets/images/posters/poster-portfolio2.0.png";
 import posterPortfolio1 from "../assets/images/posters/poster-portfolio.jpg";
 import posterCrowdMeter from "../assets/images/posters/poster-crowdmeter.jpg";
+import posterGlobal from "../assets/images/posters/poster-global.jpg";
 
 export {
   heroImage,
@@ -73,4 +74,5 @@ export {
   posterPortfolio2,
   posterPortfolio1,
   posterCrowdMeter,
+  posterGlobal,
 };
