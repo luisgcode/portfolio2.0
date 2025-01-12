@@ -37,7 +37,7 @@ import {
   jiraLogo,
   confluenceLogo,
   notionLogo,
-} from "../import_data";
+} from "../media";
 
 const Toolbox = () => {
   return (

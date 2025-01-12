@@ -5,7 +5,7 @@ import {
   posterCrowdMeter,
   posterGlobal,
   posterCanJet,
-} from "../import_data";
+} from "../media";
 import { FaCode } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
 import "./projects.css";

@@ -1,5 +1,5 @@
 import React from "react";
-import { luisLogo } from "../import_data";
+import { luisLogo } from "../media";
 import { AiFillSound } from "react-icons/ai";
 import "./navbar.css";
 import sound from "../../assets/audio/keyboard-audio.mp3";

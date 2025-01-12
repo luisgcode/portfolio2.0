@@ -1,6 +1,6 @@
 import React from "react";
 import "./hero.css";
-import { heroImage } from "../import_data";
+import { heroImage } from "../media";
 import { FiLinkedin } from "react-icons/fi";
 import { LuGithub } from "react-icons/lu";
 import { BsFileEarmarkPdf } from "react-icons/bs";
