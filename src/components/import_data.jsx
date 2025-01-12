@@ -34,8 +34,9 @@ import luisLogo from "../assets/images/logos/logo.svg";
 import heroImage from "../assets/images/hero-alter1.png";
 
 // projects videos
-import portfolioVideo from "../assets/videos/crowdmeter.mp4";
-import portfolioPoster from "../assets/images/posters/poster-crowdmeter.jpg";
+import posterPortfolio2 from "../assets/images/posters/poster-portfolio2.0.png";
+import posterPortfolio1 from "../assets/images/posters/poster-portfolio.jpg";
+import posterCrowdMeter from "../assets/images/posters/poster-crowdmeter.jpg";
 
 export {
   heroImage,
@@ -69,6 +70,7 @@ export {
   prestashopLogo,
   gitLogo,
   gitHubLogo,
-  portfolioVideo,
-  portfolioPoster,
+  posterPortfolio2,
+  posterPortfolio1,
+  posterCrowdMeter,
 };
