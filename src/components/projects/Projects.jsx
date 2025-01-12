@@ -4,6 +4,7 @@ import {
   posterPortfolio1,
   posterCrowdMeter,
   posterGlobal,
+  posterCanJet,
 } from "../import_data";
 import { FaCode } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
@@ -17,7 +18,7 @@ const Projects = () => {
         My Latest Projects.
         <span className="brush"></span>
       </h3>
-      <div className="flex flex-wrap md:justify-center gap-y-16 gap-x-10 projects-container mt-12  lg:justify-between  ">
+      <div className="flex flex-wrap md:justify-center gap-y-10 gap-x-10 projects-container mt-12  lg:justify-between  ">
         {/* 1 */}
         <div className="project-card ">
           {/* title */}
@@ -49,6 +50,9 @@ const Projects = () => {
               </span>
               <span className=" py-1 px-2  rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs  ">
                 Bilingual
+              </span>{" "}
+              <span className=" py-1 px-2  rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs  ">
+                Accessible
               </span>
             </div>
           </div>
@@ -76,9 +80,12 @@ const Projects = () => {
             <div className="flex flex-wrap items-center gap-3 ">
               <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
                 TypeScript
-              </span>{" "}
+              </span>
               <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
                 JavaScript
+              </span>
+              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
+                Responsive
               </span>
             </div>
           </div>
@@ -87,7 +94,39 @@ const Projects = () => {
             <img className="rounded-lg  " src={posterGlobal} alt="poster" />
           </div>
         </div>
-        {/* 3 */}
+        {/* 3  */}
+        <div className="project-card ">
+          {/* title */}
+          <h4 className="font-bold mb-4 flex">
+            Pattern Library & Dasboard <FiArrowUpRight />
+          </h4>{" "}
+          {/* Info */}
+          <div>
+            <p>
+              Responsible for creating a dashboard that visualizes data through
+              interactive charts. To achieve this, I used D3.js.
+            </p>
+          </div>
+          {/* tags */}
+          <div className="py-4">
+            <div className="flex flex-wrap items-center gap-3 ">
+              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
+                D3.js
+              </span>{" "}
+              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
+                JavaScript
+              </span>
+              <span className=" py-1 px-2  rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
+                CSS
+              </span>
+            </div>
+          </div>
+          {/* Pictures */}
+          <div className="pictures ">
+            <img className="rounded-lg   " src={posterCanJet} alt="poster" />
+          </div>
+        </div>
+        {/* 4 */}
         <div className="project-card ">
           {/* title */}
           <h4 className="font-bold mb-4 flex">
@@ -96,8 +135,9 @@ const Projects = () => {
           {/* Info */}
           <div>
             <p>
-              Component for measuring the occupancy of a business, designed to
-              connect to an API for real-time crowd data.
+              Designed to display real-time business occupancy levels, featuring
+              a clean and responsive UI styled with Tailwind CSS. This component
+              is ready to integrate with APIs that provide crowd data
             </p>
           </div>
           {/* tags */}
@@ -110,43 +150,7 @@ const Projects = () => {
                 Tailwind CSS
               </span>
               <span className=" py-1 px-2  rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
-                Framer Motion
-              </span>
-            </div>
-          </div>
-          {/* Pictures */}
-          <div className="pictures ">
-            <img
-              className="rounded-lg   "
-              src={posterCrowdMeter}
-              alt="poster"
-            />
-          </div>
-        </div>
-        {/* 4  */}
-        <div className="project-card ">
-          {/* title */}
-          <h4 className="font-bold mb-4 flex">
-            luisgcode.com (v2) <FiArrowUpRight />
-          </h4>{" "}
-          {/* Info */}
-          <div>
-            <p>
-              New Portfolio 2025 created with React JS mainly. Lorem ipsum dolor
-              sit amet consectetur adipisicing
-            </p>
-          </div>
-          {/* tags */}
-          <div className="py-4">
-            <div className="flex flex-wrap items-center gap-3 ">
-              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
-                React JS
-              </span>{" "}
-              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
-                Tailwind CSS
-              </span>
-              <span className=" py-1 px-2  rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
-                Framer Motion
+                JavaScript
               </span>
             </div>
           </div>

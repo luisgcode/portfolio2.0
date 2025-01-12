@@ -15,15 +15,26 @@
 }
 
 .project-card:hover {
-  background-color: #1a274b5b; /* Mantener el mismo color si no quieres cambiarlo */
+  background-color: #1a274b5b;
+  border-radius: 5px;
   border: 1px solid rgba(156, 156, 156, 0.129);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transform: translateY(-8px);
 }
 
+.pictures {
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.project-card:hover .pictures {
+  border: 1px solid rgba(255, 255, 255, 0.129);
+}
+
 .pictures img {
   width: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 @media (min-width: 660px) {

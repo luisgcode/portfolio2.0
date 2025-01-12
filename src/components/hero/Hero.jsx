@@ -4,12 +4,28 @@ import { heroImage } from "../import_data";
 import { FiLinkedin } from "react-icons/fi";
 import { LuGithub } from "react-icons/lu";
 import { BsFileEarmarkPdf } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <div className="hero px-8 py-6 md:p-mid_pad  ">
-      <div className="hero-container my-6 flex justify-between ">
-        <div className="intro">
+      <motion.div
+        variants={{
+          hidden: { y: 80, opacity: 0 },
+          show: {
+            y: 0,
+            opacity: 1,
+            transition: {
+              duration: 0.5,
+              delay: 0.2,
+            },
+          },
+        }}
+        initial="hidden"
+        animate="show"
+        className="hero-container my-6 flex justify-between      "
+      >
+        <div className="intro   ">
           <h1>Luis Guaiquirian</h1>
           <h2 className="text-highlightColor  ">Web Developer</h2>
           <p className="mt-1 mb-6 max-w-[35ch]">
@@ -65,10 +81,10 @@ const Hero = () => {
             </ul>
           </div>
         </div>
-        <div className=" hidden md:block image w-2/2 mr-20  ">
-          <img className="w-[280px]" src={heroImage} alt="Luis Guaiquirian" />
+        <div className=" hidden md:flex items-center image   lg:mr-16  ">
+          <img className="w-[280px] " src={heroImage} alt="Luis Guaiquirian" />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

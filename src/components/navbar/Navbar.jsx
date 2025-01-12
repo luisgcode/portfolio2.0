@@ -3,6 +3,7 @@ import { luisLogo } from "../import_data";
 import { AiFillSound } from "react-icons/ai";
 import "./navbar.css";
 import sound from "../../assets/audio/keyboard-audio.mp3";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const audio = new Audio(sound);
@@ -34,7 +35,22 @@ const Navbar = () => {
           <div className=" bubble "></div>
           <div className=" bubble "></div>
         </div>
-        <ul className="navigation-items hidden md:flex gap-12 ">
+        <motion.ul
+          variants={{
+            hidden: { x: 80, opacity: 0 },
+            show: {
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.5,
+                delay: 0.2,
+              },
+            },
+          }}
+          initial="hidden"
+          animate="show"
+          className="navigation-items hidden md:flex gap-12 "
+        >
           <li>
             <a className="nav-link" href="#">
               Home
@@ -58,7 +74,7 @@ const Navbar = () => {
               Contact
             </a>
           </li>
-        </ul>
+        </motion.ul>
         <div className="mobile-menu md:hidden">✅</div>
       </div>
     </div>
