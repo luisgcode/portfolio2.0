@@ -23,7 +23,16 @@
   transform: scaleX(1);
 }
 
-/* keyboard animation */
+/* ^ Logo */
+.logo-image {
+  width: 45px;
+}
+
+.navigation-logo:hover {
+  filter: drop-shadow(5px 0px 10px rgba(255, 255, 255, 0.504));
+}
+
+/* ^ Keyboard animation bubbles */
 .bubble {
   width: 7px;
   height: 7px;
@@ -72,7 +81,7 @@
   }
 }
 
-/* Sound icon animation */
+/* ^ Keyboard animation sound icon */
 .sound-icon {
   font-size: 20px;
   position: absolute;
@@ -89,13 +98,13 @@
   transition: all 0.3s ease;
   z-index: 1;
   opacity: 0.3;
-  animation-name: keyboardRotate;
+  animation-name: iconSoundRotated;
   animation-duration: 1s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
 }
 
-@keyframes keyboardRotate {
+@keyframes iconSoundRotated {
   0% {
     transform: rotate(-5deg);
   }

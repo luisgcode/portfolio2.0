@@ -53,12 +53,3 @@ img[alt=""] {
   background-image: radial-gradient(#ffffff1d 0.5px, #05142e 0.5px);
   background-size: 20px 20px;
 }
-
-/* Logo details */
-.logo-image {
-  width: 45px;
-}
-
-.navigation-logo:hover {
-  filter: drop-shadow(5px 0px 10px rgba(255, 255, 255, 0.504));
-}

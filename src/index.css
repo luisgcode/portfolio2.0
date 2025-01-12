@@ -9,7 +9,7 @@
 
 /* & Typography settings */
 body {
-  font-size: clamp(16px, 2vw, 18px);
+  font-size: clamp(18px, 2vw, 18px);
   font-family: "Poppins", serif;
   line-height: 1.4;
   overflow-x: hidden;

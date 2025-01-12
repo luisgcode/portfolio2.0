@@ -1,3 +1,16 @@
+/* ^ Style for the tags */
+
+.custom-hero-tag {
+  @apply px-2 rounded-lg py-1 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300;
+}
+
+/* ^ Style for the icons under the name */
+.hero-icon {
+  display: flex;
+  gap: 5px;
+}
+
+/* ^ Responsiveness - vector in the bg */
 @media (min-width: 768px) {
   .hero {
     background-image: url(/src/assets/images/vector1.svg);
