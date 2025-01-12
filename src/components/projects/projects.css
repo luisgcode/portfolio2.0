@@ -7,59 +7,11 @@
   position: relative;
 }
 
-.video-bg {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  opacity: 0.3;
-}
-
-.projects-container {
-  align-items: flex-start;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-}
-
 .project-card {
-  background-color: #1e2a55;
-  border-radius: 5px;
-  overflow: hidden;
-  min-width: 340px;
-  box-shadow: 0 1px 4px 0 #9698f3;
-  transition: all 0.3s ease;
 }
 
-@media (min-width: 880px) {
+@media (min-width: 950px) {
   .project-card {
-    width: 45%;
+    width: 46%;
   }
-}
-@media (min-width: 1300px) {
-  .project-card {
-    width: 31%;
-  }
-}
-
-.project-card:hover {
-  box-shadow: 0 2px 8px 0 #9698f3;
-  transition: all 0.2s ease;
-}
-
-.bottom-info {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 15px;
-  border-radius: 0 0 5px 5px;
-  color: #1e2a55;
-  background-color: #9698f3;
-  transform: translateY(100%);
-  transition: transform 0.2s ease;
-}
-
-.project-card:hover .bottom-info {
-  transform: translateY(0);
 }

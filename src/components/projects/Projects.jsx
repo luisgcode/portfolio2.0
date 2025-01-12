@@ -11,33 +11,122 @@ const Projects = () => {
         My Latest Projects.
         <span className="brush"></span>
       </h3>
-      <div className="projects-container ">
+      <div className="flex flex-wrap   md:justify-center gap-y-16 gap-x-10 projects-container mt-12  lg:justify-between">
         {/* 1 */}
-        <div className="project-card p-3    ">
+        <div className="project-card   ">
+          {/* title */}
+          <h4 className="font-bold mb-4">luisgcode.com (v2)</h4> {/* Info */}
+          <div>
+            <p>
+              New Portfolio 2025 created with React JS mainly. Lorem ipsum dolor
+              sit amet consectetur adipisicing
+            </p>
+          </div>
+          {/* tags */}
+          <div className="py-4">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-3 md:gap-x-5">
+              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs md:text-base">
+                React JS
+              </span>{" "}
+              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs md:text-base">
+                Tailwind CSS
+              </span>
+              <span className=" py-1 px-2  rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs md:text-base">
+                Framer Motion
+              </span>
+            </div>
+          </div>
+          {/* video */}
           <video className="rounded-lg" poster={portfolioPoster}>
             <source src={portfolioVideo} type="video/mp4" />
           </video>
-          {/* <div className="py-4 px-2">
-            <h5>luisgcode.com | Portfolio 2.0</h5>
-            <span>
-              <b>Teach Stacks:</b> React, Tailwind CSS & JavaSCript
-            </span>
-            <br />
-            <span>
-              <b>Goal:</b> Update my version 1.0, and showcase everything I have
-              learned in the last 2 years.
-            </span>
+        </div>
+        {/* 2 */}
+        <div className="project-card  ">
+          {/* title */}
+          <h4 className="font-bold mb-4">Canjet Dashboard</h4> {/* Info */}
+          <div>
+            <p>
+              Component for measuring the occupancy of a location, designed to
+              connect to an API for real-time crowd data.{" "}
+            </p>
           </div>
-          <div className=" bottom-info">
-            <a className="flex gap-2  items-center" href="#">
-              <CgWebsite />
-              Live site
-            </a>
-            <a className="flex gap-2 items-center" href="#">
-              <FaCode />
-              View Code
-            </a>
-          </div> */}
+          {/* tags */}
+          <div className="py-4">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-3 md:gap-x-5">
+              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs md:text-base">
+                Chart JS
+              </span>{" "}
+              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs md:text-base">
+                JavaScript
+              </span>
+              <span className=" py-1 px-2  rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs md:text-base">
+                CSS
+              </span>
+            </div>
+          </div>
+          {/* video */}
+          <video className="rounded-lg" poster={portfolioPoster}>
+            <source src={portfolioVideo} type="video/mp4" />
+          </video>
+        </div>
+        {/* 3 */}
+        <div className="project-card  ">
+          {/* title */}
+          <h4 className="font-bold mb-4">luisgcode.com(v1)</h4> {/* Info */}
+          <div>
+            <p>
+              Create a User Pattern Library for CanJet company; Grid Layout,
+              Colors, and Fonts
+            </p>
+          </div>
+          {/* tags */}
+          <div className="py-4">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-3 md:gap-x-5">
+              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs md:text-base">
+                Sass
+              </span>{" "}
+              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs md:text-base">
+                HTML
+              </span>
+              <span className=" py-1 px-2  rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs md:text-base">
+                CSS
+              </span>
+            </div>
+          </div>
+          {/* video */}
+          <video className="rounded-lg" poster={portfolioPoster}>
+            <source src={portfolioVideo} type="video/mp4" />
+          </video>
+        </div>{" "}
+        {/* 4 */}
+        <div className="project-card  ">
+          {/* title */}
+          <h4 className="font-bold mb-4">luisgcode.com(v1)</h4> {/* Info */}
+          <div>
+            <p>
+              Optimize website: fix errors, improve functionality, translate to
+              Spanish.{" "}
+            </p>
+          </div>
+          {/* tags */}
+          <div className="py-4">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-3 md:gap-x-5">
+              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs md:text-base">
+                Sass
+              </span>{" "}
+              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs md:text-base">
+                HTML
+              </span>
+              <span className=" py-1 px-2  rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs md:text-base">
+                CSS
+              </span>
+            </div>
+          </div>
+          {/* video */}
+          <video className="rounded-lg" poster={portfolioPoster}>
+            <source src={portfolioVideo} type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>

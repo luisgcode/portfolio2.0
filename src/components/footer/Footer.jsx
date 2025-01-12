@@ -5,7 +5,7 @@ import { BsFileEarmarkPdf } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="footer flex justify-center items-center flex-col pt-12 pb-8 gap-4">
+    <div className="footer flex justify-center items-center flex-col pt-16 pb-8 gap-4">
       <div className="flex justify-center items-center ">
         <ul className="flex gap-6">
           <li>
