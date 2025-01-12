@@ -1,3 +1,8 @@
+/* 
+  *  In this file, you deal with the posters size, and the CSS for the projects cards
+*/
+
+/* * Dealing with the vector BG, is different in each section * */
 .projects {
   background-image: url(/src/assets/images/vector1.svg);
   background-repeat: no-repeat;
@@ -7,6 +12,7 @@
   position: relative;
 }
 
+/* * The container for each project * */
 .project-card {
   padding: 20px;
   border-radius: 15px;
@@ -22,34 +28,41 @@
   transform: translateY(-8px);
 }
 
-.pictures {
+/* * Tags inside each project * */
+.custom-project-tag {
+  @apply py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs;
+}
+
+/* * Posters * */
+.posters {
   border-radius: 5px;
   border: 1px solid transparent;
 }
 
-.project-card:hover .pictures {
+/* * When project card gest hover, poster do: * */
+.project-card:hover .posters {
   border: 1px solid rgba(255, 255, 255, 0.129);
 }
 
-.pictures img {
+.posters img {
   width: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
 
 @media (min-width: 660px) {
-  .pictures {
+  .posters {
     width: 600px;
   }
 }
 
 @media (min-width: 950px) {
-  .pictures {
+  .posters {
     width: 350px;
   }
 }
 
-/* The project grid */
+/* * Project Grid - Handle the distribution of elements according to viewport * */
 @media (min-width: 950px) {
   .project-card {
     width: 46%;

@@ -1,3 +1,8 @@
+/* 
+  *  this file, you will find exclusively details about the menu
+  *  The keyboard animation and also the details for the underline in each nav link
+*/
+
 .nav-link {
   position: relative;
 }
@@ -23,7 +28,7 @@
   transform: scaleX(1);
 }
 
-/* ^ Logo */
+/* * Logo * */
 .logo-image {
   width: 45px;
 }
@@ -32,7 +37,7 @@
   filter: drop-shadow(5px 0px 10px rgba(255, 255, 255, 0.504));
 }
 
-/* ^ Keyboard animation bubbles */
+/* * Keyboard animation bubbles * */
 .bubble {
   width: 7px;
   height: 7px;
@@ -81,7 +86,7 @@
   }
 }
 
-/* ^ Keyboard animation sound icon */
+/* * Keyboard animation sound icon * */
 .sound-icon {
   font-size: 20px;
   position: absolute;

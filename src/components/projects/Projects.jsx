@@ -1,13 +1,10 @@
 import React from "react";
 import {
   posterPortfolio2,
-  posterPortfolio1,
   posterCrowdMeter,
   posterGlobal,
   posterCanJet,
 } from "../media";
-import { FaCode } from "react-icons/fa6";
-import { CgWebsite } from "react-icons/cg";
 import "./projects.css";
 import { FiArrowUpRight } from "react-icons/fi";
 
@@ -20,12 +17,15 @@ const Projects = () => {
       </h3>
       <div className="flex flex-wrap md:justify-center gap-y-10 gap-x-10 projects-container mt-12  lg:justify-between  ">
         {/* 1 */}
+
         <div className="project-card ">
-          {/* title */}
-          <h4 className="font-bold mb-4 flex">
+          <a
+            href="https://www.luisgcode.com/"
+            target="_blank"
+            className="project-title font-bold mb-4 flex"
+          >
             luisgcode.com (v2) <FiArrowUpRight />
-          </h4>
-          {/* Info */}
+          </a>
           <div>
             <p>
               New Portfolio designed and developed to showcase the tools and
@@ -33,41 +33,31 @@ const Projects = () => {
               and Tailwind CSS, in a modern, mobile-first design.
             </p>
           </div>
-          {/* tags */}
           <div className="py-4">
             <div className="flex flex-wrap items-center gap-3  ">
-              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs  ">
-                React JS
-              </span>
-              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs  ">
-                Tailwind CSS
-              </span>
-              <span className=" py-1 px-2  rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs  ">
-                Framer Motion
-              </span>
-              <span className=" py-1 px-2  rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs  ">
-                Responsive
-              </span>
-              <span className=" py-1 px-2  rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs  ">
-                Bilingual
-              </span>{" "}
-              <span className=" py-1 px-2  rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs  ">
-                Accessible
-              </span>
+              <span className="custom-project-tag">React JS</span>
+              <span className="custom-project-tag">Tailwind CSS</span>
+              <span className="custom-project-tag">Framer Motion</span>
+              <span className="custom-project-tag">Responsive</span>
+              <span className="custom-project-tag">Bilingual</span>
+              <span className="custom-project-tag">Accessible</span>
             </div>
           </div>
-          {/* Pictures */}
-          <div className="pictures ">
+
+          <div className="posters ">
             <img className="rounded-lg  " src={posterPortfolio2} alt="poster" />
           </div>
         </div>
         {/* 2 */}
         <div className="project-card ">
-          {/* title */}
-          <h4 className="font-bold mb-4 flex">
+          <a
+            href="https://www.luisgcode.com/"
+            target="_blank"
+            className="project-title font-bold mb-4 flex"
+          >
             Global Tech <FiArrowUpRight />
-          </h4>
-          {/* Info */}
+          </a>
+
           <div>
             <p>
               The client requested to optimize their website, fix existing
@@ -75,64 +65,55 @@ const Projects = () => {
               into Spanish. Project approached by enhancing site performance.
             </p>
           </div>
-          {/* tags */}
+
           <div className="py-4">
             <div className="flex flex-wrap items-center gap-3 ">
-              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
-                TypeScript
-              </span>
-              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
-                JavaScript
-              </span>
-              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
-                Responsive
-              </span>
+              <span className=" custom-project-tag ">TypeScript</span>
+              <span className=" custom-project-tag ">JavaScript</span>
+              <span className=" custom-project-tag ">Responsive</span>
             </div>
           </div>
-          {/* Pictures */}
-          <div className="pictures ">
+
+          <div className="posters ">
             <img className="rounded-lg  " src={posterGlobal} alt="poster" />
           </div>
         </div>
         {/* 3  */}
         <div className="project-card ">
-          {/* title */}
-          <h4 className="font-bold mb-4 flex">
+          <a
+            href="https://www.luisgcode.com/"
+            target="_blank"
+            className="project-title font-bold mb-4 flex"
+          >
             Pattern Library & Dasboard <FiArrowUpRight />
-          </h4>{" "}
-          {/* Info */}
+          </a>
           <div>
             <p>
               Responsible for creating a dashboard that visualizes data through
               interactive charts. To achieve this, I used D3.js.
             </p>
           </div>
-          {/* tags */}
           <div className="py-4">
             <div className="flex flex-wrap items-center gap-3 ">
-              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
-                D3.js
-              </span>{" "}
-              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
-                JavaScript
-              </span>
-              <span className=" py-1 px-2  rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
-                CSS
-              </span>
+              <span className=" custom-project-tag ">D3.js</span>
+              <span className=" custom-project-tag ">JavaScript</span>
+              <span className=" custom-project-tag ">CSS</span>
             </div>
           </div>
-          {/* Pictures */}
-          <div className="pictures ">
+          <div className="posters ">
             <img className="rounded-lg   " src={posterCanJet} alt="poster" />
           </div>
         </div>
         {/* 4 */}
         <div className="project-card ">
-          {/* title */}
-          <h4 className="font-bold mb-4 flex">
+          <a
+            href="https://www.luisgcode.com/"
+            target="_blank"
+            className="project-title font-bold mb-4 flex"
+          >
             Occupancy System <FiArrowUpRight />
-          </h4>
-          {/* Info */}
+          </a>
+
           <div>
             <p>
               Designed to display real-time business occupancy levels, featuring
@@ -140,22 +121,16 @@ const Projects = () => {
               is ready to integrate with APIs that provide crowd data
             </p>
           </div>
-          {/* tags */}
+
           <div className="py-4">
             <div className="flex flex-wrap items-center gap-3 ">
-              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
-                React JS
-              </span>{" "}
-              <span className=" py-1 px-2 rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
-                Tailwind CSS
-              </span>
-              <span className=" py-1 px-2  rounded-lg  bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300 text-xs ">
-                JavaScript
-              </span>
+              <span className=" custom-project-tag ">React JS</span>
+              <span className=" custom-project-tag ">Tailwind CSS</span>
+              <span className=" custom-project-tag ">JavaScript</span>
             </div>
           </div>
-          {/* Pictures */}
-          <div className="pictures ">
+
+          <div className="posters ">
             <img
               className="rounded-lg   "
               src={posterCrowdMeter}

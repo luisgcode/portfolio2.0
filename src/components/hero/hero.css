@@ -1,14 +1,19 @@
-/* ^ Style for the tags */
+/* 
+  *  In this file, some custom Tailwind CSS classes defined to reduce the repetitiveness in HTML
+  *  The hero media is for dealing the the vector BG
+*/
+
+/* * Style for the tags * */
 .custom-hero-tag {
   @apply px-2 rounded-lg py-1 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300;
 }
 
-/* ^ Style for the icons under the name */
+/* * Style for the icons under the name * */
 .hero-icon {
   @apply flex gap-1 hover:scale-110 duration-100;
 }
 
-/* ^ Responsiveness - vector in the bg */
+/* * Responsiveness - vector in the bg * */
 @media (min-width: 768px) {
   .hero {
     background-image: url(/src/assets/images/vector1.svg);
