@@ -1,4 +1,8 @@
-/* ? Anything that I would need to modify over Tailwind, goes here */
+/* 
+  *  In this File I have everything I wanted to modify from Origin. For example typography sizes
+  *  This styles will be apply for the entire document.
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,8 +26,14 @@ h1 {
 }
 
 h1::selection,
-p::selection {
-  background: #9395f6;
+h3::selection,
+h4::selection,
+h5::selection,
+p::selection,
+a::selection {
+  background: #9698f3;
+
+  color: #05142e;
 }
 
 h2 {
@@ -38,6 +48,21 @@ h2::selection {
 h3 {
   font-size: clamp(18px, 3.5vw, 35px);
   font-weight: 500;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 1;
+  display: inline-block;
+}
+
+/* * Detail behind h3 * */
+.detail-bg {
+  background-color: #1c2767;
+  height: 25px;
+  position: absolute;
+  width: 110%;
+  bottom: 1px;
+  left: 0;
+  z-index: -1;
 }
 
 h4,

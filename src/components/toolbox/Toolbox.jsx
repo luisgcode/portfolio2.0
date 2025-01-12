@@ -8,20 +8,15 @@ import { MdOutlineAnalytics } from "react-icons/md";
 import { IoSettingsOutline } from "react-icons/io5";
 
 import {
-  bootstrapLogo,
-  cssLogo,
   figmaLogo,
-  fileZileaLogo,
   firebaseLogo,
   ga4Logo,
-  postgrSQLogo,
   powerBiLogo,
   pythonLogo,
   reactLogo,
   sassLogo,
   slackLogo,
   tailWindLogo,
-  typescriptlogo,
   vsCodeLogo,
   phpLogo,
   npmLogo,
@@ -44,9 +39,9 @@ const Toolbox = () => {
     <div className="toolbox px-8 py-6 md:p-mid_pad mt-20 md:mt-0">
       <div>
         <div className="toolbox-heading mb-6">
-          <h3 className="heading-tertiary">
+          <h3>
             My Toolbox.
-            <span className="brush"></span>
+            <span className="detail-bg"></span>
           </h3>
           <p>
             My commitment to learning is unwavering; in this dynamic field,
@@ -55,206 +50,150 @@ const Toolbox = () => {
         </div>
         <div className="toolbox-wrapp flex flex-col gap-3 md:gap-0 ">
           <div className="tools-row  ">
-            <h5 className="flex items-center gap-2">
+            <h5 className="custom-tools-row-title">
               <MdMonitor />
               Front-end
             </h5>
-            <div className="tools-icons flex flex-wrap gap-8 mt-6">
+            <div className="tools-wrapper">
               {/* React */}
-              <div className=" flex flex-col items-center">
-                <img className="h-10 w-10" src={reactLogo} alt="logo React " />
+              <div className="tool-box">
+                <img src={reactLogo} alt="logo React " />
                 <small>React JS</small>
-              </div>{" "}
+              </div>
               {/* JS */}
-              <div className=" flex flex-col items-center">
-                <img
-                  className="h-10 w-10"
-                  src={jsLogo}
-                  alt="logo javascript "
-                />
+              <div className="tool-box">
+                <img src={jsLogo} alt="logo javascript " />
                 <small>JavaScript</small>
-              </div>{" "}
+              </div>
               {/* Tailwind */}
-              <div className=" flex flex-col items-center">
-                <img
-                  className="h-10 w-10"
-                  src={tailWindLogo}
-                  alt="logo javascript "
-                />
+              <div className="tool-box">
+                <img src={tailWindLogo} alt="logo javascript " />
                 <small>Tailwind CSS</small>
-              </div>{" "}
+              </div>
               {/* Sass */}
-              <div className=" flex flex-col items-center">
-                <img
-                  className="h-10 w-10"
-                  src={sassLogo}
-                  alt="logo javascript "
-                />
+              <div className="tool-box">
+                <img src={sassLogo} alt="logo javascript " />
                 <small>Sass</small>
               </div>
             </div>
           </div>
           <div className="tools-row  ">
-            <h5 className="flex items-center gap-2">
+            <h5 className="custom-tools-row-title">
               <FaServer /> Back-end
             </h5>
-            <div className="tools-icons flex flex-wrap gap-8 mt-6">
+            <div className="tools-wrapper">
               {/* Python */}
-              <div className=" flex flex-col items-center">
-                <img
-                  className="h-10 w-10"
-                  src={pythonLogo}
-                  alt="logo Python "
-                />
+              <div className="tool-box">
+                <img src={pythonLogo} alt="logo Python " />
                 <small>Python</small>
               </div>
               {/* php */}
-              <div className=" flex flex-col items-center">
-                <img className="h-10 w-10" src={phpLogo} alt="logo PHP " />
+              <div className="tool-box">
+                <img src={phpLogo} alt="logo PHP " />
                 <small>PHP</small>
               </div>
               {/* firebase */}
-              <div className=" flex flex-col items-center">
-                <img
-                  className="h-10 w-10"
-                  src={firebaseLogo}
-                  alt="logo firebase "
-                />
+              <div className="tool-box">
+                <img src={firebaseLogo} alt="logo firebase " />
                 <small>Firebase</small>
               </div>
               {/* Mysql */}
-              <div className=" flex flex-col items-center">
-                <img className="h-10 w-10" src={mySqlLogo} alt="logo MySQL " />
+              <div className="tool-box">
+                <img src={mySqlLogo} alt="logo MySQL " />
                 <small>MySQL</small>
               </div>
             </div>
           </div>
           <div className="tools-row">
-            <h5 className="flex items-center gap-2">
+            <h5 className="custom-tools-row-title">
               <FaTools />
               Development & Collaboration
             </h5>
-            <div className="tools-icons flex flex-wrap gap-8 mt-6">
+            <div className="tools-wrapper">
               {/* Github */}
-              <div className=" flex flex-col items-center">
-                <img
-                  className="h-10 w-10"
-                  src={gitHubLogo}
-                  alt="logo GitHub "
-                />
+              <div className="tool-box">
+                <img src={gitHubLogo} alt="logo GitHub " />
                 <small>GitHub</small>
               </div>
               {/* Git */}
-              <div className=" flex flex-col items-center">
-                <img className="h-10 w-10" src={gitLogo} alt="logo Git " />
+              <div className="tool-box">
+                <img src={gitLogo} alt="logo Git " />
                 <small>Git</small>
               </div>
               {/* vs code */}
-              <div className=" flex flex-col items-center">
-                <img
-                  className="h-10 w-10"
-                  src={vsCodeLogo}
-                  alt="logo VS Code "
-                />
+              <div className="tool-box">
+                <img src={vsCodeLogo} alt="logo VS Code " />
                 <small>VS Code</small>
               </div>
               {/* Figma */}
-              <div className=" flex flex-col items-center">
-                <img className="h-10 w-10" src={figmaLogo} alt="logo Figma " />
+              <div className="tool-box">
+                <img src={figmaLogo} alt="logo Figma " />
                 <small>Figma</small>
               </div>
               {/* Notion */}
-              <div className=" flex flex-col items-center">
-                <img
-                  className="h-10 w-10"
-                  src={notionLogo}
-                  alt="logo Notion "
-                />
+              <div className="tool-box">
+                <img src={notionLogo} alt="logo Notion " />
                 <small>Notion</small>
               </div>
               {/* Confluence */}
-              <div className=" flex flex-col items-center">
-                <img
-                  className="h-10 w-10"
-                  src={confluenceLogo}
-                  alt="logo Confluence "
-                />
+              <div className="tool-box">
+                <img src={confluenceLogo} alt="logo Confluence " />
                 <small>Confluence</small>
               </div>
               {/* Jira */}
-              <div className=" flex flex-col items-center">
-                <img className="h-10 w-10" src={jiraLogo} alt="logo Jira " />
+              <div className="tool-box">
+                <img src={jiraLogo} alt="logo Jira " />
                 <small>Jira</small>
               </div>
               {/* Slack */}
-              <div className=" flex flex-col items-center">
-                <img className="h-10 w-10" src={slackLogo} alt="logo Slack " />
+              <div className="tool-box">
+                <img src={slackLogo} alt="logo Slack " />
                 <small>Slack</small>
               </div>
             </div>
           </div>
           <div className="tools-row">
-            <h5 className="flex items-center gap-2">
+            <h5 className="custom-tools-row-title">
               <MdOutlineAnalytics />
               Analytics
             </h5>
-            <div className="tools-icons flex flex-wrap gap-8 mt-6">
+            <div className="tools-wrapper">
               {/* Power BI */}
-              <div className=" flex flex-col items-center">
-                <img
-                  className="h-10 w-10"
-                  src={powerBiLogo}
-                  alt="logo Power BI"
-                />
+              <div className="tool-box">
+                <img src={powerBiLogo} alt="logo Power BI" />
                 <small>Power BI</small>
               </div>
               {/* GA4 */}
-              <div className=" flex flex-col items-center">
-                <img className="h-10 w-10" src={ga4Logo} alt="logo GA4 " />
+              <div className="tool-box">
+                <img src={ga4Logo} alt="logo GA4 " />
                 <small>GA4</small>
               </div>
               {/* Hotjar */}
-              <div className=" flex flex-col items-center">
-                <img
-                  className="h-10 w-10"
-                  src={hotjarLogo}
-                  alt="logo Hotjar "
-                />
+              <div className="tool-box">
+                <img src={hotjarLogo} alt="logo Hotjar " />
                 <small>Hotjar</small>
               </div>
             </div>
           </div>
           <div className="tools-row">
-            <h5 className="flex items-center gap-2">
+            <h5 className="custom-tools-row-title">
               <IoSettingsOutline />
               CMS
             </h5>
-            <div className="tools-icons flex flex-wrap gap-8 mt-6">
+            <div className="tools-wrapper">
               {/* Magento */}
-              <div className=" flex flex-col items-center">
-                <img
-                  className="h-10 w-10"
-                  src={magentoLogo}
-                  alt="logo Magento "
-                />
+              <div className="tool-box">
+                <img src={magentoLogo} alt="logo Magento " />
                 <small>Magento</small>
               </div>
               {/* wordpress */}
-              <div className=" flex flex-col items-center">
-                <img
-                  className="h-10 w-10"
-                  src={wordpressLogo}
-                  alt="logo Wordpress "
-                />
+              <div className="tool-box">
+                <img src={wordpressLogo} alt="logo Wordpress " />
                 <small>Wordpress</small>
               </div>
               {/* Prestashop */}
-              <div className=" flex flex-col items-center">
-                <img
-                  className="h-10 w-10"
-                  src={prestashopLogo}
-                  alt="logo Prestashop "
-                />
+              <div className="tool-box">
+                <img src={prestashopLogo} alt="logo Prestashop " />
                 <small>Prestashop</small>
               </div>
             </div>

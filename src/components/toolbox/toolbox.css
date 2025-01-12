@@ -1,20 +1,4 @@
-.heading-tertiary {
-  position: relative;
-  margin-bottom: 20px;
-  z-index: 1;
-  display: inline-block;
-}
-
-.brush {
-  background-color: #1c2767;
-  height: 25px;
-  position: absolute;
-  width: 110%;
-  bottom: 1px;
-  left: 0;
-  z-index: -1;
-}
-
+/* * Dealing with vector bg, it's a constant in every file * */
 .toolbox {
   background-image: url(/src/assets/images/vector1.svg);
   background-repeat: no-repeat;
@@ -22,11 +6,32 @@
   overflow-x: hidden;
 }
 
+/* * Tool rows, done here due to the animation when hover * */
 .tools-row {
   border-radius: 25px;
   padding: 15px;
   transition: transform 0.3s ease-in-out;
-  background-image: linear-gradient(to right, #9697f33f, transparent);
+  background-image: linear-gradient(to right, #9697f31f, transparent);
+}
+
+/* * Title per row Exm: Front-end * */
+.custom-tools-row-title {
+  @apply flex items-center gap-2;
+}
+
+/* * Actual tools wrapper: React, tailwind, etc * */
+.tools-wrapper {
+  @apply flex flex-wrap gap-8 mt-6;
+}
+
+/* * Each one of the tools, each box * */
+.tool-box {
+  @apply flex flex-col items-center;
+
+  img {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 @media (min-width: 768px) {

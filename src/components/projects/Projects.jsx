@@ -10,15 +10,15 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const Projects = () => {
   return (
-    <div className="projects px-8 py-6 md:p-mid_pad ">
-      <h3 className="heading-tertiary">
+    <div className="projects px-8 py-6 md:p-mid_pad">
+      <h3>
         My Latest Projects.
-        <span className="brush"></span>
+        <span className="detail-bg"></span>
       </h3>
-      <div className="flex flex-wrap md:justify-center gap-y-10 gap-x-10 projects-container mt-12  lg:justify-between  ">
+      <div className="flex flex-wrap md:justify-center gap-y-10 gap-x-10 projects-container mt-12  lg:justify-between ">
         {/* 1 */}
 
-        <div className="project-card ">
+        <div className="project-card">
           <a
             href="https://www.luisgcode.com/"
             target="_blank"
@@ -34,7 +34,7 @@ const Projects = () => {
             </p>
           </div>
           <div className="py-4">
-            <div className="flex flex-wrap items-center gap-3  ">
+            <div className="flex flex-wrap items-center gap-3 ">
               <span className="custom-project-tag">React JS</span>
               <span className="custom-project-tag">Tailwind CSS</span>
               <span className="custom-project-tag">Framer Motion</span>
@@ -44,12 +44,12 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="posters ">
-            <img className="rounded-lg  " src={posterPortfolio2} alt="poster" />
+          <div className="posters">
+            <img className="rounded-lg " src={posterPortfolio2} alt="poster" />
           </div>
         </div>
         {/* 2 */}
-        <div className="project-card ">
+        <div className="project-card">
           <a
             href="https://www.luisgcode.com/"
             target="_blank"
@@ -67,19 +67,19 @@ const Projects = () => {
           </div>
 
           <div className="py-4">
-            <div className="flex flex-wrap items-center gap-3 ">
-              <span className=" custom-project-tag ">TypeScript</span>
-              <span className=" custom-project-tag ">JavaScript</span>
-              <span className=" custom-project-tag ">Responsive</span>
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="custom-project-tag">TypeScript</span>
+              <span className="custom-project-tag">JavaScript</span>
+              <span className="custom-project-tag">Responsive</span>
             </div>
           </div>
 
-          <div className="posters ">
-            <img className="rounded-lg  " src={posterGlobal} alt="poster" />
+          <div className="posters">
+            <img className="rounded-lg " src={posterGlobal} alt="poster" />
           </div>
         </div>
         {/* 3  */}
-        <div className="project-card ">
+        <div className="project-card">
           <a
             href="https://www.luisgcode.com/"
             target="_blank"
@@ -94,18 +94,18 @@ const Projects = () => {
             </p>
           </div>
           <div className="py-4">
-            <div className="flex flex-wrap items-center gap-3 ">
-              <span className=" custom-project-tag ">D3.js</span>
-              <span className=" custom-project-tag ">JavaScript</span>
-              <span className=" custom-project-tag ">CSS</span>
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="custom-project-tag">D3.js</span>
+              <span className="custom-project-tag">JavaScript</span>
+              <span className="custom-project-tag">CSS</span>
             </div>
           </div>
-          <div className="posters ">
-            <img className="rounded-lg   " src={posterCanJet} alt="poster" />
+          <div className="posters">
+            <img className="rounded-lg  " src={posterCanJet} alt="poster" />
           </div>
         </div>
         {/* 4 */}
-        <div className="project-card ">
+        <div className="project-card">
           <a
             href="https://www.luisgcode.com/"
             target="_blank"
@@ -123,19 +123,15 @@ const Projects = () => {
           </div>
 
           <div className="py-4">
-            <div className="flex flex-wrap items-center gap-3 ">
-              <span className=" custom-project-tag ">React JS</span>
-              <span className=" custom-project-tag ">Tailwind CSS</span>
-              <span className=" custom-project-tag ">JavaScript</span>
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="custom-project-tag">React JS</span>
+              <span className="custom-project-tag">Tailwind CSS</span>
+              <span className="custom-project-tag">JavaScript</span>
             </div>
           </div>
 
-          <div className="posters ">
-            <img
-              className="rounded-lg   "
-              src={posterCrowdMeter}
-              alt="poster"
-            />
+          <div className="posters">
+            <img className="rounded-lg  " src={posterCrowdMeter} alt="poster" />
           </div>
         </div>
       </div>
