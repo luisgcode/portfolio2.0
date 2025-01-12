@@ -7,9 +7,23 @@
   position: relative;
 }
 
+.project-card {
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  background-color: #1a274b5b; /* Mantener el mismo color si no quieres cambiarlo */
+  border: 1px solid rgba(156, 156, 156, 0.129);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px);
+}
+
 .pictures img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 @media (min-width: 660px) {

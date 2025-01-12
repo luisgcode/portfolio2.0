@@ -23,7 +23,6 @@ const Projects = () => {
           <div>
             <p>
               New Portfolio 2025 created with React JS mainly. Lorem ipsum dolor
-              sit amet consectetur adipisicing
             </p>
           </div>
           {/* tags */}
