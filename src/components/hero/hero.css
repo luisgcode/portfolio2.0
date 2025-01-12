@@ -1,13 +1,11 @@
 /* ^ Style for the tags */
-
 .custom-hero-tag {
   @apply px-2 rounded-lg py-1 bg-highlightColor bg-opacity-30 border border-highlightColor hover:bg-opacity-0 transition-all duration-300;
 }
 
 /* ^ Style for the icons under the name */
 .hero-icon {
-  display: flex;
-  gap: 5px;
+  @apply flex gap-1 hover:scale-110 duration-100;
 }
 
 /* ^ Responsiveness - vector in the bg */

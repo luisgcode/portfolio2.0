@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "./behind.css";
 
 const Behind = () => {
   return (
@@ -20,16 +21,16 @@ const Behind = () => {
         animate="show"
         className="w-full flex justify-center items-center my-6 gap-10 text-white"
       >
-        <div className="bullet text-4xl font-bold flex items-center gap-4 selection:bg-highlightColor">
+        <div className="custom-bullets ">
           3 <span className="text-base font-normal">Years of experience</span>
         </div>
         |
-        <div className="bullet text-4xl font-bold flex items-center gap-4 selection:bg-highlightColor">
+        <div className="custom-bullets">
           10+
           <span className="text-base font-normal">Tech Skills Mastered</span>
         </div>
         |
-        <div className="bullet text-4xl font-bold flex items-center gap-4 selection:bg-highlightColor">
+        <div className="custom-bullets">
           12000+ <span className="text-base font-normal  ">Hours Coding</span>
         </div>
       </motion.div>

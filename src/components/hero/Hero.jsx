@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="hero px-8 py-6 md:p-mid_pad  ">
+    <div className="hero p-sma_pad  md:p-mid_pad  ">
       <motion.div
         variants={{
           hidden: { y: 80, opacity: 0 },
@@ -43,7 +43,7 @@ const Hero = () => {
             <ul className="flex gap-6">
               <li>
                 <a
-                  className="hero-icon hover:scale-110 transition-scale duration-100"
+                  className="hero-icon"
                   href="/portfolio2.0/cv_developer_luis.pdf"
                   download="luis_summary.pdf"
                 >
@@ -52,7 +52,7 @@ const Hero = () => {
               </li>
               <li>
                 <a
-                  className="hero-icon hover:scale-110 transition-scale duration-100"
+                  className="hero-icon"
                   href="https://www.linkedin.com/in/luisgcode/"
                   target="_blank"
                 >
@@ -61,7 +61,7 @@ const Hero = () => {
               </li>
               <li>
                 <a
-                  className="hero-icon hover:scale-110 transition-scale duration-100"
+                  className="hero-icon"
                   href="https://github.com/luisgcode"
                   target="_blank"
                 >
@@ -71,7 +71,7 @@ const Hero = () => {
             </ul>
           </div>
         </div>
-        <div className=" hidden md:flex items-center   lg:mr-16  ">
+        <div className=" hidden md:flex items-center  lg:mr-16  ">
           <img className="w-[280px] " src={heroImage} alt="Luis Guaiquirian" />
         </div>
       </motion.div>

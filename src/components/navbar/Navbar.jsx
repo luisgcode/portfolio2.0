@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="navigation flex items-center justify-between px-8 py-6 md:p-mid_pad">
+      <div className="p-sma_pad navigation flex items-center justify-between md:p-mid_pad">
         <div className="navigation-logo cursor-pointer relative">
           <img
             onMouseEnter={play}
