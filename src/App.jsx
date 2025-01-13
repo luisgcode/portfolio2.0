@@ -1,20 +1,21 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
-import Hero from "./components/hero/Hero";
-import About from "./components/about/About";
-import Toolbox from "./components/toolbox/Toolbox";
-import Projects from "./components/projects/Projects";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ProjectsPage from "./pages/ProjectsPage";
 import Footer from "./components/footer/Footer";
-import Behind from "./components/behind/Behind";
 
 function App() {
   return (
     <div className="App">
       <div className="custom-bg">
         <Navbar />
-        <Hero />
-        <Behind /> <Projects />
-        <Toolbox />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+        </Routes>
         <Footer />
       </div>
     </div>

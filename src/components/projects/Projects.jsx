@@ -39,6 +39,7 @@ const Projects = () => {
               <span className="custom-project-tag">Tailwind CSS</span>
               <span className="custom-project-tag">Framer Motion</span>
               <span className="custom-project-tag">Responsive</span>
+              <span className="custom-project-tag">SPA</span>
               <span className="custom-project-tag">Bilingual</span>
               <span className="custom-project-tag">Accessible</span>
             </div>
