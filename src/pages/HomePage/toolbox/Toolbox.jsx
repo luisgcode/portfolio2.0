@@ -32,7 +32,7 @@ import {
   jiraLogo,
   confluenceLogo,
   notionLogo,
-} from "../media";
+} from "../../../components/media";
 
 const Toolbox = () => {
   return (

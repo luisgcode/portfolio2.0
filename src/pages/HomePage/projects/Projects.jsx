@@ -4,7 +4,7 @@ import {
   posterCrowdMeter,
   posterGlobal,
   posterCanJet,
-} from "../media";
+} from "../../../components/media";
 import "./projects.css";
 import { FiArrowUpRight } from "react-icons/fi";
 
