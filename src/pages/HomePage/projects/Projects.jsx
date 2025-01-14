@@ -7,6 +7,7 @@ import {
 } from "../../../components/media";
 import "./projects.css";
 import { FiArrowUpRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -17,7 +18,6 @@ const Projects = () => {
       </h3>
       <div className="flex flex-wrap md:justify-center gap-y-10 gap-x-10 projects-container mt-12  lg:justify-between ">
         {/* 1 */}
-
         <div className="project-card">
           <a
             href="https://www.luisgcode.com/"
@@ -135,6 +135,13 @@ const Projects = () => {
             <img className="rounded-lg  " src={posterCrowdMeter} alt="poster" />
           </div>
         </div>
+        <Link to="/projects">
+          <li>
+            <a className="font-bold nav-link flex my-6" href="#">
+              View full list of projects <FiArrowUpRight />
+            </a>
+          </li>
+        </Link>
       </div>
     </div>
   );

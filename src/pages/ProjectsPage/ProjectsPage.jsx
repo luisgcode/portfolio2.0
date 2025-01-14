@@ -1,7 +1,12 @@
 import React from "react";
+import TableList from "./tableList/TableList";
 
 const Projects = () => {
-  return <div>This is Projects page</div>;
+  return (
+    <div>
+      <TableList />
+    </div>
+  );
 };
 
 export default Projects;
