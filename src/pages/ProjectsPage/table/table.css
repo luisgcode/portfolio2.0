@@ -17,6 +17,10 @@
   tr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
+
+  tr:hover {
+    background-image: linear-gradient(to right, #9697f31f, transparent);
+  }
 }
 
 .tags-td {

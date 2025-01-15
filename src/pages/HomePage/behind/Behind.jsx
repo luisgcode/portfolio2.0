@@ -22,7 +22,7 @@ const Behind = () => {
         className="w-full flex justify-center items-center my-6 gap-10 text-white"
       >
         <div className="custom-bullets ">
-          3 <span className="text-base font-normal">Years of experience</span>
+          2 <span className="text-base font-normal">Years of experience</span>
         </div>
         |
         <div className="custom-bullets">

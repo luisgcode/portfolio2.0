@@ -52,7 +52,7 @@ const TableList = () => {
                 <a
                   href="https://www.luisgcode.com/"
                   target="_blank"
-                  className="flex gap-1"
+                  className="flex gap-1 hover:scale-110 transition-all duration-200"
                 >
                   luisgcode.com <FiArrowUpRight />
                 </a>
@@ -88,7 +88,7 @@ const TableList = () => {
                 <a
                   href="https://globaltechnologies.web.app/"
                   target="_blank"
-                  className="flex gap-1"
+                  className="flex gap-1 hover:scale-110 transition-all duration-200"
                 >
                   globaltechnologies.web.app <FiArrowUpRight />
                 </a>
@@ -107,7 +107,7 @@ const TableList = () => {
                   <a
                     href="https://github.com/luisgcode/pattern_library_canJet"
                     target="_blank"
-                    className="flex gap-2"
+                    className="flex gap-2 "
                   >
                     Can Jet Pattern Library & Dashboard
                     <FiArrowUpRight />
@@ -126,7 +126,7 @@ const TableList = () => {
                 <a
                   href="https://github.com/luisgcode/pattern_library_canJet"
                   target="_blank"
-                  className="flex gap-2"
+                  className="flex gap-2 hover:scale-110 transition-all duration-200"
                 >
                   GitHub
                   <FaGithub />
@@ -164,7 +164,7 @@ const TableList = () => {
                 <a
                   href="https://github.com/luisgcode/portfolio2024"
                   target="_blank"
-                  className="flex gap-2"
+                  className="flex gap-2 hover:scale-110 transition-all duration-200"
                 >
                   GitHub
                   <FaGithub />
@@ -204,14 +204,14 @@ const TableList = () => {
                 <a
                   href="https://www.rbcplacelondon.com/"
                   target="_blank"
-                  className="flex gap-1"
+                  className="flex gap-1 hover:scale-110 transition-all duration-200"
                 >
                   rbcplacelondon.com
                   <FiArrowUpRight />
                 </a>
               </td>
             </tr>
-            {/* Our stores Infanti*/}{" "}
+            {/* Our stores Infanti*/}
             <tr>
               {/* Year */}
               <td>2024</td>
@@ -222,7 +222,7 @@ const TableList = () => {
                   <a
                     href="https://infanti.cl/pages/nuestras-tiendas-infanti"
                     target="_blank"
-                    className="flex gap-1"
+                    className="flex gap-1 "
                   >
                     Infati stores page <FiArrowUpRight />
                   </a>
@@ -240,7 +240,7 @@ const TableList = () => {
                 <a
                   href="https://infanti.cl/pages/nuestras-tiendas-infanti"
                   target="_blank"
-                  className="flex gap-1"
+                  className="flex gap-1 hover:scale-110 transition-all duration-200"
                 >
                   infanti.cl <FiArrowUpRight />
                 </a>
@@ -278,7 +278,7 @@ const TableList = () => {
                 <a
                   href="https://infanti.cl/pages/terminos-y-condiciones"
                   target="_blank"
-                  className="flex gap-1"
+                  className="flex gap-1 hover:scale-110 transition-all duration-200"
                 >
                   infanti.cl <FiArrowUpRight />
                 </a>
