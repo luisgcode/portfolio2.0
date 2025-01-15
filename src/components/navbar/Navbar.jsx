@@ -23,13 +23,20 @@ const Navbar = () => {
     <div className="navbar">
       <div className="p-sma_pad navigation flex items-center justify-between md:p-mid_pad">
         <div className="navigation-logo cursor-pointer relative">
-          <img
-            onMouseEnter={play}
-            onMouseOut={stop}
-            className="logo-image md:min-w-[65px] "
-            src={luisLogo}
-            alt="My portfolio's logo"
-          />
+          <Link to="/">
+            <li>
+              <a href="#">
+                <img
+                  onMouseEnter={play}
+                  onMouseOut={stop}
+                  className="logo-image md:min-w-[65px] "
+                  src={luisLogo}
+                  alt="My portfolio's logo"
+                />
+              </a>
+            </li>
+          </Link>
+
           <AiFillSound className="sound-icon" />
           <div className=" bubble "></div>
           <div className=" bubble "></div>
