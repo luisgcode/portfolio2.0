@@ -2,6 +2,9 @@ import React from "react";
 import "./about.css";
 import { FaCheckCircle } from "react-icons/fa";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { FiLinkedin } from "react-icons/fi";
+import { LuGithub } from "react-icons/lu";
+import { BsFileEarmarkPdf } from "react-icons/bs";
 
 const About = () => {
   return (
@@ -26,6 +29,37 @@ const About = () => {
               like Power BI, Google Analytics, Git, and Agile methodologies, I
               am eager to apply my expertise to deliver impactful web solutions.
             </p>
+            <div className="mt-6">
+              <ul className="flex gap-6">
+                <li>
+                  <a
+                    className="hero-icon"
+                    href="/portfolio2.0/cv_developer_luis.pdf"
+                    download="luis_summary.pdf"
+                  >
+                    <BsFileEarmarkPdf /> Résumé
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="hero-icon"
+                    href="https://www.linkedin.com/in/luisgcode/"
+                    target="_blank"
+                  >
+                    <FiLinkedin /> Linkedin
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="hero-icon"
+                    href="https://github.com/luisgcode"
+                    target="_blank"
+                  >
+                    <LuGithub /> Github
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className=" flex flex-col gap-10 lg:w-1/2">
             <div className="formal text-sm">
