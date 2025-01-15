@@ -1,5 +1,5 @@
 import React from "react";
-import TableList from "./tableList/TableList";
+import TableList from "../ProjectsPage/table/TableList";
 
 const Projects = () => {
   return (

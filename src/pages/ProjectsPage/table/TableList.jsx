@@ -1,12 +1,12 @@
 import React from "react";
-import "./tablelist.css";
+import "./table.css";
 
 const TableList = () => {
   return (
     <div>
       <div className="p-sma_pad md:p-mid_pad">
         <div className="table">
-          <table>
+          <table className="border">
             <tr className="table-heading-row">
               <th>Year</th>
               <th>Project</th>
@@ -21,7 +21,9 @@ const TableList = () => {
               <td>My Website</td>
               <td>
                 <span className="custom-project-tag">React JS</span>
-                <span className="custom-project-tag">Tailwind CSS</span>
+                <span className="custom-project-tag bg-red-300">
+                  Tailwind CSS
+                </span>
                 <span className="custom-project-tag">Framer Motion</span>
                 <span className="custom-project-tag">Responsive</span>
                 <span className="custom-project-tag">SPA</span>
