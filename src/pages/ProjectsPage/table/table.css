@@ -1,3 +1,27 @@
 .table {
   width: 100%;
+
+  th,
+  td {
+    font-size: 14px;
+  }
+
+  th {
+    padding: 18px 20px;
+  }
+
+  td {
+    padding: 18px 20px;
+  }
+
+  tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
+.tags-td {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
