@@ -3,7 +3,6 @@
   background-image: url(/src/assets/images/vector1.svg);
   background-repeat: no-repeat;
   background-position: -80% 10%;
-  overflow-x: hidden;
 }
 
 /* * Tool rows, done here due to the animation when hover * */

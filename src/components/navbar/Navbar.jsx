@@ -57,7 +57,7 @@ const Navbar = () => {
           }}
           initial="hidden"
           animate="show"
-          className="navigation-items hidden md:flex gap-12 "
+          className="navigation-items hidden md:flex gap-12 mr-3"
         >
           <Link to="/">
             <li>
@@ -73,18 +73,15 @@ const Navbar = () => {
               </a>
             </li>
           </Link>
-          <Link to="/about">
-            <li>
-              <a className="nav-link" href="#">
-                About
-              </a>
-            </li>
-          </Link>
+
           <li>
-            <a
-              className="   border-highlightColor border-2 text-white py-2 px-4 rounded-md"
-              href="#"
-            >
+            <a className="nav-link" href="#about">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a className="nav-link" href="#">
               Contact
             </a>
           </li>

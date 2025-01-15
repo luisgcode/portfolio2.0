@@ -10,6 +10,7 @@ import {
 import "./projects.css";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
@@ -18,7 +19,13 @@ const Projects = () => {
         My Latest Projects.
         <span className="detail-bg"></span>
       </h3>
-      <div className="flex flex-wrap md:justify-center gap-y-10 gap-x-10 projects-container mt-12  lg:justify-between ">
+      <motion.div
+        className="flex flex-wrap md:justify-center gap-y-10 gap-x-10 projects-container mt-12  lg:justify-between"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.5 }}
+      >
         {/* 1 */}
         <div className="project-card">
           <a
@@ -36,7 +43,7 @@ const Projects = () => {
             </p>
           </div>
           <div className="py-4">
-            <div className="flex flex-wrap items-center gap-3 ">
+            <div className="flex flex-wrap items-center gap-3">
               <span className="custom-project-tag">React JS</span>
               <span className="custom-project-tag">Tailwind CSS</span>
               <span className="custom-project-tag">Framer Motion</span>
@@ -46,9 +53,8 @@ const Projects = () => {
               <span className="custom-project-tag">Accessible</span>
             </div>
           </div>
-
           <div className="posters">
-            <img className="rounded-lg " src={posterPortfolio2} alt="poster" />
+            <img className="rounded-lg" src={posterPortfolio2} alt="poster" />
           </div>
         </div>
         {/* 2 */}
@@ -200,7 +206,7 @@ const Projects = () => {
             </a>
           </li>
         </Link>
-      </div>
+      </motion.div>
     </div>
   );
 };

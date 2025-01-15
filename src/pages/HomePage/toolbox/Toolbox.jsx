@@ -6,6 +6,7 @@ import { FaServer } from "react-icons/fa";
 import { FaTools } from "react-icons/fa";
 import { MdOutlineAnalytics } from "react-icons/md";
 import { IoSettingsOutline } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 import {
   figmaLogo,
@@ -37,7 +38,12 @@ import {
 const Toolbox = () => {
   return (
     <div className="toolbox px-8 py-6 md:p-mid_pad mt-20 md:mt-0">
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="toolbox-heading mb-6">
           <h3>
             My Toolbox.
@@ -199,7 +205,7 @@ const Toolbox = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
