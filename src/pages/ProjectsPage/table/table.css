@@ -20,7 +20,6 @@
 }
 
 .tags-td {
-  display: flex;
   gap: 10px;
   flex-wrap: wrap;
   justify-content: flex-start;

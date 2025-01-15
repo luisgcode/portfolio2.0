@@ -7,6 +7,7 @@ export default {
       md: "768px",
       lg: "976px",
       xl: "1024px",
+      xxl: "1200px",
     },
     extend: {
       colors: {
