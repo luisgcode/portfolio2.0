@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="navigation-logo cursor-pointer relative">
           <Link to="/">
             <li>
-              <a href="#">
+              <a>
                 <img
                   onMouseEnter={play}
                   onMouseOut={stop}
@@ -61,29 +61,21 @@ const Navbar = () => {
         >
           <Link to="/">
             <li>
-              <a className="nav-link" href="#">
-                Home
-              </a>
+              <a className="nav-link">Home</a>
             </li>
           </Link>
           <Link to="/projects">
             <li>
-              <a className="nav-link" href="#">
-                Projects
-              </a>
+              <a className="nav-link">Projects</a>
             </li>
           </Link>
-
+          <Link to="/about">
+            <li>
+              <a className="nav-link">About</a>
+            </li>
+          </Link>
           <li>
-            <a className="nav-link" href="#about">
-              About
-            </a>
-          </li>
-
-          <li>
-            <a className="nav-link" href="#">
-              Contact
-            </a>
+            <a className="nav-link">Contact</a>
           </li>
         </motion.ul>
         <div className="mobile-menu md:hidden">✅</div>

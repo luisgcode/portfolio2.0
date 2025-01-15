@@ -201,7 +201,7 @@ const Projects = () => {
         </div>
         <Link to="/projects">
           <li>
-            <a className="font-bold nav-link flex my-6" href="#">
+            <a className="font-bold nav-link flex my-6">
               View full list of projects <FiArrowUpRight />
             </a>
           </li>

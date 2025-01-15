@@ -3,7 +3,6 @@ import Hero from "../HomePage/hero/Hero";
 import Behind from "../HomePage/behind/Behind";
 import Projects from "../HomePage/projects/Projects";
 import Toolbox from "../HomePage/toolbox/Toolbox";
-import About from "../HomePage/about/About";
 
 const Home = () => {
   return (
@@ -12,7 +11,6 @@ const Home = () => {
       <Behind />
       <Projects />
       <Toolbox />
-      <About />
     </div>
   );
 };
