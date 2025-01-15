@@ -50,6 +50,9 @@ img[alt=""] {
 }
 
 .custom-bg {
-  background-image: radial-gradient(#ffffff1d 0.5px, #05142e 0.5px);
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.07) 0.5px,
+    #0a162c 0.5px
+  );
   background-size: 20px 20px;
 }
