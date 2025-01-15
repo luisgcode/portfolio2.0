@@ -2,6 +2,7 @@ import React from "react";
 import "./table.css";
 import { FiArrowUpRight } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const TableList = () => {
   return (
@@ -19,7 +20,21 @@ const TableList = () => {
           </thead>
           <tbody>
             {/* portfolio v2 */}
-            <tr>
+            <motion.tr
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.1,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+            >
               {/* Year */}
               <td>2025</td>
               {/* Project */}
@@ -41,7 +56,7 @@ const TableList = () => {
                 <span className="custom-project-tag bg-red-300">
                   Tailwind CSS
                 </span>
-                <span className="custom-project-tag">Framer Motion</span>
+                <span className="custom-project-tag">Framer </span>
                 <span className="custom-project-tag">Responsive</span>
                 <span className="custom-project-tag">SPA</span>
                 <span className="custom-project-tag">Bilingual</span>
@@ -57,9 +72,23 @@ const TableList = () => {
                   luisgcode.com <FiArrowUpRight />
                 </a>
               </td>
-            </tr>
+            </motion.tr>
             {/* Global Technologies */}
-            <tr>
+            <motion.tr
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.2,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+            >
               {/* Year */}
               <td>2024</td>
               {/* Project */}
@@ -93,9 +122,23 @@ const TableList = () => {
                   globaltechnologies.web.app <FiArrowUpRight />
                 </a>
               </td>
-            </tr>
+            </motion.tr>
             {/* Can jet Pattern Library & Dashboard */}
-            <tr>
+            <motion.tr
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.3,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+            >
               {/* Year */}
               <td>2024</td>
               {/* Project */}
@@ -107,7 +150,7 @@ const TableList = () => {
                   <a
                     href="https://github.com/luisgcode/pattern_library_canJet"
                     target="_blank"
-                    className="flex gap-2 "
+                    className="flex gap-1 "
                   >
                     Can Jet Pattern Library & Dashboard
                     <FiArrowUpRight />
@@ -126,15 +169,29 @@ const TableList = () => {
                 <a
                   href="https://github.com/luisgcode/pattern_library_canJet"
                   target="_blank"
-                  className="flex gap-2 hover:scale-110 transition-all duration-200"
+                  className="flex gap-1 hover:scale-110 transition-all duration-200"
                 >
                   GitHub
                   <FaGithub />
                 </a>
               </td>
-            </tr>
+            </motion.tr>
             {/* Portfolio v1 */}
-            <tr>
+            <motion.tr
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.4,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+            >
               {/* Year */}
               <td>2024</td>
               {/* Project */}
@@ -152,7 +209,7 @@ const TableList = () => {
                 </div>
               </td>
               {/* Tags */}
-              <td className="tags-td   xl:flex hidden">
+              <td className="tags-td  hidden xl:flex">
                 <span className="custom-project-tag">Sass</span>
                 <span className="custom-project-tag">JavaScript</span>
                 <span className="custom-project-tag">Responsive</span>
@@ -164,15 +221,29 @@ const TableList = () => {
                 <a
                   href="https://github.com/luisgcode/portfolio2024"
                   target="_blank"
-                  className="flex gap-2 hover:scale-110 transition-all duration-200"
+                  className="flex gap-1 hover:scale-110 transition-all duration-200"
                 >
                   GitHub
                   <FaGithub />
                 </a>
               </td>
-            </tr>
+            </motion.tr>
             {/* RBC place Hub */}
-            <tr>
+            <motion.tr
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.5,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+            >
               {/* Year */}
               <td>2024</td>
               {/* Project */}
@@ -193,7 +264,7 @@ const TableList = () => {
               </td>
 
               {/* Tags */}
-              <td className="tags-td xxl:table-cell xl:flex hidden">
+              <td className="tags-td  hidden xl:flex">
                 <span className="custom-project-tag">HTML</span>
                 <span className="custom-project-tag">Firebase</span>
                 <span className="custom-project-tag">CSS</span>
@@ -210,9 +281,23 @@ const TableList = () => {
                   <FiArrowUpRight />
                 </a>
               </td>
-            </tr>
+            </motion.tr>
             {/* Our stores Infanti*/}
-            <tr>
+            <motion.tr
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.6,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+            >
               {/* Year */}
               <td>2024</td>
               {/* Project */}
@@ -230,7 +315,7 @@ const TableList = () => {
               </td>
 
               {/* Tags */}
-              <td className="tags-td   xl:flex hidden">
+              <td className="tags-td xl:flex hidden">
                 <span className="custom-project-tag">CSS</span>
                 <span className="custom-project-tag">JavaScript</span>
                 <span className="custom-project-tag">Responsive</span>
@@ -245,9 +330,23 @@ const TableList = () => {
                   infanti.cl <FiArrowUpRight />
                 </a>
               </td>
-            </tr>
+            </motion.tr>
             {/* Terms and conditions Infanti*/}
-            <tr>
+            <motion.tr
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.7,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+            >
               {/* Year */}
               <td>2024</td>
               {/* Project */}
@@ -283,7 +382,7 @@ const TableList = () => {
                   infanti.cl <FiArrowUpRight />
                 </a>
               </td>
-            </tr>
+            </motion.tr>
             {/* offers timer Infanti*/}
           </tbody>
         </table>
