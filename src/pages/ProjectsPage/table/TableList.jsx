@@ -58,7 +58,8 @@ const TableList = () => {
                 <span className="custom-project-tag bg-red-300">
                   Tailwind CSS
                 </span>
-                <span className="custom-project-tag">Framer </span>
+                <span className="custom-project-tag">Framer Motion</span>
+                <span className="custom-project-tag">i18next </span>
                 <span className="custom-project-tag">Responsive</span>
                 <span className="custom-project-tag">SPA</span>
                 <span className="custom-project-tag">Bilingual</span>

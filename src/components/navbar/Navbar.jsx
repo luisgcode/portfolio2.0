@@ -10,6 +10,8 @@ import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation("global");
+  const [animate, setAnimate] = useState(false);
+
   const audio = new Audio(sound);
   audio.currentTime = 5;
   audio.volume = 0.4;
@@ -23,7 +25,9 @@ const Navbar = () => {
   }
 
   function handleLanguage(lang) {
-    i18n.changeLanguage(lang);
+    setAnimate(true); // Activar la animación
+    i18n.changeLanguage(lang); // Cambiar el idioma
+    setTimeout(() => setAnimate(false), 500); // Desactivar la animación después de 500ms
   }
 
   // Estado para manejar el idioma actual
@@ -67,24 +71,28 @@ const Navbar = () => {
           }}
           initial="hidden"
           animate="show"
-          className="navigation-items hidden md:flex gap-12 mr-3"
+          className="navigation-items hidden md:flex gap-12  "
         >
           <Link to="/">
             <li>
-              <a className="nav-link">
+              <a className={`nav-link ${animate ? "fade-in-out" : ""}`}>
                 {t("header.navbar", { returnObjects: true })[0]}
               </a>
             </li>
           </Link>
           <Link to="/about">
             <li>
-              <a className="nav-link">
+              <a className={`nav-link ${animate ? "fade-in-out" : ""}`}>
                 {t("header.navbar", { returnObjects: true })[1]}
               </a>
             </li>
           </Link>
           <Link to="/projects">
-            <li>{t("header.navbar", { returnObjects: true })[2]}</li>
+            <li>
+              <a className={`nav-link ${animate ? "fade-in-out" : ""}`}>
+                {t("header.navbar", { returnObjects: true })[2]}
+              </a>
+            </li>
           </Link>
           <li>
             <a className="nav-link">Contact</a>

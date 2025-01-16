@@ -3,5 +3,19 @@
     "navbar": ["Home", "Sobre Mi", "Proyectos"],
     "heroTitle": "Desarrollador Web",
     "heroClaim": "Construyo aplicaciones web responsivas con tecnologías modernas, especializándome en:"
+  },
+  "behindSection": {
+    "years": "Años de experiencia",
+    "skills": "Tecnologias dominadas ",
+    "hours": "Horas programando"
+  },
+  "latest": {
+    "title": "Ùltimos proyectos"
+  },
+  "projectPortfolioV2": {
+    "description": "Nuevo portafolio diseñado y desarrollado para mostrar las herramientas y tecnologías que he dominado durante el último año, incluyendo React y Tailwind CSS, en un diseño moderno y enfocado en dispositivos móviles."
+  },
+  "projectGlobal": {
+    "description": "Optimización del sitio web, corrección de errores existentes, mejora de la funcionalidad general y traducción del contenido al español. El proyecto fue abordado mejorando el rendimiento del sitio."
   }
 }

@@ -14,11 +14,15 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
-  const { t } = useTranslation("global");
+  const { t, i18n } = useTranslation("global");
+
+  function handleLanguage(lang) {
+    i18n.changeLanguage(lang);
+  }
   return (
     <div className="projects px-8 py-6 md:p-mid_pad">
       <h3>
-        My Latest Projects.
+        {t("latest.title")}
         <span className="detail-bg"></span>
       </h3>
       <motion.div
@@ -38,16 +42,13 @@ const Projects = () => {
             luisgcode.com (v2) <FiArrowUpRight />
           </a>
           <div>
-            <p>
-              New Portfolio designed and developed to showcase the tools and
-              technologies I’ve mastered over the past year, including React,
-              and Tailwind CSS, in a modern, mobile-first design.
-            </p>
+            <p>{t("projectPortfolioV2.description")}</p>
           </div>
           <div className="py-4">
             <div className="flex flex-wrap items-center gap-3">
               <span className="custom-project-tag">React JS</span>
               <span className="custom-project-tag">Tailwind CSS</span>
+              <span className="custom-project-tag">i18next</span>
               <span className="custom-project-tag">Framer Motion</span>
               <span className="custom-project-tag">Responsive</span>
               <span className="custom-project-tag">SPA</span>
@@ -70,11 +71,7 @@ const Projects = () => {
           </a>
 
           <div>
-            <p>
-              The client requested to optimize their website, fix existing
-              errors, improve overall functionality, and translate the content
-              into Spanish. Project approached by enhancing site performance.
-            </p>
+            <p>{t("projectGlobal.description")}</p>
           </div>
 
           <div className="py-4">

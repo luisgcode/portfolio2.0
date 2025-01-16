@@ -3,5 +3,19 @@
     "navbar": ["Home", "About", "Projects"],
     "heroTitle": "Web Developer",
     "heroClaim": "I build responsive Web applications with modern technologies, specializing in:"
+  },
+  "behindSection": {
+    "years": "Years of experience",
+    "skills": "Tech skills mastered",
+    "hours": "Hours coding"
+  },
+  "latest": {
+    "title": "My Latest Projects."
+  },
+  "projectPortfolioV2": {
+    "description": "New Portfolio designed and developed to showcase the tools and technologies I’ve mastered over the past year, including React, and Tailwind CSS, in a modern, mobile-first design."
+  },
+  "projectGlobal": {
+    "description": "Website Optimization, fix existing errors, improve overall functionality, and translate the content into Spanish. Project approached by enhancing site performance."
   }
 }
