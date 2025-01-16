@@ -5,13 +5,29 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { FiLinkedin } from "react-icons/fi";
 import { LuGithub } from "react-icons/lu";
 import { BsFileEarmarkPdf } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div>
       <div className="about p-sma_pad md:p-mid_pad">
         <div className="box flex flex-col gap-20 lg:flex-row">
-          <div className=" flex flex-wrap text[16px] gap-4 lg:w-1/2">
+          <motion.div
+            variants={{
+              hidden: { x: -80, opacity: 0 },
+              show: {
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 0.5,
+                  delay: 0.1,
+                },
+              },
+            }}
+            initial="hidden"
+            animate="show"
+            className=" flex flex-wrap text[16px] gap-4 lg:w-1/2"
+          >
             <p>
               I am a web developer with 2 years of experience building
               responsive, user-friendly web applications using modern
@@ -29,7 +45,7 @@ const About = () => {
               like Power BI, Google Analytics, Git, and Agile methodologies, I
               am eager to apply my expertise to deliver impactful web solutions.
             </p>
-            <div className="mt-6">
+            <div className="mt-4">
               <ul className="flex gap-6">
                 <li>
                   <a
@@ -60,9 +76,24 @@ const About = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </motion.div>
           <div className=" flex flex-col gap-10 lg:w-1/2">
-            <div className="formal text-sm">
+            <motion.div
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.1,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+              className="formal text-sm"
+            >
               <h5 className="mb-3 text-highlightColor">Formal education</h5>
               <li className="my-2">
                 Fanshawe College.
@@ -78,8 +109,23 @@ const About = () => {
                   Business Administration Associate's Degree.
                 </span>
               </li>
-            </div>
-            <div className="online text-sm ">
+            </motion.div>
+            <motion.div
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.2,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+              className="online text-sm "
+            >
               <h5 className="mb-3 text-highlightColor">
                 Relevant online courses taken
               </h5>
@@ -104,7 +150,7 @@ const About = () => {
                 <FaCheckCircle />
                 Udemy: Complete JavaScript Course 2025 - Jonas S .
               </li>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
