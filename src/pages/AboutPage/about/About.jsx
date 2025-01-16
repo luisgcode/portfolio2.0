@@ -9,7 +9,12 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
-  const { t } = useTranslation("global");
+  const { t, i18n } = useTranslation("global");
+
+  function handleLanguage(lang) {
+    i18n.changeLanguage(lang);
+  }
+
   return (
     <div>
       <div className="about p-sma_pad md:p-mid_pad">
@@ -30,30 +35,16 @@ const About = () => {
             animate="show"
             className=" flex flex-wrap text[16px] gap-4 lg:w-1/2"
           >
-            <p>
-              I am a web developer with 2 years of experience building
-              responsive, user-friendly web applications using modern
-              technologies like HTML5, CSS3, JavaScript (ES6+), SCSS, and React.
-            </p>
-            <p>
-              Currently pursuing a diploma in Web Development and Internet
-              Applications at Fanshawe College (GPA: 4.075), I am enhancing my
-              skills in JavaScript frameworks, back-end development, and API
-              integration.
-            </p>
-            <p>
-              Passionate about creating innovative solutions, I excel in
-              teamwork, adaptability, and critical thinking. Proficient in tools
-              like Power BI, Google Analytics, Git, and Agile methodologies, I
-              am eager to apply my expertise to deliver impactful web solutions.
-            </p>
+            <p>{t("about.p1")}</p>
+            <p>{t("about.p2")}</p>
+            <p>{t("about.p3")}</p>
             <div className="mt-4">
               <ul className="flex gap-6">
                 <li>
                   <a
                     className="hero-icon"
-                    href="/portfolio2.0/cv_developer_luis.pdf"
-                    download="luis_summary.pdf"
+                    href="/Developer-Luis-Guaiquirian.pdf"
+                    download="Developer-Luis-Guaiquirian.pdf"
                   >
                     <BsFileEarmarkPdf /> Résumé
                   </a>

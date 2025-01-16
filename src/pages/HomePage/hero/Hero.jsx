@@ -52,8 +52,8 @@ const Hero = () => {
               <li>
                 <a
                   className="hero-icon"
-                  href="/portfolio2.0/cv_developer_luis.pdf"
-                  download="luis_summary.pdf"
+                  href="/Developer-Luis-Guaiquirian.pdf"
+                  download="Developer-Luis-Guaiquirian.pdf"
                 >
                   <BsFileEarmarkPdf /> Résumé
                 </a>

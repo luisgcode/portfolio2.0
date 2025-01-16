@@ -17,5 +17,29 @@
   },
   "projectGlobal": {
     "description": "Optimización del sitio web, corrección de errores existentes, mejora de la funcionalidad general y traducción del contenido al español. El proyecto fue abordado mejorando el rendimiento del sitio."
+  },
+  "projectCanjet": {
+    "description": "Responsable de crear una biblioteca de patrones y un panel que visualiza datos a través de gráficos interactivos. Para lograr esto, utilicé D3.js."
+  },
+  "projectInfantiTerms": {
+    "description": "Optimizar la accesibilidad de la información legal y la impresión de documentos para los usuarios."
+  },
+  "projectPortfoliov1": {
+    "description": "Mostrar eficazmente mis habilidades y experiencias.."
+  },
+  "projectOccupancy": {
+    "description": "Diseñado para mostrar los niveles de ocupación empresarial en tiempo real, con una interfaz limpia y responsiva, estilizada con Tailwind CSS. Este componente está listo para integrarse con API que proporcionen datos de afluencia."
+  },
+  "viewfFullProjects": {
+    "text": "Ver lista completa de proyectos."
+  },
+  "toolBox": {
+    "title": "Mis herramientas",
+    "description": "Mi compromiso con el aprendizaje es inquebrantable; en este campo dinámico, la educación continua es imprescindible para mantenerse relevante."
+  },
+  "about": {
+    "p1": "Soy un desarrollador web con 2 años de experiencia creando aplicaciones web receptivas y fáciles de usar, utilizando tecnologías modernas como HTML5, CSS3, JavaScript (ES6+), SCSS y React.",
+    "p2": "Actualmente estoy cursando un diploma en Desarrollo Web y Aplicaciones de Internet en Fanshawe College (GPA: 4.075), donde estoy ampliando mis habilidades en frameworks de JavaScript, desarrollo back-end e integración de API.",
+    "p3": "Apasionado por crear soluciones innovadoras, destaco en el trabajo en equipo, la adaptabilidad y el pensamiento crítico. Con experiencia en herramientas como Power BI, Google Analytics, Git y metodologías ágiles, estoy entusiasmado por aplicar mis conocimientos para desarrollar soluciones web impactantes."
   }
 }

@@ -36,7 +36,12 @@ import {
 } from "../../../components/media";
 
 const Toolbox = () => {
-  const { t } = useTranslation("global");
+  const { t, i18n } = useTranslation("global");
+
+  function handleLanguage(lang) {
+    i18n.changeLanguage(lang);
+  }
+
   return (
     <div className="toolbox px-8 py-6 md:p-mid_pad mt-20 md:mt-0">
       <motion.div
@@ -47,13 +52,10 @@ const Toolbox = () => {
       >
         <div className="toolbox-heading mb-6">
           <h3>
-            My Toolbox.
+            {t("toolBox.title")}
             <span className="detail-bg"></span>
           </h3>
-          <p>
-            My commitment to learning is unwavering; in this dynamic field,
-            continuous education is imperative for staying relevant.
-          </p>
+          <p>{t("toolBox.description")}</p>
         </div>
         <div className="toolbox-wrapp flex flex-col gap-3 md:gap-0 ">
           <div className="tools-row  ">

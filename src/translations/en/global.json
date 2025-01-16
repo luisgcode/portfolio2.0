@@ -17,5 +17,29 @@
   },
   "projectGlobal": {
     "description": "Website Optimization, fix existing errors, improve overall functionality, and translate the content into Spanish. Project approached by enhancing site performance."
+  },
+  "projectCanjet": {
+    "description": "Responsible for creating a Pattern Library and a  dashboard that visualizes data through interactive charts. To achieve this, I used D3.js."
+  },
+  "projectInfantiTerms": {
+    "description": "Optimize the accessibility of legal information and print document for users."
+  },
+  "projectPortfoliov1": {
+    "description": "Showcase my skills and experiences effectively."
+  },
+  "projectOccupancy": {
+    "description": "Designed to display real-time business occupancy levels, featuring a clean and responsive UI styled with Tailwind CSS. This component is ready to integrate with APIs that provide crowd data."
+  },
+  "viewfFullProjects": {
+    "text": "View full list of projects"
+  },
+  "toolBox": {
+    "title": "My Toolkit",
+    "description": "My commitment to learning is unwavering; in this dynamic field, continuous education is imperative for staying relevant."
+  },
+  "about": {
+    "p1": "I am a web developer with 2 years of experience building responsive, user-friendly web applications using modern technologies like HTML5, CSS3, JavaScript (ES6+), SCSS, and React.",
+    "p2": "Currently pursuing a diploma in Web Development and Internet Applications at Fanshawe College (GPA: 4.075), I am enhancing my skills in JavaScript frameworks, back-end development, and API integration.",
+    "p3": "Passionate about creating innovative solutions, I excel in teamwork, adaptability, and critical thinking. Proficient in tools like Power BI, Google Analytics, Git, and Agile methodologies, I am eager to apply my expertise to deliver impactful web solutions."
   }
 }

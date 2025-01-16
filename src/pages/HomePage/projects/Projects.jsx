@@ -96,10 +96,7 @@ const Projects = () => {
             Pattern Library & Dasboard <FiArrowUpRight />
           </a>
           <div>
-            <p>
-              Responsible for creating a dashboard that visualizes data through
-              interactive charts. To achieve this, I used D3.js.
-            </p>
+            <p>{t("projectCanjet.description")}</p>
           </div>
           <div className="py-4">
             <div className="flex flex-wrap items-center gap-3">
@@ -124,8 +121,7 @@ const Projects = () => {
 
           <div>
             <p>
-              Optimize the accessibility of legal information and print document
-              for users.
+              <p>{t("projectInfantiTerms.description")}</p>
             </p>
           </div>
 
@@ -155,7 +151,9 @@ const Projects = () => {
             Portfolio (v1) <FiArrowUpRight />
           </a>
           <div>
-            <p>Showcase my skills and experiences effectively.</p>
+            <p>
+              <p>{t("projectPortfoliov1.description")}</p>
+            </p>
           </div>
           <div className="py-4">
             <div className="flex flex-wrap items-center gap-3">
@@ -179,11 +177,7 @@ const Projects = () => {
           </a>
 
           <div>
-            <p>
-              Designed to display real-time business occupancy levels, featuring
-              a clean and responsive UI styled with Tailwind CSS. This component
-              is ready to integrate with APIs that provide crowd data
-            </p>
+            <p>{t("projectOccupancy.description")}</p>
           </div>
 
           <div className="py-4">
@@ -201,7 +195,7 @@ const Projects = () => {
         <Link to="/projects">
           <li>
             <a className="font-bold nav-link flex my-6">
-              View full list of projects <FiArrowUpRight />
+              <p>{t("viewfFullProjects.text")}</p> <FiArrowUpRight />
             </a>
           </li>
         </Link>

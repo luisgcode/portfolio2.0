@@ -44,7 +44,6 @@ const Behind = () => {
         <div className="custom-bullets">
           12000+{" "}
           <span className="text-base font-normal  ">
-            {" "}
             {t("behindSection.hours")}
           </span>
         </div>

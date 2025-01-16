@@ -13,8 +13,8 @@ const Footer = () => {
           <li>
             <a
               className="flex gap-1 text-1xl hover:scale-110 transition-scale duration-100"
-              href="/portfolio2.0/cv_developer_luis.pdf"
-              download="luis_summary.pdf"
+              href="/Developer-Luis-Guaiquirian.pdf"
+              download="Developer-Luis-Guaiquirian.pdf"
             >
               <BsFileEarmarkPdf />
             </a>

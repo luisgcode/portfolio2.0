@@ -97,15 +97,15 @@ const Navbar = () => {
           <li>
             <a className="nav-link">Contact</a>
           </li>
-          <li className="flex gap-4">
-            {/* <button>
-              <span id="light">
-                <FaRegMoon />
-              </span>
-              <span id="dark">
+          <li className="flex gap-2">
+            <button>
+              <span className="text-sm" id="light">
                 <FaMoon />
               </span>
-            </button> */}
+              {/* <span id="dark">
+               <FaRegMoon /> 
+              </span> */}
+            </button>
             {/* Botones de idioma */}
             {currentLanguage === "en" ? (
               <button
