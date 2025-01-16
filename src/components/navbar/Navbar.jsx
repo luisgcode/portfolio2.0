@@ -7,8 +7,10 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaRegMoon, FaMoon } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import { RiCloseLine } from "react-icons/ri";
-import { RiMenu2Line } from "react-icons/ri";
+import { RiCloseLine, RiMenu2Line } from "react-icons/ri";
+import { FiLinkedin } from "react-icons/fi";
+import { LuGithub } from "react-icons/lu";
+import { BsFileEarmarkPdf } from "react-icons/bs";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -33,8 +35,7 @@ const Navbar = () => {
     setTimeout(() => setAnimate(false), 500); // Desactivar la animación después de 500ms
   }
 
-  // Estado para manejar el idioma actual
-  const [currentLanguage, setCurrentLanguage] = useState("en"); // El idioma por defecto es inglés
+  const [currentLanguage, setCurrentLanguage] = useState("en");
 
   return (
     <div className="navbar">
@@ -53,12 +54,7 @@ const Navbar = () => {
               </a>
             </li>
           </Link>
-
           <AiFillSound className="sound-icon" />
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="bubble"></div>
-          <div className="bubble"></div>
         </div>
         <motion.ul
           variants={{
@@ -66,15 +62,12 @@ const Navbar = () => {
             show: {
               x: 0,
               opacity: 1,
-              transition: {
-                duration: 0.5,
-                delay: 0.2,
-              },
+              transition: { duration: 0.5, delay: 0.2 },
             },
           }}
           initial="hidden"
           animate="show"
-          className="navigation-items hidden md:flex gap-12  "
+          className="navigation-items hidden md:flex gap-12"
         >
           <Link to="/">
             <li>
@@ -105,15 +98,10 @@ const Navbar = () => {
               <span className="text-sm" id="light">
                 <FaMoon />
               </span>
-              {/* <span id="dark">
-               <FaRegMoon /> 
-              </span> */}
             </button>
-            {/* Botones de idioma */}
             {currentLanguage === "en" ? (
               <button
                 className="font-semibold text-sm"
-                id="lan-sp"
                 onClick={() => {
                   handleLanguage("sp");
                   setCurrentLanguage("sp");
@@ -123,7 +111,6 @@ const Navbar = () => {
               </button>
             ) : (
               <button
-                id="lan-en"
                 className="font-semibold text-sm"
                 onClick={() => {
                   handleLanguage("en");
@@ -138,67 +125,104 @@ const Navbar = () => {
         <div className="navbar-mobile">
           {toggleMenu ? (
             <RiCloseLine
+              className="menu-btn mr-3"
               color="#fff"
-              size={30}
+              size={35}
               onClick={() => setToggleMenu(false)}
             />
           ) : (
             <RiMenu2Line
+              className="menu-btn mr-3"
               color="#fff"
-              size={30}
+              size={35}
               onClick={() => setToggleMenu(true)}
             />
           )}
-          {toggleMenu && (
-            <div className="mobile-box">
-              <ul className="mobile-menu">
-                <Link to="/">
-                  <li>Home</li>
-                </Link>
-                <Link to="/about">
-                  <li>About</li>
-                </Link>
-                <Link to="/projects">
-                  <li>Projects</li>
-                </Link>
-                <li>Contact</li>
-                <li className="flex gap-2">
-                  <button>
-                    <span className="text-sm" id="light">
-                      <FaMoon />
-                    </span>
-                    {/* <span id="dark">
-               <FaRegMoon /> 
-              </span> */}
+          <motion.div
+            className="mobile-box"
+            initial={{ x: "100%" }}
+            animate={{ x: toggleMenu ? 0 : "100%" }}
+            exit={{ x: "100%" }}
+            transition={{ type: "spring", stiffness: 120, damping: 20 }}
+          >
+            <ul className="mobile-menu">
+              <Link to="/">
+                <li onClick={() => setToggleMenu(false)}>
+                  {t("header.navbar", { returnObjects: true })[0]}
+                </li>
+              </Link>
+              <Link to="/about">
+                <li onClick={() => setToggleMenu(false)}>
+                  {t("header.navbar", { returnObjects: true })[1]}
+                </li>
+              </Link>
+              <Link to="/projects">
+                <li onClick={() => setToggleMenu(false)}>
+                  {t("header.navbar", { returnObjects: true })[2]}
+                </li>
+              </Link>
+              <li onClick={() => setToggleMenu(false)}>
+                {t("header.navbar", { returnObjects: true })[3]}
+              </li>
+              <li className="flex gap-2">
+                <button>
+                  <span className="text-sm" id="light">
+                    <FaMoon />
+                  </span>
+                </button>
+                {currentLanguage === "en" ? (
+                  <button
+                    className="font-semibold text-sm"
+                    onClick={() => {
+                      handleLanguage("sp");
+                      setCurrentLanguage("sp");
+                    }}
+                  >
+                    SP
                   </button>
-                  {/* Botones de idioma */}
-                  {currentLanguage === "en" ? (
-                    <button
-                      className="font-semibold text-sm"
-                      id="lan-sp"
-                      onClick={() => {
-                        handleLanguage("sp");
-                        setCurrentLanguage("sp");
-                      }}
-                    >
-                      SP
-                    </button>
-                  ) : (
-                    <button
-                      id="lan-en"
-                      className="font-semibold text-sm"
-                      onClick={() => {
-                        handleLanguage("en");
-                        setCurrentLanguage("en");
-                      }}
-                    >
-                      EN
-                    </button>
-                  )}
+                ) : (
+                  <button
+                    className="font-semibold text-sm"
+                    onClick={() => {
+                      handleLanguage("en");
+                      setCurrentLanguage("en");
+                    }}
+                  >
+                    EN
+                  </button>
+                )}
+              </li>
+              <ul className="flex gap-6">
+                <li>
+                  <a
+                    className="hero-icon text-xs"
+                    href="/Developer-Luis-Guaiquirian.pdf"
+                    download="Developer-Luis-Guaiquirian.pdf"
+                  >
+                    <BsFileEarmarkPdf /> Résumé
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="hero-icon text-xs"
+                    href="https://www.linkedin.com/in/luisgcode/"
+                    target="_blank"
+                  >
+                    <FiLinkedin /> Linkedin
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="hero-icon text-xs"
+                    href="https://github.com/luisgcode"
+                    target="_blank"
+                  >
+                    <LuGithub /> Github
+                  </a>
                 </li>
               </ul>
-            </div>
-          )}
+            </ul>
+          </motion.div>
         </div>
       </div>
     </div>

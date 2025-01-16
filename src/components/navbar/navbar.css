@@ -150,32 +150,40 @@
 /* ************************ Mobile Menu */
 .navbar-mobile {
   display: none;
-  position: relative;
 }
 
 .mobile-box {
   display: flex;
   flex-direction: column;
-  background: #262626;
+  background: rgb(10, 22, 44);
   color: white;
-  position: absolute;
-  top: 40px;
+  position: fixed;
+  height: 100%;
   right: 0;
-  gap: 1rem;
-  border-radius: 5px;
-  align-items: flex-end;
-  min-width: 160px;
-  padding: 1rem;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+.navbar-mobile .menu-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10; /* Asegúrate de que esté encima del menú móvil */
+  cursor: pointer;
 }
 
-.mobile-box .mobile-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.mobile-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 /* Responsive */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
   .navbar-mobile {
     display: flex;
   }
