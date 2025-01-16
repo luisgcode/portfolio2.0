@@ -1,8 +1,7 @@
 {
   "header": {
-    "message": "Welcome to Pet Store Deluxe"
-  },
-  "home": {
-    "body": "A store designed"
+    "navbar": ["Home", "About", "Projects"],
+    "heroTitle": "Web Developer",
+    "heroClaim": "I build responsive Web applications with modern technologies, specializing in:"
   }
 }

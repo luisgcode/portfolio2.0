@@ -5,8 +5,14 @@ import { FiLinkedin } from "react-icons/fi";
 import { LuGithub } from "react-icons/lu";
 import { BsFileEarmarkPdf } from "react-icons/bs";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t, i18n } = useTranslation("global");
+
+  function handleLanguage(lang) {
+    i18n.changeLanguage(lang);
+  }
   return (
     <div className="hero p-sma_pad  md:p-mid_pad  ">
       <motion.div
@@ -27,11 +33,8 @@ const Hero = () => {
       >
         <div className="intro   ">
           <h1>Luis Guaiquirian</h1>
-          <h2 className="text-highlightColor">Web Developer</h2>
-          <p className="mt-1 mb-6 max-w-[35ch]">
-            I build responsive Web applications with modern technologies,
-            specializing in:
-          </p>
+          <h2 className="text-highlightColor">{t("header.heroTitle")}</h2>
+          <p className="mt-1 mb-6 max-w-[35ch]">{t("header.heroClaim")}</p>
           <div className="flex flex-wrap items-center   gap-y-3 gap-x-3 max-w-96">
             <span className="custom-hero-tag text-[16px]">React JS</span>
             <span className="custom-hero-tag text-[16px]">Tailwind CSS</span>

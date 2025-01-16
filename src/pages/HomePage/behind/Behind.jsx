@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./behind.css";
+import { useTranslation } from "react-i18next";
 
 const Behind = () => {
+  const { t } = useTranslation("global");
   return (
     <div className="behind text-center mt-12 overflow-y-hidden hidden md:flex px-8">
       <motion.div

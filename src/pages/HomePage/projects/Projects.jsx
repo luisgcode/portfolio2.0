@@ -11,8 +11,10 @@ import "./projects.css";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const { t } = useTranslation("global");
   return (
     <div className="projects px-8 py-6 md:p-mid_pad">
       <h3>

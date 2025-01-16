@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useTranslation } from "react-i18next";
 import "./toolbox.css";
 import { MdMonitor } from "react-icons/md";
 import { FaServer } from "react-icons/fa";
@@ -36,6 +36,7 @@ import {
 } from "../../../components/media";
 
 const Toolbox = () => {
+  const { t } = useTranslation("global");
   return (
     <div className="toolbox px-8 py-6 md:p-mid_pad mt-20 md:mt-0">
       <motion.div

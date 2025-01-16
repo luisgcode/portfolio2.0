@@ -1,25 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { luisLogo } from "../media";
 import { AiFillSound } from "react-icons/ai";
 import "./navbar.css";
 import sound from "../../assets/audio/keyboard-audio.mp3";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaRegMoon } from "react-icons/fa";
-import { FaMoon } from "react-icons/fa";
+import { FaRegMoon, FaMoon } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation("global");
   const audio = new Audio(sound);
   audio.currentTime = 5;
   audio.volume = 0.4;
 
   function play() {
-    audio.play(); // Reproducir el audio
+    audio.play();
   }
 
   function stop() {
-    audio.pause(); // Pausar el audio
+    audio.pause();
   }
+
+  function handleLanguage(lang) {
+    i18n.changeLanguage(lang);
+  }
+
+  // Estado para manejar el idioma actual
+  const [currentLanguage, setCurrentLanguage] = useState("en"); // El idioma por defecto es inglés
 
   return (
     <div className="navbar">
@@ -31,7 +39,7 @@ const Navbar = () => {
                 <img
                   onMouseEnter={play}
                   onMouseOut={stop}
-                  className="logo-image md:min-w-[65px] "
+                  className="logo-image md:min-w-[65px]"
                   src={luisLogo}
                   alt="My portfolio's logo"
                 />
@@ -40,10 +48,10 @@ const Navbar = () => {
           </Link>
 
           <AiFillSound className="sound-icon" />
-          <div className=" bubble "></div>
-          <div className=" bubble "></div>
-          <div className=" bubble "></div>
-          <div className=" bubble "></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
         </div>
         <motion.ul
           variants={{
@@ -63,32 +71,57 @@ const Navbar = () => {
         >
           <Link to="/">
             <li>
-              <a className="nav-link">Home</a>
+              <a className="nav-link">
+                {t("header.navbar", { returnObjects: true })[0]}
+              </a>
             </li>
           </Link>
           <Link to="/about">
             <li>
-              <a className="nav-link">About</a>
+              <a className="nav-link">
+                {t("header.navbar", { returnObjects: true })[1]}
+              </a>
             </li>
           </Link>
           <Link to="/projects">
-            <li>
-              <a className="nav-link">Projects</a>
-            </li>
+            <li>{t("header.navbar", { returnObjects: true })[2]}</li>
           </Link>
           <li>
             <a className="nav-link">Contact</a>
           </li>
           <li className="flex gap-4">
-            <button>
+            {/* <button>
               <span id="light">
                 <FaRegMoon />
               </span>
               <span id="dark">
                 <FaMoon />
               </span>
-            </button>
-            <button className="font-semibold">ES</button>
+            </button> */}
+            {/* Botones de idioma */}
+            {currentLanguage === "en" ? (
+              <button
+                className="font-semibold text-sm"
+                id="lan-sp"
+                onClick={() => {
+                  handleLanguage("sp");
+                  setCurrentLanguage("sp");
+                }}
+              >
+                SP
+              </button>
+            ) : (
+              <button
+                id="lan-en"
+                className="font-semibold text-sm"
+                onClick={() => {
+                  handleLanguage("en");
+                  setCurrentLanguage("en");
+                }}
+              >
+                EN
+              </button>
+            )}
           </li>
         </motion.ul>
         <div className="mobile-menu md:hidden">✅</div>

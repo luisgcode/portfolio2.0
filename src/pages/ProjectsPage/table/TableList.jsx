@@ -3,8 +3,10 @@ import "./table.css";
 import { FiArrowUpRight } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const TableList = () => {
+  const { t } = useTranslation("global");
   return (
     <div>
       <div className="p-sma_pad md:p-mid_pad">

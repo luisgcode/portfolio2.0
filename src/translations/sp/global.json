@@ -1,8 +1,7 @@
 {
   "header": {
-    "message": "Bienvenido a Pet Store Deluxe"
-  },
-  "home": {
-    "body": "Una tienda pensada para todas las necesidades"
+    "navbar": ["Home", "Sobre Mi", "Proyectos"],
+    "heroTitle": "Desarrollador Web",
+    "heroClaim": "Construyo aplicaciones web responsivas con tecnologías modernas, especializándome en:"
   }
 }

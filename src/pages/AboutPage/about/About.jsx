@@ -6,8 +6,10 @@ import { FiLinkedin } from "react-icons/fi";
 import { LuGithub } from "react-icons/lu";
 import { BsFileEarmarkPdf } from "react-icons/bs";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation("global");
   return (
     <div>
       <div className="about p-sma_pad md:p-mid_pad">
