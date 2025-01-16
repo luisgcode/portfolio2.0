@@ -7,8 +7,11 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaRegMoon, FaMoon } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { RiCloseLine } from "react-icons/ri";
+import { RiMenu2Line } from "react-icons/ri";
 
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
   const { t, i18n } = useTranslation("global");
   const [animate, setAnimate] = useState(false);
 
@@ -132,7 +135,71 @@ const Navbar = () => {
             )}
           </li>
         </motion.ul>
-        <div className="mobile-menu md:hidden">✅</div>
+        <div className="navbar-mobile">
+          {toggleMenu ? (
+            <RiCloseLine
+              color="#fff"
+              size={30}
+              onClick={() => setToggleMenu(false)}
+            />
+          ) : (
+            <RiMenu2Line
+              color="#fff"
+              size={30}
+              onClick={() => setToggleMenu(true)}
+            />
+          )}
+          {toggleMenu && (
+            <div className="mobile-box">
+              <ul className="mobile-menu">
+                <Link to="/">
+                  <li>Home</li>
+                </Link>
+                <Link to="/about">
+                  <li>About</li>
+                </Link>
+                <Link to="/projects">
+                  <li>Projects</li>
+                </Link>
+                <li>Contact</li>
+                <li className="flex gap-2">
+                  <button>
+                    <span className="text-sm" id="light">
+                      <FaMoon />
+                    </span>
+                    {/* <span id="dark">
+               <FaRegMoon /> 
+              </span> */}
+                  </button>
+                  {/* Botones de idioma */}
+                  {currentLanguage === "en" ? (
+                    <button
+                      className="font-semibold text-sm"
+                      id="lan-sp"
+                      onClick={() => {
+                        handleLanguage("sp");
+                        setCurrentLanguage("sp");
+                      }}
+                    >
+                      SP
+                    </button>
+                  ) : (
+                    <button
+                      id="lan-en"
+                      className="font-semibold text-sm"
+                      onClick={() => {
+                        handleLanguage("en");
+                        setCurrentLanguage("en");
+                      }}
+                    >
+                      EN
+                    </button>
+                  )}
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

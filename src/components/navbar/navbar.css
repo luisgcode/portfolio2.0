@@ -120,3 +120,63 @@
     transform: rotate(-5deg);
   }
 }
+
+/* Links */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  position: absolute;
+  content: "";
+  transform: scaleX(0);
+  transform-origin: center;
+  height: 1px;
+  background-color: white;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* ************************ Mobile Menu */
+.navbar-mobile {
+  display: none;
+  position: relative;
+}
+
+.mobile-box {
+  display: flex;
+  flex-direction: column;
+  background: #262626;
+  color: white;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  gap: 1rem;
+  border-radius: 5px;
+  align-items: flex-end;
+  min-width: 160px;
+  padding: 1rem;
+}
+
+.mobile-box .mobile-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+  .navbar-mobile {
+    display: flex;
+  }
+}
