@@ -132,8 +132,8 @@ const Projects = () => {
 
           <div className="py-4">
             <div className="flex flex-wrap items-center gap-3">
-              <span className="custom-project-tag">React JS</span>
-              <span className="custom-project-tag">Tailwind CSS</span>
+              <span className="custom-project-tag">CSS</span>
+              <span className="custom-project-tag">Responsive</span>
               <span className="custom-project-tag">JavaScript</span>
             </div>
           </div>

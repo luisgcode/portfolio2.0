@@ -11,7 +11,6 @@ export default {
     },
     extend: {
       colors: {
-        detailColor: "#d6dfe5",
         highlightColor: "#9698F3",
       },
       spacing: {

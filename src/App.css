@@ -9,7 +9,7 @@
 
 body {
   background: var(--color-bg);
-  color: #cfcfcf;
+  color: var(--regular-color);
   max-width: 1600px;
   margin: 0 auto;
 }

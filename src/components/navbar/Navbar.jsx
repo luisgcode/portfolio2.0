@@ -5,6 +5,8 @@ import "./navbar.css";
 import sound from "../../assets/audio/keyboard-audio.mp3";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { FaRegMoon } from "react-icons/fa";
+import { FaMoon } from "react-icons/fa";
 
 const Navbar = () => {
   const audio = new Audio(sound);
@@ -64,18 +66,29 @@ const Navbar = () => {
               <a className="nav-link">Home</a>
             </li>
           </Link>
-          <Link to="/projects">
-            <li>
-              <a className="nav-link">Projects</a>
-            </li>
-          </Link>
           <Link to="/about">
             <li>
               <a className="nav-link">About</a>
             </li>
           </Link>
+          <Link to="/projects">
+            <li>
+              <a className="nav-link">Projects</a>
+            </li>
+          </Link>
           <li>
             <a className="nav-link">Contact</a>
+          </li>
+          <li className="flex gap-4">
+            <button>
+              <span id="light">
+                <FaRegMoon />
+              </span>
+              <span id="dark">
+                <FaMoon />
+              </span>
+            </button>
+            <button className="font-semibold">ES</button>
           </li>
         </motion.ul>
         <div className="mobile-menu md:hidden">✅</div>

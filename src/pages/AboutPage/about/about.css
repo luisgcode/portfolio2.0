@@ -2,18 +2,3 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 10px 0;
 }
-
-. .journey-title {
-  position: relative;
-  width: fit-content;
-}
-
-.journey-title::after {
-  content: "";
-  left: 0;
-  position: absolute;
-  bottom: 0;
-  width: 20%;
-  height: 5px;
-  background-color: #9698f3;
-}

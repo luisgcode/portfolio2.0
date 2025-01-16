@@ -9,6 +9,8 @@
 
 :root {
   --color-bg: #0a162c;
+  --regular-color: #cfcfcf;
+  --highlight-color: #9698f3;
 }
 
 /* & Typography settings */
@@ -31,9 +33,8 @@ h4::selection,
 h5::selection,
 p::selection,
 a::selection {
-  background: #9698f3;
-
-  color: #05142e;
+  background: var(--highlight-color);
+  color: var(--color-bg);
 }
 
 h2 {
@@ -42,7 +43,7 @@ h2 {
 }
 
 h2::selection {
-  background: #d6dfe5;
+  background: var(--regular-color);
 }
 
 h3 {

@@ -32,10 +32,11 @@ const Hero = () => {
             I build responsive Web applications with modern technologies,
             specializing in:
           </p>
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-3 md:gap-x-5">
-            <span className="custom-hero-tag ">React JS</span>
-            <span className="custom-hero-tag ">Tailwind CSS</span>
-            <span className="custom-hero-tag text-sm">JavaScript</span>
+          <div className="flex flex-wrap items-center   gap-y-3 gap-x-3 max-w-96">
+            <span className="custom-hero-tag text-[16px]">React JS</span>
+            <span className="custom-hero-tag text-[16px]">Tailwind CSS</span>
+            <span className="custom-hero-tag text-[16px] ">JavaScript</span>
+            <span className="custom-hero-tag text-xs">Wordpress</span>
             <span className="custom-hero-tag text-xs">Next JS</span>
             <span className="custom-hero-tag text-xs">Python</span>
           </div>
