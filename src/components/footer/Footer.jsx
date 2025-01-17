@@ -2,10 +2,8 @@ import React from "react";
 import { FiLinkedin } from "react-icons/fi";
 import { LuGithub } from "react-icons/lu";
 import { BsFileEarmarkPdf } from "react-icons/bs";
-import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-  const { t } = useTranslation("global");
   return (
     <div className="footer flex justify-center items-center flex-col pt-16 pb-8 gap-4">
       <div className="flex justify-center items-center ">
@@ -39,7 +37,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <small> Luis Guaiquirian @ 2025</small>
+      <a href="mailto:contact@luisgcode.com">contact@luisgcode.com</a>
     </div>
   );
 };

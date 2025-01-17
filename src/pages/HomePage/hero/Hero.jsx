@@ -6,6 +6,7 @@ import { LuGithub } from "react-icons/lu";
 import { BsFileEarmarkPdf } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { IoMailOutline } from "react-icons/io5";
 
 const Hero = () => {
   const { t, i18n } = useTranslation("global");
@@ -18,7 +19,7 @@ const Hero = () => {
   }
 
   return (
-    <div className="hero p-sma_pad  md:p-mid_pad  ">
+    <div className="hero p-sma_pad  md:p-mid_pad  mt-[80px] md:mt-[0]">
       <motion.div
         variants={{
           hidden: { y: 80, opacity: 0 },
@@ -51,7 +52,7 @@ const Hero = () => {
             <ul className="flex gap-6">
               <li>
                 <a
-                  className="hero-icon"
+                  className="hero-icon text-sm"
                   href="/Developer-Luis-Guaiquirian.pdf"
                   download="Developer-Luis-Guaiquirian.pdf"
                 >
@@ -60,7 +61,16 @@ const Hero = () => {
               </li>
               <li>
                 <a
-                  className="hero-icon"
+                  className="hero-icon text-sm"
+                  href="mailto:contact@luisgcode.com"
+                >
+                  <IoMailOutline />
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hero-icon text-sm"
                   href="https://www.linkedin.com/in/luisgcode/"
                   target="_blank"
                 >
@@ -69,7 +79,7 @@ const Hero = () => {
               </li>
               <li>
                 <a
-                  className="hero-icon"
+                  className="hero-icon text-sm"
                   href="https://github.com/luisgcode"
                   target="_blank"
                 >
@@ -79,7 +89,7 @@ const Hero = () => {
             </ul>
           </div>
         </div>
-        <div className=" hidden md:flex items-center  lg:mr-16  ">
+        <div className=" hidden md:flex items-center  lg:mr-24  ">
           <img className="w-[280px] " src={heroImage} alt="Luis Guaiquirian" />
         </div>
       </motion.div>

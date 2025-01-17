@@ -5,24 +5,18 @@ import "./navbar.css";
 import sound from "../../assets/audio/keyboard-audio.mp3";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaRegMoon, FaMoon } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import { RiCloseLine, RiMenu2Line } from "react-icons/ri";
-import { AiOutlineQuestion } from "react-icons/ai";
+import { RiCloseLine } from "react-icons/ri";
 import { FiMenu } from "react-icons/fi";
-
-import { CiFolderOn } from "react-icons/ci";
-import { CiHome } from "react-icons/ci";
 import { FaRegUser } from "react-icons/fa";
 import { FiHome } from "react-icons/fi";
-
 import { MdOutlineFolderCopy } from "react-icons/md";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const { t, i18n } = useTranslation("global");
   const [animate, setAnimate] = useState(false);
-
+  const [currentLanguage, setCurrentLanguage] = useState("en");
   const audio = new Audio(sound);
   audio.currentTime = 5;
   audio.volume = 0.4;
@@ -36,12 +30,10 @@ const Navbar = () => {
   }
 
   function handleLanguage(lang) {
-    setAnimate(true); // Activar la animación
-    i18n.changeLanguage(lang); // Cambiar el idioma
-    setTimeout(() => setAnimate(false), 500); // Desactivar la animación después de 500ms
+    setAnimate(true);
+    i18n.changeLanguage(lang);
+    setTimeout(() => setAnimate(false), 500);
   }
-
-  const [currentLanguage, setCurrentLanguage] = useState("en");
 
   return (
     <div className="navbar mb-10 md:mb-0">
@@ -73,7 +65,7 @@ const Navbar = () => {
           }}
           initial="hidden"
           animate="show"
-          className="navigation-items hidden md:flex gap-12"
+          className="navigation-items hidden md:flex gap-8 mr-[70px]"
         >
           <Link to="/">
             <li>
@@ -96,15 +88,8 @@ const Navbar = () => {
               </a>
             </li>
           </Link>
-          <li>
-            <a className="nav-link">Contact</a>
-          </li>
+
           <li className="flex gap-2">
-            <button>
-              <span className="text-sm" id="light">
-                <FaMoon />
-              </span>
-            </button>
             {currentLanguage === "en" ? (
               <button
                 className="font-semibold text-sm"
@@ -195,14 +180,6 @@ const Navbar = () => {
               </Link>
 
               <li className="tools flex flex-col items-start  ">
-                <button>
-                  <span
-                    className="text-sm flex gap-2 font-semibold "
-                    id="light"
-                  >
-                    <span className="text-xs"> Mode:</span> <FaMoon />
-                  </span>
-                </button>
                 {currentLanguage === "en" ? (
                   <button
                     className="font-semibold text-sm"
