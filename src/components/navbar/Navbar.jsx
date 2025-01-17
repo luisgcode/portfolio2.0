@@ -11,7 +11,7 @@ import { RiCloseLine, RiMenu2Line } from "react-icons/ri";
 import { AiOutlineQuestion } from "react-icons/ai";
 import { FiMenu } from "react-icons/fi";
 
-import { GrProjects } from "react-icons/gr";
+import { CiFolderOn } from "react-icons/ci";
 
 import { CiHome } from "react-icons/ci";
 
@@ -110,7 +110,7 @@ const Navbar = () => {
                   setCurrentLanguage("sp");
                 }}
               >
-                SP
+                SPA
               </button>
             ) : (
               <button
@@ -120,7 +120,7 @@ const Navbar = () => {
                   setCurrentLanguage("en");
                 }}
               >
-                EN
+                ENG
               </button>
             )}
           </li>
@@ -151,7 +151,7 @@ const Navbar = () => {
             <div className="mobile-navigation-menu">
               <div className="user">
                 <img
-                  className="w-[90px] mb-4"
+                  className="w-[100px] mb-4"
                   src={heroImage}
                   alt="Luis Guaiquirian"
                 />
@@ -184,7 +184,8 @@ const Navbar = () => {
                     className="flex gap-2"
                     onClick={() => setToggleMenu(false)}
                   >
-                    <GrProjects />
+                    <CiFolderOn />
+
                     {t("header.navbar", { returnObjects: true })[2]}
                   </li>
                 </Link>
