@@ -12,8 +12,11 @@ import { AiOutlineQuestion } from "react-icons/ai";
 import { FiMenu } from "react-icons/fi";
 
 import { CiFolderOn } from "react-icons/ci";
-
 import { CiHome } from "react-icons/ci";
+import { FaRegUser } from "react-icons/fa";
+import { FiHome } from "react-icons/fi";
+
+import { MdOutlineFolderCopy } from "react-icons/md";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -148,80 +151,82 @@ const Navbar = () => {
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 120, damping: 20 }}
           >
-            <div className="mobile-navigation-menu">
-              <div className="user">
-                <img
-                  className="w-[100px] mb-4"
-                  src={heroImage}
-                  alt="Luis Guaiquirian"
-                />
-                <span className="font-semibold mb-1">Luis Guaiquirian</span>
-                <span className="text-sm">Web Developer</span>
-              </div>
-              <ul className="mobile-menu">
-                <Link to="/">
-                  <li
-                    className="flex gap-2"
-                    onClick={() => setToggleMenu(false)}
-                  >
-                    <CiHome />
-
-                    {t("header.navbar", { returnObjects: true })[0]}
-                  </li>
-                </Link>
-                <Link to="/about">
-                  <li
-                    className="flex gap-2"
-                    onClick={() => setToggleMenu(false)}
-                  >
-                    <AiOutlineQuestion />
-
-                    {t("header.navbar", { returnObjects: true })[1]}
-                  </li>
-                </Link>
-                <Link to="/projects">
-                  <li
-                    className="flex gap-2"
-                    onClick={() => setToggleMenu(false)}
-                  >
-                    <CiFolderOn />
-
-                    {t("header.navbar", { returnObjects: true })[2]}
-                  </li>
-                </Link>
-                <li onClick={() => setToggleMenu(false)}>
-                  {t("header.navbar", { returnObjects: true })[3]}
-                </li>
-                {/* <li className="flex gap-2">
-                  <button>
-                    <span className="text-sm" id="light">
-                      <FaMoon />
-                    </span>
-                  </button>
-                  {currentLanguage === "en" ? (
-                    <button
-                      className="font-semibold text-sm"
-                      onClick={() => {
-                        handleLanguage("sp");
-                        setCurrentLanguage("sp");
-                      }}
-                    >
-                      SP
-                    </button>
-                  ) : (
-                    <button
-                      className="font-semibold text-sm"
-                      onClick={() => {
-                        handleLanguage("en");
-                        setCurrentLanguage("en");
-                      }}
-                    >
-                      EN
-                    </button>
-                  )}
-                </li> */}
-              </ul>
+            <div className="user">
+              <img
+                className="w-[150px] mb-4"
+                src={heroImage}
+                alt="Luis Guaiquirian"
+              />
+              <span className="font-semibold mb-1">Luis Guaiquirian</span>
+              <span className="text-[16px] text-highlightColor">
+                Web Developer
+              </span>
             </div>
+            <ul className="mobile-menu">
+              <Link to="/">
+                <li
+                  className="flex gap-2   items-center  "
+                  onClick={() => setToggleMenu(false)}
+                >
+                  <FiHome />
+
+                  {t("header.navbar", { returnObjects: true })[0]}
+                </li>
+              </Link>
+              <Link to="/about">
+                <li
+                  className="flex gap-2   items-center  "
+                  onClick={() => setToggleMenu(false)}
+                >
+                  <FaRegUser />
+
+                  {t("header.navbar", { returnObjects: true })[1]}
+                </li>
+              </Link>
+              <Link to="/projects">
+                <li
+                  className="flex gap-2   items-center  "
+                  onClick={() => setToggleMenu(false)}
+                >
+                  <MdOutlineFolderCopy />
+
+                  {t("header.navbar", { returnObjects: true })[2]}
+                </li>
+              </Link>
+
+              <li className="tools flex flex-col items-start  ">
+                <button>
+                  <span
+                    className="text-sm flex gap-2 font-semibold "
+                    id="light"
+                  >
+                    <span className="text-xs"> Mode:</span> <FaMoon />
+                  </span>
+                </button>
+                {currentLanguage === "en" ? (
+                  <button
+                    className="font-semibold text-sm"
+                    onClick={() => {
+                      handleLanguage("sp");
+                      setCurrentLanguage("sp");
+                    }}
+                  >
+                    {" "}
+                    <span className="text-xs"> Language:</span> SPA
+                  </button>
+                ) : (
+                  <button
+                    className="font-semibold text-sm"
+                    onClick={() => {
+                      handleLanguage("en");
+                      setCurrentLanguage("en");
+                    }}
+                  >
+                    <span className="text-xs"> Language:</span> ENG
+                  </button>
+                )}
+              </li>
+            </ul>
           </motion.div>
         </div>
       </div>

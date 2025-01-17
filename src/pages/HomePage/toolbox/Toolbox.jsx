@@ -43,7 +43,7 @@ const Toolbox = () => {
   }
 
   return (
-    <div className="toolbox px-8 py-6 md:p-mid_pad mt-20 md:mt-0">
+    <div className="toolbox px-8 py-6 md:p-mid_pad mt-6 md:mt-0">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

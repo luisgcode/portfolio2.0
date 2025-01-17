@@ -160,32 +160,40 @@
   left: 0;
   top: 0;
   z-index: 9;
-}
-
-.mobile-navigation-menu {
-  width: 80%;
-  height: 100%;
-  background-color: #0a162c;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
 
 .user {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 80px 40px 50px 40px;
+  padding: 70px 50px 40px;
+  width: 100%;
 }
 
 .mobile-menu {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding: 50px 40px;
+
+  gap: 30px;
+  padding: 40px;
+}
+
+.tools {
+  display: flex;
+  gap: 20px;
 }
 
 .navbar-mobile .menu-btn {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   z-index: 21;
