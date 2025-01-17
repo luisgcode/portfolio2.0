@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { luisLogo } from "../media";
+import { luisLogo, heroImage } from "../media";
 import { AiFillSound } from "react-icons/ai";
 import "./navbar.css";
 import sound from "../../assets/audio/keyboard-audio.mp3";
@@ -8,9 +8,11 @@ import { Link } from "react-router-dom";
 import { FaRegMoon, FaMoon } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { RiCloseLine, RiMenu2Line } from "react-icons/ri";
-import { FiLinkedin } from "react-icons/fi";
-import { LuGithub } from "react-icons/lu";
-import { BsFileEarmarkPdf } from "react-icons/bs";
+import { AiOutlineQuestion } from "react-icons/ai";
+
+import { GrProjects } from "react-icons/gr";
+
+import { CiHome } from "react-icons/ci";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -145,83 +147,79 @@ const Navbar = () => {
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 120, damping: 20 }}
           >
-            <ul className="mobile-menu">
-              <Link to="/">
-                <li onClick={() => setToggleMenu(false)}>
-                  {t("header.navbar", { returnObjects: true })[0]}
-                </li>
-              </Link>
-              <Link to="/about">
-                <li onClick={() => setToggleMenu(false)}>
-                  {t("header.navbar", { returnObjects: true })[1]}
-                </li>
-              </Link>
-              <Link to="/projects">
-                <li onClick={() => setToggleMenu(false)}>
-                  {t("header.navbar", { returnObjects: true })[2]}
-                </li>
-              </Link>
-              <li onClick={() => setToggleMenu(false)}>
-                {t("header.navbar", { returnObjects: true })[3]}
-              </li>
-              <li className="flex gap-2">
-                <button>
-                  <span className="text-sm" id="light">
-                    <FaMoon />
-                  </span>
-                </button>
-                {currentLanguage === "en" ? (
-                  <button
-                    className="font-semibold text-sm"
-                    onClick={() => {
-                      handleLanguage("sp");
-                      setCurrentLanguage("sp");
-                    }}
+            <div className="mobile-navigation-menu">
+              <div className="user">
+                <img
+                  className="w-[90px] mb-4"
+                  src={heroImage}
+                  alt="Luis Guaiquirian"
+                />
+                <span className="font-semibold mb-1">Luis Guaiquirian</span>
+                <span className="text-sm">Web Developer</span>
+              </div>
+              <ul className="mobile-menu">
+                <Link to="/">
+                  <li
+                    className="flex gap-2"
+                    onClick={() => setToggleMenu(false)}
                   >
-                    SP
+                    <CiHome />
+
+                    {t("header.navbar", { returnObjects: true })[0]}
+                  </li>
+                </Link>
+                <Link to="/about">
+                  <li
+                    className="flex gap-2"
+                    onClick={() => setToggleMenu(false)}
+                  >
+                    <AiOutlineQuestion />
+
+                    {t("header.navbar", { returnObjects: true })[1]}
+                  </li>
+                </Link>
+                <Link to="/projects">
+                  <li
+                    className="flex gap-2"
+                    onClick={() => setToggleMenu(false)}
+                  >
+                    <GrProjects />
+                    {t("header.navbar", { returnObjects: true })[2]}
+                  </li>
+                </Link>
+                <li onClick={() => setToggleMenu(false)}>
+                  {t("header.navbar", { returnObjects: true })[3]}
+                </li>
+                {/* <li className="flex gap-2">
+                  <button>
+                    <span className="text-sm" id="light">
+                      <FaMoon />
+                    </span>
                   </button>
-                ) : (
-                  <button
-                    className="font-semibold text-sm"
-                    onClick={() => {
-                      handleLanguage("en");
-                      setCurrentLanguage("en");
-                    }}
-                  >
-                    EN
-                  </button>
-                )}
-              </li>
-              <ul className="flex gap-6">
-                <li>
-                  <a
-                    className="hero-icon text-xs"
-                    href="/Developer-Luis-Guaiquirian.pdf"
-                    download="Developer-Luis-Guaiquirian.pdf"
-                  >
-                    <BsFileEarmarkPdf /> Résumé
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="hero-icon text-xs"
-                    href="https://www.linkedin.com/in/luisgcode/"
-                    target="_blank"
-                  >
-                    <FiLinkedin /> Linkedin
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="hero-icon text-xs"
-                    href="https://github.com/luisgcode"
-                    target="_blank"
-                  >
-                    <LuGithub /> Github
-                  </a>
-                </li>
+                  {currentLanguage === "en" ? (
+                    <button
+                      className="font-semibold text-sm"
+                      onClick={() => {
+                        handleLanguage("sp");
+                        setCurrentLanguage("sp");
+                      }}
+                    >
+                      SP
+                    </button>
+                  ) : (
+                    <button
+                      className="font-semibold text-sm"
+                      onClick={() => {
+                        handleLanguage("en");
+                        setCurrentLanguage("en");
+                      }}
+                    >
+                      EN
+                    </button>
+                  )}
+                </li> */}
               </ul>
-            </ul>
+            </div>
           </motion.div>
         </div>
       </div>
