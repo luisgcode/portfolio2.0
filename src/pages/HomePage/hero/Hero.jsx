@@ -35,7 +35,7 @@ const Hero = () => {
         animate="show"
         className="hero-container my-6 flex justify-between      "
       >
-        <div className="intro   ">
+        <div className="intro">
           <h1>Luis Guaiquirian</h1>
           <h2 className="text-highlightColor">{t("header.heroTitle")}</h2>
           <p className="mt-1 mb-6 max-w-[35ch]">{t("header.heroClaim")}</p>

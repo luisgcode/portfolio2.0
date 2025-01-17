@@ -20,7 +20,7 @@ const Projects = () => {
     i18n.changeLanguage(lang);
   }
   return (
-    <div className="projects px-8 py-6 md:p-mid_pad">
+    <div className="projects px-8 py-12 md:p-mid_pad">
       <h3>
         {t("latest.title")}
         <span className="detail-bg"></span>

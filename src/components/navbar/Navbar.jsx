@@ -9,6 +9,7 @@ import { FaRegMoon, FaMoon } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { RiCloseLine, RiMenu2Line } from "react-icons/ri";
 import { AiOutlineQuestion } from "react-icons/ai";
+import { FiMenu } from "react-icons/fi";
 
 import { GrProjects } from "react-icons/gr";
 
@@ -40,7 +41,7 @@ const Navbar = () => {
   const [currentLanguage, setCurrentLanguage] = useState("en");
 
   return (
-    <div className="navbar">
+    <div className="navbar mb-10 md:mb-0">
       <div className="p-sma_pad navigation flex items-center justify-between md:p-mid_pad">
         <div className="navigation-logo cursor-pointer relative">
           <Link to="/">
@@ -133,7 +134,7 @@ const Navbar = () => {
               onClick={() => setToggleMenu(false)}
             />
           ) : (
-            <RiMenu2Line
+            <FiMenu
               className="menu-btn mr-3"
               color="#fff"
               size={35}
