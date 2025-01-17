@@ -89,7 +89,7 @@ const Hero = () => {
             </ul>
           </div>
         </div>
-        <div className=" hidden md:flex items-center  lg:mr-24  ">
+        <div className=" hidden md:flex items-center  lg:mr-28  ">
           <img className="w-[280px] " src={heroImage} alt="Luis Guaiquirian" />
         </div>
       </motion.div>

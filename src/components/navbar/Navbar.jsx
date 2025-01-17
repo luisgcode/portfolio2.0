@@ -65,7 +65,7 @@ const Navbar = () => {
           }}
           initial="hidden"
           animate="show"
-          className="navigation-items hidden md:flex gap-8 mr-[70px]"
+          className="navigation-items hidden md:flex gap-8 lg:mr-24"
         >
           <Link to="/">
             <li>
