@@ -55,6 +55,12 @@
   }
 }
 
+@media (max-width: 660px) {
+  .project-card {
+    padding: 20px 10px;
+  }
+}
+
 @media (min-width: 950px) {
   .posters {
     width: 350px;
