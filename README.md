@@ -1,6 +1,6 @@
 # Portfolio 2.0
 
-<!-- ## Design Idea -->
+Testing link: https://lgportfolio2.netlify.app/
 
 ## Description
 
