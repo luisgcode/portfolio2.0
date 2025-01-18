@@ -35,7 +35,7 @@ const Projects = () => {
         {/* 1 */}
         <div className="project-card">
           <a
-            href="https://www.luisgcode.com/"
+            href="https://github.com/luisgcode/portfolio2.0"
             target="_blank"
             className="project-title font-bold mb-4 flex"
           >
