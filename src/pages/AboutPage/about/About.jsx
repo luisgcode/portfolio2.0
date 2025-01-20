@@ -2,7 +2,6 @@ import React from "react";
 import "./about.css";
 import { FaCheckCircle } from "react-icons/fa";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import { FiLinkedin } from "react-icons/fi";
 import { LuGithub } from "react-icons/lu";
 import { BsFileEarmarkPdf } from "react-icons/bs";
 import { motion } from "framer-motion";
@@ -47,15 +46,6 @@ const About = () => {
                     download="Developer-Luis-Guaiquirian.pdf"
                   >
                     <BsFileEarmarkPdf /> Résumé
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="hero-icon"
-                    href="https://www.linkedin.com/in/luisgcode/"
-                    target="_blank"
-                  >
-                    <FiLinkedin /> Linkedin
                   </a>
                 </li>
                 <li>

@@ -1,5 +1,4 @@
 import React from "react";
-import { FiLinkedin } from "react-icons/fi";
 import { LuGithub } from "react-icons/lu";
 import { BsFileEarmarkPdf } from "react-icons/bs";
 
@@ -15,15 +14,6 @@ const Footer = () => {
               download="Developer-Luis-Guaiquirian.pdf"
             >
               <BsFileEarmarkPdf />
-            </a>
-          </li>
-          <li>
-            <a
-              className="flex gap-1 text-1xl hover:scale-110 transition-scale duration-100"
-              href="https://www.linkedin.com/in/luisgcode/"
-              target="_blank"
-            >
-              <FiLinkedin />
             </a>
           </li>
           <li>

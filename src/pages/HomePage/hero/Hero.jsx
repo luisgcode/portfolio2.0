@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./hero.css";
 import { heroImage } from "../../../components/media";
-import { FiLinkedin } from "react-icons/fi";
 import { LuGithub } from "react-icons/lu";
 import { BsFileEarmarkPdf } from "react-icons/bs";
 import { motion } from "framer-motion";
@@ -66,15 +65,6 @@ const Hero = () => {
                 >
                   <IoMailOutline />
                   Contact
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hero-icon text-sm"
-                  href="https://www.linkedin.com/in/luisgcode/"
-                  target="_blank"
-                >
-                  <FiLinkedin /> Linkedin
                 </a>
               </li>
               <li>
