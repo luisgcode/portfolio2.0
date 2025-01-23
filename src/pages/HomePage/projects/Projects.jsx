@@ -6,6 +6,7 @@ import {
   posterCanJet,
   posterPortfolio1,
   posterTermsIfanti,
+  posterQuickBooker,
 } from "../../../components/media";
 import "./projects.css";
 import { FiArrowUpRight } from "react-icons/fi";
@@ -35,11 +36,47 @@ const Projects = () => {
         {/* 1 */}
         <div className="project-card">
           <a
+            href="https://github.com/luisgcode/Quickbooker"
+            target="_blank"
+            className="project-title font-bold mb-4 flex items-center"
+          >
+            QuickBooker <FiArrowUpRight />
+            <span className="italic text-highlightColor font-normal text-sm">
+              In progress
+            </span>
+          </a>
+
+          <div>
+            <p>{t("projectQuickbooker.description")}</p>
+          </div>
+
+          <div className="py-4">
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="custom-project-tag">React JS</span>
+              <span className="custom-project-tag">Tailwind CSS</span>
+              <span className="custom-project-tag">JavaScript</span>
+              <span className="custom-project-tag">MySQL</span>
+              <span className="custom-project-tag">Node JS</span>
+              <span className="custom-project-tag">Figma</span>
+            </div>
+          </div>
+
+          <div className="posters">
+            <img
+              className="rounded-lg  "
+              src={posterQuickBooker}
+              alt="poster"
+            />
+          </div>
+        </div>
+        {/* 2 */}
+        <div className="project-card">
+          <a
             href="https://github.com/luisgcode/portfolio2.0"
             target="_blank"
             className="project-title font-bold mb-4 flex"
           >
-            luisgcode.com (v2) <FiArrowUpRight />
+            Portfolio (v2) <FiArrowUpRight />
           </a>
           <div>
             <p>{t("projectPortfolioV2.description")}</p>
@@ -60,7 +97,7 @@ const Projects = () => {
             <img className="rounded-lg" src={posterPortfolio2} alt="poster" />
           </div>
         </div>
-        {/* 2 */}
+        {/* 3  */}
         <div className="project-card">
           <a
             href="https://globaltechnologies.web.app/"
@@ -86,7 +123,7 @@ const Projects = () => {
             <img className="rounded-lg " src={posterGlobal} alt="poster" />
           </div>
         </div>
-        {/* 3  */}
+        {/* 4 */}
         <div className="project-card">
           <a
             href="https://github.com/luisgcode/pattern_library_canJet"
@@ -109,7 +146,7 @@ const Projects = () => {
             <img className="rounded-lg  " src={posterCanJet} alt="poster" />
           </div>
         </div>
-        {/* 4 */}{" "}
+        {/* 5  */}
         <div className="project-card">
           <a
             href="https://infanti.cl/pages/terminos-y-condiciones"
@@ -141,7 +178,7 @@ const Projects = () => {
             />
           </div>
         </div>
-        {/* 5  */}
+        {/* 6 */}
         <div className="project-card">
           <a
             href="https://github.com/luisgcode/portfolio2024"
@@ -166,8 +203,9 @@ const Projects = () => {
             <img className="rounded-lg  " src={posterPortfolio1} alt="poster" />
           </div>
         </div>
-        {/* 6 */}
-        <div className="project-card">
+
+        {/* hidden */}
+        {/* <div className="project-card">
           <a
             href="https://github.com/luisgcode/crowdMeterSystem"
             target="_blank"
@@ -191,7 +229,7 @@ const Projects = () => {
           <div className="posters">
             <img className="rounded-lg  " src={posterCrowdMeter} alt="poster" />
           </div>
-        </div>
+        </div> */}
         <Link to="/projects">
           <li>
             <a className="font-bold nav-link flex my-6">

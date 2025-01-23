@@ -40,6 +40,7 @@ import posterCrowdMeter from "../assets/images/posters/poster-crowdmeter.jpg";
 import posterGlobal from "../assets/images/posters/poster-global.jpg";
 import posterCanJet from "../assets/images/posters/poster-canjet.jpg";
 import posterTermsIfanti from "../assets/images/posters/poster-terms.jpg";
+import posterQuickBooker from "../assets/images/posters/poster-quickbooker.png";
 
 export {
   heroImage,
@@ -79,4 +80,5 @@ export {
   posterGlobal,
   posterCanJet,
   posterTermsIfanti,
+  posterQuickBooker,
 };

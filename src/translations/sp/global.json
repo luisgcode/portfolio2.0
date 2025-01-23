@@ -30,6 +30,9 @@
   "projectOccupancy": {
     "description": "Diseñado para mostrar los niveles de ocupación empresarial en tiempo real, con una interfaz limpia y responsiva, estilizada con Tailwind CSS. Este componente está listo para integrarse con API que proporcionen datos de afluencia."
   },
+  "projectQuickbooker": {
+    "description": "Sistema de Gestión de Eventos para Pequeñas Empresas es una plataforma web diseñada para ayudar a pequeñas empresas como restaurantes, parques o salones de eventos a gestionar y ofrecer reservas de eventos. Los clientes pueden explorar los lugares disponibles, verificar detalles y reservar espacios."
+  },
   "viewfFullProjects": {
     "text": "Ver lista completa de proyectos."
   },

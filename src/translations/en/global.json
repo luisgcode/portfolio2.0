@@ -30,6 +30,9 @@
   "projectOccupancy": {
     "description": "Designed to display real-time business occupancy levels, featuring a clean and responsive UI styled with Tailwind CSS. This component is ready to integrate with APIs that provide crowd data."
   },
+  "projectQuickbooker": {
+    "description": "Event Management System for Small Businesses is a web-based platform designed to help small businesses like restaurants, parks, or event halls manage and offer event bookings. Customers can browse available venues, check details, and reserve spaces."
+  },
   "viewfFullProjects": {
     "text": "View full list of projects"
   },
