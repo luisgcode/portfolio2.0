@@ -34,13 +34,13 @@ import luisLogo from "../assets/images/logos/logo.svg";
 import heroImage from "../assets/images/hero-alter1.png";
 
 // projects videos
-import posterPortfolio2 from "../assets/images/posters/poster-portfolio2.0.png";
-import posterPortfolio1 from "../assets/images/posters/poster-portfolio.jpg";
-import posterCrowdMeter from "../assets/images/posters/poster-crowdmeter.jpg";
-import posterGlobal from "../assets/images/posters/poster-global.jpg";
-import posterCanJet from "../assets/images/posters/poster-canjet.jpg";
-import posterTermsIfanti from "../assets/images/posters/poster-terms.jpg";
-import posterQuickBooker from "../assets/images/posters/poster-quickbooker.png";
+import posterPortfolio2 from "../assets/images/posters/poster-portfolio2.0.webp";
+import posterPortfolio1 from "../assets/images/posters/poster-portfolio.webp";
+import posterCrowdMeter from "../assets/images/posters/poster-crowdmeter.webp";
+import posterGlobal from "../assets/images/posters/poster-global.webp";
+import posterCanJet from "../assets/images/posters/poster-canjet.webp";
+import posterTermsIfanti from "../assets/images/posters/poster-terms.webp";
+import posterQuickBooker from "../assets/images/posters/poster-quickbooker.webp";
 
 export {
   heroImage,
