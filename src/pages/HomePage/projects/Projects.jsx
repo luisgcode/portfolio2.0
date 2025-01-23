@@ -91,6 +91,7 @@ const Projects = () => {
               <span className="custom-project-tag">SPA</span>
               <span className="custom-project-tag">Bilingual</span>
               <span className="custom-project-tag">Accessible</span>
+              <span className="custom-project-tag">GA4</span>
             </div>
           </div>
           <div className="posters">
