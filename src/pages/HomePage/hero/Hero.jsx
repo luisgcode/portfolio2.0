@@ -80,7 +80,11 @@ const Hero = () => {
           </div>
         </div>
         <div className=" hidden md:flex items-center  lg:mr-28  ">
-          <img className="w-[280px] " src={heroImage} alt="Luis Guaiquirian" />
+          <img
+            className="w-[280px] "
+            src={heroImage}
+            alt="Portrait of Luis Guaiquirian, Web Developer"
+          />
         </div>
       </motion.div>
     </div>

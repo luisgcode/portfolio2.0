@@ -47,12 +47,15 @@ const Navbar = () => {
                   onMouseOut={stop}
                   className="logo-image md:min-w-[65px]"
                   src={luisLogo}
-                  alt="My portfolio's logo"
+                  alt="Luis Guaiquirian Portofolio's Logo"
                 />
               </a>
             </li>
           </Link>
-          <AiFillSound className="sound-icon" />
+          <AiFillSound
+            aria-label="Sound button activates on logo"
+            className="sound-icon"
+          />
         </div>
         <motion.ul
           variants={{
@@ -97,6 +100,7 @@ const Navbar = () => {
                   handleLanguage("sp");
                   setCurrentLanguage("sp");
                 }}
+                aria-label="Switch to Spanish"
               >
                 SPA
               </button>
@@ -107,6 +111,7 @@ const Navbar = () => {
                   handleLanguage("en");
                   setCurrentLanguage("en");
                 }}
+                aria-label="Switch to English"
               >
                 ENG
               </button>
@@ -120,6 +125,7 @@ const Navbar = () => {
               color="#fff"
               size={35}
               onClick={() => setToggleMenu(false)}
+              aria-label="Close menu"
             />
           ) : (
             <FiMenu
@@ -127,6 +133,7 @@ const Navbar = () => {
               color="#fff"
               size={35}
               onClick={() => setToggleMenu(true)}
+              aria-label="Open menu"
             />
           )}
           <motion.div
@@ -140,7 +147,7 @@ const Navbar = () => {
               <img
                 className="w-[150px] mb-4"
                 src={heroImage}
-                alt="Luis Guaiquirian"
+                alt="Portrait of Luis Guaiquirian, Web Developer"
               />
               <span className="font-semibold mb-1">Luis Guaiquirian</span>
               <span className="text-[16px] text-highlightColor">

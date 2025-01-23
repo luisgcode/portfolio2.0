@@ -65,7 +65,7 @@ const Projects = () => {
             <img
               className="rounded-lg  "
               src={posterQuickBooker}
-              alt="poster"
+              alt="Quickbooker project's cover"
             />
           </div>
         </div>
@@ -94,7 +94,11 @@ const Projects = () => {
             </div>
           </div>
           <div className="posters">
-            <img className="rounded-lg" src={posterPortfolio2} alt="poster" />
+            <img
+              className="rounded-lg"
+              src={posterPortfolio2}
+              alt="Portfolio v2 cover"
+            />
           </div>
         </div>
         {/* 3  */}
@@ -143,7 +147,11 @@ const Projects = () => {
             </div>
           </div>
           <div className="posters">
-            <img className="rounded-lg  " src={posterCanJet} alt="poster" />
+            <img
+              className="rounded-lg  "
+              src={posterCanJet}
+              alt="Canjet project's cover"
+            />
           </div>
         </div>
         {/* 5  */}
@@ -174,7 +182,7 @@ const Projects = () => {
             <img
               className="rounded-lg  "
               src={posterTermsIfanti}
-              alt="poster"
+              alt="Infanti's terms and conditions cover"
             />
           </div>
         </div>
@@ -200,7 +208,11 @@ const Projects = () => {
             </div>
           </div>
           <div className="posters">
-            <img className="rounded-lg  " src={posterPortfolio1} alt="poster" />
+            <img
+              className="rounded-lg  "
+              src={posterPortfolio1}
+              alt="Portfolio v1 cover"
+            />
           </div>
         </div>
 
