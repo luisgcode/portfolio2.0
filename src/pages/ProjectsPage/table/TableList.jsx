@@ -178,7 +178,7 @@ const TableList = () => {
                 <span className="custom-project-tag">Responsive</span>
                 <span className="custom-project-tag">SPA</span>
                 <span className="custom-project-tag">Bilingual</span>
-                <span className="custom-project-tag">Accessible</span>
+                <span className="custom-project-tag">Hostinger</span>
                 <span className="custom-project-tag">GA4</span>
               </td>
               {/* link */}
@@ -334,6 +334,7 @@ const TableList = () => {
                 <span className="custom-project-tag">Responsive</span>
                 <span className="custom-project-tag">Bilingual</span>
                 <span className="custom-project-tag">Accessible</span>
+                <span className="custom-project-tag">Hostinger</span>
               </td>
               {/* link */}
               <td className="link hidden xxl:table-cell">

@@ -87,12 +87,12 @@ const Projects = () => {
             <div className="flex flex-wrap items-center gap-3">
               <span className="custom-project-tag">React JS</span>
               <span className="custom-project-tag">Tailwind CSS</span>
-              <span className="custom-project-tag">i18next</span>
               <span className="custom-project-tag">Framer Motion</span>
+              <span className="custom-project-tag">i18next</span>
               <span className="custom-project-tag">Responsive</span>
               <span className="custom-project-tag">SPA</span>
               <span className="custom-project-tag">Bilingual</span>
-              <span className="custom-project-tag">Accessible</span>
+              <span className="custom-project-tag">Hostinger</span>
               <span className="custom-project-tag">GA4</span>
             </div>
           </div>
@@ -208,6 +208,9 @@ const Projects = () => {
               <span className="custom-project-tag">Sass</span>
               <span className="custom-project-tag">JavaScript</span>
               <span className="custom-project-tag">CSS</span>
+              <span className="custom-project-tag">Bilingual</span>
+              <span className="custom-project-tag">Accessible</span>
+              <span className="custom-project-tag">Hostinger</span>
             </div>
           </div>
           <div className="posters">
