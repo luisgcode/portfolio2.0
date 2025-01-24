@@ -54,10 +54,12 @@ const Projects = () => {
             <div className="flex flex-wrap items-center gap-3">
               <span className="custom-project-tag">React JS</span>
               <span className="custom-project-tag">Tailwind CSS</span>
-              <span className="custom-project-tag">JavaScript</span>
-              <span className="custom-project-tag">MySQL</span>
-              <span className="custom-project-tag">Node JS</span>
-              <span className="custom-project-tag">Figma</span>
+              <span className="custom-project-tag">Responsive </span>
+              <span className="custom-project-tag">Jira </span>
+              <span className="custom-project-tag">Notion </span>
+              <span className="custom-project-tag">Figma </span>
+              <span className="custom-project-tag">Node JS </span>
+              <span className="custom-project-tag">MySQL </span>
             </div>
           </div>
 
