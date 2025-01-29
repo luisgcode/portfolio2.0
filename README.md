@@ -9,7 +9,7 @@ My portfolio v1 was built with the intention of testing my knowledge about the t
 Today, I found myself learning about Tailwind CSS and React JS, that’s why, this portfolio v2 is based on those technologies.
 I decided to prove how my skills have improved and use them in a big project, everything I have learned in the last 2 years.
 
-### Tech Stack (In Progress)
+### Tech Stack (Developing)
 
 - **Frontend**: React.js with Tailwind CSS
 - **Other Tools**: Git for version control

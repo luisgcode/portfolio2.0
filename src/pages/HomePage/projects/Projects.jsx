@@ -42,7 +42,7 @@ const Projects = () => {
           >
             QuickBooker <FiArrowUpRight />
             <span className="italic text-highlightColor font-normal text-sm">
-              In progress
+              Developing
             </span>
           </a>
 

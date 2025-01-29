@@ -21,6 +21,58 @@ const TableList = () => {
             </tr>
           </thead>
           <tbody>
+            {/* Sneddon Family Law & Mediation */}
+            <motion.tr
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.1,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+            >
+              {/* Year */}
+              <td>2025</td>
+              {/* Project */}
+              <td className="font-semibold">
+                <div className="hidden xxl:table-cell">
+                  Sneddon Family Law & Mediation - &nbsp;
+                  <span className="italic text-highlightColor font-normal">
+                    Developing
+                  </span>
+                </div>
+                <div className=" xxl:hidden ">
+                  <a href="#" className="flex gap-1">
+                    Sneddon Family Law & Mediation
+                    <span className="italic text-highlightColor font-normal">
+                      Developing
+                    </span>
+                  </a>
+                </div>
+              </td>
+              {/* Tags */}
+              <td className="tags-td hidden xl:flex  ">
+                <span className="custom-project-tag">Wordpress</span>
+                <span className="custom-project-tag">PHP</span>
+                <span className="custom-project-tag">Elementor </span>
+                <span className="custom-project-tag">Yoast SEO</span>
+              </td>
+              {/* link */}
+              <td className="link hidden xxl:table-cell">
+                <a
+                  href="#"
+                  className="flex gap-1 hover:scale-110 transition-all duration-200"
+                >
+                  WordPress Development
+                </a>
+              </td>
+            </motion.tr>
             {/* QuickBooker */}
             <motion.tr
               variants={{
@@ -44,7 +96,7 @@ const TableList = () => {
                 <div className="hidden xxl:table-cell">
                   QuickBooker - &nbsp;
                   <span className="italic text-highlightColor font-normal">
-                    In progress
+                    Developing
                   </span>
                 </div>
                 <div className=" xxl:hidden ">
@@ -55,7 +107,7 @@ const TableList = () => {
                   >
                     QuickBooker
                     <span className="italic text-highlightColor font-normal">
-                      In progress
+                      Developing
                     </span>
                     <FiArrowUpRight />
                   </a>
@@ -107,14 +159,14 @@ const TableList = () => {
                 <div className="hidden xxl:table-cell">
                   Neurovet.cl - &nbsp;
                   <span className="italic text-highlightColor font-normal">
-                    In progress
+                    Developing
                   </span>
                 </div>
                 <div className=" xxl:hidden ">
                   <a href="#" className="flex gap-1">
                     Neurovet.cl{" "}
                     <span className="italic text-highlightColor font-normal">
-                      In progress
+                      Developing
                     </span>
                   </a>
                 </div>
@@ -132,7 +184,7 @@ const TableList = () => {
                   href="#"
                   className="flex gap-1 hover:scale-110 transition-all duration-200"
                 >
-                  Wordpress
+                  WordPress Development
                 </a>
               </td>
             </motion.tr>
