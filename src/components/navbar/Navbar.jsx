@@ -134,6 +134,7 @@ const Navbar = () => {
               size={35}
               onClick={() => setToggleMenu(true)}
               aria-label="Open menu"
+              role="menubar"
             />
           )}
           <motion.div
