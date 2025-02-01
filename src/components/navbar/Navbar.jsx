@@ -36,21 +36,21 @@ const Navbar = () => {
   }
 
   return (
-    <div className="navbar mb-10 md:mb-0">
+    <nav
+      className="navbar mb-10 md:mb-0"
+      role="navigation"
+      aria-label="Main navigation"
+    >
       <div className="p-sma_pad navigation flex items-center justify-between md:p-mid_pad">
-        <div className="navigation-logo cursor-pointer relative">
-          <Link to="/">
-            <li>
-              <a>
-                <img
-                  onMouseEnter={play}
-                  onMouseOut={stop}
-                  className="logo-image md:min-w-[65px]"
-                  src={luisLogo}
-                  alt="Luis Guaiquirian Portofolio's Logo"
-                />
-              </a>
-            </li>
+        <div className="navigation-logo relative">
+          <Link to="/" aria-label="Home">
+            <img
+              onMouseEnter={play}
+              onMouseOut={stop}
+              className="logo-image md:min-w-[65px]"
+              src={luisLogo}
+              alt="Luis Guaiquirian Portfolio"
+            />
           </Link>
           <AiFillSound
             aria-label="Sound button activates on logo"
@@ -58,6 +58,8 @@ const Navbar = () => {
           />
         </div>
         <motion.ul
+          role="menubar"
+          aria-label="Main menu"
           variants={{
             hidden: { x: 80, opacity: 0 },
             show: {
@@ -135,23 +137,32 @@ const Navbar = () => {
               onClick={() => setToggleMenu(true)}
               aria-label="Open menu"
               role="menubar"
+              aria-controls="mobile-menu"
             />
           )}
           <motion.div
+            id="mobile-menu"
             className="mobile-box"
             initial={{ x: "100%" }}
             animate={{ x: toggleMenu ? 0 : "100%" }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 120, damping: 20 }}
+            role="dialog"
+            aria-label="Mobile menu"
           >
-            <div className="user">
+            <div className="user" role="banner">
               <img
                 className="w-[150px] mb-4"
                 src={heroImage}
-                alt="Portrait of Luis Guaiquirian, Web Developer"
+                alt="Luis Guaiquirian"
               />
-              <span className="font-semibold mb-1">Luis Guaiquirian</span>
-              <span className="text-[16px] text-highlightColor">
+              <span className="font-semibold mb-1" aria-label="Name">
+                Luis Guaiquirian
+              </span>
+              <span
+                className="text-[16px] text-highlightColor"
+                aria-label="Role"
+              >
                 Web Developer
               </span>
             </div>
@@ -215,7 +226,7 @@ const Navbar = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
