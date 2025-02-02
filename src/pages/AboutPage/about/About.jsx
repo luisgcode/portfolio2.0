@@ -118,24 +118,24 @@ const About = () => {
                 Relevant online courses taken / in progress
               </h5>
               <li className="flex justify-start gap-2 mb-2">
-                <AiOutlineLoading3Quarters />
+                <AiOutlineLoading3Quarters aria-hidden="true" />
                 Harvard University. CS50's Programming with Python.
               </li>{" "}
               <li className="flex justify-start gap-2 mb-2">
-                <AiOutlineLoading3Quarters />
+                <AiOutlineLoading3Quarters aria-hidden="true" />
                 Udeymy: LLM Engineering: Master AI, Large Language Models - Ed
                 D.
               </li>
               <li className="flex justify-start gap-2 mb-2">
-                <FaCheckCircle />
+                <FaCheckCircle aria-hidden="true" />
                 Udemy: 50 JS Projects in 50 Days - Brad T.
               </li>
               <li className="flex justify-start gap-2 mb-2">
-                <FaCheckCircle />
+                <FaCheckCircle aria-hidden="true" />
                 Udemy: Complete Web Development Bootcamp - Angela Y.
               </li>
               <li className="flex justify-start gap-2 mb-2">
-                <FaCheckCircle />
+                <FaCheckCircle aria-hidden="true" />
                 Udemy: Complete JavaScript Course 2025 - Jonas S .
               </li>
             </motion.div>
