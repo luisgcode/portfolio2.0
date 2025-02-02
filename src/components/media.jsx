@@ -31,7 +31,7 @@ import confluenceLogo from "../assets/images/logos/tech-confluence.svg";
 //  ^  My logo
 import luisLogo from "../assets/images/logos/logo.svg";
 //  ^  My hero image
-import heroImage from "../assets/images/hero-alter1.png";
+import heroImage from "../assets/images/hero-alter1.webp";
 
 // projects videos
 import posterPortfolio2 from "../assets/images/posters/poster-portfolio2.0.webp";
