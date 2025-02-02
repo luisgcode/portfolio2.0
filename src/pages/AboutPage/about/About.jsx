@@ -15,7 +15,7 @@ const About = () => {
   }
 
   return (
-    <div>
+    <section>
       <div className="about p-sma_pad md:p-mid_pad">
         <div className="box flex flex-col gap-20 lg:flex-row">
           <motion.div
@@ -44,6 +44,7 @@ const About = () => {
                     className="hero-icon"
                     href="/Developer-Luis-Guaiquirian.pdf"
                     download="Developer-Luis-Guaiquirian.pdf"
+                    aria-label="Download résumé of Luis Guaiquirian in PDF format"
                   >
                     <BsFileEarmarkPdf /> Résumé
                   </a>
@@ -53,6 +54,7 @@ const About = () => {
                     className="hero-icon"
                     href="https://github.com/luisgcode"
                     target="_blank"
+                    aria-label="Visit Luis Guaiquirian Github Profile"
                   >
                     <LuGithub /> Github
                   </a>
@@ -78,20 +80,23 @@ const About = () => {
               className="formal text-sm"
             >
               <h5 className="mb-3 text-highlightColor">Formal education</h5>
-              <li className="my-2">
-                Fanshawe College.
-                <span className="flex gap-2">
-                  <AiOutlineLoading3Quarters />
-                  Web Development and Internet Applications Diploma. (Apr 2025)
-                </span>
-              </li>
-              <li className="my-2">
-                University Institute of Industrial Management.
-                <span className="flex gap-2">
-                  <FaCheckCircle />
-                  Business Administration Associate's Degree.
-                </span>
-              </li>
+              <ul>
+                <li className="my-2">
+                  Fanshawe College.
+                  <span className="flex gap-2">
+                    <AiOutlineLoading3Quarters aria-hidden="true" />
+                    Web Development and Internet Applications Diploma. (Apr
+                    2025)
+                  </span>
+                </li>
+                <li className="my-2">
+                  University Institute of Industrial Management.
+                  <span className="flex gap-2">
+                    <FaCheckCircle aria-hidden="true" />
+                    Business Administration Associate's Degree.
+                  </span>
+                </li>
+              </ul>
             </motion.div>
             <motion.div
               variants={{
@@ -110,7 +115,7 @@ const About = () => {
               className="online text-sm "
             >
               <h5 className="mb-3 text-highlightColor">
-                Relevant online courses taken
+                Relevant online courses taken / in progress
               </h5>
               <li className="flex justify-start gap-2 mb-2">
                 <AiOutlineLoading3Quarters />
@@ -137,7 +142,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
