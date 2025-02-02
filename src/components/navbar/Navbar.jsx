@@ -73,21 +73,24 @@ const Navbar = () => {
           className="navigation-items hidden md:flex gap-8 lg:mr-24"
         >
           <Link to="/">
-            <li>
+            <li role="menuitem">
+              {/* Agregar role menuitem */}
               <a className={`nav-link ${animate ? "fade-in-out" : ""}`}>
                 {t("header.navbar", { returnObjects: true })[0]}
               </a>
             </li>
           </Link>
           <Link to="/about">
-            <li>
+            <li role="menuitem">
+              {/* Agregar role menuitem */}
               <a className={`nav-link ${animate ? "fade-in-out" : ""}`}>
                 {t("header.navbar", { returnObjects: true })[1]}
               </a>
             </li>
           </Link>
           <Link to="/projects">
-            <li>
+            <li role="menuitem">
+              {/* Agregar role menuitem */}
               <a className={`nav-link ${animate ? "fade-in-out" : ""}`}>
                 {t("header.navbar", { returnObjects: true })[2]}
               </a>
@@ -128,6 +131,7 @@ const Navbar = () => {
               size={35}
               onClick={() => setToggleMenu(false)}
               aria-label="Close menu"
+              aria-expanded={toggleMenu} // Agregado para mostrar si el menú está abierto
             />
           ) : (
             <FiMenu
@@ -136,10 +140,10 @@ const Navbar = () => {
               size={35}
               onClick={() => setToggleMenu(true)}
               aria-label="Open menu"
-              role="menubar"
-              aria-controls="mobile-menu"
+              aria-expanded={toggleMenu} // Agregado para mostrar si el menú está cerrado
             />
           )}
+
           <motion.div
             id="mobile-menu"
             className="mobile-box"
@@ -147,9 +151,11 @@ const Navbar = () => {
             animate={{ x: toggleMenu ? 0 : "100%" }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 120, damping: 20 }}
-            role="dialog"
+            role="dialog" // Añadido para indicar que es un diálogo/modal
             aria-label="Mobile menu"
+            aria-hidden={!toggleMenu} // Cambiar a "true" cuando el menú esté cerrado
           >
+            {/* Contenido del menú */}
             <div className="user" role="banner">
               <img
                 className="w-[150px] mb-4"
@@ -169,36 +175,36 @@ const Navbar = () => {
             <ul className="mobile-menu">
               <Link to="/">
                 <li
-                  className="flex gap-2   items-center  "
+                  className="flex gap-2 items-center"
                   onClick={() => setToggleMenu(false)}
+                  role="menuitem" // Añadir el role a cada ítem
                 >
                   <FiHome />
-
                   {t("header.navbar", { returnObjects: true })[0]}
                 </li>
               </Link>
               <Link to="/about">
                 <li
-                  className="flex gap-2   items-center  "
+                  className="flex gap-2 items-center"
                   onClick={() => setToggleMenu(false)}
+                  role="menuitem"
                 >
                   <FaRegUser />
-
                   {t("header.navbar", { returnObjects: true })[1]}
                 </li>
               </Link>
               <Link to="/projects">
                 <li
-                  className="flex gap-2   items-center  "
+                  className="flex gap-2 items-center"
                   onClick={() => setToggleMenu(false)}
+                  role="menuitem"
                 >
                   <MdOutlineFolderCopy />
-
                   {t("header.navbar", { returnObjects: true })[2]}
                 </li>
               </Link>
-
-              <li className="tools flex flex-col items-start  ">
+              {/* Language Switch */}
+              <li className="tools flex flex-col items-start">
                 {currentLanguage === "en" ? (
                   <button
                     className="font-semibold text-sm"
@@ -207,8 +213,7 @@ const Navbar = () => {
                       setCurrentLanguage("sp");
                     }}
                   >
-                    {" "}
-                    <span className="text-xs"> Language:</span> SPA
+                    <span className="text-xs">Language:</span> SPA
                   </button>
                 ) : (
                   <button
@@ -218,7 +223,7 @@ const Navbar = () => {
                       setCurrentLanguage("en");
                     }}
                   >
-                    <span className="text-xs"> Language:</span> ENG
+                    <span className="text-xs">Language:</span> ENG
                   </button>
                 )}
               </li>
