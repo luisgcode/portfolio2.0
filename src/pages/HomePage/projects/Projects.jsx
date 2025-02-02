@@ -21,12 +21,15 @@ const Projects = () => {
     i18n.changeLanguage(lang);
   }
   return (
-    <div className="projects px-8 py-12 md:p-mid_pad">
+    <div
+      className="projects px-8 py-12 md:p-mid_pad"
+      aria-label="Latest projects"
+    >
       <h3>
         {t("latest.title")}
         <span className="detail-bg"></span>
       </h3>
-      <motion.div
+      <motion.ul
         className="flex flex-wrap md:justify-center gap-y-10 gap-x-10 projects-container mt-12  lg:justify-between"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -34,11 +37,12 @@ const Projects = () => {
         transition={{ duration: 0.5 }}
       >
         {/* 1 */}
-        <div className="project-card">
+        <li className="project-card">
           <a
             href="https://github.com/luisgcode/Quickbooker"
             target="_blank"
             className="project-title font-bold mb-4 flex items-center"
+            aria-label="Visit project's Gtihub repository"
           >
             QuickBooker <FiArrowUpRight />
             <span className="italic text-highlightColor font-normal text-sm">
@@ -51,16 +55,16 @@ const Projects = () => {
           </div>
 
           <div className="py-4">
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="custom-project-tag">React JS</span>
-              <span className="custom-project-tag">Tailwind CSS</span>
-              <span className="custom-project-tag">Responsive </span>
-              <span className="custom-project-tag">Jira </span>
-              <span className="custom-project-tag">Notion </span>
-              <span className="custom-project-tag">Figma </span>
-              <span className="custom-project-tag">Node JS </span>
-              <span className="custom-project-tag">MySQL </span>
-            </div>
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">React JS</li>
+              <li className="custom-project-tag">Tailwind CSS</li>
+              <li className="custom-project-tag">Responsive </li>
+              <li className="custom-project-tag">Jira </li>
+              <li className="custom-project-tag">Notion </li>
+              <li className="custom-project-tag">Figma </li>
+              <li className="custom-project-tag">Node JS </li>
+              <li className="custom-project-tag">MySQL </li>
+            </ul>
           </div>
 
           <div className="posters">
@@ -70,13 +74,14 @@ const Projects = () => {
               alt="Quickbooker project's cover"
             />
           </div>
-        </div>
+        </li>
         {/* 2 */}
-        <div className="project-card">
+        <li className="project-card">
           <a
             href="https://github.com/luisgcode/portfolio2.0"
             target="_blank"
             className="project-title font-bold mb-4 flex"
+            aria-label="Visit project's Github repository"
           >
             Portfolio (v2) <FiArrowUpRight />
           </a>
@@ -84,17 +89,17 @@ const Projects = () => {
             <p>{t("projectPortfolioV2.description")}</p>
           </div>
           <div className="py-4">
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="custom-project-tag">React JS</span>
-              <span className="custom-project-tag">Tailwind CSS</span>
-              <span className="custom-project-tag">Framer Motion</span>
-              <span className="custom-project-tag">i18next</span>
-              <span className="custom-project-tag">Responsive</span>
-              <span className="custom-project-tag">SPA</span>
-              <span className="custom-project-tag">Bilingual</span>
-              <span className="custom-project-tag">Hostinger</span>
-              <span className="custom-project-tag">GA4</span>
-            </div>
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">React JS</li>
+              <li className="custom-project-tag">Tailwind CSS</li>
+              <li className="custom-project-tag">Framer Motion</li>
+              <li className="custom-project-tag">i18next</li>
+              <li className="custom-project-tag">Responsive</li>
+              <li className="custom-project-tag">SPA</li>
+              <li className="custom-project-tag">Bilingual</li>
+              <li className="custom-project-tag">Hostinger</li>
+              <li className="custom-project-tag">GA4</li>
+            </ul>
           </div>
           <div className="posters">
             <img
@@ -103,13 +108,14 @@ const Projects = () => {
               alt="Portfolio v2 cover"
             />
           </div>
-        </div>
+        </li>
         {/* 3  */}
-        <div className="project-card">
+        <li className="project-card">
           <a
             href="https://globaltechnologies.web.app/"
             target="_blank"
             className="project-title font-bold mb-4 flex"
+            aria-label="Visit project's web"
           >
             Global Tech <FiArrowUpRight />
           </a>
@@ -119,23 +125,24 @@ const Projects = () => {
           </div>
 
           <div className="py-4">
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="custom-project-tag">TypeScript</span>
-              <span className="custom-project-tag">JavaScript</span>
-              <span className="custom-project-tag">Responsive</span>
-            </div>
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">TypeScript</li>
+              <li className="custom-project-tag">JavaScript</li>
+              <li className="custom-project-tag">Responsive</li>
+            </ul>
           </div>
 
           <div className="posters">
             <img className="rounded-lg " src={posterGlobal} alt="poster" />
           </div>
-        </div>
+        </li>
         {/* 4 */}
-        <div className="project-card">
+        <li className="project-card">
           <a
             href="https://github.com/luisgcode/pattern_library_canJet"
             target="_blank"
             className="project-title font-bold mb-4 flex"
+            aria-label="Visit project's github repository"
           >
             Pattern Library & Dasboard <FiArrowUpRight />
           </a>
@@ -143,11 +150,11 @@ const Projects = () => {
             <p>{t("projectCanjet.description")}</p>
           </div>
           <div className="py-4">
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="custom-project-tag">D3.js</span>
-              <span className="custom-project-tag">JavaScript</span>
-              <span className="custom-project-tag">CSS</span>
-            </div>
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">D3.js</li>
+              <li className="custom-project-tag">JavaScript</li>
+              <li className="custom-project-tag">CSS</li>
+            </ul>
           </div>
           <div className="posters">
             <img
@@ -156,13 +163,14 @@ const Projects = () => {
               alt="Canjet project's cover"
             />
           </div>
-        </div>
+        </li>
         {/* 5  */}
-        <div className="project-card">
+        <li className="project-card">
           <a
             href="https://infanti.cl/pages/terminos-y-condiciones"
             target="_blank"
             className="project-title font-bold mb-4 flex"
+            aria-label="Visit project's web"
           >
             Terms & Conditions Infanti <FiArrowUpRight />
           </a>
@@ -174,11 +182,11 @@ const Projects = () => {
           </div>
 
           <div className="py-4">
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="custom-project-tag">CSS</span>
-              <span className="custom-project-tag">Responsive</span>
-              <span className="custom-project-tag">JavaScript</span>
-            </div>
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">CSS</li>
+              <li className="custom-project-tag">Responsive</li>
+              <li className="custom-project-tag">JavaScript</li>
+            </ul>
           </div>
 
           <div className="posters">
@@ -188,13 +196,14 @@ const Projects = () => {
               alt="Infanti's terms and conditions cover"
             />
           </div>
-        </div>
+        </li>
         {/* 6 */}
-        <div className="project-card">
+        <li className="project-card">
           <a
             href="https://github.com/luisgcode/portfolio2024"
             target="_blank"
             className="project-title font-bold mb-4 flex"
+            aria-label="See project on Github"
           >
             Portfolio (v1) <FiArrowUpRight />
           </a>
@@ -204,14 +213,14 @@ const Projects = () => {
             </p>
           </div>
           <div className="py-4">
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="custom-project-tag">Sass</span>
-              <span className="custom-project-tag">JavaScript</span>
-              <span className="custom-project-tag">CSS</span>
-              <span className="custom-project-tag">Bilingual</span>
-              <span className="custom-project-tag">Accessible</span>
-              <span className="custom-project-tag">Hostinger</span>
-            </div>
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">Sass</li>
+              <li className="custom-project-tag">JavaScript</li>
+              <li className="custom-project-tag">CSS</li>
+              <li className="custom-project-tag">Bilingual</li>
+              <li className="custom-project-tag">Accessible</li>
+              <li className="custom-project-tag">Hostinger</li>
+            </ul>
           </div>
           <div className="posters">
             <img
@@ -220,7 +229,7 @@ const Projects = () => {
               alt="Portfolio v1 cover"
             />
           </div>
-        </div>
+        </li>
 
         {/* hidden */}
         {/* <div className="project-card">
@@ -237,11 +246,11 @@ const Projects = () => {
           </div>
 
           <div className="py-4">
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="custom-project-tag">React JS</span>
-              <span className="custom-project-tag">Tailwind CSS</span>
-              <span className="custom-project-tag">JavaScript</span>
-            </div>
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">React JS</li>
+              <li className="custom-project-tag">Tailwind CSS</li>
+              <li className="custom-project-tag">JavaScript</li>
+            </ul>
           </div>
 
           <div className="posters">
@@ -250,12 +259,15 @@ const Projects = () => {
         </div> */}
         <Link to="/projects">
           <li>
-            <a className="font-bold nav-link flex my-6">
+            <a
+              className="font-bold nav-link flex my-6"
+              aria-label="See the full projects page"
+            >
               <p>{t("viewfFullProjects.text")}</p> <FiArrowUpRight />
             </a>
           </li>
         </Link>
-      </motion.div>
+      </motion.ul>
     </div>
   );
 };

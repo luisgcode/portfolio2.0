@@ -10,8 +10,11 @@ const Behind = () => {
     i18n.changeLanguage(lang);
   }
   return (
-    <div className="behind text-center mt-12 overflow-y-hidden hidden md:flex px-8">
-      <motion.div
+    <section
+      aria-label="statistics"
+      className="behind text-center mt-12 overflow-y-hidden hidden md:flex px-8"
+    >
+      <motion.ul
         variants={{
           hidden: { y: 80 },
           show: {
@@ -26,29 +29,30 @@ const Behind = () => {
         initial="hidden"
         animate="show"
         className="w-full flex justify-center items-center my-6 gap-10 text-white"
+        aria-label="key statistics"
       >
-        <div className="custom-bullets ">
+        <li className="custom-bullets " role="status">
           2
           <span className="text-base font-normal">
             {t("behindSection.years")}
           </span>
-        </div>
+        </li>
         |
-        <div className="custom-bullets">
+        <li className="custom-bullets" role="status">
           10+
           <span className="text-base font-normal">
             {t("behindSection.skills")}
           </span>
-        </div>
+        </li>
         |
-        <div className="custom-bullets">
-          12000+{" "}
+        <li className="custom-bullets" role="status">
+          12000+
           <span className="text-base font-normal  ">
             {t("behindSection.hours")}
           </span>
-        </div>
-      </motion.div>
-    </div>
+        </li>
+      </motion.ul>
+    </section>
   );
 };
 
