@@ -72,6 +72,7 @@ const Projects = () => {
               className="rounded-lg  "
               src={posterQuickBooker}
               alt="Quickbooker project's cover"
+              loading="lazy"
             />
           </div>
         </li>
@@ -106,6 +107,7 @@ const Projects = () => {
               className="rounded-lg"
               src={posterPortfolio2}
               alt="Portfolio v2 cover"
+              loading="lazy"
             />
           </div>
         </li>
@@ -133,7 +135,12 @@ const Projects = () => {
           </div>
 
           <div className="posters">
-            <img className="rounded-lg " src={posterGlobal} alt="poster" />
+            <img
+              className="rounded-lg "
+              src={posterGlobal}
+              alt="poster"
+              loading="lazy"
+            />
           </div>
         </li>
         {/* 4 */}
@@ -161,6 +168,7 @@ const Projects = () => {
               className="rounded-lg  "
               src={posterCanJet}
               alt="Canjet project's cover"
+              loading="lazy"
             />
           </div>
         </li>
@@ -194,6 +202,7 @@ const Projects = () => {
               className="rounded-lg  "
               src={posterTermsIfanti}
               alt="Infanti's terms and conditions cover"
+              loading="lazy"
             />
           </div>
         </li>
@@ -227,6 +236,7 @@ const Projects = () => {
               className="rounded-lg  "
               src={posterPortfolio1}
               alt="Portfolio v1 cover"
+              loading="lazy"
             />
           </div>
         </li>

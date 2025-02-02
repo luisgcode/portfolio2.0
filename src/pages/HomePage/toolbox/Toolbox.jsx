@@ -72,22 +72,22 @@ const Toolbox = () => {
             <div className="tools-wrapper">
               {/* React */}
               <div className="tool-box">
-                <img src={reactLogo} alt="logo React " />
+                <img src={reactLogo} alt="logo React " loading="lazy" />
                 <small>React JS</small>
               </div>
               {/* JS */}
               <div className="tool-box">
-                <img src={jsLogo} alt="logo javascript " />
+                <img src={jsLogo} alt="logo javascript " loading="lazy" />
                 <small>JavaScript</small>
               </div>
               {/* Tailwind */}
               <div className="tool-box">
-                <img src={tailWindLogo} alt="logo javascript " />
+                <img src={tailWindLogo} alt="logo javascript " loading="lazy" />
                 <small>Tailwind CSS</small>
               </div>
               {/* Sass */}
               <div className="tool-box">
-                <img src={sassLogo} alt="logo javascript " />
+                <img src={sassLogo} alt="logo javascript " loading="lazy" />
                 <small>Sass</small>
               </div>
             </div>
@@ -99,22 +99,22 @@ const Toolbox = () => {
             <div className="tools-wrapper">
               {/* Python */}
               <div className="tool-box">
-                <img src={pythonLogo} alt="logo Python " />
+                <img src={pythonLogo} alt="logo Python " loading="lazy" />
                 <small>Python</small>
               </div>
               {/* php */}
               <div className="tool-box">
-                <img src={phpLogo} alt="logo PHP " />
+                <img src={phpLogo} alt="logo PHP " loading="lazy" />
                 <small>PHP</small>
               </div>
               {/* firebase */}
               <div className="tool-box">
-                <img src={firebaseLogo} alt="logo firebase " />
+                <img src={firebaseLogo} alt="logo firebase " loading="lazy" />
                 <small>Firebase</small>
               </div>
               {/* Mysql */}
               <div className="tool-box">
-                <img src={mySqlLogo} alt="logo MySQL " />
+                <img src={mySqlLogo} alt="logo MySQL " loading="lazy" />
                 <small>MySQL</small>
               </div>
             </div>
@@ -130,42 +130,46 @@ const Toolbox = () => {
             <div className="tools-wrapper">
               {/* Github */}
               <div className="tool-box">
-                <img src={gitHubLogo} alt="logo GitHub " />
+                <img src={gitHubLogo} alt="logo GitHub " loading="lazy" />
                 <small>GitHub</small>
               </div>
               {/* Git */}
               <div className="tool-box">
-                <img src={gitLogo} alt="logo Git " />
+                <img src={gitLogo} alt="logo Git " loading="lazy" />
                 <small>Git</small>
               </div>
               {/* vs code */}
               <div className="tool-box">
-                <img src={vsCodeLogo} alt="logo VS Code " />
+                <img src={vsCodeLogo} alt="logo VS Code " loading="lazy" />
                 <small>VS Code</small>
               </div>
               {/* Figma */}
               <div className="tool-box">
-                <img src={figmaLogo} alt="logo Figma " />
+                <img src={figmaLogo} alt="logo Figma " loading="lazy" />
                 <small>Figma</small>
               </div>
               {/* Notion */}
               <div className="tool-box">
-                <img src={notionLogo} alt="logo Notion " />
+                <img src={notionLogo} alt="logo Notion " loading="lazy" />
                 <small>Notion</small>
               </div>
               {/* Confluence */}
               <div className="tool-box">
-                <img src={confluenceLogo} alt="logo Confluence " />
+                <img
+                  src={confluenceLogo}
+                  alt="logo Confluence "
+                  loading="lazy"
+                />
                 <small>Confluence</small>
               </div>
               {/* Jira */}
               <div className="tool-box">
-                <img src={jiraLogo} alt="logo Jira " />
+                <img src={jiraLogo} alt="logo Jira " loading="lazy" />
                 <small>Jira</small>
               </div>
               {/* Slack */}
               <div className="tool-box">
-                <img src={slackLogo} alt="logo Slack " />
+                <img src={slackLogo} alt="logo Slack " loading="lazy" />
                 <small>Slack</small>
               </div>
             </div>
@@ -178,17 +182,17 @@ const Toolbox = () => {
             <div className="tools-wrapper">
               {/* Power BI */}
               <div className="tool-box">
-                <img src={powerBiLogo} alt="logo Power BI" />
+                <img src={powerBiLogo} alt="logo Power BI" loading="lazy" />
                 <small>Power BI</small>
               </div>
               {/* GA4 */}
               <div className="tool-box">
-                <img src={ga4Logo} alt="logo GA4 " />
+                <img src={ga4Logo} alt="logo GA4 " loading="lazy" />
                 <small>GA4</small>
               </div>
               {/* Hotjar */}
               <div className="tool-box">
-                <img src={hotjarLogo} alt="logo Hotjar " />
+                <img src={hotjarLogo} alt="logo Hotjar " loading="lazy" />
                 <small>Hotjar</small>
               </div>
             </div>
@@ -204,17 +208,21 @@ const Toolbox = () => {
             <div className="tools-wrapper">
               {/* Magento */}
               <div className="tool-box">
-                <img src={magentoLogo} alt="logo Magento " />
+                <img src={magentoLogo} alt="logo Magento " loading="lazy" />
                 <small>Magento</small>
               </div>
               {/* wordpress */}
               <div className="tool-box">
-                <img src={wordpressLogo} alt="logo Wordpress " />
+                <img src={wordpressLogo} alt="logo Wordpress " loading="lazy" />
                 <small>Wordpress</small>
               </div>
               {/* Prestashop */}
               <div className="tool-box">
-                <img src={prestashopLogo} alt="logo Prestashop " />
+                <img
+                  src={prestashopLogo}
+                  alt="logo Prestashop "
+                  loading="lazy"
+                />
                 <small>Prestashop</small>
               </div>
             </div>
