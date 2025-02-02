@@ -43,7 +43,10 @@ const Toolbox = () => {
   }
 
   return (
-    <div className="toolbox px-8 py-6 md:p-mid_pad mt-6 md:mt-0">
+    <section
+      className="toolbox px-8 py-6 md:p-mid_pad mt-6 md:mt-0"
+      aria-label="Tools and technologies"
+    >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -57,8 +60,11 @@ const Toolbox = () => {
           </h3>
           <p>{t("toolBox.description")}</p>
         </div>
-        <div className="toolbox-wrapp flex flex-col gap-3 md:gap-0 ">
-          <div className="tools-row  ">
+        <div
+          className="toolbox-wrapp flex flex-col gap-3 md:gap-0 "
+          role="region"
+        >
+          <section className="tools-row  " aria-label="Frontend Tools">
             <h5 className="custom-tools-row-title">
               <MdMonitor />
               Front-end
@@ -85,8 +91,8 @@ const Toolbox = () => {
                 <small>Sass</small>
               </div>
             </div>
-          </div>
-          <div className="tools-row  ">
+          </section>
+          <section className="tools-row  " aria-label="Backend Tools">
             <h5 className="custom-tools-row-title">
               <FaServer /> Back-end
             </h5>
@@ -112,8 +118,11 @@ const Toolbox = () => {
                 <small>MySQL</small>
               </div>
             </div>
-          </div>
-          <div className="tools-row">
+          </section>
+          <section
+            className="tools-row"
+            aria-label="Development & collaboration Tools"
+          >
             <h5 className="custom-tools-row-title">
               <FaTools />
               Development & Collaboration
@@ -160,8 +169,8 @@ const Toolbox = () => {
                 <small>Slack</small>
               </div>
             </div>
-          </div>
-          <div className="tools-row">
+          </section>
+          <section className="tools-row" aria-label="Analytics Tools">
             <h5 className="custom-tools-row-title">
               <MdOutlineAnalytics />
               Analytics
@@ -183,8 +192,11 @@ const Toolbox = () => {
                 <small>Hotjar</small>
               </div>
             </div>
-          </div>
-          <div className="tools-row">
+          </section>
+          <section
+            className="tools-row"
+            aria-label="Content Management systems Tools"
+          >
             <h5 className="custom-tools-row-title">
               <IoSettingsOutline />
               CMS
@@ -206,10 +218,10 @@ const Toolbox = () => {
                 <small>Prestashop</small>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 
