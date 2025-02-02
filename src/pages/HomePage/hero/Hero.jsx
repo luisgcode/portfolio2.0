@@ -39,14 +39,17 @@ const Hero = () => {
           <h1>Luis Guaiquirian</h1>
           <h2 className="text-highlightColor">{t("header.heroTitle")}</h2>
           <p className="mt-1 mb-6 max-w-[35ch]">{t("header.heroClaim")}</p>
-          <div className="flex flex-wrap items-center gap-y-3 gap-x-3 max-w-96">
-            <span className="custom-hero-tag text-[16px]">React JS</span>
-            <span className="custom-hero-tag text-[16px]">Tailwind CSS</span>
-            <span className="custom-hero-tag text-[16px] ">JavaScript</span>
-            <span className="custom-hero-tag text-xs">Wordpress</span>
-            <span className="custom-hero-tag text-xs">Next JS</span>
+          <ul
+            className="flex flex-wrap items-center gap-y-3 gap-x-3 max-w-96"
+            aria-label="Technogologies"
+          >
+            <li className="custom-hero-tag text-[16px]">React JS</li>
+            <li className="custom-hero-tag text-[16px]">Tailwind CSS</li>
+            <li className="custom-hero-tag text-[16px] ">JavaScript</li>
+            <li className="custom-hero-tag text-xs">Wordpress</li>
+            <li className="custom-hero-tag text-xs">Next JS</li>
             <span className="custom-hero-tag text-xs">Python</span>
-          </div>
+          </ul>
           <div className="mt-6">
             <ul className="flex gap-6">
               <li>
@@ -54,6 +57,7 @@ const Hero = () => {
                   className="hero-icon text-sm"
                   href="/Developer-Luis-Guaiquirian.pdf"
                   download="Developer-Luis-Guaiquirian.pdf"
+                  aria-label="Download my resume"
                 >
                   <BsFileEarmarkPdf /> Résumé
                 </a>
@@ -62,6 +66,7 @@ const Hero = () => {
                 <a
                   className="hero-icon text-sm"
                   href="mailto:contact@luisgcode.com"
+                  aria-label="Get my email"
                 >
                   <IoMailOutline />
                   Contact
@@ -72,6 +77,7 @@ const Hero = () => {
                   className="hero-icon text-sm"
                   href="https://github.com/luisgcode"
                   target="_blank"
+                  aria-label="Visit my Github profile"
                 >
                   <LuGithub /> Github
                 </a>
@@ -83,7 +89,7 @@ const Hero = () => {
           <img
             className="w-[280px] "
             src={heroImage}
-            alt="Portrait of Luis Guaiquirian, Web Developer"
+            alt="Portrait of Luis Guaiquirian, Web Developer especializado en React y JavaScript"
           />
         </div>
       </motion.div>
