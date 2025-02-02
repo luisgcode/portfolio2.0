@@ -14,14 +14,22 @@ const TableList = () => {
           {/* Table heading */}
           <thead className="text-left">
             <tr>
-              <th className=" ">Year</th>
-              <th className=" ">Projects</th>
-              <th className="hidden xl:table-cell   ">Tech Stack</th>
-              <th className="hidden  xxl:table-cell">Link</th>
+              <th scope="col" className=" ">
+                Year
+              </th>
+              <th scope="col" className=" ">
+                Projects
+              </th>
+              <th scope="col" className="hidden xl:table-cell   ">
+                Tech Stack
+              </th>
+              <th scope="col" className="hidden  xxl:table-cell">
+                Link
+              </th>
             </tr>
           </thead>
           <tbody>
-            {/* Sneddon Family Law & Mediation */}
+            {/* Neurovet */}
             <motion.tr
               variants={{
                 hidden: { x: 80, opacity: 0 },
@@ -42,14 +50,14 @@ const TableList = () => {
               {/* Project */}
               <td className="font-semibold">
                 <div className="hidden xxl:table-cell">
-                  Sneddon Family Law & Mediation - &nbsp;
+                  Neurovet.cl - &nbsp;
                   <span className="italic text-highlightColor font-normal">
                     Developing
                   </span>
                 </div>
                 <div className=" xxl:hidden ">
                   <a href="#" className="flex gap-1">
-                    Sneddon Family Law & Mediation
+                    Neurovet.cl{" "}
                     <span className="italic text-highlightColor font-normal">
                       Developing
                     </span>
@@ -104,6 +112,7 @@ const TableList = () => {
                     href="https://github.com/luisgcode/Quickbooker"
                     target="_blank"
                     className="flex gap-1"
+                    aria-label="Visit QuickBooker Github repository"
                   >
                     QuickBooker
                     <span className="italic text-highlightColor font-normal">
@@ -130,61 +139,10 @@ const TableList = () => {
                   href="https://github.com/luisgcode/Quickbooker"
                   target="_blank"
                   className="flex gap-1 hover:scale-110 transition-all duration-200"
+                  aria-label="Visit QuickBooker Github repository"
                 >
                   GitHub
                   <FaGithub />
-                </a>
-              </td>
-            </motion.tr>
-            {/* Neurovet */}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 0.1,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>2025</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">
-                  Neurovet.cl - &nbsp;
-                  <span className="italic text-highlightColor font-normal">
-                    Developing
-                  </span>
-                </div>
-                <div className=" xxl:hidden ">
-                  <a href="#" className="flex gap-1">
-                    Neurovet.cl{" "}
-                    <span className="italic text-highlightColor font-normal">
-                      Developing
-                    </span>
-                  </a>
-                </div>
-              </td>
-              {/* Tags */}
-              <td className="tags-td hidden xl:flex  ">
-                <span className="custom-project-tag">Wordpress</span>
-                <span className="custom-project-tag">PHP</span>
-                <span className="custom-project-tag">Elementor </span>
-                <span className="custom-project-tag">Yoast SEO</span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell">
-                <a
-                  href="#"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                >
-                  WordPress Development
                 </a>
               </td>
             </motion.tr>
@@ -214,6 +172,7 @@ const TableList = () => {
                     href="https://www.luisgcode.com/"
                     target="_blank"
                     className="flex gap-1"
+                    aria-label="Visit my porfolio v2 github repository"
                   >
                     Portfolio (v2) <FiArrowUpRight />
                   </a>
@@ -239,6 +198,7 @@ const TableList = () => {
                   href="https://www.luisgcode.com/"
                   target="_blank"
                   className="flex gap-1 hover:scale-110 transition-all duration-200"
+                  aria-label="Visit my porfolio v2 github repository"
                 >
                   luisgcode.com <FiArrowUpRight />
                 </a>
@@ -272,6 +232,7 @@ const TableList = () => {
                     href="https://globaltechnologies.web.app/"
                     target="_blank"
                     className="flex gap-1"
+                    aria-label="Visit Global Technologies website"
                   >
                     globaltechnologies.web.app <FiArrowUpRight />
                   </a>
@@ -289,6 +250,7 @@ const TableList = () => {
                   href="https://globaltechnologies.web.app/"
                   target="_blank"
                   className="flex gap-1 hover:scale-110 transition-all duration-200"
+                  aria-label="Visit Global Technologies website"
                 >
                   globaltechnologies.web.app <FiArrowUpRight />
                 </a>
@@ -322,6 +284,7 @@ const TableList = () => {
                     href="https://github.com/luisgcode/pattern_library_canJet"
                     target="_blank"
                     className="flex gap-1 "
+                    aria-label="Visit Can jet Pattern Library & Dashboard Github repository"
                   >
                     Can Jet Pattern Library & Dashboard
                     <FiArrowUpRight />
@@ -341,6 +304,7 @@ const TableList = () => {
                   href="https://github.com/luisgcode/pattern_library_canJet"
                   target="_blank"
                   className="flex gap-1 hover:scale-110 transition-all duration-200"
+                  aria-label="Visit Can jet Pattern Library & Dashboard Github repository"
                 >
                   GitHub
                   <FaGithub />
@@ -373,6 +337,7 @@ const TableList = () => {
                     href="https://github.com/luisgcode/portfolio2024"
                     target="_blank"
                     className="flex gap-1"
+                    aria-label="Visit my portfolio v1 Github repository"
                   >
                     Portfolio (v1)
                     <FiArrowUpRight />
@@ -394,6 +359,7 @@ const TableList = () => {
                   href="https://github.com/luisgcode/portfolio2024"
                   target="_blank"
                   className="flex gap-1 hover:scale-110 transition-all duration-200"
+                  aria-label="Visit my portfolio v1 Github repository"
                 >
                   GitHub
                   <FaGithub />
@@ -428,6 +394,7 @@ const TableList = () => {
                     href="https://www.rbcplacelondon.com/"
                     target="_blank"
                     className="flex gap-1"
+                    aria-label="Visit RBC Place London Github repository"
                   >
                     rbcplacelondon.com
                     <FiArrowUpRight />
@@ -448,6 +415,7 @@ const TableList = () => {
                   href="https://www.rbcplacelondon.com/"
                   target="_blank"
                   className="flex gap-1 hover:scale-110 transition-all duration-200"
+                  aria-label="Visit RBC Place London Github repository"
                 >
                   rbcplacelondon.com
                   <FiArrowUpRight />
@@ -480,6 +448,7 @@ const TableList = () => {
                     href="https://infanti.cl/pages/nuestras-tiendas-infanti"
                     target="_blank"
                     className="flex gap-1 "
+                    aria-label="Visit Infant's stores page"
                   >
                     Infati stores page <FiArrowUpRight />
                   </a>
@@ -498,6 +467,7 @@ const TableList = () => {
                   href="https://infanti.cl/pages/nuestras-tiendas-infanti"
                   target="_blank"
                   className="flex gap-1 hover:scale-110 transition-all duration-200"
+                  aria-label="Visit Infant's stores page"
                 >
                   infanti.cl <FiArrowUpRight />
                 </a>
@@ -531,6 +501,7 @@ const TableList = () => {
                     href="https://infanti.cl/pages/terminos-y-condiciones"
                     target="_blank"
                     className="flex gap-1"
+                    aria-label="Visit Infant's terms and conditions page"
                   >
                     Infanti Terms & Conditions page <FiArrowUpRight />
                   </a>
@@ -550,6 +521,7 @@ const TableList = () => {
                   href="https://infanti.cl/pages/terminos-y-condiciones"
                   target="_blank"
                   className="flex gap-1 hover:scale-110 transition-all duration-200"
+                  aria-label="Visit Infant's terms and conditions page"
                 >
                   infanti.cl <FiArrowUpRight />
                 </a>
