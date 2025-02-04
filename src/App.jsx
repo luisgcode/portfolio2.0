@@ -8,6 +8,7 @@ import Footer from "./components/footer/Footer";
 import NotFound from "./components/NotFound";
 
 import { useTranslation } from "react-i18next";
+import Chatbot from "./components/Chatbot/Chatbot";
 
 function App() {
   const { t } = useTranslation("global");
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <div className="custom-bg">
         <Navbar />
+        <Chatbot />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
