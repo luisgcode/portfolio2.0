@@ -21,7 +21,7 @@ const TableList = () => {
                 Projects
               </th>
               <th scope="col" className="hidden xl:table-cell   ">
-                Tech Stack
+                Features & Tech Stack
               </th>
               <th scope="col" className="hidden  xxl:table-cell">
                 Link
@@ -132,6 +132,7 @@ const TableList = () => {
                 <span className="custom-project-tag">Figma </span>
                 <span className="custom-project-tag">Node JS </span>
                 <span className="custom-project-tag">MySQL </span>
+                <span className="custom-project-tag">Trilingual </span>
               </td>
               {/* link */}
               <td className="link hidden xxl:table-cell">

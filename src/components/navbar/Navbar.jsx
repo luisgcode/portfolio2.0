@@ -11,6 +11,7 @@ import { FiMenu } from "react-icons/fi";
 import { FaRegUser } from "react-icons/fa";
 import { FiHome } from "react-icons/fi";
 import { MdOutlineFolderCopy } from "react-icons/md";
+import { MdLanguage } from "react-icons/md";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -70,7 +71,7 @@ const Navbar = () => {
           }}
           initial="hidden"
           animate="show"
-          className="navigation-items hidden md:flex gap-8 lg:mr-24"
+          className="navigation-items hidden md:flex gap-8 lg:mr-24  items-center"
         >
           <Link to="/">
             <li role="menuitem">
@@ -97,27 +98,37 @@ const Navbar = () => {
             </li>
           </Link>
 
-          <li className="flex gap-2">
+          <li className="flex">
             {currentLanguage === "en" ? (
               <button
-                className="font-semibold text-sm"
+                className=" flex items-center gap-1 px-3 py-1.5 rounded-full 
+                 bg-gray-800/50 hover:bg-gray-700/50 
+                 border border-gray-700 hover:border-gray-500
+                 transition-all duration-300
+                 text-gray-300  text-xs"
                 onClick={() => {
                   handleLanguage("sp");
                   setCurrentLanguage("sp");
                 }}
                 aria-label="Switch to Spanish"
               >
+                <MdLanguage />
                 SPA
               </button>
             ) : (
               <button
-                className="font-semibold text-sm"
+                className=" flex items-center gap-1 px-3 py-1.5 rounded-full 
+              bg-gray-800/50 hover:bg-gray-700/50 
+              border border-gray-700 hover:border-gray-500
+              transition-all duration-300
+         text-gray-300  text-xs"
                 onClick={() => {
                   handleLanguage("en");
                   setCurrentLanguage("en");
                 }}
                 aria-label="Switch to English"
               >
+                <MdLanguage />
                 ENG
               </button>
             )}
