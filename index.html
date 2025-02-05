@@ -4,50 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="author" content="Luis Guaiquirian." />
-
+    <meta name="author" content="Luis Guaiquirian" />
     <meta
       name="description"
       content="Luis Guaiquirian, Web developer specializing in front-end and back-end solutions based in London Ontario, Canada."
     />
-
     <meta
       name="keywords"
       content="London Ontario, Web Developer, Luis Guaiquirian"
     />
 
+    <!-- Open Graph (SEO & Social Sharing) -->
+    <meta property="og:title" content="Luis Guaiquirian | Web Developer" />
+    <meta
+      property="og:description"
+      content="Experienced Web Developer specializing in front-end & back-end solutions."
+    />
+    <meta property="og:image" content="/src/assets/images/hero-alter1.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://luisgcode.com/" />
+
     <!-- Preconnect for Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Preload the most important font files (Poppins Regular and Bold) -->
+    <!-- Preload fonts -->
     <link
       rel="preload"
-      href="https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2"
       as="font"
+      href="https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
-      href="https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2"
       as="font"
+      href="https://fonts.gstatic.com/s/poppins/v22/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2"
       type="font/woff2"
       crossorigin="anonymous"
     />
 
-    <!-- Load the entire font family with only the needed font-weights -->
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
 
-    <!-- FAVICON -->
+    <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="/favicon_io/apple-touch-icon.png"
     />
-
     <link
       rel="icon"
       type="image/png"
@@ -62,55 +71,54 @@
     />
     <link rel="manifest" href="/favicon_io/site.webmanifest" />
 
+    <!-- Preload hero image -->
+    <link
+      rel="preload"
+      as="image"
+      href="/src/assets/images/hero-alter1.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
+
     <!-- Hotjar -->
-    <!--  Hotjar Tracking Code for https://luisgcode.com/ -->
-    <script>
-      window.addEventListener("load", function () {
-        (function (h, o, t, j, a, r) {
-          h.hj =
-            h.hj ||
-            function () {
-              (h.hj.q = h.hj.q || []).push(arguments);
-            };
-          h._hjSettings = { hjid: 4952770, hjsv: 6 };
-          a = o.getElementsByTagName("head")[0];
-          r = o.createElement("script");
-          r.async = 1;
-          r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-          a.appendChild(r);
-        })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-      });
+    <script defer>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 4952770, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
 
     <!-- Google Tag Manager -->
-    <script>
-      window.addEventListener("DOMContentLoaded", function () {
-        let gtagScript = document.createElement("script");
-        gtagScript.src =
-          "https://www.googletagmanager.com/gtag/js?id=G-0HM2P34T45";
-        gtagScript.async = true;
-        document.head.appendChild(gtagScript);
+    <script defer>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-0HM2P34T45");
 
-        gtagScript.onload = function () {
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
-            dataLayer.push(arguments);
-          }
-          gtag("js", new Date());
-          gtag("config", "G-0HM2P34T45");
-        };
-      });
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l !== "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "G-0HM2P34T45");
     </script>
 
     <title>Luis Guaiquirian | Web Developer</title>
-
-    <!-- preload hero image -->
-    <link
-      rel="preload"
-      href="/src/assets/images/hero-alter1.webp"
-      as="image"
-      type="image/webp"
-    />
   </head>
   <body>
     <div id="root"></div>
