@@ -29,6 +29,52 @@ const TableList = () => {
             </tr>
           </thead>
           <tbody>
+            {/* Chatbot */}
+            <motion.tr
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.1,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+            >
+              {/* Year */}
+              <td>2025</td>
+              {/* Project */}
+              <td className="font-semibold">
+                <div className="hidden xxl:table-cell">
+                  Portfolio AI Chatbot Integration
+                </div>
+                <div className=" xxl:hidden ">
+                  <a href="#" className="flex gap-1">
+                    Portfolio AI Chatbot Integration
+                  </a>
+                </div>
+              </td>
+              {/* Tags */}
+              <td className="tags-td hidden xl:flex  ">
+                <span className="custom-project-tag">Botpress</span>
+                <span className="custom-project-tag">AI Design</span>
+                <span className="custom-project-tag">Data Storage</span>
+                <span className="custom-project-tag">Knowledge Answering</span>
+              </td>
+              {/* link */}
+              <td className="link hidden xxl:table-cell">
+                <a
+                  href="#"
+                  className="flex gap-1 hover:scale-110 transition-all duration-200"
+                >
+                  luisgcode.com <FiArrowUpRight />
+                </a>
+              </td>
+            </motion.tr>
             {/* Neurovet */}
             <motion.tr
               variants={{
