@@ -12,6 +12,9 @@
   "latest": {
     "title": "Ùltimos proyectos"
   },
+  "projectChatbot": {
+    "description": "Creé un chatbot impulsado por IA para mejorar la interacción del usuario y facilitar el acceso a la información en mi Portafolio v2. Desarrollé este chatbot utilizando algoritmos lógicos y entrenamiento de IA para permitir conversaciones en tiempo real, haciendo que los visitantes puedan navegar por mi trabajo y obtener respuestas al instante."
+  },
   "projectPortfolioV2": {
     "description": "Nuevo portafolio diseñado y desarrollado para mostrar las herramientas y tecnologías que he dominado durante el último año, incluyendo React y Tailwind CSS, en un diseño moderno y enfocado en dispositivos móviles."
   },

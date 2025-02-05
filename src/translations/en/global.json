@@ -12,6 +12,9 @@
   "latest": {
     "title": "Projects."
   },
+  "projectChatbot": {
+    "description": "I built an AI-powered chatbot to enhance user interaction and provide seamless access to information in my Portfolio v2. This chatbot was developed using logical algorithms and AI training to enable real-time conversation, making it easier for visitors to navigate my work and get instant answers."
+  },
   "projectPortfolioV2": {
     "description": "New Portfolio designed and developed to showcase the tools and technologies I’ve mastered over the past year, including React, and Tailwind CSS, in a modern, mobile-first design."
   },

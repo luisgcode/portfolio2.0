@@ -7,6 +7,7 @@ import {
   posterPortfolio1,
   posterTermsIfanti,
   posterQuickBooker,
+  posterChatBot,
 } from "../../../components/media";
 import "./projects.css";
 import { FiArrowUpRight } from "react-icons/fi";
@@ -84,6 +85,36 @@ const Projects = () => {
             className="project-title font-bold mb-4 flex"
             aria-label="Visit project's Github repository"
           >
+            AI Chatbot Integration <FiArrowUpRight />
+          </a>
+          <div>
+            <p>{t("projectChatbot.description")}</p>
+          </div>
+          <div className="py-4">
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">Botpress</li>
+              <li className="custom-project-tag">AI Design</li>
+              <li className="custom-project-tag">Data Storage</li>
+              <li className="custom-project-tag">Knowledge Answering</li>
+            </ul>
+          </div>
+          <div className="posters">
+            <img
+              className="rounded-lg"
+              src={posterChatBot}
+              alt="Portfolio v2 cover"
+              loading="lazy"
+            />
+          </div>
+        </li>
+        {/* 3 */}
+        <li className="project-card">
+          <a
+            href="https://github.com/luisgcode/portfolio2.0"
+            target="_blank"
+            className="project-title font-bold mb-4 flex"
+            aria-label="Visit project's Github repository"
+          >
             Portfolio (v2) <FiArrowUpRight />
           </a>
           <div>
@@ -111,7 +142,7 @@ const Projects = () => {
             />
           </div>
         </li>
-        {/* 3  */}
+        {/* 4  */}
         <li className="project-card">
           <a
             href="https://globaltechnologies.web.app/"
@@ -143,7 +174,7 @@ const Projects = () => {
             />
           </div>
         </li>
-        {/* 4 */}
+        {/* 5 */}
         <li className="project-card">
           <a
             href="https://github.com/luisgcode/pattern_library_canJet"
@@ -173,7 +204,7 @@ const Projects = () => {
           </div>
         </li>
         {/* 5  */}
-        <li className="project-card">
+        {/* <li className="project-card">
           <a
             href="https://infanti.cl/pages/terminos-y-condiciones"
             target="_blank"
@@ -205,7 +236,7 @@ const Projects = () => {
               loading="lazy"
             />
           </div>
-        </li>
+        </li> */}
         {/* 6 */}
         <li className="project-card">
           <a

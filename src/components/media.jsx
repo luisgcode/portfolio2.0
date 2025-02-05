@@ -41,6 +41,7 @@ import posterGlobal from "../assets/images/posters/poster-global.webp";
 import posterCanJet from "../assets/images/posters/poster-canjet.webp";
 import posterTermsIfanti from "../assets/images/posters/poster-terms.webp";
 import posterQuickBooker from "../assets/images/posters/poster-quickbooker.webp";
+import posterChatBot from "../assets/images/posters/poster-chat.webp";
 
 export {
   heroImage,
@@ -81,4 +82,5 @@ export {
   posterCanJet,
   posterTermsIfanti,
   posterQuickBooker,
+  posterChatBot,
 };
