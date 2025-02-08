@@ -29,6 +29,67 @@ const TableList = () => {
             </tr>
           </thead>
           <tbody>
+            {/* Wawabb */}
+            <motion.tr
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.2,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+            >
+              {/* Year */}
+              <td>2025</td>
+              {/* Project */}
+              <td className="font-semibold">
+                <div className="hidden xxl:table-cell">
+                  {/* Desktop name */}
+                  Wawabb - Bsale Store Optimization - &nbsp;
+                  <span className="italic text-highlightColor font-normal">
+                    Developing...
+                  </span>
+                </div>
+                <div className="xxl:hidden">
+                  <a
+                    href="https://www.wawabb.cl/"
+                    target="_blank"
+                    className="flex gap-1"
+                    aria-label="Visit Global Technologies website"
+                  >
+                    {/* Mobile name */}
+                    Wawabb.cl -
+                    <span className="italic text-highlightColor font-normal">
+                      Developing...
+                    </span>
+                    <FiArrowUpRight />
+                  </a>
+                </div>
+              </td>
+              {/* Tags */}
+              <td className="tags-td   xl:flex hidden">
+                <span className="custom-project-tag">Bsale POS</span>
+                <span className="custom-project-tag">JavaScript</span>
+                <span className="custom-project-tag">CSS</span>
+              </td>
+              {/* link */}
+              <td className="link hidden xxl:table-cell">
+                <a
+                  href="wawabb.cl"
+                  target="_blank"
+                  className="flex gap-1 hover:scale-110 transition-all duration-200"
+                  aria-label="Visit Global Technologies website"
+                >
+                  wawabb.cl <FiArrowUpRight />
+                </a>
+              </td>
+            </motion.tr>
             {/* Chatbot */}
             <motion.tr
               variants={{
@@ -98,14 +159,14 @@ const TableList = () => {
                 <div className="hidden xxl:table-cell">
                   Neurovet.cl - &nbsp;
                   <span className="italic text-highlightColor font-normal">
-                    Developing
+                    Developing...
                   </span>
                 </div>
                 <div className=" xxl:hidden ">
                   <a href="#" className="flex gap-1">
-                    Neurovet.cl{" "}
+                    Neurovet.cl
                     <span className="italic text-highlightColor font-normal">
-                      Developing
+                      Developing...
                     </span>
                   </a>
                 </div>
@@ -150,7 +211,7 @@ const TableList = () => {
                 <div className="hidden xxl:table-cell">
                   QuickBooker - &nbsp;
                   <span className="italic text-highlightColor font-normal">
-                    Developing
+                    Developing...
                   </span>
                 </div>
                 <div className=" xxl:hidden ">
@@ -162,7 +223,7 @@ const TableList = () => {
                   >
                     QuickBooker
                     <span className="italic text-highlightColor font-normal">
-                      Developing
+                      Developing...
                     </span>
                     <FiArrowUpRight />
                   </a>
