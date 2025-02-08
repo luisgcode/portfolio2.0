@@ -81,7 +81,7 @@ const TableList = () => {
               {/* link */}
               <td className="link hidden xxl:table-cell">
                 <a
-                  href="wawabb.cl"
+                  href="https://www.wawabb.cl/"
                   target="_blank"
                   className="flex gap-1 hover:scale-110 transition-all duration-200"
                   aria-label="Visit Global Technologies website"
