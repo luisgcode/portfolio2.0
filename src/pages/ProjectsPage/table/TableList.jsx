@@ -29,6 +29,61 @@ const TableList = () => {
             </tr>
           </thead>
           <tbody>
+            {/* heidiweinrib */}
+            <motion.tr
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.1,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+            >
+              {/* Year */}
+              <td>2025</td>
+              {/* Project */}
+              <td className="font-semibold">
+                <div className="hidden xxl:table-cell">
+                  {/* Desktop name */}
+                  Heidi Weinrib - Web Redesign - &nbsp;
+                  <span className="italic text-highlightColor font-normal">
+                    Developing...
+                  </span>
+                </div>
+                <div className="xxl:hidden">
+                  <a href="#" className="flex gap-1">
+                    {/* Mobile name */}
+                    Heidi Weinrib - Web Redesign -
+                    <span className="italic text-highlightColor font-normal">
+                      Developing...
+                    </span>
+                  </a>
+                </div>
+              </td>
+              {/* Tags */}
+              <td className="tags-td   xl:flex hidden">
+                <span className="custom-project-tag">Wordpress</span>
+                <span className="custom-project-tag">PHP</span>
+                <span className="custom-project-tag">Elementor</span>
+                <span className="custom-project-tag">Hostinger</span>
+                <span className="custom-project-tag">SEO</span>
+              </td>
+              {/* link */}
+              <td className="link hidden xxl:table-cell">
+                <a
+                  href="#"
+                  className="flex gap-1 hover:scale-110 transition-all duration-200"
+                >
+                  WordPress Development
+                </a>
+              </td>
+            </motion.tr>
             {/* Wawabb */}
             <motion.tr
               variants={{
