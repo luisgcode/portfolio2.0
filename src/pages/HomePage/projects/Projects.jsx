@@ -8,6 +8,7 @@ import {
   posterTermsIfanti,
   posterQuickBooker,
   posterChatBot,
+  posterVocal,
 } from "../../../components/media";
 import "./projects.css";
 import { FiArrowUpRight } from "react-icons/fi";
@@ -38,6 +39,69 @@ const Projects = () => {
         transition={{ duration: 0.5 }}
       >
         {/* 1 */}
+        <li className="project-card">
+          <a
+            href="https://thevocaldirection.com/"
+            target="_blank"
+            className="project-title font-bold mb-4 flex"
+            aria-label="Visit project's Github repository"
+          >
+            The Vocal Direction <FiArrowUpRight />
+          </a>
+          <div>
+            <p>{t("projectVocal.description")}</p>
+          </div>
+          <div className="py-4">
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">Wordpress</li>
+              <li className="custom-project-tag">PHP</li>
+              <li className="custom-project-tag">Elementor</li>
+              <li className="custom-project-tag">Hostinger</li>
+              <li className="custom-project-tag">SEO</li>
+              <li className="custom-project-tag">Figma</li>
+              <li className="custom-project-tag">Photoshop</li>
+            </ul>
+          </div>
+          <div className="posters">
+            <img
+              className="rounded-lg"
+              src={posterVocal}
+              alt="Portfolio v2 cover"
+              loading="lazy"
+            />
+          </div>
+        </li>
+        {/* 2 */}
+        <li className="project-card">
+          <a
+            href="https://github.com/luisgcode/portfolio2.0"
+            target="_blank"
+            className="project-title font-bold mb-4 flex"
+            aria-label="Visit project's Github repository"
+          >
+            AI Chatbot Integration <FiArrowUpRight />
+          </a>
+          <div>
+            <p>{t("projectChatbot.description")}</p>
+          </div>
+          <div className="py-4">
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">Botpress</li>
+              <li className="custom-project-tag">AI Design</li>
+              <li className="custom-project-tag">Data Storage</li>
+              <li className="custom-project-tag">Knowledge Answering</li>
+            </ul>
+          </div>
+          <div className="posters">
+            <img
+              className="rounded-lg"
+              src={posterChatBot}
+              alt="Portfolio v2 cover"
+              loading="lazy"
+            />
+          </div>
+        </li>
+        {/* 3 */}
         <li className="project-card">
           <a
             href="https://github.com/luisgcode/Quickbooker"
@@ -77,37 +141,7 @@ const Projects = () => {
             />
           </div>
         </li>
-        {/* 2 */}
-        <li className="project-card">
-          <a
-            href="https://github.com/luisgcode/portfolio2.0"
-            target="_blank"
-            className="project-title font-bold mb-4 flex"
-            aria-label="Visit project's Github repository"
-          >
-            AI Chatbot Integration <FiArrowUpRight />
-          </a>
-          <div>
-            <p>{t("projectChatbot.description")}</p>
-          </div>
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">Botpress</li>
-              <li className="custom-project-tag">AI Design</li>
-              <li className="custom-project-tag">Data Storage</li>
-              <li className="custom-project-tag">Knowledge Answering</li>
-            </ul>
-          </div>
-          <div className="posters">
-            <img
-              className="rounded-lg"
-              src={posterChatBot}
-              alt="Portfolio v2 cover"
-              loading="lazy"
-            />
-          </div>
-        </li>
-        {/* 3 */}
+        {/* 4 */}
         <li className="project-card">
           <a
             href="https://github.com/luisgcode/portfolio2.0"
@@ -142,7 +176,7 @@ const Projects = () => {
             />
           </div>
         </li>
-        {/* 4  */}
+        {/* 5  */}
         <li className="project-card">
           <a
             href="https://globaltechnologies.web.app/"
@@ -174,8 +208,8 @@ const Projects = () => {
             />
           </div>
         </li>
-        {/* 5 */}
-        <li className="project-card">
+        {/* 6 */}
+        {/* <li className="project-card">
           <a
             href="https://github.com/luisgcode/pattern_library_canJet"
             target="_blank"
@@ -202,8 +236,8 @@ const Projects = () => {
               loading="lazy"
             />
           </div>
-        </li>
-        {/* 5  */}
+        </li> */}
+        {/* 7  */}
         {/* <li className="project-card">
           <a
             href="https://infanti.cl/pages/terminos-y-condiciones"
@@ -237,7 +271,7 @@ const Projects = () => {
             />
           </div>
         </li> */}
-        {/* 6 */}
+        {/* 8 */}
         <li className="project-card">
           <a
             href="https://github.com/luisgcode/portfolio2024"
@@ -271,7 +305,6 @@ const Projects = () => {
             />
           </div>
         </li>
-
         {/* hidden */}
         {/* <div className="project-card">
           <a

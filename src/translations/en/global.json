@@ -12,6 +12,9 @@
   "latest": {
     "title": "Projects."
   },
+  "projectVocal": {
+    "description": "The client requested a new website that captured her essence as a modern, experienced vocal director. She needed a platform that showcased her expertise and passion for music. We chose WordPress for its flexibility, creating a visually striking, user-friendly site with dynamic content and intuitive navigation to engage clients and collaborators."
+  },
   "projectChatbot": {
     "description": "I built an AI-powered chatbot to enhance user interaction and provide seamless access to information in my Portfolio v2. This chatbot was developed using logical algorithms and AI training to enable real-time conversation, making it easier for visitors to navigate my work and get instant answers."
   },

@@ -29,7 +29,7 @@ const TableList = () => {
             </tr>
           </thead>
           <tbody>
-            {/* heidiweinrib */}
+            {/* Thevocaldirection */}
             <motion.tr
               variants={{
                 hidden: { x: 80, opacity: 0 },
@@ -51,18 +51,22 @@ const TableList = () => {
               <td className="font-semibold">
                 <div className="hidden xxl:table-cell">
                   {/* Desktop name */}
-                  Heidi Weinrib - Web Redesign - &nbsp;
+                  TheVocalDirection - &nbsp;
                   <span className="italic text-highlightColor font-normal">
                     Developing...
                   </span>
                 </div>
                 <div className="xxl:hidden">
-                  <a href="#" className="flex gap-1">
+                  <a
+                    href="https://thevocaldirection.com"
+                    className="flex gap-1"
+                  >
                     {/* Mobile name */}
-                    Heidi Weinrib - Web Redesign -
+                    TheVocalDirection -
                     <span className="italic text-highlightColor font-normal">
                       Developing...
                     </span>
+                    <FiArrowUpRight />
                   </a>
                 </div>
               </td>
@@ -73,14 +77,17 @@ const TableList = () => {
                 <span className="custom-project-tag">Elementor</span>
                 <span className="custom-project-tag">Hostinger</span>
                 <span className="custom-project-tag">SEO</span>
+                <span className="custom-project-tag">Figma</span>
+                <span className="custom-project-tag">Photoshop</span>
               </td>
               {/* link */}
               <td className="link hidden xxl:table-cell">
                 <a
-                  href="#"
+                  href="https://thevocaldirection.com/"
+                  target="_blank"
                   className="flex gap-1 hover:scale-110 transition-all duration-200"
                 >
-                  WordPress Development
+                  thevocaldirection.com <FiArrowUpRight />
                 </a>
               </td>
             </motion.tr>

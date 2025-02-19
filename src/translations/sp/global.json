@@ -12,6 +12,9 @@
   "latest": {
     "title": "Ùltimos proyectos"
   },
+  "projectVocal": {
+    "description": "La clienta solicitó un nuevo sitio web que reflejara su esencia como directora vocal moderna y con experiencia. Necesitaba una plataforma que mostrara su pasión y conocimientos en la música. Optamos por WordPress por su flexibilidad, creando un sitio atractivo, intuitivo y dinámico para conectar con clientes y colaboradores."
+  },
   "projectChatbot": {
     "description": "Creé un chatbot impulsado por IA para mejorar la interacción del usuario y facilitar el acceso a la información en mi Portafolio v2. Desarrollé este chatbot utilizando algoritmos lógicos y entrenamiento de IA para permitir conversaciones en tiempo real, haciendo que los visitantes puedan navegar por mi trabajo y obtener respuestas al instante."
   },
