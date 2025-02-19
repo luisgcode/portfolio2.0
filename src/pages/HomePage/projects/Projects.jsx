@@ -43,10 +43,13 @@ const Projects = () => {
           <a
             href="https://thevocaldirection.com/"
             target="_blank"
-            className="project-title font-bold mb-4 flex"
+            className="project-title font-bold mb-4 flex items-center"
             aria-label="Visit project's Github repository"
           >
             The Vocal Direction <FiArrowUpRight />
+            <span className="italic text-highlightColor font-normal text-sm">
+              Developing
+            </span>
           </a>
           <div>
             <p>{t("projectVocal.description")}</p>
