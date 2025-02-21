@@ -28,6 +28,7 @@ import prestashopLogo from "../assets/images/logos/tech-prestashop.svg";
 import notionLogo from "../assets/images/logos/tech-notion.svg";
 import jiraLogo from "../assets/images/logos/tech-jira.svg";
 import confluenceLogo from "../assets/images/logos/tech-confluence.svg";
+import botpressLogo from "../assets/images/logos/tech-botpress.webp";
 //  ^  My logo
 import luisLogo from "../assets/images/logos/logo.svg";
 //  ^  My hero image
@@ -76,6 +77,7 @@ export {
   prestashopLogo,
   gitLogo,
   gitHubLogo,
+  botpressLogo,
   posterPortfolio2,
   posterPortfolio1,
   posterCrowdMeter,

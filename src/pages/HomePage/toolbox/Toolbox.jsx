@@ -9,6 +9,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 
 import {
+  botpressLogo,
   figmaLogo,
   firebaseLogo,
   ga4Logo,
@@ -97,6 +98,11 @@ const Toolbox = () => {
               <FaServer /> Back-end
             </h5>
             <div className="tools-wrapper">
+              {/* Botpress */}
+              <div className="tool-box">
+                <img src={botpressLogo} alt="logo Python " loading="lazy" />
+                <small>BotPress AI</small>
+              </div>
               {/* Python */}
               <div className="tool-box">
                 <img src={pythonLogo} alt="logo Python " loading="lazy" />
