@@ -51,10 +51,7 @@ const TableList = () => {
               <td className="font-semibold">
                 <div className="hidden xxl:table-cell">
                   {/* Desktop name */}
-                  TheVocalDirection - &nbsp;
-                  <span className="italic text-highlightColor font-normal">
-                    Developing...
-                  </span>
+                  The Vocal Direction (Heidi Weinrib)
                 </div>
                 <div className="xxl:hidden">
                   <a
@@ -62,10 +59,7 @@ const TableList = () => {
                     className="flex gap-1"
                   >
                     {/* Mobile name */}
-                    TheVocalDirection -
-                    <span className="italic text-highlightColor font-normal">
-                      Developing...
-                    </span>
+                    TheVocalDirection
                     <FiArrowUpRight />
                   </a>
                 </div>
@@ -73,8 +67,9 @@ const TableList = () => {
               {/* Tags */}
               <td className="tags-td   xl:flex hidden">
                 <span className="custom-project-tag">Wordpress</span>
-                <span className="custom-project-tag">PHP</span>
                 <span className="custom-project-tag">Elementor</span>
+                <span className="custom-project-tag">CSS</span>
+                <span className="custom-project-tag">Contact Form 7</span>
                 <span className="custom-project-tag">Hostinger</span>
                 <span className="custom-project-tag">SEO</span>
                 <span className="custom-project-tag">Figma</span>
