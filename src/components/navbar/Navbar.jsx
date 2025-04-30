@@ -73,6 +73,16 @@ const Navbar = () => {
           animate="show"
           className="navigation-items hidden md:flex gap-8 lg:mr-24  items-center"
         >
+          <Link to="/projects">
+            <li role="menuitem">
+              {/* Agregar role menuitem */}
+              <a
+                className={`font-bold nav-link ${animate ? "fade-in-out" : ""}`}
+              >
+                {t("header.navbar", { returnObjects: true })[2]}
+              </a>
+            </li>
+          </Link>
           <Link to="/">
             <li role="menuitem">
               {/* Agregar role menuitem */}
@@ -86,14 +96,6 @@ const Navbar = () => {
               {/* Agregar role menuitem */}
               <a className={`nav-link ${animate ? "fade-in-out" : ""}`}>
                 {t("header.navbar", { returnObjects: true })[1]}
-              </a>
-            </li>
-          </Link>
-          <Link to="/projects">
-            <li role="menuitem">
-              {/* Agregar role menuitem */}
-              <a className={`nav-link ${animate ? "fade-in-out" : ""}`}>
-                {t("header.navbar", { returnObjects: true })[2]}
               </a>
             </li>
           </Link>

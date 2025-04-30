@@ -34,7 +34,6 @@ const Projects = () => {
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 0.5 }}
       >
-
         {/* 1 */}
         <li className="project-card">
           <a
@@ -77,8 +76,8 @@ const Projects = () => {
           </div>
         </li>
 
-                {/* 2 */}
-                <li className="project-card">
+        {/* 2 */}
+        <li className="project-card">
           <a
             href="https://github.com/luisgcode/Quickbooker"
             target="_blank"
@@ -250,7 +249,7 @@ const Projects = () => {
             />
           </div>
         </li>
-        
+
         {/* 8 */}
         {/* <li className="project-card">
           <a

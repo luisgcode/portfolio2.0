@@ -84,9 +84,8 @@ const About = () => {
                 <li className="my-2">
                   Fanshawe College.
                   <span className="flex gap-2">
-                    <AiOutlineLoading3Quarters aria-hidden="true" />
-                    Web Development and Internet Applications Diploma. (Apr
-                    2025)
+                    <FaCheckCircle aria-hidden="true" />
+                    Web Development and Internet Applications Diploma.
                   </span>
                 </li>
                 <li className="my-2">

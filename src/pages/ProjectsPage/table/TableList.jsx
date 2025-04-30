@@ -15,7 +15,7 @@ const TableList = () => {
           <thead className="text-left">
             <tr>
               <th scope="col" className=" ">
-                Year
+                Date
               </th>
               <th scope="col" className=" ">
                 Projects
@@ -29,9 +29,8 @@ const TableList = () => {
             </tr>
           </thead>
           <tbody>
-
-                      {/* Geek sonas */}
-                      <motion.tr
+            {/* Geek sonas */}
+            <motion.tr
               variants={{
                 hidden: { x: 80, opacity: 0 },
                 show: {
@@ -39,7 +38,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.3,
+                    delay: 0.1,
                   },
                 },
               }}
@@ -47,18 +46,18 @@ const TableList = () => {
               animate="show"
             >
               {/* Year */}
-              <td>2025</td>
+              <td>May/2025</td>
               {/* Project */}
               <td className="font-semibold">
                 <div className="hidden xxl:table-cell">
-                Geeksonas - &nbsp;
+                  Geeksonas - &nbsp;
                   <span className="italic text-highlightColor font-normal">
                     Developing...
                   </span>
                 </div>
                 <div className=" xxl:hidden ">
                   <a href="#" className="flex gap-1">
-                  Geeksonas
+                    Geeksonas
                     <span className="italic text-highlightColor font-normal">
                       Developing...
                     </span>
@@ -68,9 +67,9 @@ const TableList = () => {
               {/* Tags */}
               <td className="tags-td hidden xl:flex  ">
                 <span className="custom-project-tag">Wordpress</span>
-  
                 <span className="custom-project-tag">Elementor </span>
-                <span className="custom-project-tag">Yoast SEO</span>                <span className="custom-project-tag">Hostinger</span>
+                <span className="custom-project-tag">Yoast SEO</span>
+                <span className="custom-project-tag">Hostinger</span>
                 <span className="custom-project-tag">SEO</span>
                 <span className="custom-project-tag">Figma</span>
                 <span className="custom-project-tag">Photoshop</span>
@@ -95,7 +94,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.3,
+                    delay: 0.2,
                   },
                 },
               }}
@@ -103,7 +102,7 @@ const TableList = () => {
               animate="show"
             >
               {/* Year */}
-              <td>2025</td>
+              <td>May/2025</td>
               {/* Project */}
               <td className="font-semibold">
                 <div className="hidden xxl:table-cell">
@@ -125,7 +124,9 @@ const TableList = () => {
               <td className="tags-td hidden xl:flex  ">
                 <span className="custom-project-tag">Wordpress</span>
                 <span className="custom-project-tag">Elementor </span>
-                <span className="custom-project-tag">Yoast SEO</span>                <span className="custom-project-tag">Hostinger</span>
+                <span className="custom-project-tag">Yoast SEO</span>
+                <span className="custom-project-tag">Bookly</span>
+                <span className="custom-project-tag">Hostinger</span>
                 <span className="custom-project-tag">SEO</span>
                 <span className="custom-project-tag">Figma</span>
                 <span className="custom-project-tag">Photoshop</span>
@@ -150,7 +151,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.1,
+                    delay: 0.3,
                   },
                 },
               }}
@@ -158,7 +159,7 @@ const TableList = () => {
               animate="show"
             >
               {/* Year */}
-              <td>2025</td>
+              <td>Mar/2025</td>
               {/* Project */}
               <td className="font-semibold">
                 <div className="hidden xxl:table-cell">
@@ -207,7 +208,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.1,
+                    delay: 0.4,
                   },
                 },
               }}
@@ -215,13 +216,12 @@ const TableList = () => {
               animate="show"
             >
               {/* Year */}
-              <td>2025</td>
+              <td>Mar/2025</td>
               {/* Project */}
               <td className="font-semibold">
                 <div className="hidden xxl:table-cell">
                   {/* Desktop name */}
-                  Wawabb - Bsale Store Optimization 
-           
+                  Wawabb - Bsale Store Optimization
                 </div>
                 <div className="xxl:hidden">
                   <a
@@ -232,13 +232,12 @@ const TableList = () => {
                   >
                     {/* Mobile name */}
                     Wawabb.cl -
-             
                     <FiArrowUpRight />
                   </a>
                 </div>
               </td>
               {/* Tags */}
-              <td className="tags-td   xl:flex hidden">                
+              <td className="tags-td   xl:flex hidden">
                 <span className="custom-project-tag">CMS Optimization</span>
                 <span className="custom-project-tag">Bsale POS</span>
                 <span className="custom-project-tag">JavaScript</span>
@@ -265,7 +264,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.2,
+                    delay: 0.5,
                   },
                 },
               }}
@@ -273,7 +272,7 @@ const TableList = () => {
               animate="show"
             >
               {/* Year */}
-              <td>2025</td>
+              <td>Feb/2025</td>
               {/* Project */}
               <td className="font-semibold">
                 <div className="hidden xxl:table-cell">
@@ -319,10 +318,10 @@ const TableList = () => {
               initial="hidden"
               animate="show"
             > */}
-              {/* Year */}
-              {/* <td>2025</td> */}
-              {/* Project */}
-              {/* <td className="font-semibold">
+            {/* Year */}
+            {/* <td>2025</td> */}
+            {/* Project */}
+            {/* <td className="font-semibold">
                 <div className="hidden xxl:table-cell">
                   QuickBooker - &nbsp;
                   <span className="italic text-highlightColor font-normal">
@@ -344,8 +343,8 @@ const TableList = () => {
                   </a>
                 </div>
               </td> */}
-              {/* Tags */}
-              {/* <td className="tags-td hidden xl:flex  ">
+            {/* Tags */}
+            {/* <td className="tags-td hidden xl:flex  ">
                 <span className="custom-project-tag">React JS</span>
                 <span className="custom-project-tag">Tailwind CSS</span>
                 <span className="custom-project-tag">Responsive </span>
@@ -356,8 +355,8 @@ const TableList = () => {
                 <span className="custom-project-tag">MySQL </span>
                 <span className="custom-project-tag">Trilingual </span>
               </td> */}
-              {/* link */}
-              {/* <td className="link hidden xxl:table-cell">
+            {/* link */}
+            {/* <td className="link hidden xxl:table-cell">
                 <a
                   href="https://github.com/luisgcode/Quickbooker"
                   target="_blank"
@@ -369,7 +368,7 @@ const TableList = () => {
                 </a>
               </td> */}
             {/* </motion.tr> */}
-            
+
             {/* portfolio v2 */}
             <motion.tr
               variants={{
@@ -379,7 +378,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.5,
+                    delay: 0.6,
                   },
                 },
               }}
@@ -387,7 +386,7 @@ const TableList = () => {
               animate="show"
             >
               {/* Year */}
-              <td>2025</td>
+              <td>Jan/2025</td>
               {/* Project */}
               <td className="font-semibold">
                 <div className="hidden xxl:table-cell">Portfolio (v2)</div>
@@ -437,7 +436,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.6,
+                    delay: 0.7,
                   },
                 },
               }}
@@ -489,7 +488,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.7,
+                    delay: 0.8,
                   },
                 },
               }}
@@ -544,7 +543,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.8,
+                    delay: 0.9,
                   },
                 },
               }}
@@ -599,7 +598,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.9,
+                    delay: 1,
                   },
                 },
               }}
@@ -655,7 +654,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 1,
+                    delay: 1.1,
                   },
                 },
               }}
@@ -706,7 +705,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 1.1,
+                    delay: 1.2,
                   },
                 },
               }}
