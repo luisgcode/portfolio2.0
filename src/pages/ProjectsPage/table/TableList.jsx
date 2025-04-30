@@ -30,6 +30,62 @@ const TableList = () => {
           </thead>
           <tbody>
 
+                      {/* Geek sonas */}
+                      <motion.tr
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.3,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+            >
+              {/* Year */}
+              <td>2025</td>
+              {/* Project */}
+              <td className="font-semibold">
+                <div className="hidden xxl:table-cell">
+                Geeksonas - &nbsp;
+                  <span className="italic text-highlightColor font-normal">
+                    Developing...
+                  </span>
+                </div>
+                <div className=" xxl:hidden ">
+                  <a href="#" className="flex gap-1">
+                  Geeksonas
+                    <span className="italic text-highlightColor font-normal">
+                      Developing...
+                    </span>
+                  </a>
+                </div>
+              </td>
+              {/* Tags */}
+              <td className="tags-td hidden xl:flex  ">
+                <span className="custom-project-tag">Wordpress</span>
+  
+                <span className="custom-project-tag">Elementor </span>
+                <span className="custom-project-tag">Yoast SEO</span>                <span className="custom-project-tag">Hostinger</span>
+                <span className="custom-project-tag">SEO</span>
+                <span className="custom-project-tag">Figma</span>
+                <span className="custom-project-tag">Photoshop</span>
+              </td>
+              {/* link */}
+              <td className="link hidden xxl:table-cell">
+                <a
+                  href="#"
+                  className="flex gap-1 hover:scale-110 transition-all duration-200"
+                >
+                  WordPress Development
+                </a>
+              </td>
+            </motion.tr>
+
             {/* Neurovet */}
             <motion.tr
               variants={{
@@ -68,9 +124,11 @@ const TableList = () => {
               {/* Tags */}
               <td className="tags-td hidden xl:flex  ">
                 <span className="custom-project-tag">Wordpress</span>
-                <span className="custom-project-tag">PHP</span>
                 <span className="custom-project-tag">Elementor </span>
-                <span className="custom-project-tag">Yoast SEO</span>
+                <span className="custom-project-tag">Yoast SEO</span>                <span className="custom-project-tag">Hostinger</span>
+                <span className="custom-project-tag">SEO</span>
+                <span className="custom-project-tag">Figma</span>
+                <span className="custom-project-tag">Photoshop</span>
               </td>
               {/* link */}
               <td className="link hidden xxl:table-cell">
