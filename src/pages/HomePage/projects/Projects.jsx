@@ -38,72 +38,51 @@ const Projects = () => {
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 0.5 }}
       >
+
         {/* 1 */}
         <li className="project-card">
           <a
-            href="https://thevocaldirection.com/"
+            href="https://github.com/luisgcode/Quickbooker"
             target="_blank"
             className="project-title font-bold mb-4 flex items-center"
-            aria-label="Visit project's Github repository"
+            aria-label="Visit project's Gtihub repository"
           >
-            The Vocal Direction <FiArrowUpRight />
+            Neurovet <FiArrowUpRight />
+            <span className="italic text-highlightColor font-normal text-sm">
+              Developing
+            </span>
           </a>
+
           <div>
-            <p>{t("projectVocal.description")}</p>
+            <p>{t("projectQuickbooker.description")}</p>
           </div>
+
           <div className="py-4">
             <ul className="flex flex-wrap items-center gap-3">
               <li className="custom-project-tag">Wordpress</li>
               <li className="custom-project-tag">Elementor</li>
-              <li className="custom-project-tag">CSS</li>
+              <li className="custom-project-tag">Bookly</li>
+              <li className="custom-project-tag">CSS </li>
               <li className="custom-project-tag">Contact Form 7 </li>
-              <li className="custom-project-tag">Hostinger</li>
-              <li className="custom-project-tag">SEO</li>
-              <li className="custom-project-tag">Figma</li>
-              <li className="custom-project-tag">Photoshop</li>
+              <li className="custom-project-tag">Hostinger </li>
+              <li className="custom-project-tag">SEO </li>
+              <li className="custom-project-tag">Figma </li>
+              <li className="custom-project-tag">Photoshop </li>
             </ul>
           </div>
+
           <div className="posters">
             <img
-              className="rounded-lg"
-              src={posterVocal}
-              alt="Portfolio v2 cover"
+              className="rounded-lg  "
+              src={posterQuickBooker}
+              alt="Quickbooker project's cover"
               loading="lazy"
             />
           </div>
         </li>
-        {/* 2 */}
-        <li className="project-card">
-          <a
-            href="https://github.com/luisgcode/portfolio2.0"
-            target="_blank"
-            className="project-title font-bold mb-4 flex"
-            aria-label="Visit project's Github repository"
-          >
-            AI Chatbot Integration <FiArrowUpRight />
-          </a>
-          <div>
-            <p>{t("projectChatbot.description")}</p>
-          </div>
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">Botpress</li>
-              <li className="custom-project-tag">AI Design</li>
-              <li className="custom-project-tag">Data Storage</li>
-              <li className="custom-project-tag">Knowledge Answering</li>
-            </ul>
-          </div>
-          <div className="posters">
-            <img
-              className="rounded-lg"
-              src={posterChatBot}
-              alt="Portfolio v2 cover"
-              loading="lazy"
-            />
-          </div>
-        </li>
-        {/* 3 */}
-        <li className="project-card">
+
+                {/* 2 */}
+                <li className="project-card">
           <a
             href="https://github.com/luisgcode/Quickbooker"
             target="_blank"
@@ -142,7 +121,73 @@ const Projects = () => {
             />
           </div>
         </li>
+
+        {/* 3 */}
+        <li className="project-card">
+          <a
+            href="https://thevocaldirection.com/"
+            target="_blank"
+            className="project-title font-bold mb-4 flex items-center"
+            aria-label="Visit project's Github repository"
+          >
+            The Vocal Direction <FiArrowUpRight />
+          </a>
+          <div>
+            <p>{t("projectVocal.description")}</p>
+          </div>
+          <div className="py-4">
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">Wordpress</li>
+              <li className="custom-project-tag">Elementor</li>
+              <li className="custom-project-tag">CSS</li>
+              <li className="custom-project-tag">Contact Form 7 </li>
+              <li className="custom-project-tag">Hostinger</li>
+              <li className="custom-project-tag">SEO</li>
+              <li className="custom-project-tag">Figma</li>
+              <li className="custom-project-tag">Photoshop</li>
+            </ul>
+          </div>
+          <div className="posters">
+            <img
+              className="rounded-lg"
+              src={posterVocal}
+              alt="Portfolio v2 cover"
+              loading="lazy"
+            />
+          </div>
+        </li>
         {/* 4 */}
+        <li className="project-card">
+          <a
+            href="https://github.com/luisgcode/portfolio2.0"
+            target="_blank"
+            className="project-title font-bold mb-4 flex"
+            aria-label="Visit project's Github repository"
+          >
+            AI Chatbot Integration <FiArrowUpRight />
+          </a>
+          <div>
+            <p>{t("projectChatbot.description")}</p>
+          </div>
+          <div className="py-4">
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">Botpress</li>
+              <li className="custom-project-tag">AI Design</li>
+              <li className="custom-project-tag">Data Storage</li>
+              <li className="custom-project-tag">Knowledge Answering</li>
+            </ul>
+          </div>
+          <div className="posters">
+            <img
+              className="rounded-lg"
+              src={posterChatBot}
+              alt="Portfolio v2 cover"
+              loading="lazy"
+            />
+          </div>
+        </li>
+
+        {/* 5 */}
         <li className="project-card">
           <a
             href="https://github.com/luisgcode/portfolio2.0"
@@ -177,7 +222,7 @@ const Projects = () => {
             />
           </div>
         </li>
-        {/* 5  */}
+        {/* 6  */}
         <li className="project-card">
           <a
             href="https://globaltechnologies.web.app/"
@@ -209,71 +254,9 @@ const Projects = () => {
             />
           </div>
         </li>
-        {/* 6 */}
-        {/* <li className="project-card">
-          <a
-            href="https://github.com/luisgcode/pattern_library_canJet"
-            target="_blank"
-            className="project-title font-bold mb-4 flex"
-            aria-label="Visit project's github repository"
-          >
-            Pattern Library & Dasboard <FiArrowUpRight />
-          </a>
-          <div>
-            <p>{t("projectCanjet.description")}</p>
-          </div>
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">D3.js</li>
-              <li className="custom-project-tag">JavaScript</li>
-              <li className="custom-project-tag">CSS</li>
-            </ul>
-          </div>
-          <div className="posters">
-            <img
-              className="rounded-lg  "
-              src={posterCanJet}
-              alt="Canjet project's cover"
-              loading="lazy"
-            />
-          </div>
-        </li> */}
-        {/* 7  */}
-        {/* <li className="project-card">
-          <a
-            href="https://infanti.cl/pages/terminos-y-condiciones"
-            target="_blank"
-            className="project-title font-bold mb-4 flex"
-            aria-label="Visit project's web"
-          >
-            Terms & Conditions Infanti <FiArrowUpRight />
-          </a>
-
-          <div>
-            <p>
-              <p>{t("projectInfantiTerms.description")}</p>
-            </p>
-          </div>
-
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">CSS</li>
-              <li className="custom-project-tag">Responsive</li>
-              <li className="custom-project-tag">JavaScript</li>
-            </ul>
-          </div>
-
-          <div className="posters">
-            <img
-              className="rounded-lg  "
-              src={posterTermsIfanti}
-              alt="Infanti's terms and conditions cover"
-              loading="lazy"
-            />
-          </div>
-        </li> */}
+        
         {/* 8 */}
-        <li className="project-card">
+        {/* <li className="project-card">
           <a
             href="https://github.com/luisgcode/portfolio2024"
             target="_blank"
@@ -305,7 +288,7 @@ const Projects = () => {
               loading="lazy"
             />
           </div>
-        </li>
+        </li> */}
         {/* hidden */}
         {/* <div className="project-card">
           <a

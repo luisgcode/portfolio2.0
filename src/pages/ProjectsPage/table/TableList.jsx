@@ -29,6 +29,60 @@ const TableList = () => {
             </tr>
           </thead>
           <tbody>
+
+            {/* Neurovet */}
+            <motion.tr
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.3,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+            >
+              {/* Year */}
+              <td>2025</td>
+              {/* Project */}
+              <td className="font-semibold">
+                <div className="hidden xxl:table-cell">
+                  Neurovet.cl - &nbsp;
+                  <span className="italic text-highlightColor font-normal">
+                    Developing...
+                  </span>
+                </div>
+                <div className=" xxl:hidden ">
+                  <a href="#" className="flex gap-1">
+                    Neurovet.cl
+                    <span className="italic text-highlightColor font-normal">
+                      Developing...
+                    </span>
+                  </a>
+                </div>
+              </td>
+              {/* Tags */}
+              <td className="tags-td hidden xl:flex  ">
+                <span className="custom-project-tag">Wordpress</span>
+                <span className="custom-project-tag">PHP</span>
+                <span className="custom-project-tag">Elementor </span>
+                <span className="custom-project-tag">Yoast SEO</span>
+              </td>
+              {/* link */}
+              <td className="link hidden xxl:table-cell">
+                <a
+                  href="#"
+                  className="flex gap-1 hover:scale-110 transition-all duration-200"
+                >
+                  WordPress Development
+                </a>
+              </td>
+            </motion.tr>
+
             {/* Thevocaldirection */}
             <motion.tr
               variants={{
@@ -108,10 +162,8 @@ const TableList = () => {
               <td className="font-semibold">
                 <div className="hidden xxl:table-cell">
                   {/* Desktop name */}
-                  Wawabb - Bsale Store Optimization - &nbsp;
-                  <span className="italic text-highlightColor font-normal">
-                    Developing...
-                  </span>
+                  Wawabb - Bsale Store Optimization 
+           
                 </div>
                 <div className="xxl:hidden">
                   <a
@@ -122,15 +174,14 @@ const TableList = () => {
                   >
                     {/* Mobile name */}
                     Wawabb.cl -
-                    <span className="italic text-highlightColor font-normal">
-                      Developing...
-                    </span>
+             
                     <FiArrowUpRight />
                   </a>
                 </div>
               </td>
               {/* Tags */}
-              <td className="tags-td   xl:flex hidden">
+              <td className="tags-td   xl:flex hidden">                
+                <span className="custom-project-tag">CMS Optimization</span>
                 <span className="custom-project-tag">Bsale POS</span>
                 <span className="custom-project-tag">JavaScript</span>
                 <span className="custom-project-tag">CSS</span>
@@ -193,60 +244,9 @@ const TableList = () => {
                 </a>
               </td>
             </motion.tr>
-            {/* Neurovet */}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 0.3,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>2025</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">
-                  Neurovet.cl - &nbsp;
-                  <span className="italic text-highlightColor font-normal">
-                    Developing...
-                  </span>
-                </div>
-                <div className=" xxl:hidden ">
-                  <a href="#" className="flex gap-1">
-                    Neurovet.cl
-                    <span className="italic text-highlightColor font-normal">
-                      Developing...
-                    </span>
-                  </a>
-                </div>
-              </td>
-              {/* Tags */}
-              <td className="tags-td hidden xl:flex  ">
-                <span className="custom-project-tag">Wordpress</span>
-                <span className="custom-project-tag">PHP</span>
-                <span className="custom-project-tag">Elementor </span>
-                <span className="custom-project-tag">Yoast SEO</span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell">
-                <a
-                  href="#"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                >
-                  WordPress Development
-                </a>
-              </td>
-            </motion.tr>
+
             {/* QuickBooker */}
-            <motion.tr
+            {/* <motion.tr
               variants={{
                 hidden: { x: 80, opacity: 0 },
                 show: {
@@ -260,11 +260,11 @@ const TableList = () => {
               }}
               initial="hidden"
               animate="show"
-            >
+            > */}
               {/* Year */}
-              <td>2025</td>
+              {/* <td>2025</td> */}
               {/* Project */}
-              <td className="font-semibold">
+              {/* <td className="font-semibold">
                 <div className="hidden xxl:table-cell">
                   QuickBooker - &nbsp;
                   <span className="italic text-highlightColor font-normal">
@@ -285,9 +285,9 @@ const TableList = () => {
                     <FiArrowUpRight />
                   </a>
                 </div>
-              </td>
+              </td> */}
               {/* Tags */}
-              <td className="tags-td hidden xl:flex  ">
+              {/* <td className="tags-td hidden xl:flex  ">
                 <span className="custom-project-tag">React JS</span>
                 <span className="custom-project-tag">Tailwind CSS</span>
                 <span className="custom-project-tag">Responsive </span>
@@ -297,9 +297,9 @@ const TableList = () => {
                 <span className="custom-project-tag">Node JS </span>
                 <span className="custom-project-tag">MySQL </span>
                 <span className="custom-project-tag">Trilingual </span>
-              </td>
+              </td> */}
               {/* link */}
-              <td className="link hidden xxl:table-cell">
+              {/* <td className="link hidden xxl:table-cell">
                 <a
                   href="https://github.com/luisgcode/Quickbooker"
                   target="_blank"
@@ -309,8 +309,9 @@ const TableList = () => {
                   GitHub
                   <FaGithub />
                 </a>
-              </td>
-            </motion.tr>
+              </td> */}
+            {/* </motion.tr> */}
+            
             {/* portfolio v2 */}
             <motion.tr
               variants={{
