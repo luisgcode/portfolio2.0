@@ -1,11 +1,7 @@
 import React from "react";
 import {
   posterPortfolio2,
-  posterCrowdMeter,
   posterGlobal,
-  posterCanJet,
-  posterPortfolio1,
-  posterTermsIfanti,
   posterQuickBooker,
   posterChatBot,
   posterVocal,
@@ -89,7 +85,7 @@ const Projects = () => {
             className="project-title font-bold mb-4 flex items-center"
             aria-label="Visit project's Gtihub repository"
           >
-            QuickBooker <FiArrowUpRight />
+            Neurovet <FiArrowUpRight />
             <span className="italic text-highlightColor font-normal text-sm">
               Developing
             </span>
