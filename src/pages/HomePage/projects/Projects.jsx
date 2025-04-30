@@ -34,35 +34,33 @@ const Projects = () => {
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 0.5 }}
       >
-        {/* 1 */}
+        {/* 1 Geek sonas*/}
         <li className="project-card">
           <a
-            href="https://github.com/luisgcode/Quickbooker"
+            href="#"
             target="_blank"
             className="project-title font-bold mb-4 flex items-center"
             aria-label="Visit project's Gtihub repository"
           >
-            Neurovet <FiArrowUpRight />
+            Geek sonas <FiArrowUpRight />
             <span className="italic text-highlightColor font-normal text-sm">
               Developing
             </span>
           </a>
 
           <div>
-            <p>{t("projectQuickbooker.description")}</p>
+            <p>{t("projectGeek.description")}</p>
           </div>
 
           <div className="py-4">
             <ul className="flex flex-wrap items-center gap-3">
               <li className="custom-project-tag">Wordpress</li>
               <li className="custom-project-tag">Elementor</li>
-              <li className="custom-project-tag">Bookly</li>
-              <li className="custom-project-tag">CSS </li>
-              <li className="custom-project-tag">Contact Form 7 </li>
-              <li className="custom-project-tag">Hostinger </li>
-              <li className="custom-project-tag">SEO </li>
-              <li className="custom-project-tag">Figma </li>
-              <li className="custom-project-tag">Photoshop </li>
+              <li className="custom-project-tag">SEO</li>
+              <li className="custom-project-tag">Hostinger</li>
+              <li className="custom-project-tag">Figma</li>
+              <li className="custom-project-tag">Photoshop</li>
+              <li className="custom-project-tag">Firefly</li>
             </ul>
           </div>
 
@@ -76,10 +74,10 @@ const Projects = () => {
           </div>
         </li>
 
-        {/* 2 */}
+        {/* 2 Neurovet */}
         <li className="project-card">
           <a
-            href="https://github.com/luisgcode/Quickbooker"
+            href="#"
             target="_blank"
             className="project-title font-bold mb-4 flex items-center"
             aria-label="Visit project's Gtihub repository"
@@ -91,19 +89,18 @@ const Projects = () => {
           </a>
 
           <div>
-            <p>{t("projectQuickbooker.description")}</p>
+            <p>{t("projectNeurovet.description")}</p>
           </div>
 
           <div className="py-4">
             <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">React JS</li>
-              <li className="custom-project-tag">Tailwind CSS</li>
-              <li className="custom-project-tag">Responsive </li>
-              <li className="custom-project-tag">Jira </li>
-              <li className="custom-project-tag">Notion </li>
+              <li className="custom-project-tag">Wordpress</li>
+              <li className="custom-project-tag">Bookly</li>
+              <li className="custom-project-tag">Elementor</li>
+              <li className="custom-project-tag">Yoast SEO</li>
+              <li className="custom-project-tag">Hostinger </li>
               <li className="custom-project-tag">Figma </li>
-              <li className="custom-project-tag">Node JS </li>
-              <li className="custom-project-tag">MySQL </li>
+              <li className="custom-project-tag">Photoshop</li>
             </ul>
           </div>
 

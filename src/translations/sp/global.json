@@ -12,6 +12,12 @@
   "latest": {
     "title": "Ùltimos proyectos"
   },
+  "projectGeek": {
+    "description": "El cliente solicitó su primer sitio web para tener control total sobre su contenido y conectarlo con su canal de YouTube. Es un proyecto interesante, ya que cuenta con una gran cantidad de material existente, por lo que es clave diseñar una estructura que destaque su trabajo y atraiga a un público más amplio. Estaré a cargo tanto del diseño como del desarrollo completo del sitio, asegurando que sea atractivo, organizado y alineado con su visión creativa."
+  },
+  "projectNeurovet": {
+    "description": "El cliente es una veterinaria que quiere renovar por completo su sitio web actual. Decidió cambiar de Wix a WordPress para tener más flexibilidad y control. Me encargaré de hacer toda la migración, crear un diseño nuevo y moderno, proponer un estilo actualizado para el contenido y ayudar a modernizar su marca para conectar mejor con los dueños de mascotas."
+  },
   "projectVocal": {
     "description": "La clienta solicitó un nuevo sitio web que reflejara su esencia como directora vocal moderna y con experiencia. Necesitaba una plataforma que mostrara su pasión y conocimientos en la música. Optamos por WordPress por su flexibilidad, creando un sitio atractivo, intuitivo y dinámico para conectar con clientes y colaboradores."
   },
@@ -48,7 +54,7 @@
   },
   "about": {
     "p1": "Soy un desarrollador web con 2 años de experiencia creando aplicaciones web receptivas y fáciles de usar, utilizando tecnologías modernas como HTML5, CSS3, JavaScript (ES6+), SCSS y React.",
-    "p2": "Actualmente estoy cursando un diploma en Desarrollo Web y Aplicaciones de Internet en Fanshawe College (GPA: 4.075), donde estoy ampliando mis habilidades en frameworks de JavaScript, desarrollo back-end e integración de API.",
+    "p2": "Graduado en 2025 del diploma en Desarrollo Web y Aplicaciones de Internet en Fanshawe College (GPA: 4.075), he fortalecido mis habilidades en frameworks de JavaScript, desarrollo back-end e integración de API.",
     "p3": "Apasionado por crear soluciones innovadoras, destaco en el trabajo en equipo, la adaptabilidad y el pensamiento crítico. Con experiencia en herramientas como Power BI, Google Analytics, Git y metodologías ágiles, estoy entusiasmado por aplicar mis conocimientos para desarrollar soluciones web impactantes."
   }
 }

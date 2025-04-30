@@ -12,6 +12,12 @@
   "latest": {
     "title": "Projects."
   },
+  "projectGeek": {
+    "description": "The client requested his very first website to have full control over his content and connect it with his YouTube channel. This is an exciting project, as he brings a large amount of existing content, making it essential to design a layout that highlights his work and attracts a wider audience. I’ll be in charge of both the design and full development of the site, ensuring it is engaging, organized, and aligned with his creative vision."
+  },
+  "projectNeurovet": {
+    "description": "The client is a veterinarian who wants to completely update their current website. They decided to move from Wix to WordPress to gain more flexibility and control. I will handle the full migration, create a fresh and modern design, bring a new style for the content, and help refresh her brand to better connect with pet owners."
+  },
   "projectVocal": {
     "description": "The client requested a new website that captured her essence as a modern, experienced vocal director. She needed a platform that showcased her expertise and passion for music. We chose WordPress for its flexibility, creating a visually striking, user-friendly site with dynamic content and intuitive navigation to engage clients and collaborators."
   },
@@ -48,7 +54,7 @@
   },
   "about": {
     "p1": "I am a web developer with 2 years of experience building responsive, user-friendly web applications using modern technologies like HTML5, CSS3, JavaScript (ES6+), SCSS, and React.",
-    "p2": "Currently pursuing a diploma in Web Development and Internet Applications at Fanshawe College (GPA: 4.075), I am enhancing my skills in JavaScript frameworks, back-end development, and API integration.",
+    "p2": "Graduated in 2025 with a diploma in Web Development and Internet Applications from Fanshawe College (GPA: 4.075), I have strengthened my skills in JavaScript frameworks, back-end development, and API integration.",
     "p3": "Passionate about creating innovative solutions, I excel in teamwork, adaptability, and critical thinking. Proficient in tools like Power BI, Google Analytics, Git, and Agile methodologies, I am eager to apply my expertise to deliver impactful web solutions."
   }
 }
