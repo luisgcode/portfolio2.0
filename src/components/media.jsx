@@ -34,7 +34,7 @@ import luisLogo from "../assets/images/logos/logo.svg";
 //  ^  My hero image
 import heroImage from "../assets/images/hero-alter1.webp";
 
-// projects videos
+// projects posters
 import posterPortfolio2 from "../assets/images/posters/poster-portfolio2.0.webp";
 import posterPortfolio1 from "../assets/images/posters/poster-portfolio.webp";
 import posterCrowdMeter from "../assets/images/posters/poster-crowdmeter.webp";
@@ -44,6 +44,7 @@ import posterTermsIfanti from "../assets/images/posters/poster-terms.webp";
 import posterQuickBooker from "../assets/images/posters/poster-quickbooker.webp";
 import posterChatBot from "../assets/images/posters/poster-chat.webp";
 import posterVocal from "../assets/images/posters/poster-vocal.webp";
+import posterLoading from "../assets/images/posters/loading.png";
 
 export {
   heroImage,
@@ -87,4 +88,5 @@ export {
   posterQuickBooker,
   posterChatBot,
   posterVocal,
+  posterLoading,
 };

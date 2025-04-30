@@ -5,6 +5,7 @@ import {
   posterQuickBooker,
   posterChatBot,
   posterVocal,
+  posterLoading,
 } from "../../../components/media";
 import "./projects.css";
 import { FiArrowUpRight } from "react-icons/fi";
@@ -67,7 +68,7 @@ const Projects = () => {
           <div className="posters">
             <img
               className="rounded-lg  "
-              src={posterQuickBooker}
+              src={posterLoading}
               alt="Quickbooker project's cover"
               loading="lazy"
             />
@@ -107,7 +108,7 @@ const Projects = () => {
           <div className="posters">
             <img
               className="rounded-lg  "
-              src={posterQuickBooker}
+              src={posterLoading}
               alt="Quickbooker project's cover"
               loading="lazy"
             />
