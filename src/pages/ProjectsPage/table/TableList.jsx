@@ -180,6 +180,7 @@ const TableList = () => {
               {/* Tags */}
               <td className="tags-td   xl:flex hidden">
                 <span className="custom-project-tag">Wordpress</span>
+                <span className="custom-project-tag">Mail Configuration</span>
                 <span className="custom-project-tag">Elementor</span>
                 <span className="custom-project-tag">CSS</span>
                 <span className="custom-project-tag">Contact Form 7</span>
