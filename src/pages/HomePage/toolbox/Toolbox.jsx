@@ -56,8 +56,7 @@ const Toolbox = () => {
       >
         <div className="toolbox-heading mb-6">
           <h3>
-            {t("toolBox.title")}
-            <span className="detail-bg"></span>
+            {t("toolBox.title")}9<span className="detail-bg"></span>
           </h3>
           <p>{t("toolBox.description")}</p>
         </div>
@@ -90,6 +89,12 @@ const Toolbox = () => {
               <div className="tool-box">
                 <img src={sassLogo} alt="logo javascript " loading="lazy" />
                 <small>Sass</small>
+              </div>
+
+              {/* Html */}
+              <div className="tool-box">
+                <img src={htmlLogo} alt="logo React " loading="lazy" />
+                <small>HTML</small>
               </div>
             </div>
           </section>
