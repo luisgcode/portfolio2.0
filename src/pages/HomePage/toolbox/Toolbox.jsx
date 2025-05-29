@@ -34,6 +34,8 @@ import {
   jiraLogo,
   confluenceLogo,
   notionLogo,
+  cssLogo,
+  photoshopLogo,
 } from "../../../components/media";
 
 const Toolbox = () => {
@@ -95,6 +97,12 @@ const Toolbox = () => {
               <div className="tool-box">
                 <img src={htmlLogo} alt="logo React " loading="lazy" />
                 <small>HTML</small>
+              </div>
+
+              {/* CSS */}
+              <div className="tool-box">
+                <img src={cssLogo} alt="logo React " loading="lazy" />
+                <small>CSS</small>
               </div>
             </div>
           </section>
@@ -158,6 +166,11 @@ const Toolbox = () => {
               <div className="tool-box">
                 <img src={figmaLogo} alt="logo Figma " loading="lazy" />
                 <small>Figma</small>
+              </div>
+              {/* Photoshop */}
+              <div className="tool-box">
+                <img src={photoshopLogo} alt="logo Figma " loading="lazy" />
+                <small>Photoshop</small>
               </div>
               {/* Notion */}
               <div className="tool-box">
