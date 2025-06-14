@@ -69,7 +69,7 @@ const Hero = () => {
                   aria-label="Get my email"
                 >
                   <IoMailOutline />
-                  Contact
+                  contact@luisgcode.com
                 </a>
               </li>
               <li>
