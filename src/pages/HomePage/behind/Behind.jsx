@@ -32,7 +32,7 @@ const Behind = () => {
         aria-label="key statistics"
       >
         <li className="custom-bullets " role="status">
-          2
+          3
           <span className="text-base font-normal">
             {t("behindSection.years")}
           </span>
