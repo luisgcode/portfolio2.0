@@ -29,6 +29,52 @@ const TableList = () => {
             </tr>
           </thead>
           <tbody>
+            {/* Resources Page */}
+            <motion.tr
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.5,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+            >
+              {/* Year */}
+              <td>Jun/2025</td>
+              {/* Project */}
+              <td className="font-semibold">
+                <div className="hidden xxl:table-cell">
+                  Resources $ page on my Portfolio
+                </div>
+                <div className=" xxl:hidden ">
+                  <a href="#" className="flex gap-1">
+                    Resources $ page on my Portfolio
+                  </a>
+                </div>
+              </td>
+              {/* Tags */}
+              <td className="tags-td hidden xl:flex  ">
+                <span className="custom-project-tag">Buymeacoffe</span>
+                <span className="custom-project-tag">React JS </span>
+                <span className="custom-project-tag">Tailwind CSS</span>
+              </td>
+              {/* link */}
+              <td className="link hidden xxl:table-cell">
+                <a
+                  href="#"
+                  className="flex gap-1 hover:scale-110 transition-all duration-200"
+                >
+                  luisgcode.com <FiArrowUpRight />
+                </a>
+              </td>
+            </motion.tr>
+
             {/* Geek sonas */}
             <motion.tr
               variants={{
@@ -200,6 +246,7 @@ const TableList = () => {
                 </a>
               </td>
             </motion.tr>
+
             {/* Wawabb */}
             <motion.tr
               variants={{
@@ -256,6 +303,7 @@ const TableList = () => {
                 </a>
               </td>
             </motion.tr>
+
             {/* Chatbot */}
             <motion.tr
               variants={{

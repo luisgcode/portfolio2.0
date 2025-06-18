@@ -150,7 +150,7 @@ const Projects = () => {
             />
           </div>
         </li>
-        {/* 4 */}
+        {/* 4 Chatbot*/}
         <li className="project-card">
           <a
             href="https://github.com/luisgcode/portfolio2.0"
