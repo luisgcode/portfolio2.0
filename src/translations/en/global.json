@@ -1,6 +1,6 @@
 {
   "header": {
-    "navbar": ["Home", "About", "Projects"],
+    "navbar": ["Home", "About", "Projects", "Resources"],
     "heroTitle": "Web Developer",
     "heroClaim": "I build responsive Web applications with modern technologies, specializing in:"
   },
