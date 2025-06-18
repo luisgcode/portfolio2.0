@@ -12,7 +12,6 @@ import { FaRegUser } from "react-icons/fa";
 import { FiHome } from "react-icons/fi";
 import { MdOutlineFolderCopy } from "react-icons/md";
 import { MdLanguage } from "react-icons/md";
-import { MdAttachMoney } from "react-icons/md";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -106,7 +105,6 @@ const Navbar = () => {
               {/* enter to resources */}
               <a className={`flex nav-link ${animate ? "fade-in-out" : ""}`}>
                 {t("header.navbar", { returnObjects: true })[3]}
-                <MdAttachMoney />
               </a>
             </li>
           </Link>
