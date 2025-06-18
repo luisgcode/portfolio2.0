@@ -11,8 +11,8 @@ const Resources = () => {
       </span>
       <span className="text-xl block  text-center mt-6 p-10">
         In this upcoming section of my portfolio, I’ll be sharing resources I’ve
-        either created or discovered through hands-on experience—resources that
-        AI alone can’t offer, because context and real-world application make
+        either created or discovered through hands on experience resources that
+        AI alone can’t offer, because context and real world application make
         all the difference.
       </span>
       <span className="text-xl block  text-center mt-6">Coming soon...</span>
