@@ -225,6 +225,16 @@ const Navbar = () => {
                   {t("header.navbar", { returnObjects: true })[2]}
                 </li>
               </Link>
+
+              <Link to="/resources">
+                <li
+                  className="flex gap-2 items-center"
+                  onClick={() => setToggleMenu(false)}
+                  role="menuitem"
+                >
+                  {t("header.navbar", { returnObjects: true })[3]}
+                </li>
+              </Link>
               {/* Language Switch */}
               <li className="tools flex flex-col items-start">
                 {currentLanguage === "en" ? (
