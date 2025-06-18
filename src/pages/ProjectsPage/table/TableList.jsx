@@ -50,24 +50,32 @@ const TableList = () => {
               {/* Project */}
               <td className="font-semibold">
                 <div className="hidden xxl:table-cell">
-                  Resources $ page on my Portfolio
+                  Resources $ page on Portfolio - &nbsp;{" "}
+                  <span className="italic text-highlightColor font-normal">
+                    Developing...
+                  </span>
                 </div>
                 <div className=" xxl:hidden ">
                   <a href="#" className="flex gap-1">
-                    Resources $ page on my Portfolio
+                    Resources $ page on Portfolio{" "}
+                    <span className="italic text-highlightColor font-normal">
+                      Developing...
+                    </span>
                   </a>
                 </div>
               </td>
               {/* Tags */}
               <td className="tags-td hidden xl:flex  ">
                 <span className="custom-project-tag">Buymeacoffe</span>
-                <span className="custom-project-tag">React JS </span>
-                <span className="custom-project-tag">Tailwind CSS</span>
+                <span className="custom-project-tag">Semantic HTML</span>
+                <span className="custom-project-tag">
+                  Web Content Accessibility Guidelines
+                </span>
               </td>
               {/* link */}
               <td className="link hidden xxl:table-cell">
                 <a
-                  href="#"
+                  href="https://luisgcode.com/resources"
                   className="flex gap-1 hover:scale-110 transition-all duration-200"
                 >
                   luisgcode.com <FiArrowUpRight />
