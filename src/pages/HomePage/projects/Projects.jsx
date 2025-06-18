@@ -29,7 +29,7 @@ const Projects = () => {
         <span className="detail-bg"></span>
       </h3>
       <motion.ul
-        className="flex flex-wrap md:justify-center gap-y-10 gap-x-10 projects-container mt-12  lg:justify-between"
+        className="flex flex-wrap md:justify-center gap-y-2 gap-x-10 projects-container mt-12  lg:justify-between"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.1 }}

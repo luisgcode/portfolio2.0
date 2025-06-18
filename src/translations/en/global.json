@@ -13,16 +13,16 @@
     "title": "Projects."
   },
   "projectGeek": {
-    "description": "The client requested his very first website to have full control over his content and connect it with his YouTube channel. This is an exciting project, as he brings a large amount of existing content, making it essential to design a layout that highlights his work and attracts a wider audience. I’ll be in charge of both the design and full development of the site, ensuring it is engaging, organized, and aligned with his creative vision."
+    "description": "Developing a custom WordPress site for a content creator, with full content control and YouTube integration. Focused on showcasing his work through an engaging, organized layout to grow his audience."
   },
   "projectNeurovet": {
-    "description": "The client is a veterinarian who wants to completely update their current website. They decided to move from Wix to WordPress to gain more flexibility and control. I will handle the full migration, create a fresh and modern design, bring a new style for the content, and help refresh her brand to better connect with pet owners."
+    "description": "Migrating a veterinary website from Wix to WordPress to improve flexibility and control. Handling full redesign, content styling, and brand refresh to better connect with pet owners."
   },
   "projectVocal": {
-    "description": "The client requested a new website that captured her essence as a modern, experienced vocal director. She needed a platform that showcased her expertise and passion for music. We chose WordPress for its flexibility, creating a visually striking, user-friendly site with dynamic content and intuitive navigation to engage clients and collaborators."
+    "description": "Built a WordPress site for a vocal director to showcase her expertise and passion for music. Focused on a modern, dynamic design with intuitive navigation to engage clients and collaborators."
   },
   "projectChatbot": {
-    "description": "I built an AI-powered chatbot to enhance user interaction and provide seamless access to information in my Portfolio v2. This chatbot was developed using logical algorithms and AI training to enable real-time conversation, making it easier for visitors to navigate my work and get instant answers."
+    "description": "Developed an AI-powered chatbot for my Portfolio v2 to improve user interaction and provide real-time navigation support. Built with logic-based algorithms and AI training for seamless, conversational access to information."
   },
   "projectPortfolioV2": {
     "description": "New Portfolio designed and developed to showcase the tools and technologies I’ve mastered over the past year, including React, and Tailwind CSS, in a modern, mobile-first design."
