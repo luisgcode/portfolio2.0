@@ -123,8 +123,7 @@ const Navbar = () => {
                 }}
                 aria-label="Switch to Spanish"
               >
-                <MdLanguage />
-                SPA
+                SPANISH
               </button>
             ) : (
               <button
@@ -139,8 +138,7 @@ const Navbar = () => {
                 }}
                 aria-label="Switch to English"
               >
-                <MdLanguage />
-                ENG
+                ENGLISH
               </button>
             )}
           </li>
@@ -245,7 +243,7 @@ const Navbar = () => {
                       setCurrentLanguage("sp");
                     }}
                   >
-                    <span className="text-xs">Language:</span> SPA
+                    <span className="text-xs">SPANISH</span>
                   </button>
                 ) : (
                   <button
@@ -255,7 +253,7 @@ const Navbar = () => {
                       setCurrentLanguage("en");
                     }}
                   >
-                    <span className="text-xs">Language:</span> ENG
+                    <span className="text-xs">ENGLISH</span>
                   </button>
                 )}
               </li>
