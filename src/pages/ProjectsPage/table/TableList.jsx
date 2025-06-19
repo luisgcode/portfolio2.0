@@ -38,7 +38,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.5,
+                    delay: 0.1,
                   },
                 },
               }}
@@ -92,7 +92,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.1,
+                    delay: 0.2,
                   },
                 },
               }}
@@ -148,7 +148,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.2,
+                    delay: 0.3,
                   },
                 },
               }}
@@ -205,7 +205,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.3,
+                    delay: 0.4,
                   },
                 },
               }}
@@ -264,7 +264,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.4,
+                    delay: 0.5,
                   },
                 },
               }}
@@ -321,7 +321,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.5,
+                    delay: 0.6,
                   },
                 },
               }}
@@ -359,73 +359,6 @@ const TableList = () => {
               </td>
             </motion.tr>
 
-            {/* QuickBooker */}
-            {/* <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 0.4,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            > */}
-            {/* Year */}
-            {/* <td>2025</td> */}
-            {/* Project */}
-            {/* <td className="font-semibold">
-                <div className="hidden xxl:table-cell">
-                  QuickBooker - &nbsp;
-                  <span className="italic text-highlightColor font-normal">
-                    Developing...
-                  </span>
-                </div>
-                <div className=" xxl:hidden ">
-                  <a
-                    href="https://github.com/luisgcode/Quickbooker"
-                    target="_blank"
-                    className="flex gap-1"
-                    aria-label="Visit QuickBooker Github repository"
-                  >
-                    QuickBooker
-                    <span className="italic text-highlightColor font-normal">
-                      Developing...
-                    </span>
-                    <FiArrowUpRight />
-                  </a>
-                </div>
-              </td> */}
-            {/* Tags */}
-            {/* <td className="tags-td hidden xl:flex  ">
-                <span className="custom-project-tag">React JS</span>
-                <span className="custom-project-tag">Tailwind CSS</span>
-                <span className="custom-project-tag">Responsive </span>
-                <span className="custom-project-tag">Jira </span>
-                <span className="custom-project-tag">Notion </span>
-                <span className="custom-project-tag">Figma </span>
-                <span className="custom-project-tag">Node JS </span>
-                <span className="custom-project-tag">MySQL </span>
-                <span className="custom-project-tag">Trilingual </span>
-              </td> */}
-            {/* link */}
-            {/* <td className="link hidden xxl:table-cell">
-                <a
-                  href="https://github.com/luisgcode/Quickbooker"
-                  target="_blank"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                  aria-label="Visit QuickBooker Github repository"
-                >
-                  GitHub
-                  <FaGithub />
-                </a>
-              </td> */}
-            {/* </motion.tr> */}
-
             {/* portfolio v2 */}
             <motion.tr
               variants={{
@@ -435,7 +368,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.6,
+                    delay: 0.7,
                   },
                 },
               }}
@@ -493,7 +426,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.7,
+                    delay: 0.8,
                   },
                 },
               }}
@@ -545,7 +478,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.8,
+                    delay: 0.9,
                   },
                 },
               }}
@@ -600,7 +533,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.9,
+                    delay: 1,
                   },
                 },
               }}
@@ -655,7 +588,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 1,
+                    delay: 1.1,
                   },
                 },
               }}
@@ -711,7 +644,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 1.1,
+                    delay: 1.2,
                   },
                 },
               }}
@@ -762,7 +695,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 1.2,
+                    delay: 1.3,
                   },
                 },
               }}
