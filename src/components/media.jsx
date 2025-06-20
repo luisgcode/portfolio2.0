@@ -14,7 +14,6 @@ import reactLogo from "../assets/images/logos/tech-react.svg";
 import pythonLogo from "../assets/images/logos/tech-python.svg";
 import powerBiLogo from "../assets/images/logos/tech-powerbi.svg";
 import postgrSQLogo from "../assets/images/logos/tech-postgresql.svg";
-import phpLogo from "../assets/images/logos/tech-php.svg";
 import npmLogo from "../assets/images/logos/tech-npm.svg";
 import mySqlLogo from "../assets/images/logos/tech-mysql.svg";
 import magentoLogo from "../assets/images/logos/tech-magento.svg";
@@ -70,7 +69,6 @@ export {
   tailWindLogo,
   typescriptlogo,
   vsCodeLogo,
-  phpLogo,
   npmLogo,
   mySqlLogo,
   jsLogo,

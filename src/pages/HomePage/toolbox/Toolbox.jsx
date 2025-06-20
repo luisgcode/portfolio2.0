@@ -20,7 +20,6 @@ import {
   slackLogo,
   tailWindLogo,
   vsCodeLogo,
-  phpLogo,
   npmLogo,
   mySqlLogo,
   jsLogo,
@@ -121,11 +120,7 @@ const Toolbox = () => {
                 <img src={pythonLogo} alt="logo Python " loading="lazy" />
                 <small>Python</small>
               </div>
-              {/* php */}
-              <div className="tool-box">
-                <img src={phpLogo} alt="logo PHP " loading="lazy" />
-                <small>PHP</small>
-              </div>
+
               {/* firebase */}
               <div className="tool-box">
                 <img src={firebaseLogo} alt="logo firebase " loading="lazy" />

@@ -39,14 +39,14 @@ const Behind = () => {
         </li>
         |
         <li className="custom-bullets" role="status">
-          10+
+          6+
           <span className="text-base font-normal">
             {t("behindSection.skills")}
           </span>
         </li>
         |
         <li className="custom-bullets" role="status">
-          12000+
+          10+
           <span className="text-base font-normal  ">
             {t("behindSection.hours")}
           </span>
