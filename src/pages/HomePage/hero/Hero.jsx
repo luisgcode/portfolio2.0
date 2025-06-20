@@ -89,7 +89,7 @@ const Hero = () => {
           <img
             className="w-[280px] "
             src={heroImage}
-            alt="Portrait of Luis Guaiquirian, Web Developer especializado en React y JavaScript"
+            alt="Portrait of Luis Guaiquirian, Front-End Developer especializado en React y JavaScript"
             loading="lazy"
           />
         </div>

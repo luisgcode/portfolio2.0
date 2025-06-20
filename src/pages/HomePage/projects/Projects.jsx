@@ -236,15 +236,9 @@ const Projects = () => {
           </div>
           <div className="py-4">
             <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">Wordpress</li>
-              <li className="custom-project-tag">Mail Configuration</li>
-              <li className="custom-project-tag">Elementor</li>
-              <li className="custom-project-tag">CSS</li>
-              <li className="custom-project-tag">Contact Form 7 </li>
-              <li className="custom-project-tag">Hostinger</li>
+              <li className="custom-project-tag">Squarespace</li>
+              <li className="custom-project-tag">GoDaddy</li>
               <li className="custom-project-tag">SEO</li>
-              <li className="custom-project-tag">Figma</li>
-              <li className="custom-project-tag">Photoshop</li>
             </ul>
           </div>
           <div className="posters">

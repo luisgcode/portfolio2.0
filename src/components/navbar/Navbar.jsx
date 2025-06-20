@@ -189,7 +189,7 @@ const Navbar = () => {
                 className="text-[16px] text-highlightColor"
                 aria-label="Role"
               >
-                Web Developer
+                Front-End Developer
               </span>
             </div>
             <ul className="mobile-menu">

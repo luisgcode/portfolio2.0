@@ -1,7 +1,7 @@
 {
   "header": {
     "navbar": ["Home", "About", "Projects", "Resources"],
-    "heroTitle": "Web Developer",
+    "heroTitle": "Front-End Developer",
     "heroClaim": "I build responsive Web applications with modern technologies, specializing in:"
   },
   "behindSection": {
