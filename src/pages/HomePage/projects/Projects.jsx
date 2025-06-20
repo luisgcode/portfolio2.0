@@ -5,6 +5,7 @@ import {
   posterQuickBooker,
   posterChatBot,
   posterVocal,
+  posterInfanti,
   posterLoading,
 } from "../../../components/media";
 import "./projects.css";
@@ -145,7 +146,7 @@ const Projects = () => {
           <div className="posters">
             <img
               className="rounded-lg  "
-              src={posterLoading}
+              src={posterInfanti}
               alt="Infanti.cl project's cover"
               loading="lazy"
             />

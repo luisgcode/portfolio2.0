@@ -46,6 +46,7 @@ import posterQuickBooker from "../assets/images/posters/poster-quickbooker.webp"
 import posterChatBot from "../assets/images/posters/poster-chat.webp";
 import posterVocal from "../assets/images/posters/poster-vocal.webp";
 import posterLoading from "../assets/images/posters/loading.png";
+import posterInfanti from "../assets/images/posters/poster-infanti.png";
 
 export {
   heroImage,
@@ -90,4 +91,5 @@ export {
   posterChatBot,
   posterVocal,
   posterLoading,
+  posterInfanti,
 };
