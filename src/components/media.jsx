@@ -47,6 +47,7 @@ import posterChatBot from "../assets/images/posters/poster-chat.webp";
 import posterVocal from "../assets/images/posters/poster-vocal.webp";
 import posterLoading from "../assets/images/posters/loading.png";
 import posterInfanti from "../assets/images/posters/poster-infanti.png";
+import posterMarket from "../assets/images/posters/poster-market.png";
 
 export {
   heroImage,
@@ -92,4 +93,5 @@ export {
   posterVocal,
   posterLoading,
   posterInfanti,
+  posterMarket,
 };

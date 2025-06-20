@@ -7,6 +7,7 @@ import {
   posterVocal,
   posterInfanti,
   posterLoading,
+  posterMarket,
 } from "../../../components/media";
 import "./projects.css";
 import { FiArrowUpRight } from "react-icons/fi";
@@ -153,7 +154,7 @@ const Projects = () => {
           </div>
         </li>
 
-        {/* 3 thevocaldirection */}
+        {/* 4 thevocaldirection */}
         <li className="project-card">
           <a
             href="https://thevocaldirection.com/"
@@ -189,43 +190,7 @@ const Projects = () => {
           </div>
         </li>
 
-        {/* 4 thevocaldirection */}
-        <li className="project-card">
-          <a
-            href="https://themarketwfd.com/"
-            target="_blank"
-            className="project-title font-bold mb-4 flex items-center"
-            aria-label="Visit project's Github repository"
-          >
-            themarketwfd.com <FiArrowUpRight />
-          </a>
-          <div>
-            <p>{t("projectVocal.description")}</p>
-          </div>
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">Wordpress</li>
-              <li className="custom-project-tag">Mail Configuration</li>
-              <li className="custom-project-tag">Elementor</li>
-              <li className="custom-project-tag">CSS</li>
-              <li className="custom-project-tag">Contact Form 7 </li>
-              <li className="custom-project-tag">Hostinger</li>
-              <li className="custom-project-tag">SEO</li>
-              <li className="custom-project-tag">Figma</li>
-              <li className="custom-project-tag">Photoshop</li>
-            </ul>
-          </div>
-          <div className="posters">
-            <img
-              className="rounded-lg  "
-              src={posterLoading}
-              alt="Quickbooker project's cover"
-              loading="lazy"
-            />
-          </div>
-        </li>
-
-        {/* 4 Chatbot*/}
+        {/* 5 Chatbot*/}
         <li className="project-card">
           <a
             href="https://github.com/luisgcode/portfolio2.0"
@@ -256,7 +221,43 @@ const Projects = () => {
           </div>
         </li>
 
-        {/* 5 Global tech */}
+        {/* 6 themarket */}
+        <li className="project-card">
+          <a
+            href="https://themarketwfd.com/"
+            target="_blank"
+            className="project-title font-bold mb-4 flex items-center"
+            aria-label="Visit project's Github repository"
+          >
+            themarketwfd.com <FiArrowUpRight />
+          </a>
+          <div>
+            <p>{t("projectMarket.description")}</p>
+          </div>
+          <div className="py-4">
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">Wordpress</li>
+              <li className="custom-project-tag">Mail Configuration</li>
+              <li className="custom-project-tag">Elementor</li>
+              <li className="custom-project-tag">CSS</li>
+              <li className="custom-project-tag">Contact Form 7 </li>
+              <li className="custom-project-tag">Hostinger</li>
+              <li className="custom-project-tag">SEO</li>
+              <li className="custom-project-tag">Figma</li>
+              <li className="custom-project-tag">Photoshop</li>
+            </ul>
+          </div>
+          <div className="posters">
+            <img
+              className="rounded-lg  "
+              src={posterMarket}
+              alt="Quickbooker project's cover"
+              loading="lazy"
+            />
+          </div>
+        </li>
+
+        {/* 7 Global tech */}
         <li className="project-card">
           <a
             href="https://globaltechnologies.web.app/"
@@ -289,7 +290,7 @@ const Projects = () => {
           </div>
         </li>
 
-        {/* 6 portfolio */}
+        {/* 8 portfolio */}
         <li className="project-card">
           <a
             href="https://github.com/luisgcode/portfolio2.0"

@@ -57,7 +57,8 @@ const Toolbox = () => {
       >
         <div className="toolbox-heading mb-6">
           <h3>
-            {t("toolBox.title")}9<span className="detail-bg"></span>
+            {t("toolBox.title")}
+            <span className="detail-bg"></span>
           </h3>
           <p>{t("toolBox.description")}</p>
         </div>
