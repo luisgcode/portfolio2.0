@@ -16,7 +16,7 @@ const About = () => {
 
   return (
     <section>
-      <div className="about p-sma_pad md:p-mid_pad">
+      <div className="about p-sma_pad md:p-mid_pad mt-10">
         <div className="box flex flex-col gap-20 lg:flex-row">
           <motion.div
             variants={{
