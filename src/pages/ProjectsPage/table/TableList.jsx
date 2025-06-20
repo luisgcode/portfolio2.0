@@ -50,16 +50,16 @@ const TableList = () => {
               {/* Project */}
               <td className="font-semibold">
                 <div className="hidden xxl:table-cell">
-                  Resources $ page on Portfolio - &nbsp;{" "}
+                  Resources $ page on Portfolio - &nbsp;
                   <span className="italic text-highlightColor font-normal">
-                    Developing...
+                    In progress...
                   </span>
                 </div>
                 <div className=" xxl:hidden ">
                   <a href="#" className="flex gap-1">
-                    Resources $ page on Portfolio{" "}
+                    Resources $ page on Portfolio
                     <span className="italic text-highlightColor font-normal">
-                      Developing...
+                      In progress...
                     </span>
                   </a>
                 </div>
@@ -106,14 +106,14 @@ const TableList = () => {
                 <div className="hidden xxl:table-cell">
                   Geeksonas - &nbsp;
                   <span className="italic text-highlightColor font-normal">
-                    Developing...
+                    In progress...
                   </span>
                 </div>
                 <div className=" xxl:hidden ">
                   <a href="#" className="flex gap-1">
                     Geeksonas
                     <span className="italic text-highlightColor font-normal">
-                      Developing...
+                      In progress...
                     </span>
                   </a>
                 </div>
@@ -162,14 +162,14 @@ const TableList = () => {
                 <div className="hidden xxl:table-cell">
                   Neurovet.cl - &nbsp;
                   <span className="italic text-highlightColor font-normal">
-                    Developing...
+                    In progress...
                   </span>
                 </div>
                 <div className=" xxl:hidden ">
                   <a href="#" className="flex gap-1">
                     Neurovet.cl
                     <span className="italic text-highlightColor font-normal">
-                      Developing...
+                      In progress...
                     </span>
                   </a>
                 </div>

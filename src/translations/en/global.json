@@ -10,17 +10,25 @@
     "hours": "Technologies Applied"
   },
   "latest": {
-    "title": "Latest projects."
-  },
-  "projectGeek": {
-    "description": "Developing a custom WordPress site for a content creator, with full content control and YouTube integration. Focused on showcasing his work through an engaging, organized layout to grow his audience."
+    "title": "Projects."
   },
   "projectNeurovet": {
     "description": "Migrating a veterinary website from Wix to WordPress to improve flexibility and control. Handling full redesign, content styling, and brand refresh to better connect with pet owners."
   },
+  "projectGeek": {
+    "description": "Developing a custom WordPress site for a content creator, with full content control and YouTube integration. Focused on showcasing his work through an engaging, organized layout to grow his audience."
+  },
+  "projectInfanti": {
+    "description": "Worked as Front-End Developer for Infanti for over 1 year, building custom components like timers and layout tweaks using both code and the CMS page builder. Blended different techniques to improve design, usability, and performance."
+  },
   "projectVocal": {
     "description": "Built a WordPress site for a vocal director to showcase her expertise and passion for music. Focused on a modern, dynamic design with intuitive navigation to engage clients and collaborators."
   },
+
+  "projectMarket": {
+    "description": "3-month internship as Front-End Developer, focused on diagnosing and improving site performance. Worked alongside a digital agency to fix layout issues, optimize images and scripts, and enhance SEO structure."
+  },
+
   "projectChatbot": {
     "description": "Developed an AI-powered chatbot for my Portfolio v2 to improve user interaction and provide real-time navigation support. Built with logic-based algorithms and AI training for seamless, conversational access to information."
   },

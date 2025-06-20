@@ -10,17 +10,25 @@
     "hours": "Tecnologías Aplicadas"
   },
   "latest": {
-    "title": "Ùltimos proyectos"
-  },
-  "projectGeek": {
-    "description": "Desarrollando un sitio personalizado en WordPress para un creador de contenido, con control total sobre su contenido e integración con YouTube. Enfocado en mostrar su trabajo con un diseño atractivo y organizado para ampliar su audiencia."
+    "title": "Proyectos"
   },
   "projectNeurovet": {
     "description": "Migrando un sitio veterinario de Wix a WordPress para mejorar flexibilidad y control. Encargado del rediseño completo, estilo de contenido y renovación de marca para conectar mejor con dueños de mascotas."
   },
+  "projectGeek": {
+    "description": "Desarrollando un sitio personalizado en WordPress para un creador de contenido, con control total sobre su contenido e integración con YouTube. Enfocado en mostrar su trabajo con un diseño atractivo y organizado para ampliar su audiencia."
+  },
+  "projectInfanti": {
+    "description": "Trabajé como Desarrollador Front-End en Infanti por 1 año, creando componentes personalizados como temporizadores y ajustes de diseño con código y constructor visual. Combiné distintas técnicas para mejorar el diseño, la usabilidad y el rendimiento."
+  },
   "projectVocal": {
     "description": "Sitio en WordPress para una directora vocal, enfocado en mostrar su experiencia y pasión por la música. Diseño moderno y dinámico con navegación intuitiva para atraer clientes y colaboradores."
   },
+
+  "projectMarket": {
+    "description": "Realicé una pasantía de 3 meses como Desarrollador Front-End, centrada en diagnosticar y mejorar el rendimiento del sitio. Trabajé junto a una agencia digital corrigiendo errores de diseño, optimizando imágenes y scripts, y reforzando la estructura SEO."
+  },
+
   "projectChatbot": {
     "description": "Desarrollé un chatbot con IA para mi Portfolio v2, mejorando la interacción del usuario y facilitando la navegación en tiempo real. Construido con algoritmos lógicos y entrenamiento de IA para ofrecer respuestas conversacionales al instante."
   },

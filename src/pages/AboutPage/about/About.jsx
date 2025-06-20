@@ -119,7 +119,7 @@ const About = () => {
               <li className="flex justify-start gap-2 mb-2">
                 <AiOutlineLoading3Quarters aria-hidden="true" />
                 Harvard University. CS50's Programming with Python.
-              </li>{" "}
+              </li>
               <li className="flex justify-start gap-2 mb-2">
                 <AiOutlineLoading3Quarters aria-hidden="true" />
                 Udeymy: LLM Engineering: Master AI, Large Language Models - Ed

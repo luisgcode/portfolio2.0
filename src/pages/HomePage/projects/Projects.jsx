@@ -24,7 +24,7 @@ const Projects = () => {
       className="projects px-8 py-12 md:p-mid_pad"
       aria-label="Latest projects"
     >
-      <h3>
+      <h3 className="mt-20">
         {t("latest.title")}
         <span className="detail-bg"></span>
       </h3>
@@ -35,7 +35,7 @@ const Projects = () => {
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 0.5 }}
       >
-        {/* 1 Geek sonas*/}
+        {/* 1 Neurovet */}
         <li className="project-card">
           <a
             href="#"
@@ -43,49 +43,9 @@ const Projects = () => {
             className="project-title font-bold mb-4 flex items-center"
             aria-label="Visit project's Gtihub repository"
           >
-            Geek sonas <FiArrowUpRight />
+            Neurovet.cl <FiArrowUpRight />
             <span className="italic text-highlightColor font-normal text-sm">
-              Developing
-            </span>
-          </a>
-
-          <div>
-            <p>{t("projectGeek.description")}</p>
-          </div>
-
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">Wordpress</li>
-              <li className="custom-project-tag">Elementor</li>
-              <li className="custom-project-tag">SEO</li>
-              <li className="custom-project-tag">Hostinger</li>
-              <li className="custom-project-tag">Figma</li>
-              <li className="custom-project-tag">Photoshop</li>
-              <li className="custom-project-tag">Firefly</li>
-            </ul>
-          </div>
-
-          <div className="posters">
-            <img
-              className="rounded-lg  "
-              src={posterLoading}
-              alt="Quickbooker project's cover"
-              loading="lazy"
-            />
-          </div>
-        </li>
-
-        {/* 2 Neurovet */}
-        <li className="project-card">
-          <a
-            href="#"
-            target="_blank"
-            className="project-title font-bold mb-4 flex items-center"
-            aria-label="Visit project's Gtihub repository"
-          >
-            Neurovet <FiArrowUpRight />
-            <span className="italic text-highlightColor font-normal text-sm">
-              Developing
+              In progress...
             </span>
           </a>
 
@@ -105,17 +65,94 @@ const Projects = () => {
             </ul>
           </div>
 
-          <div className="posters">
+          {/* <div className="posters">
             <img
               className="rounded-lg  "
               src={posterLoading}
               alt="Quickbooker project's cover"
               loading="lazy"
             />
+          </div> */}
+        </li>
+
+        {/* 2 Geek sonas*/}
+        <li className="project-card">
+          <a
+            href="#"
+            target="_blank"
+            className="project-title font-bold mb-4 flex items-center"
+            aria-label="Visit project's Gtihub repository"
+          >
+            geeksonas.com <FiArrowUpRight />
+            <span className="italic text-highlightColor font-normal text-sm">
+              In progress...
+            </span>
+          </a>
+
+          <div>
+            <p>{t("projectGeek.description")}</p>
+          </div>
+
+          <div className="py-4">
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">Wordpress</li>
+              <li className="custom-project-tag">Elementor</li>
+              <li className="custom-project-tag">SEO</li>
+              <li className="custom-project-tag">Hostinger</li>
+              <li className="custom-project-tag">Figma</li>
+              <li className="custom-project-tag">Photoshop</li>
+              <li className="custom-project-tag">Firefly</li>
+            </ul>
+          </div>
+
+          {/* <div className="posters">
+            <img
+              className="rounded-lg  "
+              src={posterLoading}
+              alt="Quickbooker project's cover"
+              loading="lazy"
+            />
+          </div> */}
+        </li>
+
+        {/* 3 Infanti.cl*/}
+        <li className="project-card">
+          <a
+            href="https://infanti.cl/"
+            target="_blank"
+            className="project-title font-bold mb-4 flex items-center"
+            aria-label="Visit project's Gtihub repository"
+          >
+            Infanti.cl <FiArrowUpRight />
+          </a>
+
+          <div>
+            <p>{t("projectInfanti.description")}</p>
+          </div>
+
+          <div className="py-4">
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">Wordpress</li>
+              <li className="custom-project-tag">Elementor</li>
+              <li className="custom-project-tag">SEO</li>
+              <li className="custom-project-tag">Hostinger</li>
+              <li className="custom-project-tag">Figma</li>
+              <li className="custom-project-tag">Photoshop</li>
+              <li className="custom-project-tag">Firefly</li>
+            </ul>
+          </div>
+
+          <div className="posters">
+            <img
+              className="rounded-lg  "
+              src={posterLoading}
+              alt="Infanti.cl project's cover"
+              loading="lazy"
+            />
           </div>
         </li>
 
-        {/* 3 */}
+        {/* 3 thevocaldirection */}
         <li className="project-card">
           <a
             href="https://thevocaldirection.com/"
@@ -123,7 +160,7 @@ const Projects = () => {
             className="project-title font-bold mb-4 flex items-center"
             aria-label="Visit project's Github repository"
           >
-            The Vocal Direction <FiArrowUpRight />
+            thevocaldirection.com <FiArrowUpRight />
           </a>
           <div>
             <p>{t("projectVocal.description")}</p>
@@ -150,6 +187,43 @@ const Projects = () => {
             />
           </div>
         </li>
+
+        {/* 4 thevocaldirection */}
+        <li className="project-card">
+          <a
+            href="https://themarketwfd.com/"
+            target="_blank"
+            className="project-title font-bold mb-4 flex items-center"
+            aria-label="Visit project's Github repository"
+          >
+            themarketwfd.com <FiArrowUpRight />
+          </a>
+          <div>
+            <p>{t("projectVocal.description")}</p>
+          </div>
+          <div className="py-4">
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">Wordpress</li>
+              <li className="custom-project-tag">Mail Configuration</li>
+              <li className="custom-project-tag">Elementor</li>
+              <li className="custom-project-tag">CSS</li>
+              <li className="custom-project-tag">Contact Form 7 </li>
+              <li className="custom-project-tag">Hostinger</li>
+              <li className="custom-project-tag">SEO</li>
+              <li className="custom-project-tag">Figma</li>
+              <li className="custom-project-tag">Photoshop</li>
+            </ul>
+          </div>
+          <div className="posters">
+            <img
+              className="rounded-lg  "
+              src={posterLoading}
+              alt="Quickbooker project's cover"
+              loading="lazy"
+            />
+          </div>
+        </li>
+
         {/* 4 Chatbot*/}
         <li className="project-card">
           <a
@@ -181,7 +255,40 @@ const Projects = () => {
           </div>
         </li>
 
-        {/* 5 */}
+        {/* 5 Global tech */}
+        <li className="project-card">
+          <a
+            href="https://globaltechnologies.web.app/"
+            target="_blank"
+            className="project-title font-bold mb-4 flex"
+            aria-label="Visit project's web"
+          >
+            globaltechnologies.web.app <FiArrowUpRight />
+          </a>
+
+          <div>
+            <p>{t("projectGlobal.description")}</p>
+          </div>
+
+          <div className="py-4">
+            <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">TypeScript</li>
+              <li className="custom-project-tag">JavaScript</li>
+              <li className="custom-project-tag">Responsive</li>
+            </ul>
+          </div>
+
+          <div className="posters">
+            <img
+              className="rounded-lg "
+              src={posterGlobal}
+              alt="poster"
+              loading="lazy"
+            />
+          </div>
+        </li>
+
+        {/* 6 portfolio */}
         <li className="project-card">
           <a
             href="https://github.com/luisgcode/portfolio2.0"
@@ -216,99 +323,7 @@ const Projects = () => {
             />
           </div>
         </li>
-        {/* 6  */}
-        <li className="project-card">
-          <a
-            href="https://globaltechnologies.web.app/"
-            target="_blank"
-            className="project-title font-bold mb-4 flex"
-            aria-label="Visit project's web"
-          >
-            Global Tech <FiArrowUpRight />
-          </a>
 
-          <div>
-            <p>{t("projectGlobal.description")}</p>
-          </div>
-
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">TypeScript</li>
-              <li className="custom-project-tag">JavaScript</li>
-              <li className="custom-project-tag">Responsive</li>
-            </ul>
-          </div>
-
-          <div className="posters">
-            <img
-              className="rounded-lg "
-              src={posterGlobal}
-              alt="poster"
-              loading="lazy"
-            />
-          </div>
-        </li>
-
-        {/* 8 */}
-        {/* <li className="project-card">
-          <a
-            href="https://github.com/luisgcode/portfolio2024"
-            target="_blank"
-            className="project-title font-bold mb-4 flex"
-            aria-label="See project on Github"
-          >
-            Portfolio (v1) <FiArrowUpRight />
-          </a>
-          <div>
-            <p>
-              <p>{t("projectPortfoliov1.description")}</p>
-            </p>
-          </div>
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">Sass</li>
-              <li className="custom-project-tag">JavaScript</li>
-              <li className="custom-project-tag">CSS</li>
-              <li className="custom-project-tag">Bilingual</li>
-              <li className="custom-project-tag">Accessible</li>
-              <li className="custom-project-tag">Hostinger</li>
-            </ul>
-          </div>
-          <div className="posters">
-            <img
-              className="rounded-lg  "
-              src={posterPortfolio1}
-              alt="Portfolio v1 cover"
-              loading="lazy"
-            />
-          </div>
-        </li> */}
-        {/* hidden */}
-        {/* <div className="project-card">
-          <a
-            href="https://github.com/luisgcode/crowdMeterSystem"
-            target="_blank"
-            className="project-title font-bold mb-4 flex"
-          >
-            Occupancy System <FiArrowUpRight />
-          </a>
-
-          <div>
-            <p>{t("projectOccupancy.description")}</p>
-          </div>
-
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">React JS</li>
-              <li className="custom-project-tag">Tailwind CSS</li>
-              <li className="custom-project-tag">JavaScript</li>
-            </ul>
-          </div>
-
-          <div className="posters">
-            <img className="rounded-lg  " src={posterCrowdMeter} alt="poster" />
-          </div>
-        </div> */}
         <Link to="/projects">
           <li>
             <a
