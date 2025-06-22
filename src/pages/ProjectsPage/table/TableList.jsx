@@ -177,7 +177,8 @@ const TableList = () => {
               {/* Tags */}
               <td className="tags-td hidden xl:flex  ">
                 <span className="custom-project-tag">Wordpress</span>
-                <span className="custom-project-tag">Elementor </span>
+                <span className="custom-project-tag">WPBakery </span>
+                <span className="custom-project-tag">Slider Revolution </span>
                 <span className="custom-project-tag">Yoast SEO</span>
                 <span className="custom-project-tag">Bookly</span>
                 <span className="custom-project-tag">Hostinger</span>

@@ -57,13 +57,15 @@ const Projects = () => {
 
           <div className="py-4">
             <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">Wordpress</li>
-              <li className="custom-project-tag">Bookly</li>
-              <li className="custom-project-tag">Elementor</li>
-              <li className="custom-project-tag">Yoast SEO</li>
-              <li className="custom-project-tag">Hostinger </li>
-              <li className="custom-project-tag">Figma </li>
-              <li className="custom-project-tag">Photoshop</li>
+              <span className="custom-project-tag">Wordpress</span>
+              <span className="custom-project-tag">WPBakery </span>
+              <span className="custom-project-tag">Slider Revolution </span>
+              <span className="custom-project-tag">Yoast SEO</span>
+              <span className="custom-project-tag">Bookly</span>
+              <span className="custom-project-tag">Hostinger</span>
+              <span className="custom-project-tag">SEO</span>
+              <span className="custom-project-tag">Figma</span>
+              <span className="custom-project-tag">Photoshop</span>
             </ul>
           </div>
 
