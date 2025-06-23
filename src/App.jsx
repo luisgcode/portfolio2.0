@@ -10,6 +10,7 @@ import NotFound from "./components/NotFound";
 
 import { useTranslation } from "react-i18next";
 import Chatbot from "./components/Chatbot/Chatbot";
+import StickyMenu from "./components/StickyMenu/StickyMenu";
 
 function App() {
   const { t } = useTranslation("global");
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <div className="custom-bg">
         <Navbar />
+        <StickyMenu />
         <Chatbot />
         <Routes>
           <Route path="/" element={<HomePage />} />
