@@ -114,9 +114,9 @@ const About = () => {
               className="online text-sm "
             >
               <h5 className="mb-3 text-highlightColor">
-                Relevant online courses taken / in progress
+                Relevant online courses taken.
               </h5>
-              <li className="flex justify-start gap-2 mb-2">
+              {/* <li className="flex justify-start gap-2 mb-2">
                 <AiOutlineLoading3Quarters aria-hidden="true" />
                 Harvard University. CS50's Programming with Python.
               </li>
@@ -124,7 +124,7 @@ const About = () => {
                 <AiOutlineLoading3Quarters aria-hidden="true" />
                 Udeymy: LLM Engineering: Master AI, Large Language Models - Ed
                 D.
-              </li>
+              </li> */}
               <li className="flex justify-start gap-2 mb-2">
                 <FaCheckCircle aria-hidden="true" />
                 Udemy: 50 JS Projects in 50 Days - Brad T.
