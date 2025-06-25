@@ -57,6 +57,7 @@ const Projects = () => {
 
           <div className="py-4">
             <ul className="flex flex-wrap items-center gap-3">
+              <span className="custom-project-tag">3 Pages</span>
               <span className="custom-project-tag">Wordpress</span>
               <span className="custom-project-tag">WPBakery </span>
               <span className="custom-project-tag">Slider Revolution </span>
@@ -99,6 +100,7 @@ const Projects = () => {
 
           <div className="py-4">
             <ul className="flex flex-wrap items-center gap-3">
+              <span className="custom-project-tag">+10 Pages</span>
               <span className="custom-project-tag">Wordpress</span>
               <span className="custom-project-tag">Elementor PRO</span>
               <span className="custom-project-tag">Bookly</span>
@@ -178,7 +180,8 @@ const Projects = () => {
 
           <div className="py-4">
             <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">Wordpress</li>
+              <li className="custom-project-tag">+20 Pages</li>
+              <li className="custom-project-tag">Magento</li>
               <li className="custom-project-tag">Elementor</li>
               <li className="custom-project-tag">SEO</li>
               <li className="custom-project-tag">Hostinger</li>
@@ -213,6 +216,7 @@ const Projects = () => {
           </div>
           <div className="py-4">
             <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">1 Page</li>
               <li className="custom-project-tag">Wordpress</li>
               <li className="custom-project-tag">Mail Configuration</li>
               <li className="custom-project-tag">Elementor</li>
@@ -280,6 +284,7 @@ const Projects = () => {
           </div>
           <div className="py-4">
             <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">+10 Pages</li>
               <li className="custom-project-tag">Squarespace</li>
               <li className="custom-project-tag">GoDaddy</li>
               <li className="custom-project-tag">SEO</li>
@@ -312,6 +317,7 @@ const Projects = () => {
 
           <div className="py-4">
             <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">6 Pages</li>
               <li className="custom-project-tag">TypeScript</li>
               <li className="custom-project-tag">JavaScript</li>
               <li className="custom-project-tag">Responsive</li>
@@ -343,6 +349,7 @@ const Projects = () => {
           </div>
           <div className="py-4">
             <ul className="flex flex-wrap items-center gap-3">
+              <li className="custom-project-tag">5 Pages</li>
               <li className="custom-project-tag">React JS</li>
               <li className="custom-project-tag">Tailwind CSS</li>
               <li className="custom-project-tag">Framer Motion</li>

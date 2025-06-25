@@ -66,6 +66,7 @@ const TableList = () => {
               </td>
               {/* Tags */}
               <td className="tags-td hidden xl:flex  ">
+                <span className="custom-project-tag">+10 Pages</span>
                 <span className="custom-project-tag">Wordpress</span>
                 <span className="custom-project-tag">Elementor PRO</span>
                 <span className="custom-project-tag">Bookly</span>
@@ -176,6 +177,7 @@ const TableList = () => {
               </td>
               {/* Tags */}
               <td className="tags-td hidden xl:flex  ">
+                <span className="custom-project-tag">+10 Pages</span>
                 <span className="custom-project-tag">Wordpress</span>
                 <span className="custom-project-tag">Elementor </span>
                 <span className="custom-project-tag">Yoast SEO</span>
@@ -232,6 +234,7 @@ const TableList = () => {
               </td>
               {/* Tags */}
               <td className="tags-td hidden xl:flex  ">
+                <span className="custom-project-tag">3 Pages</span>
                 <span className="custom-project-tag">Wordpress</span>
                 <span className="custom-project-tag">WPBakery </span>
                 <span className="custom-project-tag">Slider Revolution </span>
@@ -290,6 +293,7 @@ const TableList = () => {
               </td>
               {/* Tags */}
               <td className="tags-td   xl:flex hidden">
+                <span className="custom-project-tag">1 Page</span>
                 <span className="custom-project-tag">Wordpress</span>
                 <span className="custom-project-tag">Mail Configuration</span>
                 <span className="custom-project-tag">Elementor</span>
@@ -308,6 +312,57 @@ const TableList = () => {
                   className="flex gap-1 hover:scale-110 transition-all duration-200"
                 >
                   thevocaldirection.com <FiArrowUpRight />
+                </a>
+              </td>
+            </motion.tr>
+
+            {/* Western Fair */}
+            <motion.tr
+              variants={{
+                hidden: { x: 80, opacity: 0 },
+                show: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.5,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="show"
+            >
+              {/* Year */}
+              <td>May/2025</td>
+              {/* Project */}
+              <td className="font-semibold">
+                <div className="hidden xxl:table-cell">
+                  {/* Desktop name */}
+                  Western Fair The Market
+                </div>
+                <div className="xxl:hidden">
+                  <a href="https://themarketwfd.com/" className="flex gap-1">
+                    {/* Mobile name */}
+                    Western Fair The Market
+                    <FiArrowUpRight />
+                  </a>
+                </div>
+              </td>
+              {/* Tags */}
+              <td className="tags-td   xl:flex hidden">
+                <li className="custom-project-tag">+10 Pages</li>
+                <li className="custom-project-tag">Squarespace</li>
+                <li className="custom-project-tag">GoDaddy</li>
+                <li className="custom-project-tag">SEO</li>
+              </td>
+              {/* link */}
+              <td className="link hidden xxl:table-cell">
+                <a
+                  href="https://themarketwfd.com/"
+                  target="_blank"
+                  className="flex gap-1 hover:scale-110 transition-all duration-200"
+                >
+                  themarketwfd.com <FiArrowUpRight />
                 </a>
               </td>
             </motion.tr>
@@ -450,10 +505,9 @@ const TableList = () => {
               </td>
               {/* Tags */}
               <td className="tags-td hidden xl:flex  ">
+                <span className="custom-project-tag">5 Pages</span>
                 <span className="custom-project-tag">React JS</span>
-                <span className="custom-project-tag bg-red-300">
-                  Tailwind CSS
-                </span>
+                <span className="custom-project-tag ">Tailwind CSS</span>
                 <span className="custom-project-tag">Framer Motion</span>
                 <span className="custom-project-tag">i18next </span>
                 <span className="custom-project-tag">Responsive</span>
@@ -474,6 +528,7 @@ const TableList = () => {
                 </a>
               </td>
             </motion.tr>
+
             {/* Global Technologies */}
             <motion.tr
               variants={{
@@ -510,6 +565,7 @@ const TableList = () => {
               </td>
               {/* Tags */}
               <td className="tags-td   xl:flex hidden">
+                <span className="custom-project-tag">6 Pages</span>
                 <span className="custom-project-tag">TypeScript</span>
                 <span className="custom-project-tag">JavaScript</span>
                 <span className="custom-project-tag">Responsive</span>
@@ -526,6 +582,7 @@ const TableList = () => {
                 </a>
               </td>
             </motion.tr>
+
             {/* Can jet Pattern Library & Dashboard */}
             <motion.tr
               variants={{
@@ -563,6 +620,7 @@ const TableList = () => {
               </td>
               {/* Tags */}
               <td className="tags-td   xl:flex hidden">
+                <span className="custom-project-tag">3 Pages</span>
                 <span className="custom-project-tag">D3.js</span>
                 <span className="custom-project-tag">JavaScript</span>
                 <span className="custom-project-tag">Responsive</span>
@@ -581,6 +639,7 @@ const TableList = () => {
                 </a>
               </td>
             </motion.tr>
+
             {/* Portfolio v1 */}
             <motion.tr
               variants={{
@@ -636,6 +695,7 @@ const TableList = () => {
                 </a>
               </td>
             </motion.tr>
+
             {/* RBC place Hub */}
             <motion.tr
               variants={{
@@ -692,6 +752,7 @@ const TableList = () => {
                 </a>
               </td>
             </motion.tr>
+
             {/* Our stores Infanti*/}
             <motion.tr
               variants={{
@@ -743,6 +804,7 @@ const TableList = () => {
                 </a>
               </td>
             </motion.tr>
+
             {/* Terms and conditions Infanti*/}
             <motion.tr
               variants={{
@@ -797,7 +859,6 @@ const TableList = () => {
                 </a>
               </td>
             </motion.tr>
-            {/* offers timer Infanti*/}
           </tbody>
         </table>
       </div>
