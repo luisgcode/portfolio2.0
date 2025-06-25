@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <div className="custom-bg">
         <Navbar />
-        <StickyMenu />
+        {/* <StickyMenu /> */}
         <Chatbot />
         <Routes>
           <Route path="/" element={<HomePage />} />
