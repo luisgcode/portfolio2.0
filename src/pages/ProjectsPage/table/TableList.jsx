@@ -50,14 +50,14 @@ const TableList = () => {
               {/* Project */}
               <td className="font-semibold">
                 <div className="hidden xxl:table-cell">
-                  vivenutricion.cl - &nbsp;
+                  Vivenutricion.cl - &nbsp;
                   <span className="italic text-highlightColor font-normal">
                     In progress...
                   </span>
                 </div>
                 <div className=" xxl:hidden ">
                   <a href="#" className="flex gap-1">
-                    Neurovet.cl
+                    Vivenutricion.cl
                     <span className="italic text-highlightColor font-normal">
                       In progress...
                     </span>
@@ -67,14 +67,12 @@ const TableList = () => {
               {/* Tags */}
               <td className="tags-td hidden xl:flex  ">
                 <span className="custom-project-tag">Wordpress</span>
-                <span className="custom-project-tag">WPBakery </span>
-                <span className="custom-project-tag">Slider Revolution </span>
-                <span className="custom-project-tag">Yoast SEO</span>
+                <span className="custom-project-tag">Elementor PRO</span>
                 <span className="custom-project-tag">Bookly</span>
-                <span className="custom-project-tag">Hostinger</span>
                 <span className="custom-project-tag">SEO</span>
                 <span className="custom-project-tag">Figma</span>
-                <span className="custom-project-tag">Photoshop</span>
+                <span className="custom-project-tag">Custom CSS</span>
+                <span className="custom-project-tag">Unlimited Elements</span>
               </td>
               {/* link */}
               <td className="link hidden xxl:table-cell">
