@@ -12,6 +12,9 @@
   "latest": {
     "title": "Proyectos"
   },
+  "projectVivenutricion": {
+    "description": "Rediseñé el sitio web de Vivenutrición para modernizar su apariencia y mejorar la experiencia de usuario, logrando una presencia de marca más profesional. Trabajé en la definición de tipografía, paleta de colores y jerarquía visual, aplicando CSS personalizado para optimizar el diseño, la responsividad y la interacción general del usuario."
+  },
   "projectNeurovet": {
     "description": "Migrando un sitio veterinario de Wix a WordPress para mejorar flexibilidad y control. Encargado del rediseño completo, estilo de contenido y renovación de marca para conectar mejor con dueños de mascotas."
   },

@@ -12,6 +12,10 @@
   "latest": {
     "title": "Projects."
   },
+
+  "projectVivenutricion": {
+    "description": "Redesigned the Vivenutrición website to modernize its look and feel, improve UI/UX, and create a more professional brand presence. Worked on defining typography, color palette, and visual hierarchy while applying custom CSS to enhance layout, responsiveness, and overall user interaction."
+  },
   "projectNeurovet": {
     "description": "Migrating a veterinary website from Wix to WordPress to improve flexibility and control. Handling full redesign, content styling, and brand refresh to better connect with pet owners."
   },

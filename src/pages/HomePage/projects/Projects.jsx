@@ -79,9 +79,51 @@ const Projects = () => {
           </div> */}
         </li>
 
-        {/* 2 Geek sonas*/}
+        {/* 2 Vivenutricion */}
         <li className="project-card">
           <a
+            href="#"
+            target="_blank"
+            className="project-title font-bold mb-4 flex items-center"
+            aria-label="Visit project's Gtihub repository"
+          >
+            Vivenutricion.cl <FiArrowUpRight />
+            <span className="italic text-highlightColor font-normal text-sm">
+              In progress...
+            </span>
+          </a>
+
+          <div>
+            <p>{t("projectVivenutricion.description")}</p>
+          </div>
+
+          <div className="py-4">
+            <ul className="flex flex-wrap items-center gap-3">
+              <span className="custom-project-tag">Wordpress</span>
+              <span className="custom-project-tag">Elementor PRO</span>
+              <span className="custom-project-tag">Bookly</span>
+              <span className="custom-project-tag">SEO</span>
+              <span className="custom-project-tag">Figma</span>
+              <span className="custom-project-tag">Custom CSS</span>
+              <span className="custom-project-tag">
+                Unlimited Elements Elementor
+              </span>
+            </ul>
+          </div>
+
+          {/* <div className="posters">
+            <img
+              className="rounded-lg  "
+              src={posterLoading}
+              alt="Quickbooker project's cover"
+              loading="lazy"
+            />
+          </div> */}
+        </li>
+
+        {/* 2 Geek sonas*/}
+        {/*  <li className="project-card">
+            <a
             href="#"
             target="_blank"
             className="project-title font-bold mb-4 flex items-center"
@@ -96,7 +138,7 @@ const Projects = () => {
           <div>
             <p>{t("projectGeek.description")}</p>
           </div>
-
+          
           <div className="py-4">
             <ul className="flex flex-wrap items-center gap-3">
               <li className="custom-project-tag">Wordpress</li>
@@ -107,17 +149,17 @@ const Projects = () => {
               <li className="custom-project-tag">Photoshop</li>
               <li className="custom-project-tag">Firefly</li>
             </ul>
-          </div>
+          </div> */}
 
-          {/* <div className="posters">
+        {/* <div className="posters">
             <img
               className="rounded-lg  "
               src={posterLoading}
               alt="Quickbooker project's cover"
               loading="lazy"
             />
-          </div> */}
-        </li>
+          </div> 
+        </li>*/}
 
         {/* 3 Infanti.cl*/}
         <li className="project-card">
