@@ -38,7 +38,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.3,
+                    delay: 0.1,
                   },
                 },
               }}
@@ -94,7 +94,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.1,
+                    delay: 0.2,
                   },
                 },
               }}
@@ -148,7 +148,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.2,
+                    delay: 0.3,
                   },
                 },
               }}
@@ -204,7 +204,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.3,
+                    delay: 0.4,
                   },
                 },
               }}
@@ -262,7 +262,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.4,
+                    delay: 0.5,
                   },
                 },
               }}
@@ -321,7 +321,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.5,
+                    delay: 0.6,
                   },
                 },
               }}
@@ -378,7 +378,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.6,
+                    delay: 0.7,
                   },
                 },
               }}
@@ -425,7 +425,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.7,
+                    delay: 0.8,
                   },
                 },
               }}
@@ -483,7 +483,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.8,
+                    delay: 0.9,
                   },
                 },
               }}
@@ -535,7 +535,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 0.9,
+                    delay: 1,
                   },
                 },
               }}
@@ -590,7 +590,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 1,
+                    delay: 1.1,
                   },
                 },
               }}
@@ -645,7 +645,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 1.1,
+                    delay: 1.2,
                   },
                 },
               }}
@@ -701,7 +701,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 1.2,
+                    delay: 1.3,
                   },
                 },
               }}
@@ -752,7 +752,7 @@ const TableList = () => {
                   opacity: 1,
                   transition: {
                     duration: 0.5,
-                    delay: 1.3,
+                    delay: 1.4,
                   },
                 },
               }}
