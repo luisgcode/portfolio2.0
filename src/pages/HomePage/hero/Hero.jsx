@@ -47,8 +47,8 @@ const Hero = () => {
             <li className="custom-hero-tag text-[16px]">Tailwind CSS</li>
             <li className="custom-hero-tag text-[16px] ">JavaScript</li>
             <li className="custom-hero-tag text-xs">Wordpress</li>
-            <li className="custom-hero-tag text-xs">Next JS</li>
-            <span className="custom-hero-tag text-xs">Python</span>
+            <li className="custom-hero-tag text-xs">Figma</li>
+            <span className="custom-hero-tag text-xs">Botpress</span>
           </ul>
           <div className="mt-6">
             <ul className="flex gap-6">
