@@ -50,7 +50,7 @@ import posterInfanti from "../assets/images/posters/poster-infanti.png";
 import posterMarket from "../assets/images/posters/poster-market.png";
 
 // General images
-import collectiveBanner from "../assets/images/banner-collective.png";
+import collectiveBanner from "../assets/images/banner-collective.svg";
 
 export {
   collectiveBanner,
