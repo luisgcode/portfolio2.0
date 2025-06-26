@@ -49,7 +49,11 @@ import posterLoading from "../assets/images/posters/loading.png";
 import posterInfanti from "../assets/images/posters/poster-infanti.png";
 import posterMarket from "../assets/images/posters/poster-market.png";
 
+// General images
+import collectiveBanner from "../assets/images/banner-collective.png";
+
 export {
+  collectiveBanner,
   heroImage,
   luisLogo,
   bootstrapLogo,
