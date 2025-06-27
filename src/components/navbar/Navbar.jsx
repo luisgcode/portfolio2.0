@@ -73,21 +73,19 @@ const Navbar = () => {
           animate="show"
           className="navigation-items hidden md:flex gap-8 lg:mr-24  items-center"
         >
-          <Link to="/projects">
-            <li role="menuitem">
-              {/* Agregar role menuitem */}
-              <a
-                className={`font-bold nav-link ${animate ? "fade-in-out" : ""}`}
-              >
-                {t("header.navbar", { returnObjects: true })[2]}
-              </a>
-            </li>
-          </Link>
           <Link to="/">
             <li role="menuitem">
               {/* Agregar role menuitem */}
               <a className={`nav-link ${animate ? "fade-in-out" : ""}`}>
                 {t("header.navbar", { returnObjects: true })[0]}
+              </a>
+            </li>
+          </Link>
+          <Link to="/projects">
+            <li role="menuitem">
+              {/* Agregar role menuitem */}
+              <a className={` nav-link ${animate ? "fade-in-out" : ""}`}>
+                {t("header.navbar", { returnObjects: true })[2]}
               </a>
             </li>
           </Link>
@@ -99,7 +97,6 @@ const Navbar = () => {
               </a>
             </li>
           </Link>
-
           <Link to="/resources">
             <li role="menuitem">
               {/* enter to resources */}
@@ -108,7 +105,6 @@ const Navbar = () => {
               </a>
             </li>
           </Link>
-
           <li className="flex">
             {currentLanguage === "en" ? (
               <button
@@ -203,16 +199,6 @@ const Navbar = () => {
                   {t("header.navbar", { returnObjects: true })[0]}
                 </li>
               </Link>
-              <Link to="/about">
-                <li
-                  className="flex gap-2 items-center"
-                  onClick={() => setToggleMenu(false)}
-                  role="menuitem"
-                >
-                  <FaRegUser />
-                  {t("header.navbar", { returnObjects: true })[1]}
-                </li>
-              </Link>
               <Link to="/projects">
                 <li
                   className="flex gap-2 items-center"
@@ -223,7 +209,16 @@ const Navbar = () => {
                   {t("header.navbar", { returnObjects: true })[2]}
                 </li>
               </Link>
-
+              <Link to="/about">
+                <li
+                  className="flex gap-2 items-center"
+                  onClick={() => setToggleMenu(false)}
+                  role="menuitem"
+                >
+                  <FaRegUser />
+                  {t("header.navbar", { returnObjects: true })[1]}
+                </li>
+              </Link>
               <Link to="/resources">
                 <li
                   className="flex gap-2 items-center"
