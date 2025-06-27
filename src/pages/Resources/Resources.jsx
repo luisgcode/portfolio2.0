@@ -13,6 +13,7 @@ const Resources = () => {
       ></div>
       {/* Under construction here */}
       <div className="underConstruction">
+        f
         <span className="block text-5xl text-center mt-32">
           Section under construction.
         </span>
