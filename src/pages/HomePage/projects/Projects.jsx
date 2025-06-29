@@ -8,6 +8,7 @@ import {
   posterInfanti,
   posterLoading,
   posterMarket,
+  posterVivenutricion,
 } from "../../../components/media";
 import "./projects.css";
 import { FiArrowUpRight } from "react-icons/fi";
@@ -113,14 +114,14 @@ const Projects = () => {
             </ul>
           </div>
 
-          {/* <div className="posters">
+          <div className="posters">
             <img
               className="rounded-lg  "
-              src={posterLoading}
+              src={posterVivenutricion}
               alt="Quickbooker project's cover"
               loading="lazy"
             />
-          </div> */}
+          </div>
         </li>
 
         {/* 2 Geek sonas*/}

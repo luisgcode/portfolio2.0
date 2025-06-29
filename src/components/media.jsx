@@ -48,6 +48,7 @@ import posterVocal from "../assets/images/posters/poster-vocal.webp";
 import posterLoading from "../assets/images/posters/loading.png";
 import posterInfanti from "../assets/images/posters/poster-infanti.png";
 import posterMarket from "../assets/images/posters/poster-market.png";
+import posterVivenutricion from "../assets/images/posters/poster-vivenutricion.png";
 
 // General images
 import collectiveBanner from "../assets/images/banner-collective.svg";
@@ -98,4 +99,5 @@ export {
   posterLoading,
   posterInfanti,
   posterMarket,
+  posterVivenutricion,
 };

@@ -11,6 +11,7 @@ const Resources = () => {
         className="banner-collective bg-cover bg-center h-[400px]"
         style={{ backgroundImage: `url(${collectiveBanner})` }}
       ></div>
+      <section className="grid-resources">resources grid goes here</section>
       {/* Under construction here */}
       <div className="underConstruction">
         <span className="block text-5xl text-center mt-32">
