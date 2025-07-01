@@ -8,12 +8,9 @@ import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 import Footer from "./components/footer/Footer";
 import NotFound from "./components/NotFound";
 
-import { useTranslation } from "react-i18next";
 import Chatbot from "./components/Chatbot/Chatbot";
-import StickyMenu from "./components/StickyMenu/StickyMenu";
 
 function App() {
-  const { t } = useTranslation("global");
   return (
     <div className="App">
       <div className="custom-bg">
