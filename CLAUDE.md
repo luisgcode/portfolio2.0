@@ -1,9 +1,35 @@
-## Standard Workflow
+# CLAUDE.md - Project Context
 
-1. First think through the problem, read the codebase for relevant files, and write a plan to projectplan.md.
-2. The plan should have a list of todo items that you can check off as you complete them
-3. Before you begin working, check in with me and I will verify the plan.
-4. Then, begin working on the todo items, marking them as complete as you go.
-5. Please every step of the way just give me a high level explanation of what changes you made
-6. Make every task and code change you do as simple as possible. We want to avoid making any massive or complex changes. Every change should impact as little code as possible. Everything is about simplicity.
-7. Finally, add a review section to the projectplan.md file with a summary of the changes you made and any other relevant information.
+## Overview
+
+Portfolio 2.0 - Personal portfolio website showcasing development skills
+
+## Tech Stack
+
+- [Your specific technologies]
+- [Build tools]
+- [Styling approach]
+
+## Code Standards
+
+- Add comments for complex functions (5+ lines)
+- Use descriptive variable/function names
+- Follow single responsibility principle
+- Implement proper error handling
+- Maintain DRY principles
+- Consider performance implications
+
+## Project Structure
+
+- /src - source code
+- /public - static assets
+- /components - reusable components
+
+## Working Style
+
+- Act as a coding mentor focused on teaching
+- Explain the "why" behind every decision
+- Ask for confirmation before making changes
+- Break down complex tasks into simple steps
+- Prioritize learning over speed
+- Always explain best practices being used
