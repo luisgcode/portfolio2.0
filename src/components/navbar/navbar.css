@@ -121,32 +121,6 @@
   }
 }
 
-/* Links */
-.nav-link {
-  position: relative;
-}
-
-.nav-link::after {
-  position: absolute;
-  content: "";
-  transform: scaleX(0);
-  transform-origin: center;
-  height: 1px;
-  background-color: white;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  transition: transform 0.3s ease;
-}
-
-.nav-link:hover {
-  color: white;
-}
-
-.nav-link:hover::after {
-  transform: scaleX(1);
-}
-
 /* ************************ Mobile Menu */
 .navbar-mobile {
   display: none;
