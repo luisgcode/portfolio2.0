@@ -1,8 +1,8 @@
 {
   "header": {
     "navbar": ["Home", "About", "Projects", "Resources"],
-    "heroTitle": "Front-End Developer",
-    "heroClaim": "I build responsive Web applications with modern technologies, specializing in:"
+    "heroTitle": "Software Developer",
+    "heroClaim": "I build fast, scalable software solutions using React, Node.js, and modern development tools, specializing in:"
   },
   "behindSection": {
     "years": "Years of experience",
@@ -37,7 +37,7 @@
     "description": "Developed an AI-powered chatbot for my Portfolio v2 to improve user interaction and provide real-time navigation support. Built with logic-based algorithms and AI training for seamless, conversational access to information."
   },
   "projectPortfolioV2": {
-    "description": "New Portfolio designed and developed to showcase the tools and technologies I’ve mastered over the past year, including React, and Tailwind CSS, in a modern, mobile-first design."
+    "description": "New Portfolio designed and developed to showcase the tools and technologies I've mastered over the past year, including React, and Tailwind CSS, in a modern, mobile-first design."
   },
   "projectGlobal": {
     "description": "Website Optimization, fix existing errors, improve overall functionality, and translate the content into Spanish. Project approached by enhancing site performance."
@@ -65,8 +65,8 @@
     "description": "My commitment to learning is unwavering; in this dynamic field, continuous education is imperative for staying relevant."
   },
   "about": {
-    "p1": "I’m a Front-End Developer with over three years of experience building fast and scalable web interfaces using React, Tailwind CSS, JavaScript, and SCSS. I’ve worked on both fully custom applications and CMS-based websites, always aiming for clean, accessible, and performance-driven results.",
-    "p2": "Before focusing fully on development, I worked as a Web Manager and Coordinator, which gave me a strong understanding of UX, content strategy, and how to make websites work better for real people. That perspective still shapes how I approach every project today.",
-    "p3": "I graduated from Fanshawe College with a diploma in Web Development and earned the President’s Honor Roll with a final GPA of 4.02. As a freelancer, I build custom WordPress sites and enjoy integrating features like AI chatbots, automation tools, and multilingual support using Firebase, GitHub, and Figma."
+    "p1": "I'm a Software Developer with 3+ years of experience building fast, scalable interfaces using React, Tailwind, and modern JavaScript tools. I architect front-end solutions focused on performance, UX, and accessibility, and as a freelancer, I also deliver custom WordPress solutions and integrate AI features like chatbots and smart automations.",
+    "p2": "Currently expanding to full-stack development by building Node.js/Express APIs and integrating SQL/NoSQL databases. Skilled in agile workflows and AI-assisted development with Claude Code for automated coding processes, code standardization, and intelligent debugging. ",
+    "p3": "As a freelancer, I build custom software solutions and enjoy integrating AI features, automation tools, and scalable backend systems."
   }
 }

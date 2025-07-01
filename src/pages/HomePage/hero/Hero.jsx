@@ -46,6 +46,7 @@ const Hero = () => {
             <li className="custom-hero-tag text-[16px]">React JS</li>
             <li className="custom-hero-tag text-[16px]">Tailwind CSS</li>
             <li className="custom-hero-tag text-[16px] ">JavaScript</li>
+            <li className="custom-hero-tag text-[16px] ">Claude Code</li>
             <li className="custom-hero-tag text-xs">Wordpress</li>
             <li className="custom-hero-tag text-xs">Figma</li>
             <span className="custom-hero-tag text-xs">Botpress</span>

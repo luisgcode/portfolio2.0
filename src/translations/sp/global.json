@@ -1,8 +1,8 @@
 {
   "header": {
     "navbar": ["Home", "Sobre Mi", "Proyectos", "Recursos"],
-    "heroTitle": "Desarrollador Web",
-    "heroClaim": "Construyo aplicaciones web responsivas con tecnologías modernas, especializándome en:"
+    "heroTitle": "Desarrollador de Software",
+    "heroClaim": "Construyo soluciones de software rápidas y escalables usando React, Node.js y herramientas de desarrollo modernas, especializándome en:"
   },
   "behindSection": {
     "years": "Años de experiencia",
@@ -10,51 +10,52 @@
     "hours": "Tecnologías Aplicadas"
   },
   "latest": {
-    "title": "Proyectos"
+    "title": "Proyectos."
   },
+
   "projectVivenutricion": {
-    "description": "Rediseñé el sitio web de Vivenutrición para modernizar su apariencia y mejorar la experiencia de usuario, logrando una presencia de marca más profesional. Trabajé en la definición de tipografía, paleta de colores y jerarquía visual, aplicando CSS personalizado para optimizar el diseño, la responsividad y la interacción general del usuario."
+    "description": "Rediseñé el sitio web de Vivenutrición para modernizar su apariencia y funcionalidad, mejorando la UI/UX y creando una presencia de marca más profesional. Trabajé en la definición de tipografía, paleta de colores y jerarquía visual, aplicando CSS personalizado para mejorar el layout, la responsividad y la interacción del usuario."
   },
   "projectNeurovet": {
-    "description": "Migrando un sitio veterinario de Wix a WordPress para mejorar flexibilidad y control. Encargado del rediseño completo, estilo de contenido y renovación de marca para conectar mejor con dueños de mascotas."
+    "description": "Migrando un sitio web veterinario de Wix a WordPress para mejorar flexibilidad y control. Manejando rediseño completo, estilizado de contenido y renovación de marca para conectar mejor con dueños de mascotas."
   },
   "projectGeek": {
-    "description": "Desarrollando un sitio personalizado en WordPress para un creador de contenido, con control total sobre su contenido e integración con YouTube. Enfocado en mostrar su trabajo con un diseño atractivo y organizado para ampliar su audiencia."
+    "description": "Desarrollando un sitio WordPress personalizado para un creador de contenido, con control total del contenido e integración con YouTube. Enfocado en mostrar su trabajo a través de un diseño atractivo y organizado para hacer crecer su audiencia."
   },
   "projectInfanti": {
-    "description": "Trabajé como Desarrollador Front-End en Infanti por 1 año, creando componentes personalizados como temporizadores y ajustes de diseño con código y constructor visual. Combiné distintas técnicas para mejorar el diseño, la usabilidad y el rendimiento."
+    "description": "Trabajé como Desarrollador Front-End para Infanti por más de 1 año, construyendo componentes personalizados como temporizadores y ajustes de layout usando tanto código como el page builder del CMS. Combiné diferentes técnicas para mejorar diseño, usabilidad y rendimiento."
   },
   "projectVocal": {
-    "description": "Sitio en WordPress para una directora vocal, enfocado en mostrar su experiencia y pasión por la música. Diseño moderno y dinámico con navegación intuitiva para atraer clientes y colaboradores."
+    "description": "Construí un sitio WordPress para una directora vocal para mostrar su experiencia y pasión por la música. Enfocado en un diseño moderno y dinámico con navegación intuitiva para involucrar clientes y colaboradores."
   },
 
   "projectMarket": {
-    "description": "Realicé una pasantía de 3 meses como Desarrollador Front-End, centrada en diagnosticar y mejorar el rendimiento del sitio. Trabajé junto a una agencia digital corrigiendo errores de diseño, optimizando imágenes y scripts, y reforzando la estructura SEO."
+    "description": "Pasantía de 3 meses como Desarrollador Front-End, enfocado en diagnosticar y mejorar el rendimiento del sitio. Trabajé junto a una agencia digital para corregir problemas de layout, optimizar imágenes y scripts, y mejorar la estructura SEO."
   },
 
   "projectChatbot": {
-    "description": "Desarrollé un chatbot con IA para mi Portfolio v2, mejorando la interacción del usuario y facilitando la navegación en tiempo real. Construido con algoritmos lógicos y entrenamiento de IA para ofrecer respuestas conversacionales al instante."
+    "description": "Desarrollé un chatbot potenciado por IA para mi Portfolio v2 para mejorar la interacción del usuario y proporcionar soporte de navegación en tiempo real. Construido con algoritmos basados en lógica y entrenamiento de IA para acceso conversacional fluido a la información."
   },
   "projectPortfolioV2": {
-    "description": "Nuevo portafolio diseñado y desarrollado para mostrar las herramientas y tecnologías que he dominado durante el último año, incluyendo React y Tailwind CSS, en un diseño moderno y enfocado en dispositivos móviles."
+    "description": "Nuevo Portfolio diseñado y desarrollado para mostrar las herramientas y tecnologías que he dominado durante el último año, incluyendo React y Tailwind CSS, en un diseño moderno y mobile-first."
   },
   "projectGlobal": {
-    "description": "Optimización del sitio web, corrección de errores existentes, mejora de la funcionalidad general y traducción del contenido al español. El proyecto fue abordado mejorando el rendimiento del sitio."
+    "description": "Optimización de sitio web, corregir errores existentes, mejorar funcionalidad general y traducir el contenido al español. Proyecto abordado mejorando el rendimiento del sitio."
   },
   "projectCanjet": {
-    "description": "Responsable de crear una biblioteca de patrones y un panel que visualiza datos a través de gráficos interactivos. Para lograr esto, utilicé D3.js."
+    "description": "Responsable de crear una Librería de Patrones y un dashboard que visualiza datos a través de gráficos interactivos. Para lograr esto, utilicé D3.js."
   },
   "projectInfantiTerms": {
-    "description": "Optimizar la accesibilidad de la información legal y la impresión de documentos para los usuarios."
+    "description": "Optimizar la accesibilidad de información legal y documento de impresión para usuarios."
   },
   "projectPortfoliov1": {
-    "description": "Mostrar eficazmente mis habilidades y experiencias.."
+    "description": "Mostrar mis habilidades y experiencias de manera efectiva."
   },
-  "projectOccupancy": {
-    "description": "Diseñado para mostrar los niveles de ocupación empresarial en tiempo real, con una interfaz limpia y responsiva, estilizada con Tailwind CSS. Este componente está listo para integrarse con API que proporcionen datos de afluencia."
+  "projectOccoupancy": {
+    "description": "Diseñado para mostrar niveles de ocupación empresarial en tiempo real, con una UI limpia y responsiva estilizada con Tailwind CSS. Este componente está listo para integrarse con APIs que proporcionan datos de multitudes."
   },
   "projectQuickbooker": {
-    "description": "Sistema de Gestión de Eventos para Pequeñas Empresas es una plataforma web diseñada para ayudar a pequeñas empresas como restaurantes, parques o salones de eventos a gestionar y ofrecer reservas de eventos. Los clientes pueden explorar los lugares disponibles, verificar detalles y reservar espacios."
+    "description": "Sistema de Gestión de Eventos para Pequeñas Empresas es una plataforma basada en web diseñada para ayudar a pequeñas empresas como restaurantes, parques o salones de eventos a gestionar y ofrecer reservas de eventos. Los clientes pueden navegar por lugares disponibles, verificar detalles y reservar espacios."
   },
   "viewfFullProjects": {
     "text": "Ver lista completa de proyectos."
@@ -64,8 +65,8 @@
     "description": "Mi compromiso con el aprendizaje es inquebrantable; en este campo dinámico, la educación continua es imprescindible para mantenerse relevante."
   },
   "about": {
-    "p1": "Soy Desarrollador Front-End con más de tres años de experiencia creando interfaces web rápidas y escalables usando React, Tailwind CSS, JavaScript y SCSS. He trabajado tanto en aplicaciones totalmente personalizadas como en sitios basados en CMS, siempre buscando un diseño accesible, limpio y con buen rendimiento.",
-    "p2": "Antes de enfocarme por completo en el desarrollo, trabajé como Web Manager y Coordinador. Esa experiencia me dio una comprensión sólida de la experiencia del usuario, el contenido digital y cómo hacer que los sitios funcionen bien en la práctica. Hoy en día, sigo aplicando esa visión en cada proyecto que desarrollo.",
-    "p3": "Me gradué en Fanshawe College con un diploma en Desarrollo Web y obtuve el reconocimiento President’s Honor Roll con un promedio final de 4.02. Como freelancer, creo sitios personalizados con WordPress e integro funciones como chatbots con inteligencia artificial, herramientas de automatización y soporte multilingüe, utilizando tecnologías como Firebase, GitHub y Figma."
+    "p1": "Soy un Desarrollador de Software con más de 3 años de experiencia creando interfaces rápidas y escalables usando React, Tailwind y herramientas modernas de JavaScript. Diseño soluciones front-end enfocadas en rendimiento, UX y accesibilidad, y como freelancer, también entrego soluciones personalizadas de WordPress e integro funciones de IA como chatbots y automatizaciones inteligentes.",
+    "p2": "Actualmente expandiéndome al desarrollo full-stack construyendo APIs con Node.js/Express e integrando bases de datos SQL/NoSQL. Especializado en flujos de trabajo ágiles y desarrollo asistido por IA con Claude Code para procesos de codificación automatizados, estandarización de código y depuración inteligente.",
+    "p3": "Como freelancer, construyo soluciones de software personalizadas y disfruto integrando funciones de IA, herramientas de automatización y sistemas backend escalables."
   }
 }

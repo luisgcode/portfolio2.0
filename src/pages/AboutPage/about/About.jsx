@@ -82,7 +82,8 @@ const About = () => {
               <h5 className="mb-3 text-highlightColor">Formal education</h5>
               <ul>
                 <li className="my-2">
-                  Fanshawe College.
+                  Fanshawe College. - President's Honor Roll with a final GPA of
+                  4.02.
                   <span className="flex gap-2">
                     <FaCheckCircle aria-hidden="true" />
                     Web Development and Internet Applications Diploma.
@@ -125,6 +126,10 @@ const About = () => {
                 Udeymy: LLM Engineering: Master AI, Large Language Models - Ed
                 D.
               </li> */}
+              <li className="flex justify-start gap-2 mb-2">
+                <AiOutlineLoading3Quarters aria-hidden="true" />
+                Full Stack Developer 2025 - roadmap.sh/full-stack
+              </li>
               <li className="flex justify-start gap-2 mb-2">
                 <FaCheckCircle aria-hidden="true" />
                 Udemy: 50 JS Projects in 50 Days - Brad T.
