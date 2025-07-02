@@ -20,7 +20,7 @@ const TableList = () => {
       href: "#",
       linkText: "WordPress Development",
       linkHref: "#",
-      tags: ["WordPress", "Elementor PRO", "Custom CSS", "SEO", "Figma", "Booking System"],
+      tags: ["WordPress", "Elementor PRO", "Booking System", "SEO", "Figma"],
     },
     {
       id: 2,
@@ -32,7 +32,7 @@ const TableList = () => {
       href: "#",
       linkText: "luisgcode.com",
       linkHref: "https://luisgcode.com/resources",
-      tags: ["React", "Accessibility (WCAG)", "Semantic HTML", "Tailwind CSS", "Monetization", "UX Design"],
+      tags: ["React", "Tailwind CSS", "Accessibility (WCAG)", "Monetization", "UX Design"],
     },
     {
       id: 3,
@@ -44,7 +44,7 @@ const TableList = () => {
       href: "#",
       linkText: "WordPress Development",
       linkHref: "#",
-      tags: ["WordPress", "Elementor", "SEO", "Figma", "Multi-page", "Content Management"],
+      tags: ["WordPress", "Elementor", "SEO", "Figma", "Multi-page"],
     },
     {
       id: 4,
@@ -56,7 +56,7 @@ const TableList = () => {
       href: "#",
       linkText: "WordPress Development",
       linkHref: "#",
-      tags: ["WordPress", "WPBakery", "SEO", "Figma", "Custom Plugins", "Responsive"],
+      tags: ["WordPress", "WPBakery", "Custom Plugins", "SEO", "Figma"],
     },
     {
       id: 5,
@@ -68,7 +68,7 @@ const TableList = () => {
       href: "https://thevocaldirection.com",
       linkText: "thevocaldirection.com",
       linkHref: "https://thevocaldirection.com/",
-      tags: ["WordPress", "Elementor", "Email Integration", "CSS", "SEO", "Figma"],
+      tags: ["WordPress", "Elementor", "Email Integration", "SEO", "Figma"],
     },
     {
       id: 6,
@@ -80,7 +80,7 @@ const TableList = () => {
       href: "https://themarketwfd.com/",
       linkText: "themarketwfd.com",
       linkHref: "https://themarketwfd.com/",
-      tags: ["Squarespace", "SEO", "E-commerce", "Multi-page", "Domain Management", "Website Builder"],
+      tags: ["Squarespace", "E-commerce", "SEO", "Multi-page", "Domain Management"],
     },
     {
       id: 7,
@@ -92,7 +92,7 @@ const TableList = () => {
       href: "https://www.wawabb.cl/",
       linkText: "wawabb.cl",
       linkHref: "https://www.wawabb.cl/",
-      tags: ["CMS Optimization", "E-commerce", "JavaScript", "CSS", "POS Integration", "Performance"],
+      tags: ["CMS Optimization", "E-commerce", "JavaScript", "POS Integration", "Performance"],
     },
     {
       id: 8,
@@ -104,7 +104,7 @@ const TableList = () => {
       href: "#",
       linkText: "luisgcode.com",
       linkHref: "#",
-      tags: ["AI Integration", "Botpress", "Data Management", "Conversational AI", "Knowledge Base", "API Integration"],
+      tags: ["AI Integration", "Botpress", "API Integration", "Conversational AI", "Knowledge Base"],
     },
     {
       id: 9,
@@ -116,7 +116,7 @@ const TableList = () => {
       href: "https://www.luisgcode.com/",
       linkText: "luisgcode.com",
       linkHref: "https://www.luisgcode.com/",
-      tags: ["React", "Tailwind CSS", "Framer Motion", "i18next", "SPA", "Responsive Design"],
+      tags: ["React", "Tailwind CSS", "Framer Motion", "i18next", "SPA"],
     },
     {
       id: 10,
@@ -128,7 +128,7 @@ const TableList = () => {
       href: "https://globaltechnologies.web.app/",
       linkText: "globaltechnologies.web.app",
       linkHref: "https://globaltechnologies.web.app/",
-      tags: ["TypeScript", "JavaScript", "Responsive Design", "Performance Optimization", "Multi-page", "Web Development"],
+      tags: ["TypeScript", "JavaScript", "Performance Optimization", "Responsive Design", "Multi-page"],
     },
     {
       id: 11,
@@ -140,7 +140,7 @@ const TableList = () => {
       href: "https://github.com/luisgcode/pattern_library_canJet",
       linkText: "GitHub",
       linkHref: "https://github.com/luisgcode/pattern_library_canJet",
-      tags: ["D3.js", "Data Visualization", "JavaScript", "Responsive Design", "Dashboard", "CSS"],
+      tags: ["D3.js", "Data Visualization", "JavaScript", "Dashboard", "CSS"],
       isGitHub: true,
     },
     {
@@ -153,7 +153,7 @@ const TableList = () => {
       href: "https://github.com/luisgcode/portfolio2024",
       linkText: "GitHub",
       linkHref: "https://github.com/luisgcode/portfolio2024",
-      tags: ["Sass", "JavaScript", "Responsive Design", "Accessibility", "Internationalization", "Portfolio"],
+      tags: ["Sass", "JavaScript", "Responsive Design", "Accessibility", "Internationalization"],
       isGitHub: true,
     },
     {
@@ -166,7 +166,7 @@ const TableList = () => {
       href: "https://www.rbcplacelondon.com/",
       linkText: "rbcplacelondon.com",
       linkHref: "https://www.rbcplacelondon.com/",
-      tags: ["Firebase", "JavaScript", "Real-time Data", "CSS", "Information System", "Cloud Integration"],
+      tags: ["Firebase", "JavaScript", "Real-time Data", "Cloud Integration", "CSS"],
     },
     {
       id: 14,
@@ -178,7 +178,7 @@ const TableList = () => {
       href: "https://infanti.cl/pages/nuestras-tiendas-infanti",
       linkText: "infanti.cl",
       linkHref: "https://infanti.cl/pages/nuestras-tiendas-infanti",
-      tags: ["CSS", "JavaScript", "Responsive Design", "E-commerce", "Store Locator", "Interactive Maps"],
+      tags: ["CSS", "JavaScript", "E-commerce", "Store Locator", "Interactive Maps"],
     },
     {
       id: 15,
@@ -190,7 +190,7 @@ const TableList = () => {
       href: "https://infanti.cl/pages/terminos-y-condiciones",
       linkText: "infanti.cl",
       linkHref: "https://infanti.cl/pages/terminos-y-condiciones",
-      tags: ["CSS", "JavaScript", "Responsive Design", "Accessibility", "Legal Compliance", "Content Management"],
+      tags: ["CSS", "JavaScript", "Accessibility", "Legal Compliance", "Content Management"],
     },
   ];
   return (
