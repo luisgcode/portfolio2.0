@@ -57,6 +57,9 @@
   "projectQuickbooker": {
     "description": "Sistema de Gestión de Eventos para Pequeñas Empresas es una plataforma basada en web diseñada para ayudar a pequeñas empresas como restaurantes, parques o salones de eventos a gestionar y ofrecer reservas de eventos. Los clientes pueden navegar por lugares disponibles, verificar detalles y reservar espacios."
   },
+  "projectResourcesPage": {
+    "description": "Recursos que he creado y usado en mi camino en la programacion"
+  },
   "viewfFullProjects": {
     "text": "Ver lista completa de proyectos."
   },
@@ -64,6 +67,7 @@
     "title": "Mis herramientas",
     "description": "Mi compromiso con el aprendizaje es inquebrantable; en este campo dinámico, la educación continua es imprescindible para mantenerse relevante."
   },
+
   "about": {
     "p1": "Soy un Desarrollador de Software con más de 3 años de experiencia creando interfaces rápidas y escalables usando React, Tailwind y herramientas modernas de JavaScript. Diseño soluciones front-end enfocadas en rendimiento, UX y accesibilidad, y como freelancer, también entrego soluciones personalizadas de WordPress e integro funciones de IA como chatbots y automatizaciones inteligentes.",
     "p2": "Actualmente expandiéndome al desarrollo full-stack construyendo APIs con Node.js/Express e integrando bases de datos SQL/NoSQL. Especializado en flujos de trabajo ágiles y desarrollo asistido por IA con Claude Code para procesos de codificación automatizados, estandarización de código y depuración inteligente.",

@@ -18,14 +18,14 @@ import { useTranslation } from "react-i18next";
 
 const Projects = () => {
   const { t, i18n } = useTranslation("global");
-  const [activeTab, setActiveTab] = useState("Applications");
+  const [activeTab, setActiveTab] = useState("Freelance");
 
   function handleLanguage(lang) {
     i18n.changeLanguage(lang);
   }
 
   // Tab categories
-  const tabs = ["Applications", "Freelance", "AI Integrations", "My lab"];
+  const tabs = ["Development", "Freelance", "My Lab"];
 
   // All projects data - you can redistribute these later
   const allProjects = [
@@ -37,39 +37,49 @@ const Projects = () => {
       description: t("projectNeurovet.description"),
       status: "In progress...",
       tags: [
-        "3 Pages",
-        "Wordpress",
+        "WordPress",
         "WPBakery",
-        "Slider Revolution",
-        "Yoast SEO",
-        "Bookly",
-        "Hostinger",
         "SEO",
         "Figma",
-        "Photoshop",
+        "Custom Plugins",
+        "Responsive",
       ],
       poster: null,
     },
     {
       id: 2,
       category: "Freelance",
+      title: "Geeksonas.com",
+      href: "#",
+      description: t("projectGeek.description"),
+      status: "In progress...",
+      tags: [
+        "WordPress",
+        "Elementor",
+        "SEO",
+        "Figma",
+        "Multi-page",
+        "Content Management",
+      ],
+      poster: null,
+    },
+    {
+      id: 3,
+      category: "Freelance",
       title: "Vivenutricion.cl",
       href: "#",
       description: t("projectVivenutricion.description"),
       status: "In progress...",
       tags: [
-        "+10 Pages",
-        "Wordpress",
+        "WordPress",
         "Elementor PRO",
-        "Bookly",
+        "Custom CSS",
         "SEO",
         "Figma",
-        "Custom CSS",
-        "Unlimited Elements Elementor",
+        "Booking System",
       ],
       poster: posterVivenutricion,
     },
-
     {
       id: 4,
       category: "Freelance",
@@ -78,69 +88,82 @@ const Projects = () => {
       description: t("projectVocal.description"),
       status: null,
       tags: [
-        "1 Page",
-        "Wordpress",
-        "Mail Configuration",
+        "WordPress",
         "Elementor",
+        "Email Integration",
         "CSS",
-        "Contact Form 7",
-        "Hostinger",
         "SEO",
         "Figma",
-        "Photoshop",
       ],
       poster: posterVocal,
     },
     {
-      id: 4,
-      category: "Freelance",
-      title: "AI Chatbot Integration",
-      href: "https://github.com/luisgcode/portfolio2.0",
-      description: t("projectChatbot.description"),
-      status: null,
-      tags: ["Botpress", "AI Design", "Data Storage", "Knowledge Answering"],
-      poster: posterChatBot,
-    },
-    {
       id: 5,
-      category: "AI Integrations",
+      category: "My Lab",
       title: "AI Chatbot Integration",
       href: "https://github.com/luisgcode/portfolio2.0",
       description: t("projectChatbot.description"),
       status: null,
-      tags: ["Botpress", "AI Design", "Data Storage", "Knowledge Answering"],
+      tags: [
+        "AI Integration",
+        "Botpress",
+        "Data Management",
+        "Conversational AI",
+        "Knowledge Base",
+        "API Integration",
+      ],
       poster: posterChatBot,
     },
     {
-      id: 7,
-      category: "Applications",
+      id: 6,
+      category: "Development",
       title: "globaltechnologies.web.app",
       href: "https://globaltechnologies.web.app/",
       description: t("projectGlobal.description"),
       status: null,
-      tags: ["6 Pages", "TypeScript", "JavaScript", "Responsive"],
+      tags: [
+        "TypeScript",
+        "JavaScript",
+        "Responsive Design",
+        "Performance Optimization",
+        "Multi-page",
+        "Web Development",
+      ],
       poster: posterGlobal,
     },
     {
-      id: 8,
-      category: "Applications",
+      id: 7,
+      category: "Development",
       title: "Portfolio (v2)",
       href: "https://github.com/luisgcode/portfolio2.0",
       description: t("projectPortfolioV2.description"),
       status: null,
       tags: [
-        "5 Pages",
-        "React JS",
+        "React",
         "Tailwind CSS",
         "Framer Motion",
         "i18next",
-        "Responsive",
         "SPA",
-        "Bilingual",
-        "Hostinger",
-        "GA4",
+        "Responsive Design",
       ],
       poster: posterPortfolio2,
+    },
+    {
+      id: 8,
+      category: "My Lab",
+      title: "Resources",
+      href: "https://github.com/luisgcode/portfolio2.0",
+      description: t("projectResourcesPage.description"),
+      status: "In progress...",
+      tags: [
+        "React",
+        "Accessibility (WCAG)",
+        "Semantic HTML",
+        "Tailwind CSS",
+        "Monetization",
+        "UX Design",
+      ],
+      poster: "",
     },
   ];
 

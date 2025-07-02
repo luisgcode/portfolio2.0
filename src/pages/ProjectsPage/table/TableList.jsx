@@ -7,6 +7,192 @@ import { useTranslation } from "react-i18next";
 
 const TableList = () => {
   const { t } = useTranslation("global");
+
+  // Projects data array for dynamic rendering and consistent animations
+  const projects = [
+    {
+      id: 1,
+      date: "Jun/2025",
+      title: "Vivenutricion.cl",
+      desktopTitle: "Vivenutricion.cl",
+      mobileTitle: "Vivenutricion.cl",
+      status: "In progress...",
+      href: "#",
+      linkText: "WordPress Development",
+      linkHref: "#",
+      tags: ["WordPress", "Elementor PRO", "Custom CSS", "SEO", "Figma", "Booking System"],
+    },
+    {
+      id: 2,
+      date: "Jun/2025",
+      title: "Resources $ page on Portfolio",
+      desktopTitle: "Resources $ page on Portfolio",
+      mobileTitle: "Resources $ page on Portfolio",
+      status: "In progress...",
+      href: "#",
+      linkText: "luisgcode.com",
+      linkHref: "https://luisgcode.com/resources",
+      tags: ["React", "Accessibility (WCAG)", "Semantic HTML", "Tailwind CSS", "Monetization", "UX Design"],
+    },
+    {
+      id: 3,
+      date: "May/2025",
+      title: "Geeksonas",
+      desktopTitle: "Geeksonas",
+      mobileTitle: "Geeksonas",
+      status: "In progress...",
+      href: "#",
+      linkText: "WordPress Development",
+      linkHref: "#",
+      tags: ["WordPress", "Elementor", "SEO", "Figma", "Multi-page", "Content Management"],
+    },
+    {
+      id: 4,
+      date: "May/2025",
+      title: "Neurovet.cl",
+      desktopTitle: "Neurovet.cl",
+      mobileTitle: "Neurovet.cl",
+      status: "In progress...",
+      href: "#",
+      linkText: "WordPress Development",
+      linkHref: "#",
+      tags: ["WordPress", "WPBakery", "SEO", "Figma", "Custom Plugins", "Responsive"],
+    },
+    {
+      id: 5,
+      date: "Mar/2025",
+      title: "The Vocal Direction (Heidi Weinrib)",
+      desktopTitle: "The Vocal Direction (Heidi Weinrib)",
+      mobileTitle: "TheVocalDirection",
+      status: null,
+      href: "https://thevocaldirection.com",
+      linkText: "thevocaldirection.com",
+      linkHref: "https://thevocaldirection.com/",
+      tags: ["WordPress", "Elementor", "Email Integration", "CSS", "SEO", "Figma"],
+    },
+    {
+      id: 6,
+      date: "May/2025",
+      title: "Western Fair The Market",
+      desktopTitle: "Western Fair The Market",
+      mobileTitle: "Western Fair The Market",
+      status: null,
+      href: "https://themarketwfd.com/",
+      linkText: "themarketwfd.com",
+      linkHref: "https://themarketwfd.com/",
+      tags: ["Squarespace", "SEO", "E-commerce", "Multi-page", "Domain Management", "Website Builder"],
+    },
+    {
+      id: 7,
+      date: "Mar/2025",
+      title: "Wawabb - Bsale Store Optimization",
+      desktopTitle: "Wawabb - Bsale Store Optimization",
+      mobileTitle: "Wawabb.cl",
+      status: null,
+      href: "https://www.wawabb.cl/",
+      linkText: "wawabb.cl",
+      linkHref: "https://www.wawabb.cl/",
+      tags: ["CMS Optimization", "E-commerce", "JavaScript", "CSS", "POS Integration", "Performance"],
+    },
+    {
+      id: 8,
+      date: "Feb/2025",
+      title: "Portfolio AI Chatbot Integration",
+      desktopTitle: "Portfolio AI Chatbot Integration",
+      mobileTitle: "Portfolio AI Chatbot Integration",
+      status: null,
+      href: "#",
+      linkText: "luisgcode.com",
+      linkHref: "#",
+      tags: ["AI Integration", "Botpress", "Data Management", "Conversational AI", "Knowledge Base", "API Integration"],
+    },
+    {
+      id: 9,
+      date: "Jan/2025",
+      title: "Portfolio (v2)",
+      desktopTitle: "Portfolio (v2)",
+      mobileTitle: "Portfolio (v2)",
+      status: null,
+      href: "https://www.luisgcode.com/",
+      linkText: "luisgcode.com",
+      linkHref: "https://www.luisgcode.com/",
+      tags: ["React", "Tailwind CSS", "Framer Motion", "i18next", "SPA", "Responsive Design"],
+    },
+    {
+      id: 10,
+      date: "2024",
+      title: "Global Technologies - Optimization & Functionalities",
+      desktopTitle: "Global Technologies - Optimization & Functionalities",
+      mobileTitle: "globaltechnologies.web.app",
+      status: null,
+      href: "https://globaltechnologies.web.app/",
+      linkText: "globaltechnologies.web.app",
+      linkHref: "https://globaltechnologies.web.app/",
+      tags: ["TypeScript", "JavaScript", "Responsive Design", "Performance Optimization", "Multi-page", "Web Development"],
+    },
+    {
+      id: 11,
+      date: "2024",
+      title: "Can Jet Pattern Library & Dashboard",
+      desktopTitle: "Can Jet Pattern Library & Dashboard",
+      mobileTitle: "Can Jet Pattern Library & Dashboard",
+      status: null,
+      href: "https://github.com/luisgcode/pattern_library_canJet",
+      linkText: "GitHub",
+      linkHref: "https://github.com/luisgcode/pattern_library_canJet",
+      tags: ["D3.js", "Data Visualization", "JavaScript", "Responsive Design", "Dashboard", "CSS"],
+      isGitHub: true,
+    },
+    {
+      id: 12,
+      date: "2024",
+      title: "Portfolio (v1)",
+      desktopTitle: "Portfolio (v1)",
+      mobileTitle: "Portfolio (v1)",
+      status: null,
+      href: "https://github.com/luisgcode/portfolio2024",
+      linkText: "GitHub",
+      linkHref: "https://github.com/luisgcode/portfolio2024",
+      tags: ["Sass", "JavaScript", "Responsive Design", "Accessibility", "Internationalization", "Portfolio"],
+      isGitHub: true,
+    },
+    {
+      id: 13,
+      date: "2024",
+      title: "RBC Place - Information HUB",
+      desktopTitle: "RBC Place - Information HUB",
+      mobileTitle: "rbcplacelondon.com",
+      status: null,
+      href: "https://www.rbcplacelondon.com/",
+      linkText: "rbcplacelondon.com",
+      linkHref: "https://www.rbcplacelondon.com/",
+      tags: ["Firebase", "JavaScript", "Real-time Data", "CSS", "Information System", "Cloud Integration"],
+    },
+    {
+      id: 14,
+      date: "2024",
+      title: "Infati stores page",
+      desktopTitle: "Infati stores page",
+      mobileTitle: "Infati stores page",
+      status: null,
+      href: "https://infanti.cl/pages/nuestras-tiendas-infanti",
+      linkText: "infanti.cl",
+      linkHref: "https://infanti.cl/pages/nuestras-tiendas-infanti",
+      tags: ["CSS", "JavaScript", "Responsive Design", "E-commerce", "Store Locator", "Interactive Maps"],
+    },
+    {
+      id: 15,
+      date: "2024",
+      title: "Infanti Terms & Conditions page",
+      desktopTitle: "Infanti Terms & Conditions page",
+      mobileTitle: "Infanti Terms & Conditions page",
+      status: null,
+      href: "https://infanti.cl/pages/terminos-y-condiciones",
+      linkText: "infanti.cl",
+      linkHref: "https://infanti.cl/pages/terminos-y-condiciones",
+      tags: ["CSS", "JavaScript", "Responsive Design", "Accessibility", "Legal Compliance", "Content Management"],
+    },
+  ];
   return (
     <div>
       <div className="p-sma_pad md:p-mid_pad">
@@ -29,836 +215,79 @@ const TableList = () => {
             </tr>
           </thead>
           <tbody>
-            {/* Vivenutricion */}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 0.1,
+            {projects.map((project, index) => (
+              <motion.tr
+                key={project.id}
+                variants={{
+                  hidden: { x: 80, opacity: 0 },
+                  show: {
+                    x: 0,
+                    opacity: 1,
+                    transition: {
+                      duration: 0.5,
+                      delay: (index + 1) * 0.1, // Dynamic delay calculation
+                    },
                   },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>Jun/2025</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">
-                  Vivenutricion.cl - &nbsp;
-                  <span className="italic text-highlightColor font-normal">
-                    In progress...
-                  </span>
-                </div>
-                <div className=" xxl:hidden ">
-                  <a href="#" className="flex gap-1">
-                    Vivenutricion.cl
-                    <span className="italic text-highlightColor font-normal">
-                      In progress...
+                }}
+                initial="hidden"
+                animate="show"
+              >
+                {/* Date */}
+                <td>{project.date}</td>
+
+                {/* Project Title */}
+                <td className="font-semibold">
+                  <div className="hidden xxl:table-cell">
+                    {project.desktopTitle}
+                    {project.status && (
+                      <>
+                        {" - "}
+                        <span className="italic text-highlightColor font-normal">
+                          {project.status}
+                        </span>
+                      </>
+                    )}
+                  </div>
+                  <div className="xxl:hidden">
+                    <a href={project.href} className="flex gap-1">
+                      {project.mobileTitle}
+                      {project.status && (
+                        <span className="italic text-highlightColor font-normal">
+                          {project.status}
+                        </span>
+                      )}
+                      {project.href !== "#" && <FiArrowUpRight />}
+                    </a>
+                  </div>
+                </td>
+
+                {/* Tags */}
+                <td className="tags-td hidden xl:flex">
+                  {project.tags.map((tag, tagIndex) => (
+                    <span key={tagIndex} className="custom-project-tag">
+                      {tag}
                     </span>
-                  </a>
-                </div>
-              </td>
-              {/* Tags */}
-              <td className="tags-td hidden xl:flex  ">
-                <span className="custom-project-tag">+10 Pages</span>
-                <span className="custom-project-tag">Wordpress</span>
-                <span className="custom-project-tag">Elementor PRO</span>
-                <span className="custom-project-tag">Bookly</span>
-                <span className="custom-project-tag">SEO</span>
-                <span className="custom-project-tag">Figma</span>
-                <span className="custom-project-tag">Custom CSS</span>
-                <span className="custom-project-tag">Unlimited Elements</span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell">
-                <a
-                  href="#"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                >
-                  WordPress Development
-                </a>
-              </td>
-            </motion.tr>
+                  ))}
+                </td>
 
-            {/* Resources Page */}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 0.2,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>Jun/2025</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">
-                  Resources $ page on Portfolio - &nbsp;
-                  <span className="italic text-highlightColor font-normal">
-                    In progress...
-                  </span>
-                </div>
-                <div className=" xxl:hidden ">
-                  <a href="#" className="flex gap-1">
-                    Resources $ page on Portfolio
-                    <span className="italic text-highlightColor font-normal">
-                      In progress...
-                    </span>
-                  </a>
-                </div>
-              </td>
-              {/* Tags */}
-              <td className="tags-td hidden xl:flex  ">
-                <span className="custom-project-tag">Buymeacoffe</span>
-                <span className="custom-project-tag">Semantic HTML</span>
-                <span className="custom-project-tag">
-                  Web Content Accessibility Guidelines
-                </span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell">
-                <a
-                  href="https://luisgcode.com/resources"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                >
-                  luisgcode.com <FiArrowUpRight />
-                </a>
-              </td>
-            </motion.tr>
-
-            {/* Geek sonas */}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 0.3,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>May/2025</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">
-                  Geeksonas - &nbsp;
-                  <span className="italic text-highlightColor font-normal">
-                    In progress...
-                  </span>
-                </div>
-                <div className=" xxl:hidden ">
-                  <a href="#" className="flex gap-1">
-                    Geeksonas
-                    <span className="italic text-highlightColor font-normal">
-                      In progress...
-                    </span>
-                  </a>
-                </div>
-              </td>
-              {/* Tags */}
-              <td className="tags-td hidden xl:flex  ">
-                <span className="custom-project-tag">+10 Pages</span>
-                <span className="custom-project-tag">Wordpress</span>
-                <span className="custom-project-tag">Elementor </span>
-                <span className="custom-project-tag">Yoast SEO</span>
-                <span className="custom-project-tag">Hostinger</span>
-                <span className="custom-project-tag">SEO</span>
-                <span className="custom-project-tag">Figma</span>
-                <span className="custom-project-tag">Photoshop</span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell">
-                <a
-                  href="#"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                >
-                  WordPress Development
-                </a>
-              </td>
-            </motion.tr>
-
-            {/* Neurovet */}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 0.4,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>May/2025</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">
-                  Neurovet.cl - &nbsp;
-                  <span className="italic text-highlightColor font-normal">
-                    In progress...
-                  </span>
-                </div>
-                <div className=" xxl:hidden ">
-                  <a href="#" className="flex gap-1">
-                    Neurovet.cl
-                    <span className="italic text-highlightColor font-normal">
-                      In progress...
-                    </span>
-                  </a>
-                </div>
-              </td>
-              {/* Tags */}
-              <td className="tags-td hidden xl:flex  ">
-                <span className="custom-project-tag">3 Pages</span>
-                <span className="custom-project-tag">Wordpress</span>
-                <span className="custom-project-tag">WPBakery </span>
-                <span className="custom-project-tag">Slider Revolution </span>
-                <span className="custom-project-tag">Yoast SEO</span>
-                <span className="custom-project-tag">Bookly</span>
-                <span className="custom-project-tag">Hostinger</span>
-                <span className="custom-project-tag">SEO</span>
-                <span className="custom-project-tag">Figma</span>
-                <span className="custom-project-tag">Photoshop</span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell">
-                <a
-                  href="#"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                >
-                  WordPress Development
-                </a>
-              </td>
-            </motion.tr>
-
-            {/* Thevocaldirection */}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 0.5,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>Mar/2025</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">
-                  {/* Desktop name */}
-                  The Vocal Direction (Heidi Weinrib)
-                </div>
-                <div className="xxl:hidden">
+                {/* Link */}
+                <td className="link hidden xxl:table-cell">
                   <a
-                    href="https://thevocaldirection.com"
-                    className="flex gap-1"
+                    href={project.linkHref}
+                    target={project.linkHref !== "#" ? "_blank" : undefined}
+                    className="flex gap-1 hover:scale-110 transition-all duration-200"
+                    aria-label={`Visit ${project.title}`}
                   >
-                    {/* Mobile name */}
-                    TheVocalDirection
-                    <FiArrowUpRight />
+                    {project.linkText}
+                    {project.isGitHub ? (
+                      <FaGithub />
+                    ) : (
+                      project.linkHref !== "#" && <FiArrowUpRight />
+                    )}
                   </a>
-                </div>
-              </td>
-              {/* Tags */}
-              <td className="tags-td   xl:flex hidden">
-                <span className="custom-project-tag">1 Page</span>
-                <span className="custom-project-tag">Wordpress</span>
-                <span className="custom-project-tag">Mail Configuration</span>
-                <span className="custom-project-tag">Elementor</span>
-                <span className="custom-project-tag">CSS</span>
-                <span className="custom-project-tag">Contact Form 7</span>
-                <span className="custom-project-tag">Hostinger</span>
-                <span className="custom-project-tag">SEO</span>
-                <span className="custom-project-tag">Figma</span>
-                <span className="custom-project-tag">Photoshop</span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell">
-                <a
-                  href="https://thevocaldirection.com/"
-                  target="_blank"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                >
-                  thevocaldirection.com <FiArrowUpRight />
-                </a>
-              </td>
-            </motion.tr>
-
-            {/* Western Fair */}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 0.5,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>May/2025</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">
-                  {/* Desktop name */}
-                  Western Fair The Market
-                </div>
-                <div className="xxl:hidden">
-                  <a href="https://themarketwfd.com/" className="flex gap-1">
-                    {/* Mobile name */}
-                    Western Fair The Market
-                    <FiArrowUpRight />
-                  </a>
-                </div>
-              </td>
-              {/* Tags */}
-              <td className="tags-td   xl:flex hidden">
-                <li className="custom-project-tag">+10 Pages</li>
-                <li className="custom-project-tag">Squarespace</li>
-                <li className="custom-project-tag">GoDaddy</li>
-                <li className="custom-project-tag">SEO</li>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell">
-                <a
-                  href="https://themarketwfd.com/"
-                  target="_blank"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                >
-                  themarketwfd.com <FiArrowUpRight />
-                </a>
-              </td>
-            </motion.tr>
-
-            {/* Wawabb */}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 0.6,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>Mar/2025</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">
-                  {/* Desktop name */}
-                  Wawabb - Bsale Store Optimization
-                </div>
-                <div className="xxl:hidden">
-                  <a
-                    href="https://www.wawabb.cl/"
-                    target="_blank"
-                    className="flex gap-1"
-                    aria-label="Visit Global Technologies website"
-                  >
-                    {/* Mobile name */}
-                    Wawabb.cl -
-                    <FiArrowUpRight />
-                  </a>
-                </div>
-              </td>
-              {/* Tags */}
-              <td className="tags-td   xl:flex hidden">
-                <span className="custom-project-tag">CMS Optimization</span>
-                <span className="custom-project-tag">Bsale POS</span>
-                <span className="custom-project-tag">JavaScript</span>
-                <span className="custom-project-tag">CSS</span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell">
-                <a
-                  href="https://www.wawabb.cl/"
-                  target="_blank"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                  aria-label="Visit Global Technologies website"
-                >
-                  wawabb.cl <FiArrowUpRight />
-                </a>
-              </td>
-            </motion.tr>
-
-            {/* Chatbot */}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 0.7,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>Feb/2025</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">
-                  Portfolio AI Chatbot Integration
-                </div>
-                <div className=" xxl:hidden ">
-                  <a href="#" className="flex gap-1">
-                    Portfolio AI Chatbot Integration
-                  </a>
-                </div>
-              </td>
-              {/* Tags */}
-              <td className="tags-td hidden xl:flex  ">
-                <span className="custom-project-tag">Botpress</span>
-                <span className="custom-project-tag">AI Design</span>
-                <span className="custom-project-tag">Data Storage</span>
-                <span className="custom-project-tag">Knowledge Answering</span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell">
-                <a
-                  href="#"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                >
-                  luisgcode.com <FiArrowUpRight />
-                </a>
-              </td>
-            </motion.tr>
-
-            {/* portfolio v2 */}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 0.8,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>Jan/2025</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">Portfolio (v2)</div>
-                <div className=" xxl:hidden ">
-                  <a
-                    href="https://www.luisgcode.com/"
-                    target="_blank"
-                    className="flex gap-1"
-                    aria-label="Visit my porfolio v2 github repository"
-                  >
-                    Portfolio (v2) <FiArrowUpRight />
-                  </a>
-                </div>
-              </td>
-              {/* Tags */}
-              <td className="tags-td hidden xl:flex  ">
-                <span className="custom-project-tag">5 Pages</span>
-                <span className="custom-project-tag">React JS</span>
-                <span className="custom-project-tag ">Tailwind CSS</span>
-                <span className="custom-project-tag">Framer Motion</span>
-                <span className="custom-project-tag">i18next </span>
-                <span className="custom-project-tag">Responsive</span>
-                <span className="custom-project-tag">SPA</span>
-                <span className="custom-project-tag">Bilingual</span>
-                <span className="custom-project-tag">Hostinger</span>
-                <span className="custom-project-tag">GA4</span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell">
-                <a
-                  href="https://www.luisgcode.com/"
-                  target="_blank"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                  aria-label="Visit my porfolio v2 github repository"
-                >
-                  luisgcode.com <FiArrowUpRight />
-                </a>
-              </td>
-            </motion.tr>
-
-            {/* Global Technologies */}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 0.9,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>2024</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">
-                  Global Technologies - Optimization & Functionalities
-                </div>
-                <div className="xxl:hidden">
-                  <a
-                    href="https://globaltechnologies.web.app/"
-                    target="_blank"
-                    className="flex gap-1"
-                    aria-label="Visit Global Technologies website"
-                  >
-                    globaltechnologies.web.app <FiArrowUpRight />
-                  </a>
-                </div>
-              </td>
-              {/* Tags */}
-              <td className="tags-td   xl:flex hidden">
-                <span className="custom-project-tag">6 Pages</span>
-                <span className="custom-project-tag">TypeScript</span>
-                <span className="custom-project-tag">JavaScript</span>
-                <span className="custom-project-tag">Responsive</span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell">
-                <a
-                  href="https://globaltechnologies.web.app/"
-                  target="_blank"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                  aria-label="Visit Global Technologies website"
-                >
-                  globaltechnologies.web.app <FiArrowUpRight />
-                </a>
-              </td>
-            </motion.tr>
-
-            {/* Can jet Pattern Library & Dashboard */}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 1,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>2024</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">
-                  Can Jet Pattern Library & Dashboard
-                </div>
-                <div className="xxl:hidden">
-                  <a
-                    href="https://github.com/luisgcode/pattern_library_canJet"
-                    target="_blank"
-                    className="flex gap-1 "
-                    aria-label="Visit Can jet Pattern Library & Dashboard Github repository"
-                  >
-                    Can Jet Pattern Library & Dashboard
-                    <FiArrowUpRight />
-                  </a>
-                </div>
-              </td>
-              {/* Tags */}
-              <td className="tags-td   xl:flex hidden">
-                <span className="custom-project-tag">3 Pages</span>
-                <span className="custom-project-tag">D3.js</span>
-                <span className="custom-project-tag">JavaScript</span>
-                <span className="custom-project-tag">Responsive</span>
-                <span className="custom-project-tag">CSS</span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell">
-                <a
-                  href="https://github.com/luisgcode/pattern_library_canJet"
-                  target="_blank"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                  aria-label="Visit Can jet Pattern Library & Dashboard Github repository"
-                >
-                  GitHub
-                  <FaGithub />
-                </a>
-              </td>
-            </motion.tr>
-
-            {/* Portfolio v1 */}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 1.1,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>2024</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">Portfolio (v1)</div>
-                <div className="xxl:hidden">
-                  <a
-                    href="https://github.com/luisgcode/portfolio2024"
-                    target="_blank"
-                    className="flex gap-1"
-                    aria-label="Visit my portfolio v1 Github repository"
-                  >
-                    Portfolio (v1)
-                    <FiArrowUpRight />
-                  </a>
-                </div>
-              </td>
-              {/* Tags */}
-              <td className="tags-td  hidden xl:flex">
-                <span className="custom-project-tag">Sass</span>
-                <span className="custom-project-tag">JavaScript</span>
-                <span className="custom-project-tag">Responsive</span>
-                <span className="custom-project-tag">Bilingual</span>
-                <span className="custom-project-tag">Accessible</span>
-                <span className="custom-project-tag">Hostinger</span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell">
-                <a
-                  href="https://github.com/luisgcode/portfolio2024"
-                  target="_blank"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                  aria-label="Visit my portfolio v1 Github repository"
-                >
-                  GitHub
-                  <FaGithub />
-                </a>
-              </td>
-            </motion.tr>
-
-            {/* RBC place Hub */}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 1.2,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>2024</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">
-                  RBC Place - Information HUB
-                </div>
-                <div className="xxl:hidden">
-                  <a
-                    href="https://www.rbcplacelondon.com/"
-                    target="_blank"
-                    className="flex gap-1"
-                    aria-label="Visit RBC Place London Github repository"
-                  >
-                    rbcplacelondon.com
-                    <FiArrowUpRight />
-                  </a>
-                </div>
-              </td>
-
-              {/* Tags */}
-              <td className="tags-td  hidden xl:flex">
-                <span className="custom-project-tag">HTML</span>
-                <span className="custom-project-tag">Firebase</span>
-                <span className="custom-project-tag">CSS</span>
-                <span className="custom-project-tag">JavaScript</span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell">
-                <a
-                  href="https://www.rbcplacelondon.com/"
-                  target="_blank"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                  aria-label="Visit RBC Place London Github repository"
-                >
-                  rbcplacelondon.com
-                  <FiArrowUpRight />
-                </a>
-              </td>
-            </motion.tr>
-
-            {/* Our stores Infanti*/}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 1.3,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>2024</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">Infati stores page</div>
-                <div className="xxl:hidden">
-                  <a
-                    href="https://infanti.cl/pages/nuestras-tiendas-infanti"
-                    target="_blank"
-                    className="flex gap-1 "
-                    aria-label="Visit Infant's stores page"
-                  >
-                    Infati stores page <FiArrowUpRight />
-                  </a>
-                </div>
-              </td>
-
-              {/* Tags */}
-              <td className="tags-td xl:flex hidden">
-                <span className="custom-project-tag">CSS</span>
-                <span className="custom-project-tag">JavaScript</span>
-                <span className="custom-project-tag">Responsive</span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell ">
-                <a
-                  href="https://infanti.cl/pages/nuestras-tiendas-infanti"
-                  target="_blank"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                  aria-label="Visit Infant's stores page"
-                >
-                  infanti.cl <FiArrowUpRight />
-                </a>
-              </td>
-            </motion.tr>
-
-            {/* Terms and conditions Infanti*/}
-            <motion.tr
-              variants={{
-                hidden: { x: 80, opacity: 0 },
-                show: {
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.5,
-                    delay: 1.4,
-                  },
-                },
-              }}
-              initial="hidden"
-              animate="show"
-            >
-              {/* Year */}
-              <td>2024</td>
-              {/* Project */}
-              <td className="font-semibold">
-                <div className="hidden xxl:table-cell">
-                  Infanti Terms & Conditions page
-                </div>
-                <div className="xxl:hidden">
-                  <a
-                    href="https://infanti.cl/pages/terminos-y-condiciones"
-                    target="_blank"
-                    className="flex gap-1"
-                    aria-label="Visit Infant's terms and conditions page"
-                  >
-                    Infanti Terms & Conditions page <FiArrowUpRight />
-                  </a>
-                </div>
-              </td>
-              <div></div>
-              {/* Tags */}
-              <td className="tags-td xl:flex hidden">
-                <span className="custom-project-tag">CSS</span>
-                <span className="custom-project-tag">JavaScript</span>
-                <span className="custom-project-tag">Responsive</span>
-                <span className="custom-project-tag">Accessible</span>
-              </td>
-              {/* link */}
-              <td className="link hidden xxl:table-cell ">
-                <a
-                  href="https://infanti.cl/pages/terminos-y-condiciones"
-                  target="_blank"
-                  className="flex gap-1 hover:scale-110 transition-all duration-200"
-                  aria-label="Visit Infant's terms and conditions page"
-                >
-                  infanti.cl <FiArrowUpRight />
-                </a>
-              </td>
-            </motion.tr>
+                </td>
+              </motion.tr>
+            ))}
           </tbody>
         </table>
       </div>

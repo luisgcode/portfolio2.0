@@ -57,6 +57,9 @@
   "projectQuickbooker": {
     "description": "Event Management System for Small Businesses is a web-based platform designed to help small businesses like restaurants, parks, or event halls manage and offer event bookings. Customers can browse available venues, check details, and reserve spaces."
   },
+  "projectResourcesPage": {
+    "description": "Resources I have built and used during my programming journey"
+  },
   "viewfFullProjects": {
     "text": "View full list of projects"
   },
