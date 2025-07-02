@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   posterPortfolio2,
   posterGlobal,
@@ -18,10 +18,136 @@ import { useTranslation } from "react-i18next";
 
 const Projects = () => {
   const { t, i18n } = useTranslation("global");
+  const [activeTab, setActiveTab] = useState("Applications");
 
   function handleLanguage(lang) {
     i18n.changeLanguage(lang);
   }
+
+  // Tab categories
+  const tabs = ["Applications", "Freelance", "AI Integrations", "My lab"];
+
+  // All projects data - you can redistribute these later
+  const allProjects = [
+    {
+      id: 1,
+      category: "Freelance",
+      title: "Neurovet.cl",
+      href: "#",
+      description: t("projectNeurovet.description"),
+      status: "In progress...",
+      tags: [
+        "3 Pages",
+        "Wordpress",
+        "WPBakery",
+        "Slider Revolution",
+        "Yoast SEO",
+        "Bookly",
+        "Hostinger",
+        "SEO",
+        "Figma",
+        "Photoshop",
+      ],
+      poster: null,
+    },
+    {
+      id: 2,
+      category: "Freelance",
+      title: "Vivenutricion.cl",
+      href: "#",
+      description: t("projectVivenutricion.description"),
+      status: "In progress...",
+      tags: [
+        "+10 Pages",
+        "Wordpress",
+        "Elementor PRO",
+        "Bookly",
+        "SEO",
+        "Figma",
+        "Custom CSS",
+        "Unlimited Elements Elementor",
+      ],
+      poster: posterVivenutricion,
+    },
+
+    {
+      id: 4,
+      category: "Freelance",
+      title: "thevocaldirection.com",
+      href: "https://thevocaldirection.com/",
+      description: t("projectVocal.description"),
+      status: null,
+      tags: [
+        "1 Page",
+        "Wordpress",
+        "Mail Configuration",
+        "Elementor",
+        "CSS",
+        "Contact Form 7",
+        "Hostinger",
+        "SEO",
+        "Figma",
+        "Photoshop",
+      ],
+      poster: posterVocal,
+    },
+    {
+      id: 4,
+      category: "Freelance",
+      title: "AI Chatbot Integration",
+      href: "https://github.com/luisgcode/portfolio2.0",
+      description: t("projectChatbot.description"),
+      status: null,
+      tags: ["Botpress", "AI Design", "Data Storage", "Knowledge Answering"],
+      poster: posterChatBot,
+    },
+    {
+      id: 5,
+      category: "AI Integrations",
+      title: "AI Chatbot Integration",
+      href: "https://github.com/luisgcode/portfolio2.0",
+      description: t("projectChatbot.description"),
+      status: null,
+      tags: ["Botpress", "AI Design", "Data Storage", "Knowledge Answering"],
+      poster: posterChatBot,
+    },
+    {
+      id: 7,
+      category: "Applications",
+      title: "globaltechnologies.web.app",
+      href: "https://globaltechnologies.web.app/",
+      description: t("projectGlobal.description"),
+      status: null,
+      tags: ["6 Pages", "TypeScript", "JavaScript", "Responsive"],
+      poster: posterGlobal,
+    },
+    {
+      id: 8,
+      category: "Applications",
+      title: "Portfolio (v2)",
+      href: "https://github.com/luisgcode/portfolio2.0",
+      description: t("projectPortfolioV2.description"),
+      status: null,
+      tags: [
+        "5 Pages",
+        "React JS",
+        "Tailwind CSS",
+        "Framer Motion",
+        "i18next",
+        "Responsive",
+        "SPA",
+        "Bilingual",
+        "Hostinger",
+        "GA4",
+      ],
+      poster: posterPortfolio2,
+    },
+  ];
+
+  // Filter projects by active tab
+  const filteredProjects = allProjects.filter(
+    (project) => project.category === activeTab
+  );
   return (
     <div
       className="projects px-8 py-12 md:p-mid_pad"
@@ -31,347 +157,89 @@ const Projects = () => {
         {t("latest.title")}
         <span className="detail-bg"></span>
       </h3>
+
+      {/* Tab Navigation */}
+      <div className="mt-8 mb-8">
+        <nav className="flex flex-wrap gap-2 justify-center md:justify-start">
+          {tabs.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-4 py-2 rounded-lg transition-all duration-300 text-sm font-medium ${
+                activeTab === tab
+                  ? "bg-highlightColor text-white"
+                  : "bg-transparent border border-highlightColor text-highlightColor hover:bg-highlightColor hover:bg-opacity-10"
+              }`}
+              aria-label={`Show ${tab} projects`}
+            >
+              {tab}
+            </button>
+          ))}
+        </nav>
+      </div>
+
+      {/* Projects Container */}
       <motion.ul
-        className="flex flex-wrap md:justify-center gap-y-2 gap-x-10 projects-container mt-12  lg:justify-between"
+        className="flex flex-wrap md:justify-center gap-y-2 gap-x-10 projects-container mt-12 lg:justify-between"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 0.5 }}
+        key={activeTab} // Re-trigger animation when tab changes
       >
-        {/* 1 Neurovet */}
-        <li className="project-card">
-          <a
-            href="#"
-            target="_blank"
-            className="project-title font-bold mb-4 flex items-center"
-            aria-label="Visit project's Gtihub repository"
-          >
-            Neurovet.cl <FiArrowUpRight />
-            <span className="italic text-highlightColor font-normal text-sm">
-              In progress...
-            </span>
-          </a>
-
-          <div>
-            <p>{t("projectNeurovet.description")}</p>
-          </div>
-
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <span className="custom-project-tag">3 Pages</span>
-              <span className="custom-project-tag">Wordpress</span>
-              <span className="custom-project-tag">WPBakery </span>
-              <span className="custom-project-tag">Slider Revolution </span>
-              <span className="custom-project-tag">Yoast SEO</span>
-              <span className="custom-project-tag">Bookly</span>
-              <span className="custom-project-tag">Hostinger</span>
-              <span className="custom-project-tag">SEO</span>
-              <span className="custom-project-tag">Figma</span>
-              <span className="custom-project-tag">Photoshop</span>
-            </ul>
-          </div>
-
-          {/* <div className="posters">
-            <img
-              className="rounded-lg  "
-              src={posterLoading}
-              alt="Quickbooker project's cover"
-              loading="lazy"
-            />
-          </div> */}
-        </li>
-
-        {/* 2 Vivenutricion */}
-        <li className="project-card">
-          <a
-            href="#"
-            target="_blank"
-            className="project-title font-bold mb-4 flex items-center"
-            aria-label="Visit project's Gtihub repository"
-          >
-            Vivenutricion.cl <FiArrowUpRight />
-            <span className="italic text-highlightColor font-normal text-sm">
-              In progress...
-            </span>
-          </a>
-
-          <div>
-            <p>{t("projectVivenutricion.description")}</p>
-          </div>
-
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <span className="custom-project-tag">+10 Pages</span>
-              <span className="custom-project-tag">Wordpress</span>
-              <span className="custom-project-tag">Elementor PRO</span>
-              <span className="custom-project-tag">Bookly</span>
-              <span className="custom-project-tag">SEO</span>
-              <span className="custom-project-tag">Figma</span>
-              <span className="custom-project-tag">Custom CSS</span>
-              <span className="custom-project-tag">
-                Unlimited Elements Elementor
-              </span>
-            </ul>
-          </div>
-
-          <div className="posters">
-            <img
-              className="rounded-lg  "
-              src={posterVivenutricion}
-              alt="Quickbooker project's cover"
-              loading="lazy"
-            />
-          </div>
-        </li>
-
-        {/* 2 Geek sonas*/}
-        {/*  <li className="project-card">
+        {filteredProjects.map((project) => (
+          <li key={project.id} className="project-card">
             <a
-            href="#"
-            target="_blank"
-            className="project-title font-bold mb-4 flex items-center"
-            aria-label="Visit project's Gtihub repository"
-          >
-            geeksonas.com <FiArrowUpRight />
-            <span className="italic text-highlightColor font-normal text-sm">
-              In progress...
-            </span>
-          </a>
+              href={project.href}
+              target="_blank"
+              className="project-title font-bold mb-4 flex items-center"
+              aria-label="Visit project's repository or website"
+            >
+              {project.title} <FiArrowUpRight />
+              {project.status && (
+                <span className="italic text-highlightColor font-normal text-sm ml-2">
+                  {project.status}
+                </span>
+              )}
+            </a>
 
-          <div>
-            <p>{t("projectGeek.description")}</p>
-          </div>
-          
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">Wordpress</li>
-              <li className="custom-project-tag">Elementor</li>
-              <li className="custom-project-tag">SEO</li>
-              <li className="custom-project-tag">Hostinger</li>
-              <li className="custom-project-tag">Figma</li>
-              <li className="custom-project-tag">Photoshop</li>
-              <li className="custom-project-tag">Firefly</li>
-            </ul>
-          </div> */}
+            <div>
+              <p>{project.description}</p>
+            </div>
 
-        {/* <div className="posters">
-            <img
-              className="rounded-lg  "
-              src={posterLoading}
-              alt="Quickbooker project's cover"
-              loading="lazy"
-            />
-          </div> 
-        </li>*/}
+            <div className="py-4">
+              <ul className="flex flex-wrap items-center gap-3">
+                {project.tags.map((tag, index) => (
+                  <span key={index} className="custom-project-tag">
+                    {tag}
+                  </span>
+                ))}
+              </ul>
+            </div>
 
-        {/* 3 Infanti.cl*/}
-        <li className="project-card">
-          <a
-            href="https://infanti.cl/"
-            target="_blank"
-            className="project-title font-bold mb-4 flex items-center"
-            aria-label="Visit project's Gtihub repository"
-          >
-            Infanti.cl <FiArrowUpRight />
-          </a>
+            {project.poster && (
+              <div className="posters">
+                <img
+                  className="rounded-lg"
+                  src={project.poster}
+                  alt={`${project.title} project cover`}
+                  loading="lazy"
+                />
+              </div>
+            )}
+          </li>
+        ))}
 
-          <div>
-            <p>{t("projectInfanti.description")}</p>
-          </div>
+        {/* Show message if no projects in category */}
+        {filteredProjects.length === 0 && (
+          <li className="w-full text-center py-8">
+            <p className="text-gray-400 italic">
+              No projects in {activeTab} category yet. Coming soon!
+            </p>
+          </li>
+        )}
 
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">+20 Pages</li>
-              <li className="custom-project-tag">Magento</li>
-              <li className="custom-project-tag">Elementor</li>
-              <li className="custom-project-tag">SEO</li>
-              <li className="custom-project-tag">Hostinger</li>
-              <li className="custom-project-tag">Figma</li>
-              <li className="custom-project-tag">Photoshop</li>
-              <li className="custom-project-tag">Firefly</li>
-            </ul>
-          </div>
-
-          <div className="posters">
-            <img
-              className="rounded-lg  "
-              src={posterInfanti}
-              alt="Infanti.cl project's cover"
-              loading="lazy"
-            />
-          </div>
-        </li>
-
-        {/* 4 thevocaldirection */}
-        <li className="project-card">
-          <a
-            href="https://thevocaldirection.com/"
-            target="_blank"
-            className="project-title font-bold mb-4 flex items-center"
-            aria-label="Visit project's Github repository"
-          >
-            thevocaldirection.com <FiArrowUpRight />
-          </a>
-          <div>
-            <p>{t("projectVocal.description")}</p>
-          </div>
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">1 Page</li>
-              <li className="custom-project-tag">Wordpress</li>
-              <li className="custom-project-tag">Mail Configuration</li>
-              <li className="custom-project-tag">Elementor</li>
-              <li className="custom-project-tag">CSS</li>
-              <li className="custom-project-tag">Contact Form 7 </li>
-              <li className="custom-project-tag">Hostinger</li>
-              <li className="custom-project-tag">SEO</li>
-              <li className="custom-project-tag">Figma</li>
-              <li className="custom-project-tag">Photoshop</li>
-            </ul>
-          </div>
-          <div className="posters">
-            <img
-              className="rounded-lg"
-              src={posterVocal}
-              alt="Portfolio v2 cover"
-              loading="lazy"
-            />
-          </div>
-        </li>
-
-        {/* 5 Chatbot*/}
-        <li className="project-card">
-          <a
-            href="https://github.com/luisgcode/portfolio2.0"
-            target="_blank"
-            className="project-title font-bold mb-4 flex"
-            aria-label="Visit project's Github repository"
-          >
-            AI Chatbot Integration <FiArrowUpRight />
-          </a>
-          <div>
-            <p>{t("projectChatbot.description")}</p>
-          </div>
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">Botpress</li>
-              <li className="custom-project-tag">AI Design</li>
-              <li className="custom-project-tag">Data Storage</li>
-              <li className="custom-project-tag">Knowledge Answering</li>
-            </ul>
-          </div>
-          <div className="posters">
-            <img
-              className="rounded-lg"
-              src={posterChatBot}
-              alt="Portfolio v2 cover"
-              loading="lazy"
-            />
-          </div>
-        </li>
-
-        {/* 6 themarket */}
-        <li className="project-card">
-          <a
-            href="https://themarketwfd.com/"
-            target="_blank"
-            className="project-title font-bold mb-4 flex items-center"
-            aria-label="Visit project's Github repository"
-          >
-            themarketwfd.com <FiArrowUpRight />
-          </a>
-          <div>
-            <p>{t("projectMarket.description")}</p>
-          </div>
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">+10 Pages</li>
-              <li className="custom-project-tag">Squarespace</li>
-              <li className="custom-project-tag">GoDaddy</li>
-              <li className="custom-project-tag">SEO</li>
-            </ul>
-          </div>
-          <div className="posters">
-            <img
-              className="rounded-lg  "
-              src={posterMarket}
-              alt="Quickbooker project's cover"
-              loading="lazy"
-            />
-          </div>
-        </li>
-
-        {/* 7 Global tech */}
-        <li className="project-card">
-          <a
-            href="https://globaltechnologies.web.app/"
-            target="_blank"
-            className="project-title font-bold mb-4 flex"
-            aria-label="Visit project's web"
-          >
-            globaltechnologies.web.app <FiArrowUpRight />
-          </a>
-
-          <div>
-            <p>{t("projectGlobal.description")}</p>
-          </div>
-
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">6 Pages</li>
-              <li className="custom-project-tag">TypeScript</li>
-              <li className="custom-project-tag">JavaScript</li>
-              <li className="custom-project-tag">Responsive</li>
-            </ul>
-          </div>
-
-          <div className="posters">
-            <img
-              className="rounded-lg "
-              src={posterGlobal}
-              alt="poster"
-              loading="lazy"
-            />
-          </div>
-        </li>
-
-        {/* 8 portfolio */}
-        <li className="project-card">
-          <a
-            href="https://github.com/luisgcode/portfolio2.0"
-            target="_blank"
-            className="project-title font-bold mb-4 flex"
-            aria-label="Visit project's Github repository"
-          >
-            Portfolio (v2) <FiArrowUpRight />
-          </a>
-          <div>
-            <p>{t("projectPortfolioV2.description")}</p>
-          </div>
-          <div className="py-4">
-            <ul className="flex flex-wrap items-center gap-3">
-              <li className="custom-project-tag">5 Pages</li>
-              <li className="custom-project-tag">React JS</li>
-              <li className="custom-project-tag">Tailwind CSS</li>
-              <li className="custom-project-tag">Framer Motion</li>
-              <li className="custom-project-tag">i18next</li>
-              <li className="custom-project-tag">Responsive</li>
-              <li className="custom-project-tag">SPA</li>
-              <li className="custom-project-tag">Bilingual</li>
-              <li className="custom-project-tag">Hostinger</li>
-              <li className="custom-project-tag">GA4</li>
-            </ul>
-          </div>
-          <div className="posters">
-            <img
-              className="rounded-lg"
-              src={posterPortfolio2}
-              alt="Portfolio v2 cover"
-              loading="lazy"
-            />
-          </div>
-        </li>
-
+        {/* View Full Projects Link */}
         <Link to="/projects">
           <li>
             <a
