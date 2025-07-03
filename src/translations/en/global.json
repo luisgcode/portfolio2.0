@@ -60,6 +60,9 @@
   "projectResourcesPage": {
     "description": "Developing MCP (Model Context Protocol) servers and integrations to extend AI capabilities with custom tools and data sources"
   },
+  "projectChetracker": {
+    "description": "Simple APP Solution to keep track of cheques, simply take a picture and all the information from your cheque will be save. "
+  },
   "viewfFullProjects": {
     "text": "View full list of projects"
   },

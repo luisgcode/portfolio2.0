@@ -121,6 +121,16 @@ const Projects = () => {
       tags: ["Anthropic", "Claude", "Servers", "MCP"],
       poster: "",
     },
+    {
+      id: 9,
+      category: "My Lab",
+      title: "CheTracker",
+      href: "#",
+      description: t("projectChetracker.description"),
+      status: "In progress...",
+      tags: ["Anthropic", "Claude", "Servers", "MCP"],
+      poster: "",
+    },
   ];
 
   // Filter projects by active tab
