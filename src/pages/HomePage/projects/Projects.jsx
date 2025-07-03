@@ -111,12 +111,13 @@ const Projects = () => {
       tags: ["React", "Tailwind CSS", "Framer Motion", "i18next", "SPA"],
       poster: posterPortfolio2,
     },
+
     {
       id: 8,
       category: "My Lab",
-      title: "MCP - Model Context Protocol",
-      href: "#",
-      description: t("projectResourcesPage.description"),
+      title: "CheTracker_app",
+      href: "https://github.com/luisgcode/cheTracker_app",
+      description: t("projectChetracker.description"),
       status: "In progress...",
       tags: ["Anthropic", "Claude", "Servers", "MCP"],
       poster: "",
@@ -124,9 +125,9 @@ const Projects = () => {
     {
       id: 9,
       category: "My Lab",
-      title: "CheTracker",
+      title: "MCP - Model Context Protocol",
       href: "#",
-      description: t("projectChetracker.description"),
+      description: t("projectResourcesPage.description"),
       status: "In progress...",
       tags: ["Anthropic", "Claude", "Servers", "MCP"],
       poster: "",
