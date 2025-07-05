@@ -6,6 +6,7 @@ import { BsFileEarmarkPdf } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { IoMailOutline } from "react-icons/io5";
+import { FaInstagram } from "react-icons/fa";
 
 const Hero = () => {
   const { t, i18n } = useTranslation("global");
@@ -43,10 +44,10 @@ const Hero = () => {
             className="flex flex-wrap items-center gap-y-3 gap-x-3 max-w-96"
             aria-label="Technogologies"
           >
+            <li className="custom-hero-tag text-[16px]">Claude Code</li>
             <li className="custom-hero-tag text-[16px]">React JS</li>
             <li className="custom-hero-tag text-[16px]">Tailwind CSS</li>
             <li className="custom-hero-tag text-[16px] ">JavaScript</li>
-            <li className="custom-hero-tag text-[16px] ">Claude Code</li>
             <li className="custom-hero-tag text-xs">Wordpress</li>
             <li className="custom-hero-tag text-xs">Figma</li>
             <span className="custom-hero-tag text-xs">Botpress</span>
@@ -55,32 +56,41 @@ const Hero = () => {
             <ul className="flex gap-6">
               <li>
                 <a
-                  className="hero-icon text-sm"
+                  className="hero-icon text-2xl text-gray-400"
                   href="/Developer-Luis-Guaiquirian.pdf"
                   download="Developer-Luis-Guaiquirian.pdf"
                   aria-label="Download my resume"
                 >
-                  <BsFileEarmarkPdf /> Resume
+                  <BsFileEarmarkPdf />
                 </a>
               </li>
               <li>
                 <a
-                  className="hero-icon text-sm"
+                  className="hero-icon text-2xl text-gray-400"
                   href="mailto:contact@luisgcode.com"
                   aria-label="Get my email"
                 >
                   <IoMailOutline />
-                  contact@luisgcode.com
                 </a>
               </li>
               <li>
                 <a
-                  className="hero-icon text-sm"
+                  className="hero-icon text-2xl text-gray-400"
                   href="https://github.com/luisgcode"
                   target="_blank"
                   aria-label="Visit my Github profile"
                 >
-                  <LuGithub /> Github
+                  <LuGithub />
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hero-icon text-2xl text-gray-400"
+                  href="https://www.instagram.com/luisgcoding/"
+                  target="_blank"
+                  aria-label="Visit my Github profile"
+                >
+                  <FaInstagram />
                 </a>
               </li>
             </ul>
