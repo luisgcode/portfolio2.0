@@ -60,7 +60,7 @@ const Hero = () => {
                   download="Developer-Luis-Guaiquirian.pdf"
                   aria-label="Download my resume"
                 >
-                  <BsFileEarmarkPdf /> Résumé
+                  <BsFileEarmarkPdf /> Resume
                 </a>
               </li>
               <li>
