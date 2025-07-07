@@ -9,6 +9,7 @@ import {
   posterLoading,
   posterMarket,
   posterVivenutricion,
+  posterCheTracker,
 } from "../../../components/media";
 import "./projects.css";
 import { FiArrowUpRight } from "react-icons/fi";
@@ -25,7 +26,7 @@ const Projects = () => {
   }
 
   // Tab categories
-  const tabs = ["Development", "Freelance", "My Lab"];
+  const tabs = ["Development", "Freelance", "Lab", "Dev Logs"];
 
   // All projects data - you can redistribute these later
   const allProjects = [
@@ -71,7 +72,7 @@ const Projects = () => {
     },
     {
       id: 5,
-      category: "My Lab",
+      category: "Lab",
       title: "AI Chatbot Integration",
       href: "https://github.com/luisgcode/portfolio2.0",
       description: t("projectChatbot.description"),
@@ -114,12 +115,18 @@ const Projects = () => {
 
     {
       id: 8,
-      category: "My Lab",
+      category: "Lab",
       title: "CheTracker_app",
       href: "https://github.com/luisgcode/cheTracker_app",
       description: t("projectChetracker.description"),
       status: "In progress...",
-      tags: ["Anthropic", "Claude", "Servers", "MCP"],
+      tags: [
+        "React Native",
+        "OCR Processing",
+        "Mobile App",
+        "Image Processing",
+        "SQLite",
+      ],
       poster: "",
     },
     {
@@ -210,7 +217,7 @@ const Projects = () => {
             {project.poster && (
               <div className="posters">
                 <img
-                  className="rounded-lg"
+                  className="rounded-lg  "
                   src={project.poster}
                   alt={`${project.title} project cover`}
                   loading="lazy"
