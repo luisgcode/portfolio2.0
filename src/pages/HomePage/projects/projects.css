@@ -138,15 +138,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.social-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: flex-start;
 }
 
 .external-link {
@@ -160,37 +151,9 @@
   color: #60a5fa;
 }
 
-.social-follow {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.social-icon {
-  font-size: 1.25rem;
-  color: #3b82f6;
-  transition: color 0.3s ease;
-}
-
-.social-icon:hover {
-  color: #60a5fa;
-}
-
-.social-message {
-  font-size: 0.75rem;
-  color: #9ca3af;
-  font-style: italic;
-}
 
 @media (max-width: 768px) {
   .log-footer {
-    flex-direction: column;
     align-items: flex-start;
-  }
-  
-  .social-follow {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
   }
 }

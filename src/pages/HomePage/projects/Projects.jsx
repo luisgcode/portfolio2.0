@@ -26,7 +26,7 @@ const Projects = () => {
   }
 
   // Tab categories
-  const tabs = ["Development", "Freelance", "Lab", "Dev Logs"];
+  const tabs = ["Development", "Freelance", "My Lab", "Logs"];
 
   // All projects data - you can redistribute these later
   const allProjects = [
@@ -72,7 +72,7 @@ const Projects = () => {
     },
     {
       id: 5,
-      category: "Lab",
+      category: "My Lab",
       title: "AI Chatbot Integration",
       href: "https://github.com/luisgcode/portfolio2.0",
       description: t("projectChatbot.description"),
@@ -115,7 +115,7 @@ const Projects = () => {
 
     {
       id: 8,
-      category: "Lab",
+      category: "My Lab",
       title: "CheTracker_app",
       href: "https://github.com/luisgcode/cheTracker_app",
       description: t("projectChetracker.description"),
@@ -131,7 +131,7 @@ const Projects = () => {
     },
     {
       id: 9,
-      category: "My Lab",
+      category: "My My Lab",
       title: "MCP - Model Context Protocol",
       href: "#",
       description: t("projectResourcesPage.description"),
@@ -147,32 +147,20 @@ const Projects = () => {
       id: 1,
       date: "July 6, 2025",
       title: "Automated Learning with AI",
-      description: "Set up Claude Code to automatically track concepts I struggle with. Now I have a personalized learning roadmap after each project.",
-      platform: "linkedin",
-      platformIcon: "📝",
-      externalLink: "https://www.linkedin.com/in/luisgcode/",
-      socialMessage: "Follow me on LinkedIn for more dev insights"
+      description:
+        "Using AI to track what I need to learn automatically Every project now has a simple rule: log concepts that challenge me. No manual notes, no forgetting what confused me 🧠...",
+      platform: "Instagram",
+      externalLink: "https://www.instagram.com/reel/DL0mNuOOE3q",
     },
     {
       id: 2,
-      date: "July 1, 2025",
-      title: "React Native OCR Journey",
-      description: "Building CheTracker taught me how challenging mobile OCR can be. Here's what I learned about image processing and text extraction.",
-      platform: "instagram",
-      platformIcon: "📱",
-      externalLink: "https://www.instagram.com/luisgcode/",
-      socialMessage: "Follow me on Instagram for behind-the-scenes coding content"
+      date: "July 2, 2025",
+      title: "Claude is Now running on my Laptop",
+      description:
+        "Finally! Got it running on my machine! This setup gives it DIRECT access to my computer I just tell it what I want and watch the magic happen. 🧠...",
+      platform: "Instagram",
+      externalLink: "https://www.instagram.com/p/DLoJyn6uU2t/",
     },
-    {
-      id: 3,
-      date: "June 24, 2025",
-      title: "Why I Switched to Tailwind CSS",
-      description: "After years of custom CSS, I finally gave Tailwind a real chance. The productivity boost was unexpected and game-changing.",
-      platform: "linkedin",
-      platformIcon: "🎨",
-      externalLink: "https://www.linkedin.com/in/luisgcode/",
-      socialMessage: "Follow me on LinkedIn for more dev insights"
-    }
   ];
 
   // Filter projects by active tab
@@ -182,7 +170,8 @@ const Projects = () => {
   return (
     <div
       className="projects px-8 py-12 md:p-mid_pad"
-      aria-label="Latest projects"
+      aria-My
+      label="Latest projects"
     >
       <h3 className="mt-20">
         {t("latest.title")}
@@ -201,7 +190,8 @@ const Projects = () => {
                   ? "bg-highlightColor text-white border border-highlightColor"
                   : "bg-transparent border border-highlightColor text-highlightColor hover:bg-highlightColor hover:bg-opacity-10"
               }`}
-              aria-label={`Show ${tab} projects`}
+              aria-My
+              label={`Show ${tab} projects`}
             >
               {tab}
             </button>
@@ -210,7 +200,7 @@ const Projects = () => {
       </div>
 
       {/* Dev Logs Container */}
-      {activeTab === "Dev Logs" ? (
+      {activeTab === "Logs" ? (
         <motion.div
           className="dev-logs-container mt-12"
           initial={{ opacity: 0, y: 50 }}
@@ -227,29 +217,17 @@ const Projects = () => {
               <h3>{entry.title}</h3>
               <p>{entry.description}</p>
               <div className="log-footer">
-                <div className="social-links">
-                  <a 
-                    href={entry.externalLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="external-link"
-                  >
-                    View original →
-                  </a>
-                  <div className="social-follow">
-                    {entry.platform === "linkedin" ? (
-                      <>
-                        <FaLinkedin className="social-icon" />
-                        <span className="social-message">{entry.socialMessage}</span>
-                      </>
-                    ) : (
-                      <>
-                        <FaInstagram className="social-icon" />
-                        <span className="social-message">{entry.socialMessage}</span>
-                      </>
-                    )}
-                  </div>
-                </div>
+                <a
+                  href={entry.externalLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="external-link"
+                >
+                  {entry.platform === "linkedin"
+                    ? "View on my LinkedIn"
+                    : "View on my Instagram"}{" "}
+                  →
+                </a>
               </div>
             </div>
           ))}
@@ -270,7 +248,8 @@ const Projects = () => {
                 href={project.href}
                 target="_blank"
                 className="project-title font-bold mb-4 flex items-center"
-                aria-label="Visit project's repository or website"
+                aria-My
+                label="Visit project's repository or website"
               >
                 {project.title} <FiArrowUpRight />
                 {project.status && (
@@ -321,7 +300,8 @@ const Projects = () => {
             <li>
               <a
                 className="font-bold nav-link flex my-6"
-                aria-label="See the full projects page"
+                aria-My
+                label="See the full projects page"
               >
                 <p>{t("viewfFullProjects.text")}</p> <FiArrowUpRight />
               </a>
