@@ -9,13 +9,13 @@ import {
   posterLoading,
   posterMarket,
   posterVivenutricion,
-  posterCheTracker,
 } from "../../../components/media";
 import "./projects.css";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Projects = () => {
   const { t, i18n } = useTranslation("global");
@@ -141,6 +141,40 @@ const Projects = () => {
     },
   ];
 
+  // Dev Log entries data
+  const devLogEntries = [
+    {
+      id: 1,
+      date: "July 6, 2025",
+      title: "Automated Learning with AI",
+      description: "Set up Claude Code to automatically track concepts I struggle with. Now I have a personalized learning roadmap after each project.",
+      platform: "linkedin",
+      platformIcon: "📝",
+      externalLink: "https://www.linkedin.com/in/luisgcode/",
+      socialMessage: "Follow me on LinkedIn for more dev insights"
+    },
+    {
+      id: 2,
+      date: "July 1, 2025",
+      title: "React Native OCR Journey",
+      description: "Building CheTracker taught me how challenging mobile OCR can be. Here's what I learned about image processing and text extraction.",
+      platform: "instagram",
+      platformIcon: "📱",
+      externalLink: "https://www.instagram.com/luisgcode/",
+      socialMessage: "Follow me on Instagram for behind-the-scenes coding content"
+    },
+    {
+      id: 3,
+      date: "June 24, 2025",
+      title: "Why I Switched to Tailwind CSS",
+      description: "After years of custom CSS, I finally gave Tailwind a real chance. The productivity boost was unexpected and game-changing.",
+      platform: "linkedin",
+      platformIcon: "🎨",
+      externalLink: "https://www.linkedin.com/in/luisgcode/",
+      socialMessage: "Follow me on LinkedIn for more dev insights"
+    }
+  ];
+
   // Filter projects by active tab
   const filteredProjects = allProjects.filter(
     (project) => project.category === activeTab
@@ -164,7 +198,7 @@ const Projects = () => {
               onClick={() => setActiveTab(tab)}
               className={`px-4 py-2 rounded-lg transition-all duration-300 text-sm font-medium ${
                 activeTab === tab
-                  ? "bg-highlightColor text-white"
+                  ? "bg-highlightColor text-white border border-highlightColor"
                   : "bg-transparent border border-highlightColor text-highlightColor hover:bg-highlightColor hover:bg-opacity-10"
               }`}
               aria-label={`Show ${tab} projects`}
@@ -175,79 +209,126 @@ const Projects = () => {
         </nav>
       </div>
 
-      {/* Projects Container */}
-      <motion.ul
-        className="flex flex-wrap md:justify-center gap-y-2 gap-x-10 projects-container mt-12 lg:justify-between"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.1 }}
-        transition={{ duration: 0.5 }}
-        key={activeTab} // Re-trigger animation when tab changes
-      >
-        {filteredProjects.map((project) => (
-          <li key={project.id} className="project-card">
-            <a
-              href={project.href}
-              target="_blank"
-              className="project-title font-bold mb-4 flex items-center"
-              aria-label="Visit project's repository or website"
-            >
-              {project.title} <FiArrowUpRight />
-              {project.status && (
-                <span className="italic text-highlightColor font-normal text-sm ml-2">
-                  {project.status}
-                </span>
-              )}
-            </a>
-
-            <div>
-              <p>{project.description}</p>
-            </div>
-
-            <div className="py-4">
-              <ul className="flex flex-wrap items-center gap-3">
-                {project.tags.map((tag, index) => (
-                  <span key={index} className="custom-project-tag">
-                    {tag}
-                  </span>
-                ))}
-              </ul>
-            </div>
-
-            {project.poster && (
-              <div className="posters">
-                <img
-                  className="rounded-lg  "
-                  src={project.poster}
-                  alt={`${project.title} project cover`}
-                  loading="lazy"
-                />
+      {/* Dev Logs Container */}
+      {activeTab === "Dev Logs" ? (
+        <motion.div
+          className="dev-logs-container mt-12"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 0.5 }}
+          key={activeTab}
+        >
+          {devLogEntries.map((entry) => (
+            <div key={entry.id} className="dev-log-entry">
+              <div className="log-header">
+                <span className="date">{entry.date}</span>
               </div>
-            )}
-          </li>
-        ))}
+              <h3>{entry.title}</h3>
+              <p>{entry.description}</p>
+              <div className="log-footer">
+                <div className="social-links">
+                  <a 
+                    href={entry.externalLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="external-link"
+                  >
+                    View original →
+                  </a>
+                  <div className="social-follow">
+                    {entry.platform === "linkedin" ? (
+                      <>
+                        <FaLinkedin className="social-icon" />
+                        <span className="social-message">{entry.socialMessage}</span>
+                      </>
+                    ) : (
+                      <>
+                        <FaInstagram className="social-icon" />
+                        <span className="social-message">{entry.socialMessage}</span>
+                      </>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </motion.div>
+      ) : (
+        /* Projects Container */
+        <motion.ul
+          className="flex flex-wrap md:justify-center gap-y-2 gap-x-10 projects-container mt-12 lg:justify-between"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 0.5 }}
+          key={activeTab}
+        >
+          {filteredProjects.map((project) => (
+            <li key={project.id} className="project-card">
+              <a
+                href={project.href}
+                target="_blank"
+                className="project-title font-bold mb-4 flex items-center"
+                aria-label="Visit project's repository or website"
+              >
+                {project.title} <FiArrowUpRight />
+                {project.status && (
+                  <span className="italic text-highlightColor font-normal text-sm ml-2">
+                    {project.status}
+                  </span>
+                )}
+              </a>
 
-        {/* Show message if no projects in category */}
-        {filteredProjects.length === 0 && (
-          <li className="w-full text-center py-8">
-            <p className="text-gray-400 italic">
-              No projects in {activeTab} category yet. Coming soon!
-            </p>
-          </li>
-        )}
+              <div>
+                <p>{project.description}</p>
+              </div>
 
-        {/* View Full Projects Link */}
-        <Link to="/projects">
-          <li>
-            <a
-              className="font-bold nav-link flex my-6"
-              aria-label="See the full projects page"
-            >
-              <p>{t("viewfFullProjects.text")}</p> <FiArrowUpRight />
-            </a>
-          </li>
-        </Link>
-      </motion.ul>
+              <div className="py-4">
+                <ul className="flex flex-wrap items-center gap-3">
+                  {project.tags.map((tag, index) => (
+                    <span key={index} className="custom-project-tag">
+                      {tag}
+                    </span>
+                  ))}
+                </ul>
+              </div>
+
+              {project.poster && (
+                <div className="posters">
+                  <img
+                    className="rounded-lg"
+                    src={project.poster}
+                    alt={`${project.title} project cover`}
+                    loading="lazy"
+                  />
+                </div>
+              )}
+            </li>
+          ))}
+
+          {/* Show message if no projects in category */}
+          {filteredProjects.length === 0 && (
+            <li className="w-full text-center py-8">
+              <p className="text-gray-400 italic">
+                No projects in {activeTab} category yet. Coming soon!
+              </p>
+            </li>
+          )}
+
+          {/* View Full Projects Link */}
+          <Link to="/projects">
+            <li>
+              <a
+                className="font-bold nav-link flex my-6"
+                aria-label="See the full projects page"
+              >
+                <p>{t("viewfFullProjects.text")}</p> <FiArrowUpRight />
+              </a>
+            </li>
+          </Link>
+        </motion.ul>
+      )}
     </div>
   );
 };
