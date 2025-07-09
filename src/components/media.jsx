@@ -29,6 +29,10 @@ import jiraLogo from "../assets/images/logos/tech-jira.svg";
 import confluenceLogo from "../assets/images/logos/tech-confluence.svg";
 import botpressLogo from "../assets/images/logos/tech-botpress.webp";
 import photoshopLogo from "../assets/images/logos/tech-photoshop.svg";
+import nodeLogo from "../assets/images/logos/tech-node.svg";
+import elementorLogo from "../assets/images/logos/tech-elementor.svg";
+import claudeLogo from "../assets/images/logos/tech-claude.svg";
+import mcpLlgo from "../assets/images/logos/tech-mcp.svg";
 
 //  ^  My logo
 import luisLogo from "../assets/images/logos/logo.svg";
@@ -77,13 +81,17 @@ export {
   typescriptlogo,
   vsCodeLogo,
   npmLogo,
+  elementorLogo,
+  claudeLogo,
   mySqlLogo,
   jsLogo,
   htmlLogo,
   hotjarLogo,
+  mcpLlgo,
   magentoLogo,
   wordpressLogo,
   prestashopLogo,
+  nodeLogo,
   gitLogo,
   gitHubLogo,
   botpressLogo,
