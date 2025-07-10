@@ -130,6 +130,7 @@ const Toolbox = () => {
 
   return (
     <section
+      id="skills"
       className="toolbox px-8 py-6 md:p-mid_pad mt-6 md:mt-0"
       aria-label="Tools and technologies"
     >

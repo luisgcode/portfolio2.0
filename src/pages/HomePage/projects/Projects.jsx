@@ -170,6 +170,7 @@ const Projects = () => {
   );
   return (
     <div
+      id="recent-work"
       className="projects px-8 py-12 md:p-mid_pad"
       aria-My
       label="Latest projects"
