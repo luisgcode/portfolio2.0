@@ -115,7 +115,7 @@ const About = () => {
               className="online text-sm "
             >
               <h5 className="mb-3 text-highlightColor">
-                Relevant online courses taken.
+                Most relevant completed courses & certifications
               </h5>
               {/* <li className="flex justify-start gap-2 mb-2">
                 <AiOutlineLoading3Quarters aria-hidden="true" />
@@ -126,6 +126,10 @@ const About = () => {
                 Udeymy: LLM Engineering: Master AI, Large Language Models - Ed
                 D.
               </li> */}
+              <li className="flex justify-start gap-2 mb-2">
+                <AiOutlineLoading3Quarters aria-hidden="true" />
+                FreeCodeCamp Certification - Back-End Development and API's 2025
+              </li>
               <li className="flex justify-start gap-2 mb-2">
                 <AiOutlineLoading3Quarters aria-hidden="true" />
                 Full Stack Developer 2025 - roadmap.sh/full-stack
