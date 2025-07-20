@@ -107,6 +107,26 @@ const Projects = () => {
     {
       id: 7,
       category: "Development",
+      title: "Western Fair District - OnBoard Hub",
+      href: "https://western-on-board-hub-1tdf.vercel.app/",
+      description: "A centralized digital hub for Western Fair District event services workers to access onboarding documents, PDFs, and essential instructions online.",
+      status: "In progress...",
+      tags: ["React", "Vite", "Tailwind CSS", "Firebase", "Vercel"],
+      poster: null,
+    },
+    {
+      id: 8,
+      category: "Development",
+      title: "Infanti.cl - E-commerce Platform",
+      href: "https://infanti.cl/",
+      description: "3+ years developing and maintaining Chile's leading baby products e-commerce platform. Implemented same-day delivery integration, Salesforce CRM connections, and performance optimizations.",
+      status: null,
+      tags: ["Magento", "JavaScript", "API Integration", "Google Analytics", "Salesforce"],
+      poster: posterInfanti,
+    },
+    {
+      id: 9,
+      category: "Development",
       title: "Portfolio (v2)",
       href: "https://github.com/luisgcode/portfolio2.0",
       description: t("projectPortfolioV2.description"),
@@ -116,7 +136,7 @@ const Projects = () => {
     },
 
     {
-      id: 8,
+      id: 10,
       category: "My Lab",
       title: "CheTracker_app",
       href: "https://github.com/luisgcode/cheTracker_app",
@@ -132,8 +152,8 @@ const Projects = () => {
       poster: "",
     },
     {
-      id: 9,
-      category: "My My Lab",
+      id: 11,
+      category: "My Lab",
       title: "MCP - Model Context Protocol",
       href: "#",
       description: t("projectResourcesPage.description"),
