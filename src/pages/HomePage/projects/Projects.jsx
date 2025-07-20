@@ -41,18 +41,8 @@ const Projects = () => {
       tags: ["WordPress", "Elementor", "Email Integration", "SEO", "Figma"],
       poster: posterVocal,
     },
-    // {
-    //   id: 2,
-    //   category: "Freelance",
-    //   title: "Geeksonas.com",
-    //   href: "#",
-    //   description: t("projectGeek.description"),
-    //   status: "In progress...",
-    //   tags: ["WordPress", "Elementor", "SEO", "Figma", "Multi-page"],
-    //   poster: null,
-    // },
     {
-      id: 3,
+      id: 2,
       category: "Freelance",
       title: "Vivenutricion.cl",
       href: "https://vivenutricion.cl/nuevo-home/",
@@ -61,6 +51,17 @@ const Projects = () => {
       tags: ["WordPress", "Elementor PRO", "Booking System", "SEO", "Figma"],
       poster: posterVivenutricion,
     },
+    {
+      id: 3,
+      category: "Freelance",
+      title: "Geeksonas.com",
+      href: "#",
+      description: t("projectGeek.description"),
+      status: "In progress...",
+      tags: ["WordPress", "Elementor", "SEO", "Figma", "Multi-page"],
+      poster: null,
+    },
+
     {
       id: 4,
       category: "Freelance",
@@ -146,6 +147,15 @@ const Projects = () => {
   const devLogEntries = [
     {
       id: 1,
+      date: "July 20, 2025",
+      title: "AI-Powered Job Search Automation",
+      description:
+        "Built an intelligent job search robot using Make.com that automatically finds relevant opportunities, filters them based on my criteria, and tells me if it's worth applying. No more endless scrolling through job boards! 🤖...",
+      platform: "Instagram",
+      externalLink: "https://www.instagram.com/reel/DMRPkO8x22i/?utm_source=ig_web_copy_link&igsh=MTNwMDFsM3FzaTZ4Yg==",
+    },
+    {
+      id: 2,
       date: "July 6, 2025",
       title: "Automated Learning with AI",
       description:
@@ -154,7 +164,7 @@ const Projects = () => {
       externalLink: "https://www.instagram.com/reel/DL0mNuOOE3q",
     },
     {
-      id: 2,
+      id: 3,
       date: "July 2, 2025",
       title: "Claude is Now running on my Laptop",
       description:
