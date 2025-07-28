@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
+import StickyMenu from "./components/StickyMenu/StickyMenu";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/about/About";
 import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
@@ -14,7 +15,7 @@ function App() {
     <div className="App">
       <div className="custom-bg">
         <Navbar />
-        {/* <StickyMenu /> */}
+        <StickyMenu />
         <Chatbot />
         <Routes>
           <Route path="/" element={<HomePage />} />

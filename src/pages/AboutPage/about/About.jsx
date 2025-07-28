@@ -141,14 +141,10 @@ const About = () => {
                 Udeymy: LLM Engineering: Master AI, Large Language Models - Ed
                 D.
               </li> */}
-              <li className="flex justify-start gap-2 mb-2">
-                <AiOutlineLoading3Quarters aria-hidden="true" />
-                FreeCodeCamp Certification - Back-End Development and API's 2025
-              </li>
-              <li className="flex justify-start gap-2 mb-2">
+              {/* <li className="flex justify-start gap-2 mb-2">
                 <AiOutlineLoading3Quarters aria-hidden="true" />
                 Full Stack Developer 2025 - roadmap.sh/full-stack
-              </li>
+              </li> */}
               <li className="flex justify-start gap-2 mb-2">
                 <FaCheckCircle aria-hidden="true" />
                 Udemy: 50 JS Projects in 50 Days - Brad T.

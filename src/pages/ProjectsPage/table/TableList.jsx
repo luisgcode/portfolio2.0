@@ -12,6 +12,30 @@ const TableList = () => {
   const projects = [
     {
       id: 1,
+      date: "Jul/2025",
+      title: "Geeksonas",
+      desktopTitle: "Geeksonas",
+      mobileTitle: "Geeksonas",
+      status: "In Progress",
+      href: "#",
+      linkText: "geeksonas.com",
+      linkHref: "#",
+      tags: ["WordPress", "YouTube API", "Content Management", "Custom Integration", "Video Content"],
+    },
+    {
+      id: 2,
+      date: "Jul/2025",
+      title: "Neurovet",
+      desktopTitle: "Neurovet",
+      mobileTitle: "Neurovet",
+      status: "In Progress",
+      href: "#",
+      linkText: "neurovet.com",
+      linkHref: "#",
+      tags: ["WordPress", "Wix Migration", "Bookly", "Yoast SEO", "Website Redesign"],
+    },
+    {
+      id: 3,
       date: "Jun/2025",
       title: "Vivenutricion.cl",
       desktopTitle: "Vivenutricion.cl",
@@ -23,7 +47,7 @@ const TableList = () => {
       tags: ["WordPress", "Elementor PRO", "Booking System", "SEO", "Figma"],
     },
     {
-      id: 7,
+      id: 4,
       date: "Mar/2025",
       title: "The Vocal Direction (Heidi Weinrib)",
       desktopTitle: "The Vocal Direction (Heidi Weinrib)",
@@ -35,7 +59,7 @@ const TableList = () => {
       tags: ["WordPress", "Elementor", "Email Integration", "SEO", "Figma"],
     },
     {
-      id: 8,
+      id: 5,
       date: "May/2025",
       title: "Western Fair The Market",
       desktopTitle: "Western Fair The Market",
@@ -47,7 +71,7 @@ const TableList = () => {
       tags: ["Squarespace", "E-commerce", "SEO", "Multi-page", "Domain Management"],
     },
     {
-      id: 9,
+      id: 6,
       date: "Mar/2025",
       title: "Wawabb - Bsale Store Optimization",
       desktopTitle: "Wawabb - Bsale Store Optimization",
@@ -59,7 +83,7 @@ const TableList = () => {
       tags: ["CMS Optimization", "E-commerce", "JavaScript", "POS Integration", "Performance"],
     },
     {
-      id: 10,
+      id: 7,
       date: "2021-2024",
       title: "Infanti.cl - E-commerce Platform",
       desktopTitle: "Infanti.cl - E-commerce Platform",

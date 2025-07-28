@@ -51,6 +51,26 @@ const Projects = () => {
       tags: ["WordPress", "Elementor PRO", "Booking System", "SEO", "Figma"],
       poster: posterVivenutricion,
     },
+    {
+      id: 13,
+      category: "Freelance",
+      title: "Geeksonas",
+      href: "#",
+      description: "WordPress website for YouTube content creator with custom YouTube API integration. Managing extensive video content catalog and building dynamic content management system.",
+      status: "In Progress",
+      tags: ["WordPress", "YouTube API", "Content Management", "Custom Integration", "Video Content"],
+      poster: null,
+    },
+    {
+      id: 14,
+      category: "Freelance", 
+      title: "Neurovet",
+      href: "#",
+      description: "Complete migration from Wix to WordPress with full website redesign and development. Implementing appointment booking with Bookly, SEO optimization with Yoast, and custom veterinary features.",
+      status: "In Progress",
+      tags: ["WordPress", "Wix Migration", "Bookly", "Yoast SEO", "Website Redesign"],
+      poster: null,
+    },
 
     {
       id: 5,
@@ -103,6 +123,16 @@ const Projects = () => {
       status: null,
       tags: ["React", "Tailwind CSS", "Framer Motion", "i18next", "SPA"],
       poster: posterPortfolio2,
+    },
+    {
+      id: 10,
+      category: "Experiments",
+      title: "Claude Code - AI Assisted Development",
+      href: "https://claude.ai/code",
+      description: "Experimenting with Claude Code for assisted development workflows including debugging, professional documentation, code reviews, and automated testing implementation.",
+      status: "Active",
+      tags: ["Claude Code", "AI Development", "Debugging", "Documentation", "Code Reviews"],
+      poster: null,
     },
 
   ];
