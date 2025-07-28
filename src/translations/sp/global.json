@@ -1,14 +1,10 @@
 {
   "header": {
     "navbar": ["Home", "Sobre Mi", "Proyectos", "Recursos"],
-    "heroTitle": "Desarrollador de Software",
-    "heroClaim": "Construyo soluciones de software rápidas y escalables usando React, Node.js y herramientas de desarrollo modernas, especializándome en:"
+    "heroTitle": "Desarrollador Web & Front-End.",
+    "heroClaim": "Construyo interfaces accesibles, sitios web optimizados y automatizaciones inteligentes usando React, Tailwind, WordPress y herramientas no-code."
   },
-  "behindSection": {
-    "years": "Años de experiencia",
-    "skills": "Proyectos reales completados",
-    "hours": "Tecnologías Aplicadas"
-  },
+
   "latest": {
     "title": "Algunos de Mis Trabajos."
   },
@@ -72,8 +68,12 @@
   },
 
   "about": {
-    "p1": "Soy un Desarrollador de Software con más de 3 años de experiencia creando interfaces rápidas y escalables usando React, Tailwind y herramientas modernas de JavaScript. Diseño soluciones front-end enfocadas en rendimiento, UX y accesibilidad, y como freelancer, también entrego soluciones personalizadas de WordPress e integro funciones de IA como chatbots y automatizaciones inteligentes.",
-    "p2": "Actualmente expandiéndome al desarrollo full-stack construyendo APIs con Node.js/Express e integrando bases de datos SQL/NoSQL. Especializado en flujos de trabajo ágiles y desarrollo asistido por IA con Claude Code para procesos de codificación automatizados, estandarización de código y depuración inteligente.",
-    "p3": "Como freelancer, construyo soluciones de software personalizadas y disfruto integrando funciones de IA, herramientas de automatización y sistemas backend escalables."
+    "p1": "Soy un Desarrollador Web & Front-End con más de 3 años construyendo interfaces de usuario de alto rendimiento y sitios web basados en CMS. Me especializo en React, Tailwind y herramientas modernas de JavaScript, mientras también entrego soluciones avanzadas de WordPress con enfoque en rendimiento, SEO y automatización.",
+    "p2": "Me encanta integrar herramientas de IA como Claude u OpenAI para simplificar flujos de trabajo y Make.com para conectar sistemas sin código backend personalizado. Ya sea que esté trabajando en un sitio de marketing, un dashboard interno o una plataforma con chatbot, mi objetivo siempre es el mismo: gran UX, código mantenible y soluciones inteligentes.",
+    "p3": "Mis proyectos recientes incluyen:",
+    "p4": "Implementaciones personalizadas de WordPress con integración SEO y CRM",
+    "p5": "Aplicaciones Front-End con contenido dinámico y automatización no-code",
+    "p6": "Interfaces potenciadas por IA usando APIs (OpenAI, Claude, Hugging Face)",
+    "p7": "Actualmente estoy ubicado en Ontario y abierto a oportunidades presenciales en desarrollo Front-End o CMS."
   }
 }

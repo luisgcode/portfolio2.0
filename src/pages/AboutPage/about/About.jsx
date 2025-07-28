@@ -36,7 +36,22 @@ const About = () => {
           >
             <p>{t("about.p1")}</p>
             <p>{t("about.p2")}</p>
-            <p>{t("about.p3")}</p>
+            <p className="font-semibold">{t("about.p3")}</p>
+            <ul className="ml-4 space-y-2">
+              <li className="flex items-start">
+                <span className="text-highlightColor mr-2">•</span>
+                {t("about.p4")}
+              </li>
+              <li className="flex items-start">
+                <span className="text-highlightColor mr-2">•</span>
+                {t("about.p5")}
+              </li>
+              <li className="flex items-start">
+                <span className="text-highlightColor mr-2">•</span>
+                {t("about.p6")}
+              </li>
+            </ul>
+            <p>{t("about.p7")}</p>
             <div className="mt-4">
               <ul className="flex gap-6">
                 <li>

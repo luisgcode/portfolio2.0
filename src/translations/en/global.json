@@ -1,13 +1,8 @@
 {
   "header": {
     "navbar": ["Home", "About", "Projects", "Resources"],
-    "heroTitle": "Software Developer",
-    "heroClaim": "I build fast, scalable software solutions using React, Node.js, and modern development tools, specializing in:"
-  },
-  "behindSection": {
-    "years": "Years of experience",
-    "skills": "Real projects delivered",
-    "hours": "Technologies Applied"
+    "heroTitle": "Web & Front-End Developer.",
+    "heroClaim": "I build accessible interfaces, optimized websites, and smart automations using React, Tailwind, WordPress, and no-code tools."
   },
   "latest": {
     "title": "Some of My Work."
@@ -71,8 +66,12 @@
     "description": "My commitment to learning is unwavering; in this dynamic field, continuous education is imperative for staying relevant."
   },
   "about": {
-    "p1": "I'm a Software Developer with 3+ years of experience building fast, scalable interfaces using React, Tailwind, and modern JavaScript tools. I architect front-end solutions focused on performance, UX, and accessibility, and as a freelancer, I also deliver custom WordPress solutions and integrate AI features like chatbots and smart automations.",
-    "p2": "Currently expanding to full-stack development by building Node.js/Express APIs and integrating SQL/NoSQL databases. Skilled in agile workflows and AI-assisted development with Claude Code for automated coding processes, code standardization, and intelligent debugging. ",
-    "p3": "As a freelancer, I build custom software solutions and enjoy integrating AI features, automation tools, and scalable backend systems."
+    "p1": "I'm a Web & Front-End Developer with 3+ years building high-performance user interfaces and CMS-based websites. I specialize in React, Tailwind, and modern JavaScript tools, while also delivering advanced WordPress solutions with a focus on performance, SEO, and automation.",
+    "p2": "I love integrating AI tools like Claude or OpenAI to simplify workflows and Make.com to connect systems without custom backend code. Whether I'm working on a marketing site, an internal dashboard, or a chatbot-powered platform, my goal is always the same: great UX, maintainable code, and smart solutions.",
+    "p3": "My recent projects include:",
+    "p4": "Custom WordPress implementations with SEO and CRM integration",
+    "p5": "Front-End applications with dynamic content and no-code automation",
+    "p6": "AI-powered interfaces using APIs (OpenAI, Claude, Hugging Face)",
+    "p7": "I'm currently based in Ontario and open to on-site opportunities in Front-End or CMS development."
   }
 }
