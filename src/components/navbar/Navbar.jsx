@@ -97,14 +97,6 @@ const Navbar = () => {
               </a>
             </li>
           </Link>
-          <Link to="/resources">
-            <li role="menuitem">
-              {/* enter to resources */}
-              <a className={`flex nav-link ${animate ? "fade-in-out" : ""}`}>
-                {t("header.navbar", { returnObjects: true })[3]}
-              </a>
-            </li>
-          </Link>
           <li className="flex">
             {currentLanguage === "en" ? (
               <button
@@ -217,15 +209,6 @@ const Navbar = () => {
                 >
                   <FaRegUser />
                   {t("header.navbar", { returnObjects: true })[1]}
-                </li>
-              </Link>
-              <Link to="/resources">
-                <li
-                  className="flex gap-2 items-center"
-                  onClick={() => setToggleMenu(false)}
-                  role="menuitem"
-                >
-                  {t("header.navbar", { returnObjects: true })[3]}
                 </li>
               </Link>
               {/* Language Switch */}

@@ -26,7 +26,7 @@ const Projects = () => {
   }
 
   // Tab categories
-  const tabs = ["Development", "Freelance", "My Lab", "Logs"];
+  const tabs = ["Development", "Freelance", "Experiments", "Logs"];
 
   // All projects data - you can redistribute these later
   const allProjects = [
@@ -51,30 +51,10 @@ const Projects = () => {
       tags: ["WordPress", "Elementor PRO", "Booking System", "SEO", "Figma"],
       poster: posterVivenutricion,
     },
-    {
-      id: 3,
-      category: "Freelance",
-      title: "Geeksonas.com",
-      href: "#",
-      description: t("projectGeek.description"),
-      status: "In progress...",
-      tags: ["WordPress", "Elementor", "SEO", "Figma", "Multi-page"],
-      poster: null,
-    },
 
     {
-      id: 4,
-      category: "Freelance",
-      title: "Neurovet.cl",
-      href: "#",
-      description: t("projectNeurovet.description"),
-      status: "In progress...",
-      tags: ["WordPress", "WPBakery", "Custom Plugins", "SEO", "Figma"],
-      poster: null,
-    },
-    {
       id: 5,
-      category: "My Lab",
+      category: "Development",
       title: "AI Chatbot Integration",
       href: "https://github.com/luisgcode/portfolio2.0",
       description: t("projectChatbot.description"),
@@ -115,16 +95,6 @@ const Projects = () => {
       poster: posterGlobal,
     },
     {
-      id: 8,
-      category: "Development",
-      title: "Western Fair District - OnBoard Hub",
-      href: "https://western-on-board-hub-1tdf.vercel.app/",
-      description: "A centralized digital hub for Western Fair District event services workers to access onboarding documents, PDFs, and essential instructions online.",
-      status: "In progress...",
-      tags: ["React", "Vite", "Tailwind CSS", "Firebase", "Vercel"],
-      poster: null,
-    },
-    {
       id: 9,
       category: "Development",
       title: "Portfolio (v2)",
@@ -135,32 +105,6 @@ const Projects = () => {
       poster: posterPortfolio2,
     },
 
-    {
-      id: 10,
-      category: "My Lab",
-      title: "CheTracker_app",
-      href: "https://github.com/luisgcode/cheTracker_app",
-      description: t("projectChetracker.description"),
-      status: "In progress...",
-      tags: [
-        "React Native",
-        "OCR Processing",
-        "Mobile App",
-        "Image Processing",
-        "SQLite",
-      ],
-      poster: "",
-    },
-    {
-      id: 11,
-      category: "My Lab",
-      title: "MCP - Model Context Protocol",
-      href: "#",
-      description: t("projectResourcesPage.description"),
-      status: "In progress...",
-      tags: ["Anthropic", "Claude", "Servers", "MCP"],
-      poster: "",
-    },
   ];
 
   // Dev Log entries data
