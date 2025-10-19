@@ -26,7 +26,7 @@ const Projects = () => {
   }
 
   // Tab categories
-  const tabs = ["Development", "Freelance", "Experiments", "Logs"];
+  const tabs = ["Development", "Freelance", "Experiments"];
 
   // All projects data - you can redistribute these later
   const allProjects = [
@@ -56,19 +56,33 @@ const Projects = () => {
       category: "Freelance",
       title: "Geeksonas",
       href: "#",
-      description: "WordPress website for YouTube content creator with custom YouTube API integration. Managing extensive video content catalog and building dynamic content management system.",
+      description:
+        "WordPress website for YouTube content creator with custom YouTube API integration. Managing extensive video content catalog and building dynamic content management system.",
       status: "In Progress",
-      tags: ["WordPress", "YouTube API", "Content Management", "Custom Integration", "Video Content"],
+      tags: [
+        "WordPress",
+        "YouTube API",
+        "Content Management",
+        "Custom Integration",
+        "Video Content",
+      ],
       poster: null,
     },
     {
       id: 14,
-      category: "Freelance", 
+      category: "Freelance",
       title: "Neurovet",
       href: "#",
-      description: "Complete migration from Wix to WordPress with full website redesign and development. Implementing appointment booking with Bookly, SEO optimization with Yoast, and custom veterinary features.",
+      description:
+        "Complete migration from Wix to WordPress with full website redesign and development. Implementing appointment booking with Bookly, SEO optimization with Yoast, and custom veterinary features.",
       status: "In Progress",
-      tags: ["WordPress", "Wix Migration", "Bookly", "Yoast SEO", "Website Redesign"],
+      tags: [
+        "WordPress",
+        "Wix Migration",
+        "Bookly",
+        "Yoast SEO",
+        "Website Redesign",
+      ],
       poster: null,
     },
 
@@ -93,9 +107,16 @@ const Projects = () => {
       category: "Development",
       title: "Infanti.cl - E-commerce Platform",
       href: "https://infanti.cl/",
-      description: "3+ years developing and maintaining Chile's leading baby products e-commerce platform. Implemented same-day delivery integration, Salesforce CRM connections, and performance optimizations.",
+      description:
+        "3+ years developing and maintaining Chile's leading baby products e-commerce platform. Implemented same-day delivery integration, Salesforce CRM connections, and performance optimizations.",
       status: null,
-      tags: ["Magento", "JavaScript", "API Integration", "Google Analytics", "Salesforce"],
+      tags: [
+        "Magento",
+        "JavaScript",
+        "API Integration",
+        "Google Analytics",
+        "Salesforce",
+      ],
       poster: posterInfanti,
     },
     {
@@ -129,12 +150,18 @@ const Projects = () => {
       category: "Experiments",
       title: "Claude Code - AI Assisted Development",
       href: "https://claude.ai/code",
-      description: "Experimenting with Claude Code for assisted development workflows including debugging, professional documentation, code reviews, and automated testing implementation.",
+      description:
+        "Experimenting with Claude Code for assisted development workflows including debugging, professional documentation, code reviews, and automated testing implementation.",
       status: "Active",
-      tags: ["Claude Code", "AI Development", "Debugging", "Documentation", "Code Reviews"],
+      tags: [
+        "Claude Code",
+        "AI Development",
+        "Debugging",
+        "Documentation",
+        "Code Reviews",
+      ],
       poster: null,
     },
-
   ];
 
   // Dev Log entries data
@@ -146,7 +173,8 @@ const Projects = () => {
       description:
         "Built an intelligent job search robot using Make.com that automatically finds relevant opportunities, filters them based on my criteria, and tells me if it's worth applying. No more endless scrolling through job boards! 🤖...",
       platform: "Instagram",
-      externalLink: "https://www.instagram.com/reel/DMRPkO8x22i/?utm_source=ig_web_copy_link&igsh=MTNwMDFsM3FzaTZ4Yg==",
+      externalLink:
+        "https://www.instagram.com/reel/DMRPkO8x22i/?utm_source=ig_web_copy_link&igsh=MTNwMDFsM3FzaTZ4Yg==",
     },
     {
       id: 2,
@@ -205,116 +233,81 @@ const Projects = () => {
         </nav>
       </div>
 
-      {/* Dev Logs Container */}
-      {activeTab === "Logs" ? (
-        <motion.div
-          className="dev-logs-container mt-12"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 0.5 }}
-          key={activeTab}
-        >
-          {devLogEntries.map((entry) => (
-            <div key={entry.id} className="dev-log-entry">
-              <div className="log-header">
-                <span className="date">{entry.date}</span>
-              </div>
-              <h3>{entry.title}</h3>
-              <p>{entry.description}</p>
-              <div className="log-footer">
-                <a
-                  href={entry.externalLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="external-link"
-                >
-                  {entry.platform === "linkedin"
-                    ? "View on my LinkedIn"
-                    : "View on my Instagram"}{" "}
-                  →
-                </a>
-              </div>
-            </div>
-          ))}
-        </motion.div>
-      ) : (
-        /* Projects Container */
-        <motion.ul
-          className="flex flex-wrap md:justify-center gap-y-2 gap-x-10 projects-container mt-12 lg:justify-between"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 0.5 }}
-          key={activeTab}
-        >
-          {filteredProjects.map((project) => (
-            <li key={project.id} className="project-card">
-              <a
-                href={project.href}
-                target="_blank"
-                className="project-title font-bold mb-4 flex items-center"
-                aria-My
-                label="Visit project's repository or website"
-              >
-                {project.title} <FiArrowUpRight />
-                {project.status && (
-                  <span className="italic text-highlightColor font-normal text-sm ml-2">
-                    {project.status}
-                  </span>
-                )}
-              </a>
-
-              <div>
-                <p>{project.description}</p>
-              </div>
-
-              <div className="py-4">
-                <ul className="flex flex-wrap items-center gap-3">
-                  {project.tags.map((tag, index) => (
-                    <span key={index} className="custom-project-tag">
-                      {tag}
-                    </span>
-                  ))}
-                </ul>
-              </div>
-
-              {project.poster && (
-                <div className="posters">
-                  <img
-                    className="rounded-lg"
-                    src={project.poster}
-                    alt={`${project.title} project cover`}
-                    loading="lazy"
-                  />
-                </div>
+      {/* Projects Container  */}
+      <motion.ul
+        className="flex flex-wrap md:justify-center gap-y-2 gap-x-10 projects-container mt-12 lg:justify-between"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.5 }}
+        key={activeTab}
+      >
+        {filteredProjects.map((project) => (
+          <li key={project.id} className="project-card">
+            <a
+              href={project.href}
+              target="_blank"
+              className="project-title font-bold mb-4 flex items-center"
+              aria-My
+              label="Visit project's repository or website"
+            >
+              {project.title} <FiArrowUpRight />
+              {project.status && (
+                <span className="italic text-highlightColor font-normal text-sm ml-2">
+                  {project.status}
+                </span>
               )}
-            </li>
-          ))}
+            </a>
 
-          {/* Show message if no projects in category */}
-          {filteredProjects.length === 0 && (
-            <li className="w-full text-center py-8">
-              <p className="text-gray-400 italic">
-                No projects in {activeTab} category yet. Coming soon!
-              </p>
-            </li>
-          )}
+            <div>
+              <p>{project.description}</p>
+            </div>
 
-          {/* View Full Projects Link */}
-          <Link to="/projects">
-            <li>
-              <a
-                className="font-bold nav-link flex my-6"
-                aria-My
-                label="See the full projects page"
-              >
-                <p>{t("viewfFullProjects.text")}</p> <FiArrowUpRight />
-              </a>
-            </li>
-          </Link>
-        </motion.ul>
-      )}
+            <div className="py-4">
+              <ul className="flex flex-wrap items-center gap-3">
+                {project.tags.map((tag, index) => (
+                  <span key={index} className="custom-project-tag">
+                    {tag}
+                  </span>
+                ))}
+              </ul>
+            </div>
+
+            {project.poster && (
+              <div className="posters">
+                <img
+                  className="rounded-lg"
+                  src={project.poster}
+                  alt={`${project.title} project cover`}
+                  loading="lazy"
+                />
+              </div>
+            )}
+          </li>
+        ))}
+
+        {/* Show message if no projects in category */}
+        {filteredProjects.length === 0 && (
+          <li className="w-full text-center py-8">
+            <p className="text-gray-400 italic">
+              No projects in {activeTab} category yet. Coming soon!
+            </p>
+          </li>
+        )}
+
+        {/* View Full Projects Link */}
+        <Link to="/projects">
+          <li>
+            <a
+              className="font-bold nav-link flex my-6"
+              aria-My
+              label="See the full projects page"
+            >
+              <p>{t("viewfFullProjects.text")}</p> <FiArrowUpRight />
+            </a>
+          </li>
+        </Link>
+      </motion.ul>
     </div>
   );
 };

@@ -1,8 +1,8 @@
 {
   "header": {
     "navbar": ["Home", "Sobre Mi", "Proyectos", "Recursos"],
-    "heroTitle": "Desarrollador Web & Front-End.",
-    "heroClaim": "Construyo interfaces accesibles, sitios web optimizados y automatizaciones inteligentes usando React, Tailwind, WordPress y herramientas no-code."
+    "heroTitle": "Web Manager & Desarrollador Web.",
+    "heroClaim": "Desarrollo interfaces accesibles, optimizo sitios web y creo automatizaciones inteligentes con React, Tailwind, WordPress, Python y herramientas no-code."
   },
 
   "latest": {

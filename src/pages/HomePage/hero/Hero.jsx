@@ -50,7 +50,7 @@ const Hero = () => {
             <li className="custom-hero-tag text-[16px] ">JavaScript</li>
             <li className="custom-hero-tag text-xs">Wordpress</li>
             <li className="custom-hero-tag text-xs">Figma</li>
-            <span className="custom-hero-tag text-xs">Botpress</span>
+            <span className="custom-hero-tag text-xs">Drupal</span>
           </ul>
           <div className="mt-6">
             <ul className="flex gap-6">
