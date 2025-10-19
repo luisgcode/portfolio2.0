@@ -68,12 +68,9 @@
   },
 
   "about": {
-    "p1": "Soy un Desarrollador Web & Front-End con más de 3 años construyendo interfaces de usuario de alto rendimiento y sitios web basados en CMS. Me especializo en React, Tailwind y herramientas modernas de JavaScript, mientras también entrego soluciones avanzadas de WordPress con enfoque en rendimiento, SEO y automatización.",
-    "p2": "Me encanta integrar herramientas de IA como Claude u OpenAI para simplificar flujos de trabajo y Make.com para conectar sistemas sin código backend personalizado. Ya sea que esté trabajando en un sitio de marketing, un dashboard interno o una plataforma con chatbot, mi objetivo siempre es el mismo: gran UX, código mantenible y soluciones inteligentes.",
-    "p3": "Mis proyectos recientes incluyen:",
-    "p4": "Implementaciones personalizadas de WordPress con integración SEO y CRM",
-    "p5": "Aplicaciones Front-End con contenido dinámico y automatización no-code",
-    "p6": "Interfaces potenciadas por IA usando APIs (OpenAI, Claude, Hugging Face)",
-    "p7": "Actualmente estoy ubicado en Ontario y abierto a oportunidades presenciales en desarrollo Front-End o CMS."
+    "p1": "Soy Web Manager y Web Developer con más de 3 años de experiencia en la creación, gestión y optimización de sitios web de alto rendimiento y plataformas basadas en CMS.",
+    "p2": "Me especializo en React, Tailwind y herramientas modernas de JavaScript, además de desarrollar soluciones avanzadas en WordPress centradas en el rendimiento, el SEO y la accesibilidad.",
+    "p3": "Actualmente gestiono y mejoro sitios corporativos desarrollados en Drupal en Glen Dimplex Americas, alineando la ejecución técnica con los objetivos de negocio y marketing.",
+    "p4": "Radicado en Ontario, Canadá. Siempre construyendo en el punto donde se unen el código, el diseño y el contenido."
   }
 }

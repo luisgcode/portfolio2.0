@@ -15,7 +15,6 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Projects = () => {
   const { t, i18n } = useTranslation("global");
@@ -161,38 +160,6 @@ const Projects = () => {
         "Code Reviews",
       ],
       poster: null,
-    },
-  ];
-
-  // Dev Log entries data
-  const devLogEntries = [
-    {
-      id: 1,
-      date: "July 20, 2025",
-      title: "AI-Powered Job Search Automation",
-      description:
-        "Built an intelligent job search robot using Make.com that automatically finds relevant opportunities, filters them based on my criteria, and tells me if it's worth applying. No more endless scrolling through job boards! 🤖...",
-      platform: "Instagram",
-      externalLink:
-        "https://www.instagram.com/reel/DMRPkO8x22i/?utm_source=ig_web_copy_link&igsh=MTNwMDFsM3FzaTZ4Yg==",
-    },
-    {
-      id: 2,
-      date: "July 6, 2025",
-      title: "Automated Learning with AI",
-      description:
-        "Using AI to track what I need to learn automatically Every project now has a simple rule: log concepts that challenge me. No manual notes, no forgetting what confused me 🧠...",
-      platform: "Instagram",
-      externalLink: "https://www.instagram.com/reel/DL0mNuOOE3q",
-    },
-    {
-      id: 3,
-      date: "July 2, 2025",
-      title: "Claude is Now running on my Laptop",
-      description:
-        "Finally! Got it running on my machine! This setup gives it DIRECT access to my computer I just tell it what I want and watch the magic happen. 🧠...",
-      platform: "Instagram",
-      externalLink: "https://www.instagram.com/p/DLoJyn6uU2t/",
     },
   ];
 

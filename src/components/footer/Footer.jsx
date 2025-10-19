@@ -29,12 +29,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <a
-        href="mailto:contact@luisgcode.com"
-        aria-label="Send email to contact@luisgcode.com"
-      >
-        contact@luisgcode.com
-      </a>
+      <address>contact@luisgcode.com</address>
     </footer>
   );
 };

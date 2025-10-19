@@ -5,8 +5,7 @@ import { LuGithub } from "react-icons/lu";
 import { BsFileEarmarkPdf } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { IoMailOutline } from "react-icons/io5";
-import { FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Hero = () => {
   const { t, i18n } = useTranslation("global");
@@ -64,15 +63,7 @@ const Hero = () => {
                   <BsFileEarmarkPdf />
                 </a>
               </li>
-              <li>
-                <a
-                  className="hero-icon text-2xl text-gray-400"
-                  href="mailto:contact@luisgcode.com"
-                  aria-label="Get my email"
-                >
-                  <IoMailOutline />
-                </a>
-              </li>
+
               <li>
                 <a
                   className="hero-icon text-2xl text-gray-400"
@@ -86,11 +77,11 @@ const Hero = () => {
               <li>
                 <a
                   className="hero-icon text-2xl text-gray-400"
-                  href="https://www.instagram.com/luisgcoding/"
+                  href="https://www.linkedin.com/in/luisgcode/"
                   target="_blank"
-                  aria-label="Visit my Github profile"
+                  aria-label="Visit my Linkedin profile"
                 >
-                  <FaInstagram />
+                  <FaLinkedinIn />
                 </a>
               </li>
             </ul>
