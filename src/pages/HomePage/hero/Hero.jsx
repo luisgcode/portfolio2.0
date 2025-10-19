@@ -5,7 +5,7 @@ import { LuGithub } from "react-icons/lu";
 import { BsFileEarmarkPdf } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { FaLinkedinIn } from "react-icons/fa";
+import { SlSocialLinkedin } from "react-icons/sl";
 
 const Hero = () => {
   const { t, i18n } = useTranslation("global");
@@ -81,7 +81,7 @@ const Hero = () => {
                   target="_blank"
                   aria-label="Visit my Linkedin profile"
                 >
-                  <FaLinkedinIn />
+                  <SlSocialLinkedin />
                 </a>
               </li>
             </ul>

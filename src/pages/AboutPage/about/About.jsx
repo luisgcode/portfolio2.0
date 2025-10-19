@@ -47,7 +47,7 @@ const About = () => {
                     download="Developer-Luis-Guaiquirian.pdf"
                     aria-label="Download résumé of Luis Guaiquirian in PDF format"
                   >
-                    <BsFileEarmarkPdf /> CV
+                    <BsFileEarmarkPdf />
                   </a>
                 </li>
                 <li>
@@ -57,7 +57,7 @@ const About = () => {
                     target="_blank"
                     aria-label="Visit Luis Guaiquirian Github Profile"
                   >
-                    <LuGithub /> Github
+                    <LuGithub />
                   </a>
                 </li>
               </ul>
