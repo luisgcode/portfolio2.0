@@ -51,7 +51,7 @@
 
 @media (min-width: 660px) {
   .posters {
-    width: 600px;
+    width: 380px;
   }
 }
 
@@ -59,11 +59,14 @@
   .project-card {
     padding: 20px 10px;
   }
+  .posters {
+    max-width: 320px;
+  }
 }
 
 @media (min-width: 950px) {
   .posters {
-    width: 250px;
+    width: 200px;
   }
 }
 

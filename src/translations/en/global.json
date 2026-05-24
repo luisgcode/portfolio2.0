@@ -2,7 +2,7 @@
   "header": {
     "navbar": ["Home", "About", "Projects", "Resources"],
     "heroTitle": "Web Manager & Web Developer.",
-    "heroClaim": "I build accessible interfaces, optimize websites, and create smart automations using React, Tailwind, WordPress, Python, and no-code tools."
+    "heroClaim": "I build websites, manage product data pipelines, and design custom systems that solve real business problems. I work with React, Drupal, WordPress, and AI automation."
   },
   "latest": {
     "title": "Some of My Work."
@@ -11,11 +11,26 @@
   "projectVivenutricion": {
     "description": "Redesigned the Vivenutrición website to modernize its look and feel, improve UI/UX, and create a more professional brand presence. Worked on defining typography, color palette, and visual hierarchy while applying custom CSS to enhance layout, responsiveness, and overall user interaction."
   },
-  "projectNeurovet": {
-    "description": "Migrating a veterinary website from Wix to WordPress to improve flexibility and control. Handling full redesign, content styling, and brand refresh to better connect with pet owners."
-  },
   "projectGeek": {
-    "description": "Developing a custom WordPress site for a content creator, with full content control and YouTube integration. Focused on showcasing his work through an engaging, organized layout to grow his audience."
+    "description": "Custom WordPress site for a content creator. Full control of the content, YouTube integration, and a layout focused on growing the audience."
+  },
+  "projectDimplex": {
+    "description": "Web Manager for dimplex.com, the main brand site for Glen Dimplex Americas. A Drupal product catalog and brand site for US, EN-CA, and FR-CA markets. I own product visibility on the web, technical SEO, and the integrations with Plytix (PIM) and CommerceTools. Right now I'm also leading the Google Ads launch for the brand from scratch: baseline capture, SEO cleanup, and campaign architecture."
+  },
+  "projectConvectair": {
+    "description": "Web Manager for convectair.ca, the bilingual EN/FR-CA brand site of Convectair. A Drupal catalog that shares infrastructure across the Glen Dimplex Americas ecosystem."
+  },
+  "projectCadet": {
+    "description": "Web Manager for cadetheat.com, Cadet's brand site for the US market. A Drupal catalog inside the multi-brand Glen Dimplex Americas ecosystem."
+  },
+  "projectAmazonMap": {
+    "description": "A custom MAP (Minimum Advertised Price) violation monitoring system I built from scratch for Dimplex. Three apps running on Fly.io, automated with GitHub Actions, connected to Rainforest API. Live in production, used every day by the CS team to enforce pricing with third-party sellers on Amazon."
+  },
+  "projectSebra": {
+    "description": "A personal AI knowledge management system. A second brain with detailed documentation and a graphical neural-network interface that shows topics, relationships, and open questions at a glance. Mixes deliberate process documentation with experimental AI workflows to make better decisions at work."
+  },
+  "projectEmber": {
+    "description": "Designing and building Ember, a Botpress chatbot for customer support in EN-CA and FR-CA on dimplex.com. Currently in architecture phase. Knowledge base built from 123 internal CS docs. 5 priority use cases defined with the CS team."
   },
   "projectInfanti": {
     "description": "Worked as Front-End Developer for Infanti for over 1 year, building custom components like timers and layout tweaks using both code and the CMS page builder. Blended different techniques to improve design, usability, and performance."
@@ -66,9 +81,9 @@
     "description": "My commitment to learning is unwavering; in this dynamic field, continuous education is imperative for staying relevant."
   },
   "about": {
-    "p1": "I’m a Web Manager & Web Developer with 5+ years of experience building, managing, and optimizing high-performance websites and CMS-based platforms.",
-    "p2": "I specialize in React, Tailwind, and modern JavaScript tools, while also delivering advanced WordPress solutions focused on performance, SEO, and accessibility.",
-    "p3": "Currently, I manage and improve corporate websites built on Drupal at Glen Dimplex Americas, aligning technical execution with business and marketing goals.",
-    "p4": "Based in Ontario, Canada. Always building where code, design, and content meet."
+    "p1": "I'm a Web Manager and Web Developer with 5+ years of experience building, managing, and optimizing websites, CMS-based platforms, and custom internal tools.",
+    "p2": "I work with React, Tailwind, JavaScript, and Drupal. I also have deep experience with WordPress, performance optimization, SEO, accessibility, and AI automation.",
+    "p3": "Right now I'm the Web Manager at Glen Dimplex Americas. I run digital operations for three brand sites (Dimplex, Convectair, Cadet) and lead custom projects like a Botpress chatbot, a Google Ads launch, and a custom Amazon MAP monitoring system that runs in production every day.",
+    "p4": "Based in Cambridge, Ontario, Canada. I like building things where code, strategy, and content meet."
   }
 }

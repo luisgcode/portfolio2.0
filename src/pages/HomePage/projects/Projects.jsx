@@ -18,77 +18,52 @@ import { useTranslation } from "react-i18next";
 
 const Projects = () => {
   const { t, i18n } = useTranslation("global");
-  const [activeTab, setActiveTab] = useState("Freelance");
+  const [activeTab, setActiveTab] = useState("Development");
 
   function handleLanguage(lang) {
     i18n.changeLanguage(lang);
   }
 
   // Tab categories
-  const tabs = ["Development", "Freelance", "Experiments"];
+  const tabs = ["Development", "Custom Solutions", "Freelance"];
 
   // All projects data - you can redistribute these later
   const allProjects = [
+    // ===== DEVELOPMENT =====
     {
-      id: 1,
-
-      category: "Freelance",
-      title: "thevocaldirection.com",
-      href: "https://thevocaldirection.com/",
-      description: t("projectVocal.description"),
+      id: 100,
+      category: "Development",
+      title: "dimplex.com",
+      href: "https://www.dimplex.com",
+      description: t("projectDimplex.description"),
       status: null,
-      tags: ["WordPress", "Elementor", "Email Integration", "SEO", "Figma"],
-      poster: posterVocal,
-    },
-    {
-      id: 2,
-      category: "Freelance",
-      title: "Vivenutricion.cl",
-      href: "https://vivenutricion.cl/nuevo-home/",
-      description: t("projectVivenutricion.description"),
-      status: null,
-      tags: ["WordPress", "Elementor PRO", "Booking System", "SEO", "Figma"],
-      poster: posterVivenutricion,
-    },
-    {
-      id: 13,
-      category: "Freelance",
-      title: "Geeksonas",
-      href: "#",
-      description:
-        "WordPress website for YouTube content creator with custom YouTube API integration. Managing extensive video content catalog and building dynamic content management system.",
-      status: "In Progress",
-      tags: [
-        "WordPress",
-        "YouTube API",
-        "Content Management",
-        "Custom Integration",
-        "Video Content",
-      ],
+      tags: ["Drupal", "CommerceTools", "Plytix", "SEO", "GA4"],
       poster: null,
     },
     {
-      id: 14,
-      category: "Freelance",
-      title: "Neurovet",
-      href: "#",
-      description:
-        "Complete migration from Wix to WordPress with full website redesign and development. Implementing appointment booking with Bookly, SEO optimization with Yoast, and custom veterinary features.",
-      status: "In Progress",
-      tags: [
-        "WordPress",
-        "Wix Migration",
-        "Bookly",
-        "Yoast SEO",
-        "Website Redesign",
-      ],
+      id: 101,
+      category: "Development",
+      title: "convectair.ca",
+      href: "https://www.convectair.ca",
+      description: t("projectConvectair.description"),
+      status: null,
+      tags: ["Drupal", "Bilingual EN/FR", "CommerceTools", "Plytix"],
       poster: null,
     },
-
+    {
+      id: 102,
+      category: "Development",
+      title: "cadetheat.com",
+      href: "https://www.cadetheat.com",
+      description: t("projectCadet.description"),
+      status: null,
+      tags: ["Drupal", "CommerceTools", "Plytix"],
+      poster: null,
+    },
     {
       id: 5,
       category: "Development",
-      title: "AI Chatbot Integration",
+      title: "Portfolio AI Chatbot",
       href: "https://github.com/luisgcode/portfolio2.0",
       description: t("projectChatbot.description"),
       status: null,
@@ -107,7 +82,7 @@ const Projects = () => {
       title: "Infanti.cl - E-commerce Platform",
       href: "https://infanti.cl/",
       description:
-        "3+ years developing and maintaining Chile's leading baby products e-commerce platform. Implemented same-day delivery integration, Salesforce CRM connections, and performance optimizations.",
+        "Over 4 years developing and maintaining Chile's leading baby products e-commerce platform. Implemented same-day delivery integration, Salesforce CRM connections, and performance optimizations.",
       status: null,
       tags: [
         "Magento",
@@ -144,22 +119,102 @@ const Projects = () => {
       tags: ["React", "Tailwind CSS", "Framer Motion", "i18next", "SPA"],
       poster: posterPortfolio2,
     },
+
+    // ===== CUSTOM SOLUTIONS =====
     {
-      id: 10,
-      category: "Experiments",
-      title: "Claude Code - AI Assisted Development",
-      href: "https://claude.ai/code",
-      description:
-        "Experimenting with Claude Code for assisted development workflows including debugging, professional documentation, code reviews, and automated testing implementation.",
-      status: "Active",
+      id: 200,
+      category: "Custom Solutions",
+      title: "Amazon MAP Violation System",
+      href: "#",
+      description: t("projectAmazonMap.description"),
+      status: "In Production",
       tags: [
-        "Claude Code",
-        "AI Development",
-        "Debugging",
-        "Documentation",
-        "Code Reviews",
+        "Fly.io",
+        "GitHub Actions",
+        "Rainforest API",
+        "Python",
+        "Automation",
       ],
       poster: null,
+    },
+    {
+      id: 201,
+      category: "Custom Solutions",
+      title: "SEBRA (Second Brain)",
+      href: "https://sebra.vercel.app",
+      description: t("projectSebra.description"),
+      status: "In Progress",
+      tags: ["AI", "Knowledge Graph", "D3.js", "PowerShell", "Claude Code"],
+      poster: null,
+    },
+    {
+      id: 202,
+      category: "Custom Solutions",
+      title: "Ember — Botpress Chatbot for Dimplex",
+      href: "#",
+      description: t("projectEmber.description"),
+      status: "In Development",
+      tags: ["Botpress", "Conversational AI", "EN/FR-CA", "Drupal", "Zendesk"],
+      poster: null,
+    },
+
+    // ===== FREELANCE =====
+    {
+      id: 1,
+      category: "Freelance",
+      title: "thevocaldirection.com",
+      href: "https://thevocaldirection.com/",
+      description: t("projectVocal.description"),
+      status: null,
+      tags: ["WordPress", "Elementor", "Email Integration", "SEO", "Figma"],
+      poster: posterVocal,
+    },
+    {
+      id: 2,
+      category: "Freelance",
+      title: "Vivenutricion.cl",
+      href: "https://vivenutricion.cl/nuevo-home/",
+      description: t("projectVivenutricion.description"),
+      status: null,
+      tags: ["WordPress", "Elementor PRO", "Booking System", "SEO", "Figma"],
+      poster: posterVivenutricion,
+    },
+    {
+      id: 13,
+      category: "Freelance",
+      title: "Geeksonas",
+      href: "#",
+      description: t("projectGeek.description"),
+      status: null,
+      tags: [
+        "WordPress",
+        "YouTube API",
+        "Content Management",
+        "Custom Integration",
+        "Video Content",
+      ],
+      poster: null,
+    },
+    {
+      id: 300,
+      category: "Freelance",
+      title: "Wawabb - Bsale Store Optimization",
+      href: "https://www.wawabb.cl/",
+      description:
+        "CMS optimization and content translation to Spanish. Fixed existing errors and improved overall site functionality and performance.",
+      status: null,
+      tags: ["CMS Optimization", "E-commerce", "JavaScript", "POS Integration", "Performance"],
+      poster: null,
+    },
+    {
+      id: 301,
+      category: "Freelance",
+      title: "Western Fair The Market",
+      href: "https://themarketwfd.com/",
+      description: t("projectMarket.description"),
+      status: null,
+      tags: ["Squarespace", "E-commerce", "SEO", "Multi-page", "Domain Management"],
+      poster: posterMarket,
     },
   ];
 

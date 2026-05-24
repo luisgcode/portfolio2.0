@@ -41,15 +41,16 @@ const Hero = () => {
           <p className="mt-1 mb-6 max-w-[35ch]">{t("header.heroClaim")}</p>
           <ul
             className="flex flex-wrap items-center gap-y-3 gap-x-3 max-w-96"
-            aria-label="Technogologies"
+            aria-label="Technologies"
           >
             <li className="custom-hero-tag text-[16px]">Claude Code</li>
             <li className="custom-hero-tag text-[16px]">React JS</li>
-            <li className="custom-hero-tag text-[16px]">Tailwind CSS</li>
-            <li className="custom-hero-tag text-[16px] ">JavaScript</li>
-            <li className="custom-hero-tag text-xs">Wordpress</li>
-            <li className="custom-hero-tag text-xs">Figma</li>
-            <span className="custom-hero-tag text-xs">Drupal</span>
+            <li className="custom-hero-tag text-[16px]">Drupal</li>
+            <li className="custom-hero-tag text-[16px]">CommerceTools</li>
+            <li className="custom-hero-tag text-xs">Tailwind CSS</li>
+            <li className="custom-hero-tag text-xs">JavaScript</li>
+            <li className="custom-hero-tag text-xs">WordPress</li>
+            <li className="custom-hero-tag text-xs">AI Automation</li>
           </ul>
           <div className="mt-6">
             <ul className="flex gap-6">
