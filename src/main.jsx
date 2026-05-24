@@ -21,6 +21,14 @@ i18next.init({
   },
 });
 
+// Keep <html lang> in sync with the active language (a11y + SEO)
+const syncHtmlLang = (lng) => {
+  const langAttr = lng === "sp" ? "es" : "en";
+  document.documentElement.setAttribute("lang", langAttr);
+};
+syncHtmlLang(i18next.language);
+i18next.on("languageChanged", syncHtmlLang);
+
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <I18nextProvider i18n={i18next}>

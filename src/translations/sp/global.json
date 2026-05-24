@@ -87,5 +87,13 @@
     "p2": "Trabajo con React, Tailwind, JavaScript y Drupal. También tengo experiencia profunda con WordPress, optimización de performance, SEO, accesibilidad y automatización con AI.",
     "p3": "Hoy soy Web Manager en Glen Dimplex Americas. Manejo las operaciones digitales de tres sites de marca (Dimplex, Convectair, Cadet) y lidero proyectos custom como un chatbot de Botpress, el lanzamiento de Google Ads y un sistema custom de monitoreo de MAP en Amazon que corre en producción todos los días.",
     "p4": "Vivo en Cambridge, Ontario, Canadá. Me gusta construir en el cruce entre código, estrategia y contenido."
+  },
+  "meta": {
+    "homeTitle": "Luis Guaiquirian | Web Manager & Web Developer",
+    "homeDescription": "Web Manager y Web Developer en Cambridge, Ontario. Construyo sitios, gestiono pipelines de datos de producto y diseño sistemas custom con React, Drupal, WordPress y automatización con AI.",
+    "aboutTitle": "Sobre Mi | Luis Guaiquirian",
+    "aboutDescription": "Sobre Luis Guaiquirian: más de 5 años construyendo sitios y sistemas custom. Hoy Web Manager en Glen Dimplex Americas. Basado en Cambridge, Ontario.",
+    "projectsTitle": "Proyectos | Luis Guaiquirian",
+    "projectsDescription": "Lista completa de proyectos de Luis Guaiquirian: sitios Drupal en Glen Dimplex Americas, soluciones custom como Amazon MAP y Ember chatbot, trabajo freelance y más."
   }
 }

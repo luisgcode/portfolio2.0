@@ -6,9 +6,11 @@ import { LuGithub } from "react-icons/lu";
 import { BsFileEarmarkPdf } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { usePageMeta } from "../../../hooks/usePageMeta";
 
 const About = () => {
   const { t, i18n } = useTranslation("global");
+  usePageMeta(t("meta.aboutTitle"), t("meta.aboutDescription"));
 
   function handleLanguage(lang) {
     i18n.changeLanguage(lang);
