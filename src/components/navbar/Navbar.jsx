@@ -1,40 +1,53 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { luisLogo, heroImage } from "../media";
 import { AiFillSound } from "react-icons/ai";
 import "./navbar.css";
-import sound from "../../assets/audio/keyboard-audio.mp3";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { RiCloseLine } from "react-icons/ri";
-import { FiMenu } from "react-icons/fi";
+import { FiMenu, FiHome } from "react-icons/fi";
 import { FaRegUser } from "react-icons/fa";
-import { FiHome } from "react-icons/fi";
 import { MdOutlineFolderCopy } from "react-icons/md";
-import { MdLanguage } from "react-icons/md";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const { t, i18n } = useTranslation("global");
   const [animate, setAnimate] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState("en");
-  const audio = new Audio(sound);
-  audio.currentTime = 5;
-  audio.volume = 0.4;
+  // Audio lives in a ref so we don't recreate it on every render.
+  // It's also loaded lazily (dynamic import) the first time the user hovers
+  // the logo — that keeps the 2 MB mp3 out of the initial bundle.
+  const audioRef = useRef(null);
 
-  function play() {
-    audio.play();
-  }
+  const playSound = async () => {
+    if (!audioRef.current) {
+      try {
+        const { default: src } = await import(
+          "../../assets/audio/keyboard-audio.mp3"
+        );
+        audioRef.current = new Audio(src);
+        audioRef.current.currentTime = 5;
+        audioRef.current.volume = 0.4;
+      } catch {
+        return; // silently fail if audio can't load
+      }
+    }
+    audioRef.current.play().catch(() => {
+      // some browsers block autoplay; fail silently
+    });
+  };
 
-  function stop() {
-    audio.pause();
-  }
+  const stopSound = () => {
+    audioRef.current?.pause();
+  };
 
-  function handleLanguage(lang) {
+  const handleLanguage = (lang) => {
     setAnimate(true);
     i18n.changeLanguage(lang);
     setTimeout(() => setAnimate(false), 500);
-  }
+  };
+
+  const isEnglish = i18n.language === "en";
 
   return (
     <nav
@@ -46,20 +59,19 @@ const Navbar = () => {
         <div className="navigation-logo relative">
           <Link to="/" aria-label="Home">
             <img
-              onMouseEnter={play}
-              onMouseOut={stop}
+              onMouseEnter={playSound}
+              onMouseLeave={stopSound}
               className="logo-image md:min-w-[65px]"
               src={luisLogo}
-              alt="Luis Guaiquirian Portfolio"
+              alt="Luis Guaiquirian logo"
             />
           </Link>
           <AiFillSound
-            aria-label="Sound button activates on logo"
+            aria-hidden="true"
             className="sound-icon"
           />
         </div>
         <motion.ul
-          role="menubar"
           aria-label="Main menu"
           variants={{
             hidden: { x: 80, opacity: 0 },
@@ -71,85 +83,69 @@ const Navbar = () => {
           }}
           initial="hidden"
           animate="show"
-          className="navigation-items hidden md:flex gap-8 lg:mr-24  items-center"
+          className="navigation-items hidden md:flex gap-8 lg:mr-24 items-center"
         >
-          <Link to="/">
-            <li role="menuitem">
-              {/* Agregar role menuitem */}
-              <a className={`nav-link ${animate ? "fade-in-out" : ""}`}>
-                {t("header.navbar", { returnObjects: true })[0]}
-              </a>
-            </li>
-          </Link>
-          <Link to="/projects">
-            <li role="menuitem">
-              {/* Agregar role menuitem */}
-              <a className={` nav-link ${animate ? "fade-in-out" : ""}`}>
-                {t("header.navbar", { returnObjects: true })[2]}
-              </a>
-            </li>
-          </Link>
-          <Link to="/about">
-            <li role="menuitem">
-              {/* Agregar role menuitem */}
-              <a className={`nav-link ${animate ? "fade-in-out" : ""}`}>
-                {t("header.navbar", { returnObjects: true })[1]}
-              </a>
-            </li>
-          </Link>
+          <li>
+            <Link
+              to="/"
+              className={`nav-link ${animate ? "fade-in-out" : ""}`}
+            >
+              {t("header.navbar", { returnObjects: true })[0]}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/projects"
+              className={`nav-link ${animate ? "fade-in-out" : ""}`}
+            >
+              {t("header.navbar", { returnObjects: true })[2]}
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              className={`nav-link ${animate ? "fade-in-out" : ""}`}
+            >
+              {t("header.navbar", { returnObjects: true })[1]}
+            </Link>
+          </li>
           <li className="flex">
-            {currentLanguage === "en" ? (
-              <button
-                className=" flex items-center gap-1 px-3 py-1.5 rounded-full 
-                 bg-gray-800/50 hover:bg-gray-700/50 
+            <button
+              className="flex items-center gap-1 px-3 py-1.5 rounded-full
+                 bg-gray-800/50 hover:bg-gray-700/50
                  border border-gray-700 hover:border-gray-500
                  transition-all duration-300
-                 text-gray-300  text-xs"
-                onClick={() => {
-                  handleLanguage("sp");
-                  setCurrentLanguage("sp");
-                }}
-                aria-label="Switch to Spanish"
-              >
-                SPANISH
-              </button>
-            ) : (
-              <button
-                className=" flex items-center gap-1 px-3 py-1.5 rounded-full 
-              bg-gray-800/50 hover:bg-gray-700/50 
-              border border-gray-700 hover:border-gray-500
-              transition-all duration-300
-         text-gray-300  text-xs"
-                onClick={() => {
-                  handleLanguage("en");
-                  setCurrentLanguage("en");
-                }}
-                aria-label="Switch to English"
-              >
-                ENGLISH
-              </button>
-            )}
+                 text-gray-300 text-xs"
+              onClick={() => handleLanguage(isEnglish ? "sp" : "en")}
+              aria-label={isEnglish ? "Switch to Spanish" : "Switch to English"}
+            >
+              {isEnglish ? "SPANISH" : "ENGLISH"}
+            </button>
           </li>
         </motion.ul>
         <div className="navbar-mobile">
           {toggleMenu ? (
-            <RiCloseLine
-              className="menu-btn mr-3"
-              color="#fff"
-              size={35}
+            <button
+              type="button"
               onClick={() => setToggleMenu(false)}
               aria-label="Close menu"
-              aria-expanded={toggleMenu} // Agregado para mostrar si el menú está abierto
-            />
-          ) : (
-            <FiMenu
+              aria-expanded={toggleMenu}
+              aria-controls="mobile-menu"
               className="menu-btn mr-3"
-              color="#fff"
-              size={35}
+            >
+              <RiCloseLine color="#fff" size={35} />
+            </button>
+          ) : (
+            <button
+              type="button"
               onClick={() => setToggleMenu(true)}
               aria-label="Open menu"
-              aria-expanded={toggleMenu} // Agregado para mostrar si el menú está cerrado
-            />
+              aria-expanded={toggleMenu}
+              aria-controls="mobile-menu"
+              className="menu-btn mr-3"
+            >
+              <FiMenu color="#fff" size={35} />
+            </button>
           )}
 
           <motion.div
@@ -159,81 +155,64 @@ const Navbar = () => {
             animate={{ x: toggleMenu ? 0 : "100%" }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 120, damping: 20 }}
-            role="dialog" // Añadido para indicar que es un diálogo/modal
+            role="dialog"
             aria-label="Mobile menu"
-            aria-hidden={!toggleMenu} // Cambiar a "true" cuando el menú esté cerrado
+            aria-hidden={!toggleMenu}
           >
-            {/* Contenido del menú */}
-            <div className="user" role="banner">
+            <div className="user">
               <img
                 className="w-[150px] mb-4"
                 src={heroImage}
                 alt="Luis Guaiquirian"
               />
-              <span className="font-semibold mb-1" aria-label="Name">
-                Luis Guaiquirian
-              </span>
-              <span
-                className="text-[16px] text-highlightColor"
-                aria-label="Role"
-              >
-                Front-End Developer
+              <span className="font-semibold mb-1">Luis Guaiquirian</span>
+              <span className="text-[16px] text-highlightColor">
+                Web Manager &amp; Web Developer
               </span>
             </div>
             <ul className="mobile-menu">
-              <Link to="/">
-                <li
+              <li>
+                <Link
+                  to="/"
                   className="flex gap-2 items-center"
                   onClick={() => setToggleMenu(false)}
-                  role="menuitem" // Añadir el role a cada ítem
                 >
-                  <FiHome />
+                  <FiHome aria-hidden="true" />
                   {t("header.navbar", { returnObjects: true })[0]}
-                </li>
-              </Link>
-              <Link to="/projects">
-                <li
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/projects"
                   className="flex gap-2 items-center"
                   onClick={() => setToggleMenu(false)}
-                  role="menuitem"
                 >
-                  <MdOutlineFolderCopy />
+                  <MdOutlineFolderCopy aria-hidden="true" />
                   {t("header.navbar", { returnObjects: true })[2]}
-                </li>
-              </Link>
-              <Link to="/about">
-                <li
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
                   className="flex gap-2 items-center"
                   onClick={() => setToggleMenu(false)}
-                  role="menuitem"
                 >
-                  <FaRegUser />
+                  <FaRegUser aria-hidden="true" />
                   {t("header.navbar", { returnObjects: true })[1]}
-                </li>
-              </Link>
-              {/* Language Switch */}
+                </Link>
+              </li>
               <li className="tools flex flex-col items-start">
-                {currentLanguage === "en" ? (
-                  <button
-                    className="font-semibold text-sm"
-                    onClick={() => {
-                      handleLanguage("sp");
-                      setCurrentLanguage("sp");
-                    }}
-                  >
-                    <span className="text-xs">SPANISH</span>
-                  </button>
-                ) : (
-                  <button
-                    className="font-semibold text-sm"
-                    onClick={() => {
-                      handleLanguage("en");
-                      setCurrentLanguage("en");
-                    }}
-                  >
-                    <span className="text-xs">ENGLISH</span>
-                  </button>
-                )}
+                <button
+                  className="font-semibold text-sm"
+                  onClick={() => handleLanguage(isEnglish ? "sp" : "en")}
+                  aria-label={
+                    isEnglish ? "Switch to Spanish" : "Switch to English"
+                  }
+                >
+                  <span className="text-xs">
+                    {isEnglish ? "SPANISH" : "ENGLISH"}
+                  </span>
+                </button>
               </li>
             </ul>
           </motion.div>
