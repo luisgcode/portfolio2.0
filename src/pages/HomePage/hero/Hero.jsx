@@ -88,12 +88,24 @@ const Hero = () => {
             </ul>
           </div>
         </div>
-        <div className=" hidden md:flex items-center  lg:mr-28  ">
-          <img
-            className="w-[280px] "
+        <div className="hidden md:flex items-center lg:mr-28">
+          <motion.img
+            className="w-[280px]"
             src={heroImage}
-            alt="Portrait of Luis Guaiquirian, Front-End Developer especializado en React y JavaScript"
-            loading="lazy"
+            alt="Portrait of Luis Guaiquirian, Web Manager and Web Developer"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+            animate={{
+              y: [0, -10, 0, -6, 0],
+              rotate: [0, -1.2, 0, 1.2, 0],
+            }}
+            transition={{
+              duration: 7,
+              repeat: Infinity,
+              ease: "easeInOut",
+              times: [0, 0.3, 0.5, 0.75, 1],
+            }}
           />
         </div>
       </motion.div>

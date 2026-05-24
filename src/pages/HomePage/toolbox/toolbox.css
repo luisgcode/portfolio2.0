@@ -1,6 +1,6 @@
 /* * Dealing with vector bg, it's a constant in every file * */
 .toolbox {
-  background-image: url(/src/assets/images/vector1.svg);
+  background-image: url(/vector1.svg);
   background-repeat: no-repeat;
   background-position: -80% 10%;
 }

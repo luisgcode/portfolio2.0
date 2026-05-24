@@ -4,7 +4,7 @@
 
 /* * Dealing with the vector BG, is different in each section * */
 .projects {
-  background-image: url(/src/assets/images/vector1.svg);
+  background-image: url(/vector1.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: 130%;
