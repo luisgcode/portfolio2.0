@@ -27,18 +27,23 @@ const PageLoader = () => (
 function App() {
   return (
     <div className="App">
+      <a href="#main-content" className="skip-to-content">
+        Skip to main content
+      </a>
       <div className="custom-bg">
         <Navbar />
         <StickyMenu />
         <Chatbot />
-        <Suspense fallback={<PageLoader />}>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/projects" element={<ProjectsPage />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
+        <div id="main-content">
+          <Suspense fallback={<PageLoader />}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
+        </div>
         <Footer />
       </div>
     </div>
