@@ -49,6 +49,8 @@ const Toolbox = () => {
   }
 
   // Toolbox categories data
+  // Tools without a logo render as a text chip — drop the SVG into
+  // src/assets/images/logos/ later and add it to media.jsx to swap.
   const toolboxCategories = [
     {
       id: 1,
@@ -56,74 +58,85 @@ const Toolbox = () => {
       icon: <MdMonitor />,
       ariaLabel: "Frontend Tools",
       tools: [
-        { logo: reactLogo, name: "React JS", alt: "logo React" },
-        { logo: jsLogo, name: "JavaScript", alt: "logo javascript" },
-        { logo: tailWindLogo, name: "Tailwind CSS", alt: "logo Tailwind" },
-        { logo: sassLogo, name: "Sass", alt: "logo Sass" },
-        { logo: htmlLogo, name: "HTML", alt: "logo HTML" },
-        { logo: cssLogo, name: "CSS", alt: "logo CSS" },
+        { logo: reactLogo, name: "React JS", alt: "React logo" },
+        { logo: jsLogo, name: "JavaScript", alt: "JavaScript logo" },
+        { logo: tailWindLogo, name: "Tailwind CSS", alt: "Tailwind logo" },
+        { logo: sassLogo, name: "Sass", alt: "Sass logo" },
+        { logo: htmlLogo, name: "HTML", alt: "HTML logo" },
+        { logo: cssLogo, name: "CSS", alt: "CSS logo" },
       ],
     },
     {
-      id: 2,
-      title: "Back-end",
-      icon: <FaServer />,
-      ariaLabel: "Backend Tools",
+      id: 6,
+      title: "CMS & Commerce",
+      icon: <IoSettingsOutline />,
+      ariaLabel: "Content Management and Commerce platforms",
       tools: [
-        { logo: firebaseLogo, name: "Firebase", alt: "logo Firebase" },
-        { logo: mySqlLogo, name: "MySQL", alt: "logo MySQL" },
-        { logo: nodeLogo, name: "Node js", alt: "logo MySQL" },
+        { logo: null, name: "Drupal", alt: "Drupal" },
+        { logo: wordpressLogo, name: "WordPress", alt: "WordPress logo" },
+        { logo: magentoLogo, name: "Magento", alt: "Magento logo" },
+        { logo: null, name: "CommerceTools", alt: "CommerceTools" },
+        { logo: null, name: "Plytix (PIM)", alt: "Plytix" },
+        { logo: elementorLogo, name: "Elementor & PRO", alt: "Elementor logo" },
+        { logo: prestashopLogo, name: "Prestashop", alt: "Prestashop logo" },
       ],
     },
     {
       id: 3,
       title: "AI & Automation",
       icon: <FaTools />,
-      ariaLabel: "Development & collaboration Tools",
+      ariaLabel: "AI and automation tools",
       tools: [
-        { logo: botpressLogo, name: "BotPress AI", alt: "logo BotPress" },
-        { logo: claudeLogo, name: "Claude Code", alt: "logo Claude Code" },
-        { logo: mcpLlgo, name: "MCP", alt: "logo Claude Code" },
+        { logo: claudeLogo, name: "Claude Code", alt: "Claude logo" },
+        { logo: mcpLlgo, name: "MCP", alt: "MCP logo" },
+        { logo: botpressLogo, name: "Botpress", alt: "Botpress logo" },
+        { logo: null, name: "GitHub Actions", alt: "GitHub Actions" },
+        { logo: null, name: "Fly.io", alt: "Fly.io" },
       ],
     },
     {
-      id: 4,
-      title: "Development & Collaboration",
-      icon: <FaTools />,
-      ariaLabel: "Development & collaboration Tools",
+      id: 2,
+      title: "Back-end & Data",
+      icon: <FaServer />,
+      ariaLabel: "Backend and Data tools",
       tools: [
-        { logo: gitHubLogo, name: "GitHub", alt: "logo GitHub" },
-        { logo: gitLogo, name: "Git", alt: "logo Git" },
-        { logo: vsCodeLogo, name: "VS Code", alt: "logo VS Code" },
-        { logo: figmaLogo, name: "Figma", alt: "logo Figma" },
-        { logo: photoshopLogo, name: "Photoshop", alt: "logo Photoshop" },
-        { logo: notionLogo, name: "Notion", alt: "logo Notion" },
-        { logo: confluenceLogo, name: "Confluence", alt: "logo Confluence" },
-        { logo: jiraLogo, name: "Jira", alt: "logo Jira" },
-        { logo: slackLogo, name: "Slack", alt: "logo Slack" },
+        { logo: nodeLogo, name: "Node.js", alt: "Node.js logo" },
+        { logo: pythonLogo, name: "Python", alt: "Python logo" },
+        { logo: firebaseLogo, name: "Firebase", alt: "Firebase logo" },
+        { logo: mySqlLogo, name: "MySQL", alt: "MySQL logo" },
       ],
     },
     {
       id: 5,
-      title: "Analytics",
+      title: "Analytics & SEO",
       icon: <MdOutlineAnalytics />,
-      ariaLabel: "Analytics Tools",
+      ariaLabel: "Analytics and SEO tools",
       tools: [
-        { logo: powerBiLogo, name: "Power BI", alt: "logo Power BI" },
-        { logo: ga4Logo, name: "GA4", alt: "logo GA4" },
-        { logo: hotjarLogo, name: "Hotjar", alt: "logo Hotjar" },
+        { logo: ga4Logo, name: "GA4", alt: "Google Analytics logo" },
+        { logo: hotjarLogo, name: "Hotjar", alt: "Hotjar logo" },
+        { logo: null, name: "Microsoft Clarity", alt: "Microsoft Clarity" },
+        { logo: null, name: "SEMrush", alt: "SEMrush" },
+        { logo: null, name: "Google Search Console", alt: "Google Search Console" },
+        { logo: null, name: "Google Tag Manager", alt: "Google Tag Manager" },
+        { logo: powerBiLogo, name: "Power BI", alt: "Power BI logo" },
+        { logo: null, name: "Looker Studio", alt: "Looker Studio" },
       ],
     },
     {
-      id: 6,
-      title: "CMS",
-      icon: <IoSettingsOutline />,
-      ariaLabel: "Content Management systems Tools",
+      id: 4,
+      title: "Dev tools & Collaboration",
+      icon: <FaTools />,
+      ariaLabel: "Development and collaboration tools",
       tools: [
-        { logo: magentoLogo, name: "Magento", alt: "logo Magento" },
-        { logo: wordpressLogo, name: "Wordpress", alt: "logo Wordpress" },
-        { logo: elementorLogo, name: "Elementor & PRO", alt: "logo Elementor" },
-        { logo: prestashopLogo, name: "Prestashop", alt: "logo Prestashop" },
+        { logo: gitHubLogo, name: "GitHub", alt: "GitHub logo" },
+        { logo: gitLogo, name: "Git", alt: "Git logo" },
+        { logo: vsCodeLogo, name: "VS Code", alt: "VS Code logo" },
+        { logo: figmaLogo, name: "Figma", alt: "Figma logo" },
+        { logo: photoshopLogo, name: "Photoshop", alt: "Photoshop logo" },
+        { logo: notionLogo, name: "Notion", alt: "Notion logo" },
+        { logo: confluenceLogo, name: "Confluence", alt: "Confluence logo" },
+        { logo: jiraLogo, name: "Jira", alt: "Jira logo" },
+        { logo: slackLogo, name: "Slack", alt: "Slack logo" },
       ],
     },
   ];
@@ -164,7 +177,16 @@ const Toolbox = () => {
               <div className="tools-wrapper">
                 {category.tools.map((tool, index) => (
                   <div key={index} className="tool-box">
-                    <img src={tool.logo} alt={tool.alt} loading="lazy" />
+                    {tool.logo ? (
+                      <img src={tool.logo} alt={tool.alt} loading="lazy" />
+                    ) : (
+                      <div
+                        className="tool-box-text-placeholder"
+                        aria-hidden="true"
+                      >
+                        {tool.name.charAt(0)}
+                      </div>
+                    )}
                     <small>{tool.name}</small>
                   </div>
                 ))}

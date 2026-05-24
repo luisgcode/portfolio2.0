@@ -34,6 +34,22 @@
   }
 }
 
+/* Placeholder for tools that don't have a logo yet — renders the first
+   letter inside a circle so the layout stays consistent. */
+.tool-box-text-placeholder {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--highlight-color), #1c2767);
+  color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
 @media (min-width: 768px) {
   .tools-row {
     padding: 25px 0 25px 25px;
