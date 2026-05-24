@@ -62,7 +62,7 @@
   "projectPortfoliov1": {
     "description": "Mostrar mis habilidades y experiencias de manera efectiva."
   },
-  "projectOccoupancy": {
+  "projectOccupancy": {
     "description": "Diseñado para mostrar niveles de ocupación empresarial en tiempo real, con una UI limpia y responsiva estilizada con Tailwind CSS. Este componente está listo para integrarse con APIs que proporcionan datos de multitudes."
   },
   "projectQuickbooker": {

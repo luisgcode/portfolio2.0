@@ -127,7 +127,7 @@ const Projects = () => {
       title: "Amazon MAP Violation System",
       href: "#",
       description: t("projectAmazonMap.description"),
-      status: "In Production",
+      status: null,
       tags: [
         "Fly.io",
         "GitHub Actions",
@@ -150,7 +150,7 @@ const Projects = () => {
     {
       id: 202,
       category: "Custom Solutions",
-      title: "Ember — Botpress Chatbot for Dimplex",
+      title: "Ember (Botpress Chatbot for Dimplex)",
       href: "#",
       description: t("projectEmber.description"),
       status: "In Development",
@@ -223,11 +223,10 @@ const Projects = () => {
     (project) => project.category === activeTab
   );
   return (
-    <div
+    <section
       id="recent-work"
       className="projects px-8 py-12 md:p-mid_pad"
-      aria-My
-      label="Latest projects"
+      aria-label="Latest projects"
     >
       <h3 className="mt-20">
         {t("latest.title")}
@@ -236,7 +235,7 @@ const Projects = () => {
 
       {/* Tab Navigation */}
       <div className="mt-8 mb-8">
-        <nav className="flex flex-wrap gap-2 justify-center md:justify-start">
+        <nav className="flex flex-wrap gap-2 justify-center md:justify-start" aria-label="Project categories">
           {tabs.map((tab) => (
             <button
               key={tab}
@@ -246,8 +245,8 @@ const Projects = () => {
                   ? "bg-highlightColor text-white border border-highlightColor"
                   : "bg-transparent border border-highlightColor text-highlightColor hover:bg-highlightColor hover:bg-opacity-10"
               }`}
-              aria-My
-              label={`Show ${tab} projects`}
+              aria-label={`Show ${tab} projects`}
+              aria-pressed={activeTab === tab}
             >
               {tab}
             </button>
@@ -264,49 +263,63 @@ const Projects = () => {
         transition={{ duration: 0.5 }}
         key={activeTab}
       >
-        {filteredProjects.map((project) => (
-          <li key={project.id} className="project-card">
-            <a
-              href={project.href}
-              target="_blank"
-              className="project-title font-bold mb-4 flex items-center"
-              aria-My
-              label="Visit project's repository or website"
-            >
-              {project.title} <FiArrowUpRight />
-              {project.status && (
-                <span className="italic text-highlightColor font-normal text-sm ml-2">
-                  {project.status}
+        {filteredProjects.map((project) => {
+          const isExternal = project.href && project.href !== "#";
+          return (
+            <li key={project.id} className="project-card">
+              {isExternal ? (
+                <a
+                  href={project.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-title font-bold mb-4 flex items-center"
+                  aria-label={`Visit ${project.title} (opens in new tab)`}
+                >
+                  {project.title} <FiArrowUpRight aria-hidden="true" />
+                  {project.status && (
+                    <span className="italic text-highlightColor font-normal text-sm ml-2">
+                      {project.status}
+                    </span>
+                  )}
+                </a>
+              ) : (
+                <span className="project-title font-bold mb-4 flex items-center">
+                  {project.title}
+                  {project.status && (
+                    <span className="italic text-highlightColor font-normal text-sm ml-2">
+                      {project.status}
+                    </span>
+                  )}
                 </span>
               )}
-            </a>
 
-            <div>
-              <p>{project.description}</p>
-            </div>
-
-            <div className="py-4">
-              <ul className="flex flex-wrap items-center gap-3">
-                {project.tags.map((tag, index) => (
-                  <span key={index} className="custom-project-tag">
-                    {tag}
-                  </span>
-                ))}
-              </ul>
-            </div>
-
-            {project.poster && (
-              <div className="posters">
-                <img
-                  className="rounded-lg"
-                  src={project.poster}
-                  alt={`${project.title} project cover`}
-                  loading="lazy"
-                />
+              <div>
+                <p>{project.description}</p>
               </div>
-            )}
-          </li>
-        ))}
+
+              <div className="py-4">
+                <ul className="flex flex-wrap items-center gap-3" aria-label="Tech stack">
+                  {project.tags.map((tag, index) => (
+                    <li key={index} className="custom-project-tag">
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {project.poster && (
+                <div className="posters">
+                  <img
+                    className="rounded-lg"
+                    src={project.poster}
+                    alt={`${project.title} project cover`}
+                    loading="lazy"
+                  />
+                </div>
+              )}
+            </li>
+          );
+        })}
 
         {/* Show message if no projects in category */}
         {filteredProjects.length === 0 && (
@@ -318,19 +331,17 @@ const Projects = () => {
         )}
 
         {/* View Full Projects Link */}
-        <Link to="/projects">
-          <li>
-            <a
-              className="font-bold nav-link flex my-6"
-              aria-My
-              label="See the full projects page"
-            >
-              <p>{t("viewfFullProjects.text")}</p> <FiArrowUpRight />
-            </a>
-          </li>
-        </Link>
+        <li>
+          <Link
+            to="/projects"
+            className="font-bold nav-link flex my-6"
+            aria-label="See the full projects page"
+          >
+            <p>{t("viewfFullProjects.text")}</p> <FiArrowUpRight aria-hidden="true" />
+          </Link>
+        </li>
       </motion.ul>
-    </div>
+    </section>
   );
 };
 
